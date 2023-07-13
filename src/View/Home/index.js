@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function index() {
+function Index()  {
   return (
-    <div>index</div>
+  <>
+  home
+  </>
   )
 }
+
+export default Index

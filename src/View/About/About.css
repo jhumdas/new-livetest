@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.about_mission {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.about_mission h4.our_mission_heading {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #747475;
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+.about_mission .mission_dashed_image img {
+    margin: 8px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_mission .mission_text p {
+    color: #000;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.about_mission .mission_image {
+    width: 100%;
+    height: 500px;
+}
+
+.about_mission .mission_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.about_mission .mission_heading_text h2 {
+    padding-top: 75px;
+    padding-bottom: 26px;
+    color: #000;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+
+}
+
+.about_mission .mission_heading_paragraph p {
+    color: #000;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.about_end {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.about_middle {
+    padding-top: 31px;
+    padding-bottom: 33px;
+    background-color: #ECECEC;
+    width: 100%;
+    height: auto;
+    margin-bottom: 28px;
+}
+
+p.about_middle_lrm {
+    color: #000;
+    font-family: 'open sans';
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+p.about_middle_lrm_text {
+    color: #000;
+    font-family: 'open sans';
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 34px;
+}
+
+.about_middle_img_main {
+    margin-left: auto;
+    display: table;
+}
+
+.about_middle_img img {
+    width: auto;
+    height: auto;
+
+}
+
+.about_middle_img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.about_end_img {
+    display: flex;
+
+}
+
+.about_end_img2 img {
+    margin-left: 30px;
+}
+
+h2.about_download {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+p.about_download_lrm {
+    color: #000;
+    font-family: Open Sans Hebrew Condensed;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 20px;
+}
+.about_end_img {
+    padding-top: 60px;
+}
+.about_end_img_phone {
+    width: 400px;
+    margin-left: 42px;
+}
+.about_end_text {
+    margin-left: 19px;
+}
+.about_end_img_phone img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:1199px) {
+    p.about_middle_lrm {
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+
+    p.about_middle_lrm_text {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+    .about_mission .mission_text p {
+        font-size: 33px;
+    }
+
+    .about_mission .mission_heading_text h2 {
+        padding-top: 45px;
+        padding-bottom: 20px;
+        font-size: 28px;
+
+    }
+
+    .about_mission .mission_heading_paragraph p {
+        font-size: 19px;
+
+    }
+
+    .about_middle_img_main {
+        margin: auto;
+    }
+    .about_end_img_phone {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about_mission .mission_text p {
+        font-size: 28px;
+    }
+
+    .about_mission .mission_heading_text h2 {
+        padding-top: 30px;
+        padding-bottom: 16px;
+        font-size: 25px;
+    }
+
+    .about_mission .mission_heading_paragraph p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .about_mission .mission_image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about_mission .mission_text p {
+        font-size: 24px;
+        margin-top: 22px;
+        margin-bottom: 8px;
+    }
+
+    .about_middle_img {
+        width: 287px;
+    }
+
+    /* p.about_middle_lrm_text {
+        font-size: 18px;
+        line-height: 23px;
+    } */
+
+    p.about_middle_lrm {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    p.about_middle_lrm_text {
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: 13px;
+    }
+    .about_end_img_phone {
+        margin: auto;
+        width: 300px;
+    }
+    .about_end_text {
+        margin-left: 19px;
+        margin-top: 20px;
+    }
+    .about_end_img {
+        padding-top: 18px;
+    }
+    h2.about_download {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    p.about_download_lrm {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .about_mission .mission_text p {
+        font-size: 21px;
+    }
+
+    .about_mission h4.our_mission_heading {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .about_mission .mission_dashed_image img {
+        width: 30%;
+    }
+
+    .about_mission .mission_heading_paragraph p {
+        font-size: 13px;
+    }
+
+    .about_mission .mission_heading_text h2 {
+        padding-top: 20px;
+        padding-bottom: 8px;
+        font-size: 23px;
+    }
+    h2.about_download {
+        font-size: 27px;
+        line-height: 35px;
+    }
+    p.about_middle_lrm_text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 8px;
+    }
+    p.about_middle_lrm {
+        font-size: 19px;
+        line-height: 31px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .about_mission .mission_text p {
+        font-size: 15px;
+        margin-top: 16px;
+        margin-bottom: 10px;
+    }
+
+    .about_mission .mission_dashed_image img {
+        width: 30%;
+    }
+
+    .about_mission h4.our_mission_heading {
+        font-size: 16px;
+
+    }
+
+    .about_mission .mission_dashed_image img {
+        width: 29%;
+    }
+
+    .about_mission .mission_dashed_image img {
+        margin: 2px auto;
+    }
+
+}
