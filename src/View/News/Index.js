@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import news_sld1 from "../../Images/news_sld1.png";
-import lcl_news_1 from "../../Images/lcl_news_1.png";
-import lcl_news_2 from "../../Images/lcl_news_2.png";
-import lcl_news_3 from "../../Images/lcl_news_3.png";
-import lcl_news_4 from "../../Images/lcl_news_4.png";
-import lcl_news_5 from "../../Images/lcl_news_5.png";
-import lcl_news_6 from "../../Images/lcl_news_6.png";
-import lcl_news_7 from "../../Images/lcl_news_7.png";
-import lcl_news_8 from "../../Images/lcl_news_8.png";
-import lcl_news_9 from "../../Images/lcl_news_9.png";
-import lcl_news_10 from "../../Images/lcl_news_10.png";
+import news_sld1 from "../../images/news_sld1.png";
+import lcl_news_1 from "../../images/lcl_news_1.png";
+import lcl_news_2 from "../../images/lcl_news_2.png";
+import lcl_news_3 from "../../images/lcl_news_3.png";
+import lcl_news_4 from "../../images/lcl_news_4.png";
+import lcl_news_5 from "../../images/lcl_news_5.png";
+import lcl_news_6 from "../../images/lcl_news_6.png";
+import lcl_news_7 from "../../images/lcl_news_7.png";
+import lcl_news_8 from "../../images/lcl_news_8.png";
+import lcl_news_9 from "../../images/lcl_news_9.png";
+import lcl_news_10 from "../../images/lcl_news_10.png";
 
-function Index() {
+export default function Index() {
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
@@ -313,4 +313,3 @@ function Index() {
     )
 }
 
-export default Index

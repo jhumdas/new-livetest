@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Index()  {
+export default function Index()   {
   return (
   <>
   home
@@ -8,4 +8,4 @@ function Index()  {
   )
 }
 
-export default Index
+

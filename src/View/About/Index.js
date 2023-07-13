@@ -1,14 +1,14 @@
 import React from 'react';
 // import '../About/About.css';
-import mission_dashed from '../../Images/mission_dashed.png';
-import mission_img from '../../Images/mission_img.png';
-import about_middle from '../../Images/about_middle.png';
-import about_end from '../../Images/about_end.png';
-import about_end_img1 from '../../Images/about_end_img1.png';
-import about_end_img2 from '../../Images/about_end_img2.png'
+import mission_dashed from '../../images/mission_dashed.png';
+import mission_img from '../../images/mission_img.png';
+import about_middle from '../../images/about_middle.png';
+import about_end from '../../images/about_end.png';
+import about_end_img1 from '../../images/about_end_img1.png';
+import about_end_img2 from '../../images/about_end_img2.png'
 
 
-function Index() {
+export default function Index() {
     return (
         <>
             {/* Our Mission section start */}
@@ -103,4 +103,3 @@ function Index() {
     )
 }
 
-export default Index

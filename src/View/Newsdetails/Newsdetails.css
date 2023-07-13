@@ -218,24 +218,33 @@ p.news_details_local_txt2 {
         height: 33px;
         overflow: hidden;
     }
+
     p.newsdetails_start_text2 {
         font-size: 15px;
         line-height: 20px;
     }
+
     p.newsdetails_start_text1 {
         font-size: 16px;
         line-height: 22px;
     }
 
-
-
     p.newsdetails_start_text3 {
         font-size: 15px;
         line-height: 20px;
     }
+
     p.newsdetails_start_text4 {
         font-size: 15px;
         line-height: 22px;
         padding-top: 12px;
+    }
+
+    p.news_details_local_txt2 {
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 5px;
+        height: 62px;
+        overflow: hidden;
     }
 }

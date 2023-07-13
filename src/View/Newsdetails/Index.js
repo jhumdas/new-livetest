@@ -1,10 +1,10 @@
 import React from 'react'
-import news_sld1 from '../../Images/news_sld1.png';
-import lcl_news11 from '../../Images/lcl_news11.png';
+import news_sld1 from '../../images/news_sld1.png';
+import lcl_news11 from '../../images/lcl_news11.png';
 // import lcl_news10 from '../../Images/lcl_news10.png'
 // import lcl_news9 from '../../Images/lcl_news9.png'
 
-function Index() {
+export default function Index() {
     return (
         <>
             <section className='newsdetails'>
@@ -65,4 +65,3 @@ function Index() {
         </>
     )
 }
-export default Index

@@ -1,11 +1,10 @@
+
 import React from 'react'
 
-const Header =()=> {
+export default function Header() {
   return (
-   <>
-   header
-   </>
+<>
+</>
   )
 }
 
-export default Header
