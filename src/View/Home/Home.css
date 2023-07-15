@@ -1,63 +1,68 @@
-
-
-
-.zigzag .right{
+.zigzag .right {
     padding-right: 40px;
 }
-.zigzag .right ul span{
+
+.zigzag .right ul span {
     display: block;
 }
-.zigzag .right h3{
+
+.zigzag .right h3 {
     color: #000;
-font-family: Open Sans;
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-padding-bottom: 45px;
+    font-family: Open Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 45px;
 }
-.zigzag .right ul{
+
+.zigzag .right ul {
     padding-left: 25px;
 }
-.zigzag .right ul li{
+
+.zigzag .right ul li {
     color: #000;
-font-family: Open Sans;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-bottom: 20px;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
 
 }
-.zigzag .right ul li span{
+
+.zigzag .right ul li span {
     color: #000;
-font-family: Open Sans Hebrew Condensed;
-font-size: 15px;
-font-style: normal;
-font-weight: 300;
-line-height: 25px;
-margin-top: 10px;
+    font-family: Open Sans Hebrew Condensed;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 10px;
 }
-.exploreBtn{
+
+.exploreBtn {
     color: #FF3A44;
-font-family: Open Sans;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-border-radius: 5px;
-border: 1px solid #FF3A44;
-width: 222px;
-height: 64px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 34px;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 5px;
+    border: 1px solid #FF3A44;
+    width: 222px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
 }
-.cust-container{
+
+.cust-container {
     padding: 0 80px;
 }
-.zigzag{
+
+.zigzag {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 0 79%;
@@ -65,11 +70,13 @@ margin-top: 34px;
     margin-bottom: 70px;
     padding: 50px 0 30px 0;
 }
-.zigzag .left img{
-width:100%;
+
+.zigzag .left img {
+    width: 100%;
 }
+
 /****about****/
-.about-bushido h2{
+.about-bushido h2 {
     color: #000;
     text-align: center;
     font-family: Open Sans;
@@ -79,224 +86,341 @@ width:100%;
     line-height: normal;
     margin-bottom: 20px;
 }
-.about-bushido p{
+
+.about-bushido p {
     color: #000;
-text-align: center;
-font-family: Open Sans;
-font-size: 25px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px;
-margin-bottom: 20px;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
-.about-bushido .read-more{
+
+.about-bushido .read-more {
     border-radius: 5px;
-background: #455A64;
-display: flex;
-width: 222px;
-height: 64px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-color: #FFF;
-font-family: Open Sans;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin: 0 auto;
+    background: #455A64;
+    display: flex;
+    width: 222px;
+    height: 64px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 auto;
 }
-.about-bushido{
+
+.about-bushido {
     padding-top: 50px;
     padding-bottom: 30px;
 }
+
 /****gallery***/
-.gallery{
+.gallery {
     padding-top: 60px;
 }
-.gallery .box{
+
+.gallery .box {
     position: relative;
 }
-.gallery .box .Cnt{
+
+.gallery .box .Cnt {
     position: absolute;
     bottom: 0;
     padding-left: 20px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    padding-bottom: 10px;
 
 }
-.gallery .box .Cnt h3{
+
+.gallery .box .Cnt h3 {
     color: #FFF;
-font-family: Open Sans;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
-.gallery .box .Cnt p{
+
+.gallery .box .Cnt p {
     color: #FFF;
-font-family: Open Sans;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
 }
+
 /****newsletter****/
-.newsletter{
+.newsletter {
     text-align: center;
     padding: 70px 0;
     max-width: 70%;
     margin: 0 auto;
 }
-.newsletter h3{
+
+.newsletter h3 {
     color: #000;
-text-align: center;
-font-family: Open Sans;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-margin-bottom: 23px;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 23px;
 }
-.newsletter p{
+
+.newsletter p {
     color: #000;
-text-align: center;
-font-family: Open Sans;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-margin-bottom: 30px;
-line-height: 30px;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 30px;
 }
-.newsletter input{
+
+.newsletter input {
     border-radius: 10px;
-background: #FFF;
-width: 540px;
-height: 70px;
-padding: 10px;
-align-items: center;
-gap: 10px;
-border: 1px solid #ACACAC;
-color: #ACACAC;
-font-family: Open Sans;
-font-size: 23px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-display: flex;
+    background: #FFF;
+    width: 540px;
+    height: 70px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ACACAC;
+    color: #ACACAC;
+    font-family: Open Sans;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
 }
-.subscription{
+
+.subscription {
     border-radius: 10px;
-background: #FF3A44;
-color: #FFF;
-text-align: center;
-font-family: Open Sans;
-font-size: 23px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-height: 70px;
-width: 210px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-margin-left: 10px;
-display: flex;
+    background: #FF3A44;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 70px;
+    width: 210px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    display: flex;
 }
-.mailBox{
+
+.mailBox {
     display: flex;
     justify-content: center;
 }
-@media (max-width:767px){
+
+/***application****/
+.application .img {
+    /* background-image: url(../../images/NewProject.png); */
+    background: linear-gradient(136deg, #ABCDE7 0%, rgba(171, 205, 231, 0.00) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+   
+    display: flex;
+
+}
+.application .left{
+    width: 52%;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.application .wrap {
+    width: 39%;
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 62px 0;
+
+}
+
+.application .wrap h3 {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.application .wrap p {
+    color: #000;
+    font-family: Open Sans Hebrew Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 0 60px 0;
+}
+
+.application .wrap a {
+    margin-right: 20px;
+}
+.application .leftImg{
+    width:46%;
+}
+.application .rgtImg{
+    width:46%;
+}
+/****responsive****/
+@media (max-width:991px){
+    .application .wrap h3 {
+        font-size: 28px;
+    }
+    .application .wrap a {
+        margin-right: 5px;
+    }
+}
+@media (max-width:767px) {
+    .application .img{
+        padding: 0 30px;
+    }
+    /* .application .leftImg{
+        width:100%;
+    }
+    .application .rgtImg{
+        width:100%;
+    } */
+    .application .wrap{
+        width: 100%;
+    }
+    .application .left{
+        width: 100%;
+    }
+    .application .img{
+        flex-direction: column;
+    }
+
     .newsletter {
         text-align: center;
         padding: 30px 0;
     }
-    .newsletter h3{
+
+    .newsletter h3 {
         margin-bottom: 8px;
     }
+
     .newsletter input {
-  font-size: 18px;
+        font-size: 18px;
         width: 442px;
         height: 52px;
     }
+
     .subscription {
 
         font-size: 18px;
-     
+
         height: 52px;
         width: 160px;
-     
+
     }
-    .newsletter{
+
+    .newsletter {
         max-width: 100%;
     }
+
     .newsletter h3 {
         font-size: 26px;
     }
+
     .newsletter p {
         font-size: 17px;
         line-height: 23px;
     }
+
     .gallery {
         padding-top: 20px;
     }
-    .gallery .box{
+
+    .gallery .box {
         margin-bottom: 20px;
     }
-    .zigzag .left{
+
+    .zigzag .left {
         margin-bottom: 20px;
     }
 }
-@media (max-width:575px){
+
+@media (max-width:575px) {
     .cust-container {
         padding: 0 15px;
     }
+
     .zigzag .right h3 {
         color: #000;
         font-size: 22px;
         padding-bottom: 28px;
     }
+
     .zigzag .right ul li {
         font-size: 17px;
         margin-bottom: 16px;
     }
+
     .exploreBtn {
         font-size: 20px;
         width: 133px;
         height: 47px;
 
     }
-    .zigzag{
+
+    .zigzag {
         margin-bottom: 0;
     }
+
     .zigzag .right ul li span {
         font-size: 14px;
         line-height: 21px;
     }
 }
-@media (max-width:480px){
-    .about-bushido h2{
+
+@media (max-width:480px) {
+    .about-bushido h2 {
         font-size: 28px;
         margin-bottom: 9px;
     }
+
     .about-bushido .read-more {
-  
+
         width: 166px;
         height: 48px;
-     
+
         font-size: 18px;
     }
+
     .about-bushido p {
-  
+
         font-size: 18px;
-     
+
         line-height: 23px;
     }
-    .newsletter input{
-        width:100%;
+
+    .newsletter input {
+        width: 100%;
         margin-bottom: 20px;
     }
-    .mailBox{
-flex-wrap: wrap;
+
+    .mailBox {
+        flex-wrap: wrap;
     }
 }

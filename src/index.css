@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: Open Sans Hebrew Condensed;
+  src: local("Open Sans Hebrew Condensed"),
+   url("../src/Assets/Fonts/OpensansHebrewCondensed/OpenSansHebrewCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+ }
+ @font-face {
+  font-family: Open Sans Hebrew Condensed;
+  src: local("Open Sans Hebrew Condensed"),
+   url("../src/Assets/Fonts/OpensansHebrewCondensed/OpenSansHebrewCondensed-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+ }
+ @font-face {
+  font-family: Open Sans Hebrew Condensed;
+  src: local("Open Sans Hebrew Condensed"),
+   url("../src/Assets/Fonts/OpensansHebrewCondensed/OpenSansHebrewCondensed-Regular.ttf") format("truetype");
+  font-weight: regular;
+ }

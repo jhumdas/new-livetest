@@ -9,6 +9,7 @@ import g from '../../images/rafiki.png'
 import About from './About'
 import Gallery from './Gallery'
 import Newsletter from './Newsletter'
+import Application from './Application'
 export default function index() {
   return (
     <>
@@ -213,6 +214,7 @@ export default function index() {
       <About/>
       <Gallery/>
       <Newsletter/>
+      <Application/>
     </>
   )
 }
