@@ -13,6 +13,7 @@ import lcl_news_7 from "../../images/lcl_news_7.png";
 import lcl_news_8 from "../../images/lcl_news_8.png";
 import lcl_news_9 from "../../images/lcl_news_9.png";
 import lcl_news_10 from "../../images/lcl_news_10.png";
+import { Link } from 'react-router-dom';
 
 export default function Index() {
     const [toggleState, setToggleState] = useState(1);
@@ -144,6 +145,7 @@ export default function Index() {
                     </div>
                     <div className='row'>
                         <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+                            <Link to="/newsdetails">
                             <div className='news_local_img_txt1'>
                                 <div className='news_local_img1'>
                                     <img src={lcl_news_1} alt='' />
@@ -153,6 +155,7 @@ export default function Index() {
                                     <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
                                 </div>
                             </div>
+                            </Link>
                             <div className='news_local_img_txt1'>
                                 <div className='news_local_img1'>
                                     <img src={lcl_news_2} alt='' />

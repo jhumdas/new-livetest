@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,body{
+max-width: 100%;
+overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,h2,h3,h4,h5,h6,ul{
+  margin: 0;
+  padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul li{
+  list-style: none;
+}
+a:hover{
+  text-decoration: none;
+  color:#000;
+}
+/****header****/
+.header{
+  background: #E1D8D8;
+  padding: 26px 0;
+}
+.header .wraper{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.header .wraper ul{
+  display: flex;
+}
+.header .wraper ul li a{
+  color: #000;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding-left: 36px;
+text-transform: uppercase;
+}
+.account{
+  color: #000;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 36px;
+  text-transform: uppercase;
+  border-radius: 44px;
+border: 1px solid #25333A;
+padding: 10px;
+}
+.menuPart{
+  display: flex;
+  align-items: center;
+}
+.toggole{
+  color: #000;
+  display: none;
+}
+/****footer****/
+.footer{
+  background: #ECECEC;
+}
+.footer .wrap{
+display: flex;
+justify-content: space-between;
+}
+.footer .wrap .leftBox{
+width: 36%;
+padding: 50px 0;
+}
+.footer .wrap .leftBox p{
+  padding: 20px 0;
+  color: #000;
+font-family: Open Sans Hebrew Condensed;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.footer .wrap .leftBox span{
+  color: #000;
+  font-family: Open Sans Hebrew Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer .wrap .rgtBox{
+  width: 60%;
+  display: flex;
+justify-content: end;
+  }
+  .footer .wrap .rgtBox ul{
+    padding-right: 50px;
+  }
+  .footer .wrap .rgtBox h5{
+    color: #000;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 220%;
+position: relative;
+margin-bottom: 20px;
+  }
+  .footer .wrap .rgtBox h5:after{
+    content: "";
+    position: absolute;
+    width:40%;
+    border-bottom: 3px solid #000;
+    bottom: 0;
+    left: 0;
+  }
+  .footer .wrap .rgtBox ul li a{
+    color: #000;
+font-family: Open Sans Hebrew Condensed;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-bottom: 15px;
+display: inline-block;
+  }
+  .social-media a{
+color:#000;
+font-size: 23px;
+margin-right: 20px;
+  }
+  .social-media a:nth-child(4){
+    margin-right: 0;
+  }
+/****responsive*****/
+@media (max-width:1199px){
+  .header .wraper ul li a {
+    font-size: 14px;
+    padding-left: 17px;
+}
+}
+@media (max-width:991px){
+  .account {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 22px;
+    text-transform: uppercase;
+    border-radius: 44px;
+    border: 1px solid #25333A;
+    padding: 7px;
+}
+.header .wraper ul li a {
+  font-size: 12px;
+  padding-left: 14px;
+}
+}
+@media (max-width:767px){
+  .footer .wrap .rgtBox ul {
+    padding-right: 41px;
+}
+  .footer .wrap .leftBox{
+    width: 100%;
+  }
+  .footer .wrap{
+ flex-wrap: wrap;
+  }
+  .footer .wrap .rgtBox{
+    width: 100%;
+  }
+  .toggole{
+    display: block;
+  }
+  .header .wraper ul{
+    display: none;
+  }
+}
+@media (max-width:533px){
+  .footer .wrap .rgtBox{
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .wrap .rgtBox h5{
+    display: inline-block;
+  }
+  .footer .wrap .rgtBox h5:after {
+    width: 100%;
+  }
+  .footer .wrap .rgtBox ul {
+    padding-right: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
