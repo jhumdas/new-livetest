@@ -154,6 +154,8 @@
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
+    height: 45px;
+    overflow-y: hidden;
 }
 
 /****faq****/
@@ -198,6 +200,7 @@ line-height: normal;
     width: 27px;
     height: 27px;
     text-align: center;
+    line-height: 29px;
 
 }
 
@@ -228,6 +231,135 @@ line-height: normal;
 }
 .Faq .btn {
 padding: 0;
+}
+/***reacharge*****/
+.reacharge{
+    background: #FF3A44;
+    padding: 30px 0;
+    color: #fff;
+}
+.reacharge h3{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 30px;
+}
+.reacharge .wrapper{
+    display: flex;
+    justify-content: center;
+}
+.reacharge .wrapper .box{
+    width:20%;
+    text-align: center;
+}
+.reacharge .boximg{
+    width: 145px;
+height: 145px;
+background-color: #fff;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto 20px auto;
+}
+.reacharge .box h5{
+padding-bottom: 10px;
+color: #FFF;
+font-family: Open Sans Hebrew Condensed;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.reacharge .box h6{
+    color: #FFF;
+text-align: center;
+font-family: Open Sans Hebrew Condensed;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+/****transaction****/
+.transaction{
+    margin: 100px 0;
+}
+.transaction .bottomPart{
+    padding: 0 55px;
+    margin-top: -13%;
+}
+.transaction .topPart{
+    background: #000;
+    height: 300px;
+    color: #fff;
+    padding: 30px 55px;
+}
+.transaction .wrapper img{
+    width: 100%;
+}
+.transaction .topPart h2{
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.transaction .topPart p{
+    color: #FFF;
+font-family: Open Sans Hebrew Condensed;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-top: 20px;
+}
+/****digital-money****/
+.digital-money h2{
+    color: #000;
+font-family: Open Sans;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 25px;
+}
+.digital-money p{
+    color: #3B3B3B;
+font-family: Open Sans Hebrew Condensed;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-bottom: 40px;
+}
+.digital-money a{
+    display: flex;
+width: 255px;
+height: 50px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+color: #FFF;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border-radius: 5px;
+background: #FF3A44;
+}
+.digital-money .leftCnt{
+display: flex;
+justify-content: center;
+flex-direction: column;
+height: 100%;
+}
+.digital-money .rightImg img{
+    width: 100%;
 }
 
 /****newsletter****/
@@ -363,6 +495,16 @@ padding: 0;
 
 /****responsive****/
 @media (max-width:991px) {
+    .digital-money h2 {
+        font-size: 30px;
+    }
+    .reacharge .wrapper{
+        flex-wrap: wrap;
+    }
+    .reacharge .wrapper .box{
+        width:50%;
+        margin-bottom: 30px;
+    }
     .application .wrap h3 {
         font-size: 28px;
     }
@@ -373,6 +515,41 @@ padding: 0;
 }
 
 @media (max-width:767px) {
+    .gallery .box .Cnt h3 {
+
+        font-size: 23px;
+    }
+    .digital-money{
+        padding-top: 30px;
+    }
+    .digital-money p {
+
+        padding-bottom: 20px;
+    }
+    .digital-money h2 {
+        font-size: 25px;
+    }
+    
+    .transaction .bottomPart {
+
+        margin-top: -26%;
+    }
+    .transaction .topPart {
+    
+        padding: 18px 25px;
+    }
+    .transaction .bottomPart {
+        padding: 0 25px
+    }
+    .transaction .topPart h2 {
+        font-size: 25px;
+    }
+    .transaction {
+        margin: 20px 0;
+    }
+    .transaction .wrapper img{
+        margin-bottom: 30px;
+    }
     .Faq .collapsible-link {
  
         font-size: 18px;
@@ -493,6 +670,16 @@ padding: 0;
 }
 
 @media (max-width:480px) {
+    .application .img {
+        padding: 0px 12px;
+    }
+    .reacharge .wrapper .box{
+        width: 100%;
+    }
+    .reacharge h3{
+        font-size: 25px;
+        text-align: center;
+    }
     .about-bushido h2 {
         font-size: 28px;
         margin-bottom: 9px;

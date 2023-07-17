@@ -11,9 +11,15 @@ import Gallery from './Gallery'
 import Newsletter from './Newsletter'
 import Application from './Application'
 import Faq from './Faq'
+import Recharge from './Recharge'
+import Transaction from './Transaction'
+import DigitalMoney from './DigitalMoney'
 export default function index() {
   return (
     <>
+    <DigitalMoney/>
+    <Transaction/>
+    <Recharge/>
       <section className='zigzag' style={{ backgroundImage: `url('${b}')`, position: 'relative' }}>
         <div className='cust-container'>
           <div className='row' style={{ alignItems: "center" }}>
@@ -24,7 +30,7 @@ export default function index() {
             </div>
             <div className='col-lg-6 col-md-6 col-12'>
               <div className='right'>
-                <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                <h3>You can easily buy & sell your products in this marketplace</h3>
                 <ul>
                   <li>
                     Lorem Ipsum is simply dummy
@@ -51,7 +57,7 @@ export default function index() {
           <div className='row' style={{ alignItems: "center" }}>
             <div className='col-lg-6 col-md-6 col-12'>
               <div className='right'>
-                <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                <h3>Easy to listen anytime and any where</h3>
                 <ul>
                   <li>
                     Lorem Ipsum is simply dummy
@@ -89,7 +95,7 @@ export default function index() {
             </div>
             <div className='col-lg-6 col-md-6 col-12'>
               <div className='right'>
-                <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                <h3>For Humanity purpose Donation & Charity</h3>
                 <ul>
                   <li>
                     Lorem Ipsum is simply dummy
@@ -117,7 +123,7 @@ export default function index() {
        
             <div className='col-lg-6 col-md-6 col-12'>
               <div className='right'>
-                <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                <h3>Manage Your selling item to be more organised</h3>
                 <ul>
                   <li>
                     Lorem Ipsum is simply dummy
@@ -154,7 +160,7 @@ export default function index() {
             </div>
             <div className='col-lg-6 col-md-6 col-12'>
               <div className='right'>
-                <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                <h3>You can create easily Virtual ID card</h3>
                 <ul>
                   <li>
                     Lorem Ipsum is simply dummy
@@ -182,7 +188,8 @@ export default function index() {
           <div className='row' style={{ alignItems: "center" }}>
           <div className='col-lg-6 col-md-6 col-12'>
               <div className='right'>
-                <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+                <h3>You can  easily enjoy your 
+Favorite movies & episodes</h3>
                 <ul>
                   <li>
                     Lorem Ipsum is simply dummy

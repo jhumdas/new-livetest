@@ -27,10 +27,18 @@ a:hover{
   text-decoration: none;
   color:#000;
 }
+.mainpage{
+  padding-top: 66px;
+}
 /****header****/
 .header{
   background: #E1D8D8;
-  padding: 26px 0;
+  padding: 12px 0;
+  height: 66px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
 }
 .header .wraper{
   display: flex;
@@ -43,7 +51,7 @@ a:hover{
 .header .wraper ul li a{
   color: #000;
 font-family: Open Sans;
-font-size: 16px;
+font-size: 15px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -53,7 +61,7 @@ text-transform: uppercase;
 .account{
   color: #000;
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -61,7 +69,11 @@ text-transform: uppercase;
   text-transform: uppercase;
   border-radius: 44px;
 border: 1px solid #25333A;
-padding: 10px;
+width: 109px;
+height: 42px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .menuPart{
   display: flex;

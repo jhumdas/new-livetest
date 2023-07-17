@@ -26,7 +26,7 @@ export default function Header() {
                 <li><Link to="/news">NEWS</Link></li>
                 <li><a href="#">COMPANY</a></li>
               </ul>
-              <a href="#" className='account'>PROFILE <img src={profile}/></a>
+              <a href="#" className='account'>PROFILE <img src={profile} style={{ marginLeft:"7px"}}/></a>
             </div>
           </div>
         </div>
