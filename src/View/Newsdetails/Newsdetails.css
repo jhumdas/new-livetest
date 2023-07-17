@@ -29,10 +29,10 @@ p.newsdetails_start_text2 {
     border-radius: 13px;
     background: #FFF;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    width: 100%;
-    height: 100%;
-    max-height: 452px;
-    padding: 15px 19px 35px 19px;
+    width: auto;
+    height: auto;
+    /* max-height: 452px; */
+    padding: 14px 19px 20px 19px;
 }
 
 .newsdetails_image {
@@ -113,7 +113,7 @@ p.news_details_local_txt2 {
 }
 
 .news_detail_local_news_text {
-    padding-bottom: 12px;
+    padding-bottom: 25px;
 }
 
 .news_details_local_img1 {
@@ -132,11 +132,53 @@ p.news_details_local_txt2 {
 }
 
 @media screen and (max-width:1199px) {
-    .newsdetails_image {
+    .newsdetails .newsdetails_image {
         width: auto;
         height: auto;
         padding-top: 45px;
         padding-bottom: 30px;
+    }
+
+    .newsdetails .news_details_local_img1 {
+        width: auto;
+        height: 122px;
+    }
+
+    .newsdetails .news_details_local_img1 img {
+        width: auto;
+        height: 100%;
+    }
+
+
+
+    .newsdetails .news_details_local_img_txt1 {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsdetails .news_details_local_txt_main {
+
+        padding-top: 20px;
+    }
+
+    .newsdetails p.news_details_local_txt1 {
+        font-size: 16px;
+        line-height: 23px;
+        height: 51px;
+
+    }
+
+    p.news_details_local_txt2 {
+        font-size: 15px;
+        line-height: 20px;
+        height: 80px;
+
+    }
+
+    .newsdetails .news_details_local_txt_main {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -159,8 +201,8 @@ p.news_details_local_txt2 {
     }
 
     p.newsdetails_start_text4 {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 18px;
+        line-height: 23px;
 
     }
 
@@ -168,31 +210,92 @@ p.news_details_local_txt2 {
         margin-top: 35px;
     }
 
-    .news_details_local_img1 {
+    .newsdetails .news_details_local_img1 {
         width: auto;
-        height: 93px;
+        height: 122px;
     }
 
-    .news_details_local_img1 img {
+    .newsdetails .news_details_local_img1 img {
         width: auto;
         height: 100%;
     }
 
-    .p.news_details_local_txt1 {
-        height: 0;
-        overflow: hidden;
+    .newsdetails p.news_details_local_txt1 {
+        height: 47px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .newsdetails p.news_details_local_txt2 {
+        height: 65px;
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .news_local_news .news_local_img1 {
+        width: auto;
+        height: 122px;
+    }
+
+    .news_local_news .news_details_local_img1 img {
+        width: auto;
+        height: 100%;
     }
 }
 
 @media screen and (max-width:767px) {
-    p.newsdetails_start_text1 {
+    .newsdetails p.newsdetails_start_text1 {
         font-size: 20px;
         line-height: 25px;
     }
 
-    p.newsdetails_start_text3 {
+    .newsdetails p.newsdetails_start_text3 {
         font-size: 18px;
         line-height: 23px;
+    }
+
+    .newsdetails .news_local_img1 {
+        width: auto;
+        height: auto;
+    }
+
+    .newsdetails .news_local_txt_main {
+        margin-left: 17px;
+        height: 111px;
+    }
+
+    p.news_local_txt1 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    p.news_local_txt2 {
+        font-size: 15px;
+        line-height: 19px;
+        padding-top: 3px;
+    }
+
+    .newsdetails_start_text_main2 {
+        padding-right: 0;
+    }
+
+    .newsdetails .news_details_local_img1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .newsdetails .news_details_local_txt_main {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .newsdetails_start_text_main {
+        padding-right: 0;
+    }
+
+    .newsdetails {
+        padding-top: 31px;
+        padding-bottom: 31px;
     }
 }
 
@@ -212,30 +315,98 @@ p.news_details_local_txt2 {
 } */
 
 @media screen and (max-width:480px) {
-    p.news_details_local_txt1 {
-        font-size: 13px;
-        line-height: 19px;
-        height: 33px;
-        overflow: hidden;
+    .newsdetails p.news_details_local_txt1 {
+        height: 47px;
+        font-size: 15px;
+        line-height: 23px;
     }
+
     p.newsdetails_start_text2 {
         font-size: 15px;
         line-height: 20px;
     }
-    p.newsdetails_start_text1 {
-        font-size: 16px;
-        line-height: 22px;
-    }
 
 
 
-    p.newsdetails_start_text3 {
+    .newsdetailsp .newsdetails_start_text3 {
         font-size: 15px;
         line-height: 20px;
     }
-    p.newsdetails_start_text4 {
+
+    .newsdetailsp .newsdetails_start_text4 {
         font-size: 15px;
         line-height: 22px;
         padding-top: 12px;
     }
+
+    p.news_details_local_txt2 {
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 5px;
+        height: 62px;
+        overflow: hidden;
+    }
+
+    .newsdetails p.news_local_txt1 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    p.news_local_txt2 {
+        font-size: 13px;
+        line-height: 18px;
+        padding-top: 3px;
+    }
+
+    .newsdetails p.news_details_local_txt2 {
+        height: 71px;
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .newsdetails p.newsdetails_start_text1 {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .newsdetails {
+        padding-top: 30px;
+        padding-bottom: 26px;
+    }
+
+    .news_local_news {
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .newsdetails p.news_details_local_txt1 {
+        height: 39px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .newsdetails p.newsdetails_start_text1 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    p.news_local_txt2 {
+        font-size: 9px;
+        line-height: 13px;
+        padding-top: 2px;
+    }
+
+    .news_local_img_txt1 {
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
+
+    .newsdetails p.news_details_local_txt2 {
+        height: 68px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
 }

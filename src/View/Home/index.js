@@ -10,6 +10,7 @@ import About from './About'
 import Gallery from './Gallery'
 import Newsletter from './Newsletter'
 import Application from './Application'
+import Faq from './Faq'
 export default function index() {
   return (
     <>
@@ -213,8 +214,10 @@ export default function index() {
 
       <About/>
       <Gallery/>
-      <Newsletter/>
+      <Faq/>
       <Application/>
+      <Newsletter/>
+      
     </>
   )
 }

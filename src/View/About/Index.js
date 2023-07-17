@@ -8,7 +8,7 @@ import about_end_img1 from '../../images/about_end_img1.png';
 import about_end_img2 from '../../images/about_end_img2.png'
 
 
-function Index() {
+export default function Index() {
     return (
         <>
             {/* Our Mission section start */}
@@ -103,4 +103,3 @@ function Index() {
     )
 }
 
-export default Index

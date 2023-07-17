@@ -123,7 +123,7 @@
 
 /****gallery***/
 .gallery {
-    padding-top: 60px;
+    padding: 60px;
 }
 
 .gallery .box {
@@ -154,6 +154,80 @@
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
+}
+
+/****faq****/
+.Faq .collapsible-link {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    color: #000;
+font-family: Open Sans;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.card-header{
+    padding: .75rem 0;
+}
+.card-body{
+    padding: 1.25rem 0;
+}
+.Faq .card-body p{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 80%;
+    
+}
+.Faq .collapsible-link::before {
+    content: "\f107";
+    position: absolute;
+    top: 50%;
+    right: 0.8rem;
+    transform: translateY(-50%);
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 1.1rem;
+    border-radius: 35px;
+    background: #E0E0E0;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+
+}
+
+.Faq .collapsible-link[aria-expanded="true"]::before {
+    content: "\f106";
+}
+
+.Faq {
+    padding-bottom: 60px;
+}
+
+.Faq .card {
+    border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+
+}
+
+.Faq h1 {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+.Faq .btn {
+padding: 0;
 }
 
 /****newsletter****/
@@ -236,16 +310,18 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-   
+
     display: flex;
 
 }
-.application .left{
+
+.application .left {
     width: 52%;
     margin-left: auto;
     display: flex;
     justify-content: space-between;
 }
+
 .application .wrap {
     width: 39%;
     margin-left: auto;
@@ -276,38 +352,60 @@
 .application .wrap a {
     margin-right: 20px;
 }
-.application .leftImg{
-    width:46%;
+
+.application .leftImg {
+    width: 46%;
 }
-.application .rgtImg{
-    width:46%;
+
+.application .rgtImg {
+    width: 46%;
 }
+
 /****responsive****/
-@media (max-width:991px){
+@media (max-width:991px) {
     .application .wrap h3 {
         font-size: 28px;
     }
+
     .application .wrap a {
         margin-right: 5px;
     }
 }
+
 @media (max-width:767px) {
-    .application .img{
+    .Faq .collapsible-link {
+ 
+        font-size: 18px;
+    }
+    .Faq .card-body p {
+
+        font-size: 14px;
+    }
+    .Faq h1 {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 28px;
+
+    }
+    .application .img {
         padding: 0 30px;
     }
+
     /* .application .leftImg{
         width:100%;
     }
     .application .rgtImg{
         width:100%;
     } */
-    .application .wrap{
+    .application .wrap {
         width: 100%;
     }
-    .application .left{
+
+    .application .left {
         width: 100%;
     }
-    .application .img{
+
+    .application .img {
         flex-direction: column;
     }
 
@@ -349,7 +447,7 @@
     }
 
     .gallery {
-        padding-top: 20px;
+        padding: 20px;
     }
 
     .gallery .box {

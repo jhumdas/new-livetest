@@ -13,8 +13,9 @@ import lcl_news_7 from "../../images/lcl_news_7.png";
 import lcl_news_8 from "../../images/lcl_news_8.png";
 import lcl_news_9 from "../../images/lcl_news_9.png";
 import lcl_news_10 from "../../images/lcl_news_10.png";
+import { Link } from 'react-router-dom';
 
-function Index() {
+export default function Index() {
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
@@ -144,15 +145,17 @@ function Index() {
                     </div>
                     <div className='row'>
                         <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
-                            <div className='news_local_img_txt1'>
-                                <div className='news_local_img1'>
-                                    <img src={lcl_news_1} alt='' />
+                            <Link to="/newsdetails">
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_1} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
                                 </div>
-                                <div className='news_local_txt_main'>
-                                    <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
-                                    <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
-                                </div>
-                            </div>
+                            </Link>
                             <div className='news_local_img_txt1'>
                                 <div className='news_local_img1'>
                                     <img src={lcl_news_2} alt='' />
@@ -241,9 +244,12 @@ function Index() {
                         </button>
                     </div>
 
-                    <div className='row'>
-                        
-                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+                   
+                        <div
+                            className={toggleState === 1 ? "content  active-content row" : "content" }
+                        >
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12 '>
+
                                 <div className='news_local_img_txt1'>
                                     <div className='news_local_img1'>
                                         <img src={lcl_news_5} alt='' />
@@ -271,10 +277,12 @@ function Index() {
                                         <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
                                     </div>
                                 </div>
+
                             </div>
 
 
                             <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
                                 <div className='news_local_img_txt1'>
                                     <div className='news_local_img1'>
                                         <img src={lcl_news_8} alt='' />
@@ -304,13 +312,481 @@ function Index() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                
-            </section >
+                        <div
+                            className={toggleState === 2 ? "content  active-content row" : "content"}
+                        >
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
 
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_6} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_5} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_8} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_7} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_10} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_9} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className={toggleState === 3 ? "content  active-content row" : "content"}
+                        >
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_6} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_5} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_8} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_7} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_10} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_9} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className={toggleState === 4 ? "content  active-content row" : "content"}
+                        >
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_6} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_5} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_8} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_7} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_10} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_9} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className={toggleState === 5 ? "content  active-content row" : "content"}
+                        >
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_6} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_5} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_8} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_7} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_10} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_9} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className={toggleState === 6 ? "content  active-content row" : "content"}
+                        >
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_6} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_5} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_8} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_7} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_10} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_9} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className={toggleState === 7 ? "content  active-content row" : "content"}
+                        >
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_6} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_5} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_8} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_7} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_10} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_9} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className={toggleState === 8 ? "content  active-content row" : "content"}
+                        >
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_6} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_5} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_8} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_7} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_10} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                                <div className='news_local_img_txt1'>
+                                    <div className='news_local_img1'>
+                                        <img src={lcl_news_9} alt='' />
+                                    </div>
+                                    <div className='news_local_txt_main'>
+                                        <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                        <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+
+
+            </section >
 
         </>
     )
 }
-
-export default Index

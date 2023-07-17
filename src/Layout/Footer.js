@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import logo from '../images/logo.png'
 export default function Footer() {
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
             <div className='rgtBox'>
               <ul>
                 <h5>SUPPORT</h5>
-                <li><a>About</a></li>
+                <li><Link to="/about">About</Link></li>
                 <li><a>Contact Us</a></li>
                 <li><a>Privacy & Policy</a></li>
               </ul>
@@ -54,5 +55,3 @@ export default function Footer() {
     </>
   )
 }
-
-

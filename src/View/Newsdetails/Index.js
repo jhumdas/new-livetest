@@ -1,10 +1,11 @@
 import React from 'react'
 import news_sld1 from '../../images/news_sld1.png';
 import lcl_news11 from '../../images/lcl_news11.png';
-// import lcl_news10 from '../../Images/lcl_news10.png'
-// import lcl_news9 from '../../Images/lcl_news9.png'
+import { Link } from 'react-router-dom';
 
-function Index() {
+
+
+export default function Index() {
     return (
         <>
             <section className='newsdetails'>
@@ -62,7 +63,58 @@ function Index() {
                     </div>
                 </div>
             </section>
+            <section className='news_local_news'>
+                <div className='container'>
+                    <div className='news_local_txt'>
+                        <h4>Related News</h4>
+                    </div>
+                    <div className='row'>
+                        <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+                            <Link to="/newsdetails">
+                            <div className='news_local_img_txt1'>
+                                <div className='news_local_img1'>
+                                    <img src={lcl_news11} alt='' />
+                                </div>
+                                <div className='news_local_txt_main'>
+                                    <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                    <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                </div>
+                            </div>
+                            </Link>
+                            <div className='news_local_img_txt1'>
+                                <div className='news_local_img1'>
+                                    <img src={lcl_news11} alt='' />
+                                </div>
+                                <div className='news_local_txt_main'>
+                                    <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                    <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
+                            <div className='news_local_img_txt1'>
+                                <div className='news_local_img1'>
+                                    <img src={lcl_news11} alt='' />
+                                </div>
+                                <div className='news_local_txt_main'>
+                                    <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                    <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                </div>
+                            </div>
+                            <div className='news_local_img_txt1'>
+                                <div className='news_local_img1'>
+                                    <img src={lcl_news11} alt='' />
+                                </div>
+                                <div className='news_local_txt_main'>
+                                    <p className='news_local_txt1'>Lorem ipsum dolor sit amet consectetur. Donec elit mauris a malesuada.</p>
+                                    <p className='news_local_txt2'>Lorem ipsum dolor sit amet consectetur. Pharetra lacus magna placerat risus ultrices nunc est viverra enim. Elit et semper rhoncus id</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
-export default Index
