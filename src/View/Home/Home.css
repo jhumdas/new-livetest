@@ -23,7 +23,7 @@
 .zigzag .right ul li {
     color: #000;
     font-family: Open Sans;
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -64,13 +64,18 @@
 
 .zigzag {
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 0 79%;
+    background-size: 43%;
+    background-position: 0% 0%;
     position: relative;
-    padding: 80px 0 30px 0;
+    padding: 30px 0 30px 0;
 }
+.zigzag.donation .right ul li{
+list-style: disc;
+font-size: 14px;
+}
+
 .zigzag.FirstStep{
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 .zigzag.LastStep{
     margin-bottom: 70px;
