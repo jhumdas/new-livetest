@@ -50,7 +50,65 @@ a:hover{
   border-radius: 13px;
   background-color: #FF3A44;
 }
-
+/***login-modal***/
+.loginModalWrapper{
+  position: fixed;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2%;
+  z-index: 1;
+}
+.loginModal{
+  display: flex;
+  margin: 0 auto;
+  width: 937px;
+  border-radius: 10px;
+background: #FFF;
+  height: 512px;
+  padding: 60px 45px 30px 45px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.loginModal h5{
+  color: #25333A;
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 40px;
+}
+.loginModal ul li{
+  color: #000;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 40px;
+}
+.loginModal a{
+  border-radius: 5px;
+border: 1px solid #000;
+width: 255px;
+height: 50px;
+padding: 10px;
+display: inline-block;
+margin-top: 40px;
+display: flex;
+justify-content: center;
+}
+.barCode{
+  border: 1px solid #000;
+  padding: 20px;
+}
 /****sidebar***/
 .slide-right {
   animation: .7s slide-right;
@@ -111,7 +169,7 @@ padding: 30px;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index:1;
+  z-index:9;
 }
 .header .wraper{
   display: flex;
@@ -239,6 +297,9 @@ margin-right: 20px;
 }
 }
 @media (max-width:991px){
+  .loginModal{
+width: 100%;
+  }
   .footer .wrap .leftBox {
     width: 100%;
 }
@@ -267,6 +328,18 @@ margin-right: 20px;
 }
 }
 @media (max-width:767px){
+  .loginModal{
+    flex-wrap: wrap;
+ overflow-y: auto;
+ overflow-x: hidden;
+ justify-content: center;
+  }
+  .barCode{
+    margin: 20px auto 0 auto;
+  }
+  .barCode img{
+    width: 100%;
+  }
  
   .footer .wrap .rgtBox ul {
     padding-right: 41px;

@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../images/logo.png'
 import profile from '../images/profile.png'
 import { Link } from 'react-router-dom'
 import MobileSidebar from './MobileSidebar'
+import LoginModal from '../Component/Modal/LoginModal'
 
 export default function Header() {
+  const[modal,setModal]= useState(false);
+  const handClickLogin = ()=>{
+    setModal(!modal)
+  }
 const toggleSidebarOpen = () =>{
   document.getElementById ('Sidebar').style.display ="block";
 }
@@ -33,12 +38,14 @@ const toggleSidebarClose = () =>{
                 <li><Link to="/news">NEWS</Link></li>
                 <li><a href="#">COMPANY</a></li>
               </ul>
-              <a href="#" className='account'>PROFILE <img src={profile} style={{ marginLeft: "7px" }} /></a>
+              <a href="#" className='account' onClick={handClickLogin}>PROFILE <img src={profile} style={{ marginLeft: "7px" }} /></a>
             </div>
           </div>
         </div>
       </header>
       <MobileSidebar closeIcon={toggleSidebarClose}/>
+
+      {modal &&<LoginModal/>}
     </>
   )
 }

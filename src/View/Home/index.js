@@ -14,6 +14,7 @@ import Faq from './Faq'
 import Recharge from './Recharge'
 import Transaction from './Transaction'
 import DigitalMoney from './DigitalMoney'
+
 export default function index() {
   return (
     <>
@@ -228,6 +229,8 @@ export default function index() {
       <Faq />
       <Application />
       <Newsletter />
+
+
 
     </>
   )
