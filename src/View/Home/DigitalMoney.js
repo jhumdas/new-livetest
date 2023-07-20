@@ -9,11 +9,11 @@ export default function DigitalMoney() {
                     <div className='row'>
                         <div className='col-md-6 col-12'>
                             <div className='leftCnt'>
-                                <h2>The Next Big Thing<br/>
-                                    in Digital Money<br/>
-                                    Transfer</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <a href="#">Download The App <img src={p} style={{marginLeft:"15px"}}/></a>
+                                <h2>The SuperApp which helps you grow and make an impact.
+                                </h2>
+                                <p>A dedicated innovative digital platform which is open to all.  Our goal is to reshape the way we can all make a difference. We support businesses and individuals with exciting  opportunities to grow and make impact.
+                                </p>
+                                <a href="#">Download The App <img src={p} style={{ marginLeft: "15px" }} /></a>
                             </div>
                         </div>
                         <div className='col-md-6 col-12'>

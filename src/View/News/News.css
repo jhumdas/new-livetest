@@ -120,14 +120,28 @@ p.news_local_txt2 {
     justify-content: space-between;
 }
 
-.tabs {
+.news_chnl .tabs {
     padding: 15px;
     text-align: center;
-    background: white;
+    background: transparent;
     cursor: pointer;
     outline: none;
+    color: #A6A6A6;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
-
+.news_chnl .tabs.active-tabs{
+    color: #000;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border-bottom: 1px solid #000;
+}
 button {
     border: none;
 }

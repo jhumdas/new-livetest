@@ -31,7 +31,9 @@ import best_selling9 from '../../images/best_selling9.png';
 import best_selling11 from '../../images/best_selling11.png';
 import best_selling12 from '../../images/best_selling12.png';
 import best_selling13 from '../../images/best_selling13.png';
-
+import search from '../../images/search.png';
+import arrow from '../../images/arrow.png'
+import man from '../../images/model_2-removebg-preview 1.png'
 import { useState } from 'react';
 
 
@@ -42,6 +44,7 @@ export default function Index() {
         setToggleState(index);
     };
     var settings = {
+        autoplay: true,
         dots: false,
         arrows: false,
         infinite: true,
@@ -79,8 +82,8 @@ export default function Index() {
         arrows: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 1,
 
         responsive: [
             {
@@ -119,6 +122,7 @@ export default function Index() {
                             <form action="">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Search for products"></input>
+                                    <div className='searchIcon'><img src={search} /></div>
                                 </div>
 
                             </form>
@@ -499,9 +503,71 @@ export default function Index() {
                         </button>
                     </div>
                     <div
-                            className={toggleState === 1 ? "content  active-content row" : "content" }
-                        >
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+                        className={toggleState === 1 ? "content  active-content row" : "content"}
+                    >
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <Link to="/single-product">
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling5} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
+
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling6} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
+
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling4} alt='/'></img>
@@ -521,48 +587,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
 
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling7} alt='/'></img>
@@ -582,8 +608,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling8} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -602,10 +628,30 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling9} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
+
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling7} alt='/'></img>
                                     <div className='best_selling_product_icon'>
                                         <img src={best_selling_icon} alt='' />
                                     </div>
@@ -625,9 +671,9 @@ export default function Index() {
 
                     </div>
                     <div
-                            className={toggleState === 2 ? "content  active-content row" : "content" }
-                        >
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+                        className={toggleState === 2 ? "content  active-content row" : "content"}
+                    >
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling4} alt='/'></img>
@@ -647,8 +693,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling5} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -667,8 +713,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling6} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -687,8 +733,28 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling4} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
 
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling7} alt='/'></img>
@@ -708,8 +774,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling8} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -728,10 +794,30 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling9} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
+
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling7} alt='/'></img>
                                     <div className='best_selling_product_icon'>
                                         <img src={best_selling_icon} alt='' />
                                     </div>
@@ -751,9 +837,9 @@ export default function Index() {
 
                     </div>
                     <div
-                            className={toggleState === 3 ? "content  active-content row" : "content" }
-                        >
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+                        className={toggleState === 3 ? "content  active-content row" : "content"}
+                    >
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling4} alt='/'></img>
@@ -773,8 +859,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling5} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -793,8 +879,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling6} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -813,8 +899,28 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling4} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
 
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling7} alt='/'></img>
@@ -834,8 +940,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling8} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -854,10 +960,30 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling9} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
+
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling7} alt='/'></img>
                                     <div className='best_selling_product_icon'>
                                         <img src={best_selling_icon} alt='' />
                                     </div>
@@ -877,9 +1003,9 @@ export default function Index() {
 
                     </div>
                     <div
-                            className={toggleState === 4 ? "content  active-content row" : "content" }
-                        >
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+                        className={toggleState === 4 ? "content  active-content row" : "content"}
+                    >
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling4} alt='/'></img>
@@ -899,8 +1025,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling5} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -919,8 +1045,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling6} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -939,8 +1065,28 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling4} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
 
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling7} alt='/'></img>
@@ -960,8 +1106,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling8} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -980,10 +1126,30 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling9} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
+
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling7} alt='/'></img>
                                     <div className='best_selling_product_icon'>
                                         <img src={best_selling_icon} alt='' />
                                     </div>
@@ -1003,9 +1169,9 @@ export default function Index() {
 
                     </div>
                     <div
-                            className={toggleState === 5 ? "content  active-content row" : "content" }
-                        >
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+                        className={toggleState === 5 ? "content  active-content row" : "content"}
+                    >
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling4} alt='/'></img>
@@ -1025,8 +1191,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling5} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1045,8 +1211,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling6} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1065,8 +1231,28 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling4} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
 
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling7} alt='/'></img>
@@ -1086,8 +1272,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling8} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1106,10 +1292,30 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling9} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
+
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling7} alt='/'></img>
                                     <div className='best_selling_product_icon'>
                                         <img src={best_selling_icon} alt='' />
                                     </div>
@@ -1129,9 +1335,9 @@ export default function Index() {
 
                     </div>
                     <div
-                            className={toggleState === 6 ? "content  active-content row" : "content" }
-                        >
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+                        className={toggleState === 6 ? "content  active-content row" : "content"}
+                    >
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling4} alt='/'></img>
@@ -1151,8 +1357,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling5} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1171,8 +1377,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling6} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1191,8 +1397,28 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling4} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
 
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling7} alt='/'></img>
@@ -1212,8 +1438,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling8} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1232,10 +1458,30 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling9} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
+
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling7} alt='/'></img>
                                     <div className='best_selling_product_icon'>
                                         <img src={best_selling_icon} alt='' />
                                     </div>
@@ -1255,9 +1501,9 @@ export default function Index() {
 
                     </div>
                     <div
-                            className={toggleState === 6 ? "content  active-content row" : "content" }
-                        >
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+                        className={toggleState === 6 ? "content  active-content row" : "content"}
+                    >
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling4} alt='/'></img>
@@ -1277,8 +1523,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling5} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1297,8 +1543,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling6} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1317,8 +1563,28 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling4} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
 
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling7} alt='/'></img>
@@ -1338,8 +1604,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling8} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1358,10 +1624,30 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling9} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
+
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling7} alt='/'></img>
                                     <div className='best_selling_product_icon'>
                                         <img src={best_selling_icon} alt='' />
                                     </div>
@@ -1381,9 +1667,9 @@ export default function Index() {
 
                     </div>
                     <div
-                            className={toggleState === 7 ? "content  active-content row" : "content" }
-                        >
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+                        className={toggleState === 7 ? "content  active-content row" : "content"}
+                    >
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling5} alt='/'></img>
@@ -1403,8 +1689,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling4} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1423,8 +1709,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling7} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1443,8 +1729,28 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling5} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
 
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling6} alt='/'></img>
@@ -1464,8 +1770,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling9} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1484,10 +1790,30 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling8} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
+
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling6} alt='/'></img>
                                     <div className='best_selling_product_icon'>
                                         <img src={best_selling_icon} alt='' />
                                     </div>
@@ -1507,9 +1833,9 @@ export default function Index() {
 
                     </div>
                     <div
-                            className={toggleState === 8 ? "content  active-content row" : "content" }
-                        >
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+                        className={toggleState === 8 ? "content  active-content row" : "content"}
+                    >
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling5} alt='/'></img>
@@ -1529,8 +1855,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling4} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1549,8 +1875,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling7} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1569,8 +1895,28 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling5} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
 
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                             <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling6} alt='/'></img>
@@ -1590,8 +1936,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling9} alt='/'></img>
                                     <div className='best_selling_product_icon'>
@@ -1610,10 +1956,30 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-4 col-lg-4 col-md-6 col-12'>
-                        <div className='best_selling_shop'>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
                                 <div className='best_selling_product_bg'>
                                     <img src={best_selling8} alt='/'></img>
+                                    <div className='best_selling_product_icon'>
+                                        <img src={best_selling_icon} alt='' />
+                                    </div>
+                                </div>
+
+
+                                <div className='best_selling_product_txt_main'>
+                                    <h4 className='best_selling_product_txt1'>
+                                        Product Name
+                                    </h4>
+                                    <p className='best_selling_product_txt2'>
+                                        $ 100
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                            <div className='best_selling_shop'>
+                                <div className='best_selling_product_bg'>
+                                    <img src={best_selling6} alt='/'></img>
                                     <div className='best_selling_product_icon'>
                                         <img src={best_selling_icon} alt='' />
                                     </div>
@@ -1639,6 +2005,15 @@ export default function Index() {
             <section className='shop_dnm_collection'>
                 <div className='container'>
                     <div className='shop_dnm_bg'>
+                        <div className='lftImg'>
+                            <img src={man} />
+                        </div>
+                        <div className='rgtCnt'>
+                            <h6>DENIM COLLECTION</h6>
+                            <h2>The <span>C</span>asual Selection.</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <a>Shop Now <img src={arrow} /></a>
+                        </div>
 
                     </div>
                 </div>

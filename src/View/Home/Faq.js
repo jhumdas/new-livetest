@@ -36,6 +36,7 @@ export default function Faq() {
                                                 Lorem ipsum dolor sit amet consectetur. Volutpat magna phasellus interdum?
                                             </button>
                                         </h2>
+                                        {/* <div className='icon'></div> */}
                                     </div>
                                     <div
                                         id="collapseOne"

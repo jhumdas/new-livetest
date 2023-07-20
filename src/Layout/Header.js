@@ -2,8 +2,15 @@ import React from 'react'
 import logo from '../images/logo.png'
 import profile from '../images/profile.png'
 import { Link } from 'react-router-dom'
+import MobileSidebar from './MobileSidebar'
 
 export default function Header() {
+const toggleSidebarOpen = () =>{
+  document.getElementById ('Sidebar').style.display ="block";
+}
+const toggleSidebarClose = () =>{
+  document.getElementById ('Sidebar').style.display ="none";
+}
   return (
     <>
 
@@ -11,12 +18,12 @@ export default function Header() {
         <div className='container'>
           <div className='wraper'>
             <Link to="/">
-            <div className='logo'>
-              <img src={logo} />
-            </div>
+              <div className='logo'>
+                <img src={logo} />
+              </div>
             </Link>
             <div className='menuPart'>
-              <a href="#" className='toggole'><i class="fa-solid fa-bars-staggered"></i></a>
+              <a href="#" className='toggole' onClick={toggleSidebarOpen}><i class="fa-solid fa-bars-staggered"></i></a>
               <ul>
                 <li><a href="#">PARTNERS</a></li>
                 <li><a href="#">CONSUMER</a></li>
@@ -26,12 +33,12 @@ export default function Header() {
                 <li><Link to="/news">NEWS</Link></li>
                 <li><a href="#">COMPANY</a></li>
               </ul>
-              <a href="#" className='account'>PROFILE <img src={profile} style={{ marginLeft:"7px"}}/></a>
+              <a href="#" className='account'>PROFILE <img src={profile} style={{ marginLeft: "7px" }} /></a>
             </div>
           </div>
         </div>
       </header>
-
+      <MobileSidebar closeIcon={toggleSidebarClose}/>
     </>
   )
 }

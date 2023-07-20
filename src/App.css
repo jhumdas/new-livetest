@@ -10,7 +10,12 @@
 .btn-link:hover{
   text-decoration: none;
 }
-
+.btn-link:focus {
+  text-decoration:none;
+}
+:focus-visible {
+  outline: none;
+}
 html,body{
 max-width: 100%;
 overflow-x: hidden;
@@ -29,6 +34,74 @@ a:hover{
 }
 .mainpage{
   padding-top: 66px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 13px;
+
+}
+
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 13px;
+  background-color: #FF3A44;
+}
+
+/****sidebar***/
+.slide-right {
+  animation: .7s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+.SidebarClose{
+  color: #000;
+  font-size: 23px;
+  position: absolute;
+  right: 17px;
+  top: 19px;
+}
+.Sidebar{
+  position: fixed;
+  top: 0;
+  padding-top: 66px;
+  width: 18rem;
+  background-color: #E1D8D8;
+  right: 0;
+  z-index:2;
+  display: none;
+  height: 100vh;
+}
+.Sidebar ul{
+padding: 30px;
+}
+.Sidebar ul li a{
+  color: #000;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  display: inline-block;
 }
 /****header****/
 .header{
@@ -166,6 +239,15 @@ margin-right: 20px;
 }
 }
 @media (max-width:991px){
+  .footer .wrap .leftBox {
+    width: 100%;
+}
+  .footer .wrap{
+    flex-wrap: wrap;
+  }
+  .footer .wrap .rgtBox {
+    width: 100%
+  }
   .account {
     color: #000;
     font-family: Open Sans;
@@ -185,8 +267,13 @@ margin-right: 20px;
 }
 }
 @media (max-width:767px){
+ 
   .footer .wrap .rgtBox ul {
     padding-right: 41px;
+    width:50%;
+}
+.footer .wrap .rgtBox .servicePart{
+  width: 50%;
 }
   .footer .wrap .leftBox{
     width: 100%;
@@ -196,6 +283,8 @@ margin-right: 20px;
   }
   .footer .wrap .rgtBox{
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   .toggole{
     display: block;
@@ -205,10 +294,7 @@ margin-right: 20px;
   }
 }
 @media (max-width:533px){
-  .footer .wrap .rgtBox{
-    flex-direction: column;
-    text-align: center;
-  }
+
   .footer .wrap .rgtBox h5{
     display: inline-block;
   }

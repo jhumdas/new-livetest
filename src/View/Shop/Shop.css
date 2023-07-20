@@ -214,7 +214,7 @@ p.shop_bg_txt_main2 {
 h4.best_selling_product_txt1 {
     color: #000;
     font-family: 'Open Sans';
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 30px;
     padding-top: 10px;
@@ -265,22 +265,40 @@ p.best_selling_product_txt2 {
 .shop_u_choice .shop_tab {
     cursor: pointer;
     outline: none;
-    padding-top: 30px;
-    padding-left: 40px;
-    background-color: #F4F4F4;
+    padding: 5px 5px;
+    margin: 10px 15px;
+    background-color: transparent;
+    color: #797979;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.slick-list {
+    padding: 10px 0 !important;
+}
+
+.shop_tab.active_shop_tab {
+    color: #000;
+    border-bottom: 2px solid #000;
+
 }
 
 .shop_u_choice .best_selling_product_icon {
     position: absolute;
     top: 7px;
     right: 15px;
+    width: 33px;
+    height: 33px;
     /* display: flex; */
 }
 
 .shop_u_choice .best_selling_shop {
     padding: 16px;
     border-radius: 10px;
-    box-shadow: 2px -5px 3px 0px rgb(0 0 0 / 12%);
+    box-shadow: 0px -1px 4px 2px rgb(0 0 0 / 12%);
     margin-top: 30px;
     margin-bottom: 20px;
     margin-left: 22px;
@@ -302,10 +320,63 @@ p.best_selling_product_txt2 {
     height: auto;
     background-color: #F4F4F4;
     padding-top: 22px;
-    padding-bottom: 45px;
+    display: flex;
+    align-items: center;
 
 }
 
+.shop_dnm_bg .lftImg {
+    width: 50%;
+    padding: 0 15px;
+}
+.shop_dnm_bg .lftImg img{
+    width: 100%;
+}
+
+.shop_dnm_bg .rgtCnt {
+    width: 48%;
+    padding: 0 15px;
+}
+.shop_dnm_bg .rgtCnt h6{
+    color: #505050;
+font-family: Open Sans Hebrew Condensed;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 20px;
+
+}
+.shop_dnm_bg .rgtCnt h2{
+    color: #000;
+font-family: Open Sans;
+font-size: 70px;
+font-style: normal;
+font-weight: 700;
+}
+.shop_dnm_bg .rgtCnt h2 span{
+    color: #F00;
+}
+.shop_dnm_bg .rgtCnt p{
+    color: #3B3B3B;
+font-family: Open Sans Hebrew Condensed;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 20px;
+}
+.shop_dnm_bg .rgtCnt a{
+    color: #F10;
+text-align: center;
+font-family: Open Sans Hebrew Condensed;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 30px;
+display: inline-block;
+}
 .shop_best_selling_prdt_ftw {
     padding-top: 87px;
     padding-bottom: 90px;
@@ -571,27 +642,41 @@ p.best_selling_product_txt2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 46%;
-    /* max-width: 32%; */
     background: #FFF;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10) inset;
     color: #455A64;
     font-family: 'Open Sans';
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     line-height: 30px;
-    padding: 20px;
+    padding: 17px 20px;
 
 }
+
 .see_option {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
 }
+
 .shop_u_choice .row {
-    display: flex!important;
+    display: flex !important;
 }
+
+.searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    height: 19px;
+    width: 19px;
+
+}
+
+.searchIcon img {
+    width: 100%;
+}
+
 @media screen and (max-width:1199px) {
     .shop_best_selling_prdt .slick-prev {
         top: -21% !important;
@@ -647,6 +732,9 @@ p.best_selling_product_txt2 {
 }
 
 @media screen and (max-width:991px) {
+    .shop_dnm_bg .rgtCnt h2 {
+        font-size: 37px;
+    }
     .shop_facility {
         height: auto;
     }
@@ -736,6 +824,24 @@ p.best_selling_product_txt2 {
 }
 
 @media screen and (max-width:767px) {
+    .shop_dnm_bg .rgtCnt a{
+        margin-top: 13px;
+        font-size: 17px;
+    }
+    .shop_dnm_bg .rgtCnt h2 {
+        font-size: 25px;
+    }
+    .shop_dnm_bg{
+        flex-wrap: wrap;
+      padding: 15px;
+    }
+    .shop_dnm_bg .lftImg {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .shop_dnm_bg .rgtCnt {
+        width: 100%;
+    }
     .shop_facility {
         height: auto;
     }
@@ -990,7 +1096,7 @@ p.best_selling_product_txt2 {
     }
 
     .shop_u_choice .shop_tab {
-        padding-top: 9px;
+        margin: 6px 10px;
     }
 
     .shop_choice_txt h2 {

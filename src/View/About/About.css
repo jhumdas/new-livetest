@@ -224,6 +224,7 @@ p.about_download_lrm {
     .about_mission .mission_heading_paragraph p {
         font-size: 15px;
         line-height: 23px;
+        text-align: justify;
     }
 
     .about_mission .mission_image {
@@ -277,6 +278,7 @@ p.about_download_lrm {
         font-size: 14px;
         line-height: 20px;
         padding-top: 15px;
+        text-align: justify;
     }
 
 }
@@ -312,6 +314,7 @@ p.about_download_lrm {
         font-size: 14px;
         line-height: 18px;
         margin-top: 8px;
+        text-align: justify;
     }
     p.about_middle_lrm {
         font-size: 19px;

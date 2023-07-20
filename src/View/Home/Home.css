@@ -67,10 +67,14 @@
     background-size: auto;
     background-position: 0 79%;
     position: relative;
-    margin-bottom: 70px;
-    padding: 50px 0 30px 0;
+    padding: 80px 0 30px 0;
 }
-
+.zigzag.FirstStep{
+    margin-bottom: 70px;
+}
+.zigzag.LastStep{
+    margin-bottom: 70px;
+}
 .zigzag .left img {
     width: 100%;
 }
@@ -91,25 +95,25 @@
     color: #000;
     text-align: center;
     font-family: Open Sans;
-    font-size: 25px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 38px;
 }
 
 .about-bushido .read-more {
     border-radius: 5px;
     background: #455A64;
     display: flex;
-    width: 222px;
-    height: 64px;
+    width: 188px;
+    height: 57px;
     padding: 10px;
     justify-content: center;
     align-items: center;
     color: #FFF;
     font-family: Open Sans;
-    font-size: 25px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -142,10 +146,11 @@
 .gallery .box .Cnt h3 {
     color: #FFF;
     font-family: Open Sans;
-    font-size: 40px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 10px;
 }
 
 .gallery .box .Cnt p {
@@ -179,11 +184,12 @@ line-height: normal;
 .Faq .card-body p{
     color: #000;
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 300;
-    line-height: normal;
+    line-height: 26px;
     max-width: 80%;
+    text-align: justify;
     
 }
 .Faq .collapsible-link::before {
@@ -227,7 +233,7 @@ line-height: normal;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .Faq .btn {
 padding: 0;
@@ -265,6 +271,10 @@ justify-content: center;
 align-items: center;
 margin: 0 auto 20px auto;
 }
+.reacharge .boximg img{
+    width: 58px;
+    height: 46px;
+}
 .reacharge .box h5{
 padding-bottom: 10px;
 color: #FFF;
@@ -285,7 +295,7 @@ line-height: normal;
 }
 /****transaction****/
 .transaction{
-    margin: 100px 0;
+    margin: 30px 0 70px 0;
 }
 .transaction .bottomPart{
     padding: 0 55px;
@@ -403,7 +413,7 @@ height: 100%;
     border: 1px solid #ACACAC;
     color: #ACACAC;
     font-family: Open Sans;
-    font-size: 23px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -495,6 +505,15 @@ height: 100%;
 
 /****responsive****/
 @media (max-width:991px) {
+    .zigzag .right h3 {
+        font-size: 25px;
+    }
+    .zigzag .right ul li {
+        font-size: 17px;
+    }
+    .zigzag .right{
+        padding-right: 0;
+    }
     .digital-money h2 {
         font-size: 30px;
     }
@@ -515,6 +534,33 @@ height: 100%;
 }
 
 @media (max-width:767px) {
+    .application .wrap p{
+        padding: 15px 0 30px 0;
+        text-align: justify;
+    }
+    .zigzag.FirstStep {
+        margin-bottom: 10px;
+    }
+    .zigzag.LastStep {
+        margin-bottom: 10px;
+    }
+    .zigzag {
+        padding: 30px 0 30px 0;
+    }
+    .orderTwo{
+        order: 2;
+    }
+    .orderOne{
+        order: 1;
+    }
+    .reacharge .boximg img{
+        width: 47px;
+        height: 35px;
+    
+    }
+    .reacharge .boximg {
+        width: 110px;
+        height: 110px;}
     .gallery .box .Cnt h3 {
 
         font-size: 23px;
@@ -552,7 +598,12 @@ height: 100%;
     }
     .Faq .collapsible-link {
  
-        font-size: 18px;
+        font-size: 15px;
+        max-width: 90%;
+    }
+    .Faq .collapsible-link::before {
+
+        right: -3.2rem;
     }
     .Faq .card-body p {
 
@@ -619,8 +670,9 @@ height: 100%;
     }
 
     .newsletter p {
-        font-size: 17px;
-        line-height: 23px;
+        font-size: 15px;
+    line-height: 23px;
+    text-align: justify;
     }
 
     .gallery {
@@ -637,6 +689,11 @@ height: 100%;
 }
 
 @media (max-width:575px) {
+  
+    .Faq .collapsible-link {
+ 
+        max-width: 80%;
+    }
     .cust-container {
         padding: 0 15px;
     }
@@ -695,9 +752,9 @@ height: 100%;
 
     .about-bushido p {
 
-        font-size: 18px;
-
+        font-size: 15px;
         line-height: 23px;
+        text-align: justify;
     }
 
     .newsletter input {
