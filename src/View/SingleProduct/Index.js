@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -140,7 +141,7 @@ export default function Index() {
                                 </div>
                             </div>
                             <div className='mt-3'>
-                                <a href="#" className='cartBtn'>Add to Cart</a><a href="#" className='buyBtn'>Buy Now</a>
+                                <Link to="/cart" className='cartBtn'>Add to Cart</Link><a href="#" className='buyBtn'>Buy Now</a>
                             </div>
                         </div>
                     </div>

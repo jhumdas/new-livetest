@@ -31,10 +31,11 @@ import best_selling9 from '../../images/best_selling9.png';
 import best_selling11 from '../../images/best_selling11.png';
 import best_selling12 from '../../images/best_selling12.png';
 import best_selling13 from '../../images/best_selling13.png';
-import search from '../../images/search.png';
+
 import arrow from '../../images/arrow.png'
 import man from '../../images/model_2-removebg-preview 1.png'
 import { useState } from 'react';
+import ProductSearch from '../../Component/ProductSearch';
 
 
 export default function Index() {
@@ -112,41 +113,7 @@ export default function Index() {
         <>
             <section className='shop_page_product_search'>
                 <div className='container'>
-                    <div className='row'>
-                        <div className="col-xl-1 col-lg-1 col-md-6 col-6 ordr1">
-                            <a className='nav_icon_search'>
-                                <i class="fa-solid fa-bars"></i>
-                            </a>
-                        </div>
-                        <div className="col-xl-8 col-lg-8 col-md-12 col-12 ordr2">
-                            <form action="">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search for products"></input>
-                                    <div className='searchIcon'><img src={search} /></div>
-                                </div>
-
-                            </form>
-                        </div>
-                        <div className="col-xl-3 col-lg-3 col-md-6 col-6 ordr3">
-                            <div className='from_icon_whish_cart_main'>
-                                <div className='from_icon_whish_cart1'>
-                                    <Link to="">
-                                        <img src={icon1} alt='' />
-                                    </Link>
-                                </div>
-                                <div className='from_icon_whish_cart1'>
-                                    <Link to="">
-                                        <img src={icon2} alt='' />
-                                    </Link>
-                                </div>
-                                <div className='from_icon_whish_cart1'>
-                                    <Link to="">
-                                        <img src={icon3} alt='' />
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <ProductSearch/>
                 </div>
             </section>
             <section className='shop_bg'>
