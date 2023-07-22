@@ -1,21 +1,12 @@
 import React from "react";
-import p from "../../images/profile2.png";
 import best_selling1 from "../../images/best_selling1.png";
-import best_selling_icon from "../../images/best_selling_icon.png";
+import ProfileBox from "../../Component/ProfileBox";
 export default function Index() {
   return (
     <>
       <section className="my-order">
         <div className="container">
-          <div className="profileBox mb-4">
-            <div className="profileImg">
-              <img src={p} />
-            </div>
-            <div className="profile-cnt">
-              <h6>Hello</h6>
-              <p>Lorem Ipsum</p>
-            </div>
-          </div>
+       <ProfileBox/>
           <div className="row">
             <div className="col-lg-4 col-md-4 col-12">
               <div className="filter">

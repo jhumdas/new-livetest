@@ -9,6 +9,7 @@ import '../src/View/SingleProduct/SingleProduct.css'
 import '../src/View/Cart/Cart.css'
 import '../src/View/Wishlist/Wishlist.css'
 import '../src/View/MyOrder/Order.css'
+import '../src/View/Review/Review.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -20,6 +21,7 @@ import SingleProduct from '../src/View/SingleProduct/Index';
 import Cart from '../src/View/Cart/Index'
 import Wishlist from '../src/View/Wishlist/Index'
 import Order from '../src/View/MyOrder/Index'
+import Review from '../src/View/Review/Index'
 function App() {
   return (
     <React.Fragment>
@@ -37,6 +39,7 @@ function App() {
               <Route path="/cart" element={<Cart/>}/>
               <Route path="/wishlist" element={<Wishlist/>}/>
               <Route path="/order" element={<Order/>}/>
+              <Route path="/review" element={<Review/>}/>
             </Route>
           </Routes>
 

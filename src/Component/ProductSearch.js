@@ -40,7 +40,7 @@ export default function ProductSearch() {
               </Link>
             </div>
             <div className="from_icon_whish_cart1">
-              <Link to="">
+              <Link to="/review">
                 <img src={icon1} alt="" />
               </Link>
             </div>

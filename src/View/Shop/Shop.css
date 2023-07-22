@@ -285,7 +285,7 @@ p.best_selling_product_txt2 {
 
 }
 
-.shop_u_choice .best_selling_product_icon {
+ .best_selling_product_icon {
     position: absolute;
     top: 7px;
     right: 15px;

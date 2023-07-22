@@ -1,0 +1,123 @@
+.review{
+    padding: 30px 0;
+}
+.review .card{
+    border: 0;
+}
+.ReviewFirstBox{
+    background: #FFF;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+padding: 20px 30px;
+display: flex;
+align-items: center;
+}
+.ReviewFirstBox img {
+    margin-right: 30px;
+}
+.review .collapsible-link::before {
+    content: "\f107";
+    position: absolute;
+    top: 24%;
+    right: 0.8rem;
+    transform: translateY(-11%);
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 26px;
+    text-align: center;
+    line-height: 43px;
+
+}
+
+.review .collapsible-link[aria-expanded="true"]::before {
+    content: "\f106";
+    position: absolute;
+    top: 6%;
+    right: 0.8rem;
+    transform: translateY(-11%);
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 26px;
+    text-align: center;
+    line-height: 43px;
+}
+.ReviewSecondBox{
+    background: #FFF;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+padding: 20px 30px;
+}
+.btn-link:hover{
+    color: #514848;
+}
+.ReviewSecondBox h2 button{
+    color: #514848;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.ReviewSecondBox h2 i{
+    font-size: 20px;
+}
+.ReviewSecondBox a{
+    display: block;
+    color: #000;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 20px 0 20px 28px;
+}
+.ReviewSecondBox a:focus{
+    background: #ACACAC;
+    color: #FFF;
+}
+.review .card-body{
+    padding: 0;
+}
+.threedot{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+.starBox{
+    margin: 20px 0;
+}
+.starBox i{
+    padding-left: 20px;
+    font-size: 30px;
+}
+.review textarea{
+    border-radius: 6.393px;
+background: #FFF;
+box-shadow: 0px 0px 8.310554504394531px 0px rgba(0, 0, 0, 0.25);
+color: #ACACAC;
+font-family: Open Sans;
+font-size: 21.171px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+height: 107px;
+width: 100%;
+padding: 30px;
+resize: none;
+}
+@media (max-width:991px){
+    .ReviewSecondBox {
+        
+        padding: 20px 10px;
+    }
+    .ReviewFirstBox {
+
+        padding: 20px 10px;
+    }
+}
+@media (max-width:767px){
+    .ReviewSecondBox{
+        margin-bottom: 30px;
+    }
+
+
+}
