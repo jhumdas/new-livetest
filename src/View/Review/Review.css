@@ -1,7 +1,7 @@
 .review{
     padding: 30px 0;
 }
-.review .card{
+ .card{
     border: 0;
 }
 .ReviewFirstBox{
@@ -14,7 +14,7 @@ align-items: center;
 .ReviewFirstBox img {
     margin-right: 30px;
 }
-.review .collapsible-link::before {
+.ReviewSecondBox .collapsible-link::before {
     content: "\f107";
     position: absolute;
     top: 24%;
@@ -28,7 +28,7 @@ align-items: center;
 
 }
 
-.review .collapsible-link[aria-expanded="true"]::before {
+.ReviewSecondBox .collapsible-link[aria-expanded="true"]::before {
     content: "\f106";
     position: absolute;
     top: 6%;

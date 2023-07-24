@@ -1,0 +1,28 @@
+.ManageAddress{
+    padding: 30px 0;
+}
+.ManageAddress .address{
+    border-radius: 4.602px;
+background: #FFF;
+box-shadow: 0px 0px 3.681877613067627px 0px rgba(0, 0, 0, 0.25) inset;
+padding: 10px 10px 10px 33px;
+
+}
+.input-radio.on:checked {
+    box-shadow: 0px 0px 0px 1px #FF3A44;
+    background-color: #FF3A44;
+}
+
+.input-radio {
+    box-shadow: 0px 0px 0px 1px #6d6d6d;
+    font-size: 2em;
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+    border: 2px solid #fff;
+    background-clip: border-box;
+    border-radius: 50%;
+    appearance: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+}

@@ -115,7 +115,7 @@ export default function Index() {
                   <h3>
                     Apply Coupon <img src={bb} />
                   </h3>
-                  <div>
+                  <div className="d-flex">
                     <input placeholder="Apply Coupon code"></input>
                     <a href="#" className="shop_bg_btn">
                       Apply

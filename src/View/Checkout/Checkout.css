@@ -1,0 +1,110 @@
+.checkout .top{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout{
+    padding: 50px 0;
+}
+.checkout .address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.checkout .address a{
+    border-radius: 4.752px;
+    border: 0.792px solid #FF3A44;
+    color: #FF3A44;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 5px 14px;
+}
+.checkout .payment{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.paymentBox .inputBox{
+    display: flex;
+    justify-content: space-between;
+}
+.paymentBox  input[type="text"]{
+border-top: 0;
+border-left: 0;
+border-right: 0;
+border-bottom: 1px solid #8C8C8C;
+margin-bottom: 10px;
+}
+.summeryBox .product-details{
+    display: flex;
+    align-items: center;
+}
+.summeryBox .product-details .cnt{
+    padding-left: 20px;
+}
+.summeryBox .product-details .cnt h5{
+color: #454545;
+font-family: Open Sans;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 10px;
+}
+.summeryBox .product-details .cnt h5 input{
+    
+    width: 25%;
+    text-align: center;
+    padding: 2px;
+    margin-left: 10px;
+
+}
+.summeryBox .product-details .cnt a{
+    color: #FF3A44;
+font-family: Open Sans;
+font-size: 17;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.summeryBox .product-details img{
+width: 124px;
+height: 124px;
+}
+.summeryBox{
+    border-radius: 12.671px;
+background: #FFF;
+box-shadow: 1.5838748216629028px 3.9596872329711914px 9.503250122070312px 1.5838748216629028px rgba(0, 0, 0, 0.25);
+padding: 20px;
+}
+.summeryBox h5.top-h{
+    color: #000;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 30px;
+}
+.summeryBox img{
+    border-radius: 12.671px;
+background: #FFF;
+box-shadow: 3.1677496433258057px 3.1677496433258057px 15.0468111038208px 0.7919374108314514px rgba(0, 0, 0, 0.25);
+padding: 5px;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+@media (max-width:767px){
+    .checkout .top h3{
+        font-size: 20px;
+    }
+    .checkout .address p{
+        font-size: 14px;
+    }
+}

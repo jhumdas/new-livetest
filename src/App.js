@@ -10,6 +10,9 @@ import '../src/View/Cart/Cart.css'
 import '../src/View/Wishlist/Wishlist.css'
 import '../src/View/MyOrder/Order.css'
 import '../src/View/Review/Review.css'
+import '../src/View/ManageAddress/ManageAddress.css'
+import '../src/View/Checkout/Checkout.css'
+import '../src/View/Category/Category.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -22,6 +25,9 @@ import Cart from '../src/View/Cart/Index'
 import Wishlist from '../src/View/Wishlist/Index'
 import Order from '../src/View/MyOrder/Index'
 import Review from '../src/View/Review/Index'
+import ManageAddress from '../src/View/ManageAddress/Index'
+import Checkout from '../src/View/Checkout/Index'
+import Category from '../src/View/Category/Index'
 function App() {
   return (
     <React.Fragment>
@@ -40,6 +46,9 @@ function App() {
               <Route path="/wishlist" element={<Wishlist/>}/>
               <Route path="/order" element={<Order/>}/>
               <Route path="/review" element={<Review/>}/>
+              <Route path="/manage-address" element={<ManageAddress/>}/>
+              <Route path="/checkout" element={<Checkout/>}/>
+              <Route path="/category" element={<Category/>}/>
             </Route>
           </Routes>
 
