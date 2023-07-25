@@ -28,7 +28,7 @@ export default function Index() {
         infinite: true,
         navs: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: 1.14,
         slidesToScroll: 1,
         initialSlide: 0,
 

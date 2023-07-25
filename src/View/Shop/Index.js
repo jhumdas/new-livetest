@@ -83,7 +83,7 @@ export default function Index() {
         arrows: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 4.10,
         slidesToScroll: 1,
 
         responsive: [

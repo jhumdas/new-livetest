@@ -13,6 +13,7 @@ import '../src/View/Review/Review.css'
 import '../src/View/ManageAddress/ManageAddress.css'
 import '../src/View/Checkout/Checkout.css'
 import '../src/View/Category/Category.css'
+import '../src/View/SelectPodcastDetails/Selectpodcastdetails.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -28,6 +29,7 @@ import Review from '../src/View/Review/Index'
 import ManageAddress from '../src/View/ManageAddress/Index'
 import Checkout from '../src/View/Checkout/Index'
 import Category from '../src/View/Category/Index'
+import SelectPodcastDetail from '../src/View/SelectPodcastDetails/Index'
 function App() {
   return (
     <React.Fragment>
@@ -49,6 +51,7 @@ function App() {
               <Route path="/manage-address" element={<ManageAddress/>}/>
               <Route path="/checkout" element={<Checkout/>}/>
               <Route path="/category" element={<Category/>}/>
+              <Route path="/selectpodcast-detail" element={<SelectPodcastDetail/>}/>
             </Route>
           </Routes>
 

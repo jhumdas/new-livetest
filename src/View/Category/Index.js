@@ -1,4 +1,5 @@
 import React from 'react'
+import $ from "jquery";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,6 +8,11 @@ import best_selling2 from '../../images/best_selling2.png';
 import best_selling3 from '../../images/best_selling3.png';
 import best_selling_icon from '../../images/best_selling_icon.png';
 export default function Index() {
+    const [value, setValue] = React.useState("12.85");
+    const [value2, setValue2] = React.useState("80.85");
+
+
+
     var settings1 = {
         dots: false,
         arrows: false,
@@ -42,7 +48,7 @@ export default function Index() {
             <section className='category'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-lg-3 col-md-3 col-12'>
+                        <div className='col-lg-3 col-md-12 col-12'>
                             <div className='sidewrap'>
                                 <h4>Categories</h4>
                                 <a className='shoe'>Shoes</a>
@@ -58,8 +64,73 @@ export default function Index() {
                                         Women’s
                                     </label>
                                 </div>
-                                <div className='price mt-3'>
+                                <div className='price mt-3 mb-3'>
                                     <h5>Price</h5>
+                                    <div class="slider">
+
+                                        <div class="slider__input range-slide">
+                                            {/* <div className="slide">
+                                                <div className="line" id="line" style={{ left: "0%", right: "0%" }} />
+                                                <span className="thumb" id="thumbMin" style={{ left: "0%" }} />
+                                                <span className="thumb" id="thumbMax" style={{ left: "100%" }} />
+                                            </div> */}
+                                            <input
+                                                className="slider__input_slider"
+                                                type="range"
+                                                min="0"
+                                                max="100"
+                                                step="0.05"
+                                                value={value}
+                                                onChange={e => setValue(e.target.value)}
+                                            />
+                                            <input
+                                                className="slider__input_slider"
+                                                type="range"
+                                                min="0"
+                                                max="100"
+                                                step="0.05"
+                                                value={value2}
+                                                onChange={e => setValue2(e.target.value)}
+                                            />
+
+                                        </div>
+                                        <div className='display'>
+                                            <p> ${value}</p>
+                                            <p> ${value2}</p>
+                                        </div>
+                                    </div>
+                                 
+
+                                    {/* <div className="range-slide">
+                                            <div className="slide">
+                                                <div className="line" id="line" style={{ left: "0%", right: "0%" }} />
+                                                <span className="thumb" id="thumbMin" style={{ left: "0%" }} />
+                                                <span className="thumb" id="thumbMax" style={{ left: "100%" }} />
+                                            </div>
+                                            <input
+                                                id="rangeMin"
+                                                type="range"
+                                                max={100}
+                                                min={10}
+                                                step={5}
+                                                defaultValue={0}
+                                            />
+                                            <input
+                                                id="rangeMax"
+                                                type="range"
+                                                max={100}
+                                                min={10}
+                                                step={5}
+                                                defaultValue={100}
+                                            />
+                                        </div>
+                                        <div className="display">
+                                            <span id="min">10</span>
+                                            <span id="max">100</span>
+                                        </div> */}
+
+
+
                                 </div>
                                 <div id="accordion" role="tablist" aria-multiselectable="true">
 
@@ -157,7 +228,7 @@ export default function Index() {
                                                                 Sparx
                                                             </label>
                                                         </div>
-
+                                                        <span className='more-disc'>More 500 Brands</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -245,10 +316,11 @@ export default function Index() {
                                                             </label>
                                                         </div>
 
-
+                                                        <span className='more-disc'>10 More size </span>
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                     <div className="card">
@@ -494,7 +566,7 @@ export default function Index() {
 
                             </div>
                         </div>
-                        <div className='col-lg-9 col-md-9 col-12 mt-3'>
+                        <div className='col-lg-9 col-md-12 col-12 mt-3'>
                             <div>
                                 <form action="">
                                     <div className="input-group">
