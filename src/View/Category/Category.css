@@ -101,16 +101,18 @@ padding-left: 0;
   }
   
   .category input[type="range"] {
-    /* -webkit-appearance: none;
-    appearance: none; */
-    position: absolute;
+   position: absolute;
     pointer-events: none;
     z-index: 3;
-    height: 5px;
-    top: 0;
+    -webkit-appearance: none;
+
     width: 100%;
-    /* opacity: 0; */
-    margin: 0;
+    height: 7px;
+    background: rgb(237 231 231 / 60%);
+    border-radius: 5px;
+    background-image: linear-gradient(#FF3A44, #FF3A44);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
   }
   
   input::-webkit-slider-thumb {

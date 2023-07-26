@@ -30,6 +30,7 @@ import ManageAddress from '../src/View/ManageAddress/Index'
 import Checkout from '../src/View/Checkout/Index'
 import Category from '../src/View/Category/Index'
 import SelectPodcastDetail from '../src/View/SelectPodcastDetails/Index'
+import SelectSong from '../src/View/SelectSong/Index'
 function App() {
   return (
     <React.Fragment>
@@ -52,6 +53,7 @@ function App() {
               <Route path="/checkout" element={<Checkout/>}/>
               <Route path="/category" element={<Category/>}/>
               <Route path="/selectpodcast-detail" element={<SelectPodcastDetail/>}/>
+              <Route path="/select-song" element={<SelectSong/>}/>
             </Route>
           </Routes>
 
