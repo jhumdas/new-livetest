@@ -100,7 +100,7 @@ padding-left: 0;
     margin-left: -9px;
   }
   
-  input[type="range"] {
+  .category input[type="range"] {
     /* -webkit-appearance: none;
     appearance: none; */
     position: absolute;

@@ -4,6 +4,7 @@ import p from '../../images/gridicons_play.png'
 import d from '../../images/bi_download.png'
 import f from '../../images/Ellipse 210.png'
 import i from '../../images/Ellipse 211.png'
+import Playfooter from '../../Component/Playfooter'
 export default function Index() {
     const [toggleState, setToggleState] = useState(1);
 
@@ -68,7 +69,7 @@ export default function Index() {
                                         <div className='cnt'>
                                             <div className=''>
                                                 <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                                                <div className='Movietype'><span>Audio Book</span><span className='v-line'></span><span>English</span><span className='v-line'></span><span>Horror</span></div>
+                                                <div className='Movietype'><span>Part 1</span><span className='v-line'></span><span>10 Munities</span><span className='v-line'></span><span>22 June 2022</span></div>
                                             </div>
                                             <div><img src={d} /></div>
                                         </div>
@@ -81,7 +82,7 @@ export default function Index() {
                                         <div className='cnt'>
                                             <div className=''>
                                                 <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                                                <div className='Movietype'><span>Audio Book</span><span className='v-line'></span><span>English</span><span className='v-line'></span><span>Horror</span></div>
+                                                <div className='Movietype'><span>Part 2</span><span className='v-line'></span><span>10 Munities</span><span className='v-line'></span><span>22 June 2022</span></div>
                                             </div>
                                             <div><img src={d} /></div>
                                         </div>
@@ -94,7 +95,7 @@ export default function Index() {
                                         <div className='cnt'>
                                             <div className=''>
                                                 <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                                                <div className='Movietype'><span>Audio Book</span><span className='v-line'></span><span>English</span><span className='v-line'></span><span>Horror</span></div>
+                                                <div className='Movietype'><span>Part 3</span><span className='v-line'></span><span>10 Munities</span><span className='v-line'></span><span>22 June 2022</span></div>
                                             </div>
                                             <div><img src={d} /></div>
                                         </div>
@@ -107,7 +108,7 @@ export default function Index() {
                                         <div className='cnt'>
                                             <div className=''>
                                                 <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                                                <div className='Movietype'><span>Audio Book</span><span className='v-line'></span><span>English</span><span className='v-line'></span><span>Horror</span></div>
+                                                <div className='Movietype'><span>Part 4</span><span className='v-line'></span><span>10 Munities</span><span className='v-line'></span><span>22 June 2022</span></div>
                                             </div>
                                             <div><img src={d} /></div>
                                         </div>
@@ -120,7 +121,7 @@ export default function Index() {
                                         <div className='cnt'>
                                             <div className=''>
                                                 <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                                                <div className='Movietype'><span>Audio Book</span><span className='v-line'></span><span>English</span><span className='v-line'></span><span>Horror</span></div>
+                                                <div className='Movietype'><span>Part 5</span><span className='v-line'></span><span>10 Munities</span><span className='v-line'></span><span>22 June 2022</span></div>
                                             </div>
                                             <div><img src={d} /></div>
                                         </div>
@@ -153,6 +154,7 @@ export default function Index() {
                             </div>
                         </div>
                 </div>
+                <Playfooter/>
             </section>
         </>
     )
