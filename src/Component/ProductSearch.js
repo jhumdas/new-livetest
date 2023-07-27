@@ -1,8 +1,8 @@
 import React from "react";
 import search from '../images/search.png';
-import icon1 from '../images/icon1.png';
-import icon2 from '../images/icon2.png';
-import icon3 from '../images/icon3.png';
+import icon1 from '../images/user.png';
+import icon2 from '../images/love.png';
+import icon3 from '../images/cart.png';
 import { Link } from 'react-router-dom';
 export default function ProductSearch() {
   return (

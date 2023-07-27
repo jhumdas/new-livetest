@@ -1,0 +1,18 @@
+.select-song table .icons{
+    height: 36px;
+    width:36px;
+}
+.select-song table tbody td img{
+    margin-right: 5px;
+}
+table tbody td{
+    vertical-align: middle !important;
+    white-space: nowrap;
+}
+ table th{
+    border-top: 0 !important;
+    width: 23%;
+}
+/* table tbody tr{
+    border-bottom: 1px solid #dee2e6 !important;
+} */

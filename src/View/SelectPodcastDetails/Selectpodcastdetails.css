@@ -58,7 +58,7 @@ line-height: normal;
     align-items: center;
     margin: 10px 0;
 }
-.icons span{
+.icons{
     border-radius: 48px;
 background: #FFF;
 box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -135,11 +135,14 @@ margin-bottom: 20px;
 }
 .episodeDetails p{
     color: #716E6E;
-font-family: Open Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-margin-bottom: 30px;
+    font-family: Open Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+ .song-details p{
+    margin-bottom: 5px;
 }
 .episodeDetails img{
     width: 60px;
@@ -242,13 +245,85 @@ padding: 5px 8px;
   .small-pop h5{
     display: flex;
     font-size: 14px;
-    margin: 7px 0;
+    margin: 13px 0;
   }
   .small-pop h5 img{
     width: 20px;
     height: 20px;
     margin-right: 10px;
   }
+
+.favourite-podcuat{
+    padding: 30px 0;
+}
+
+
+
+.theme-custom-checkbox label{
+    display: inline;
+}
+  .theme-custom-checkbox label input{
+    position: relative;
+    z-index: 1;
+    appearance: none;
+}
+
+.theme-custom-checkbox label span{
+    position: relative;
+    width: 43px;
+    height: 22px;
+    transition: 1.5s;
+    border-radius: 6rem;
+    background: #716e6e;
+    cursor: pointer;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.theme-custom-checkbox label input:checked ~ span{
+    background: #FF3A44;
+
+}
+
+.theme-custom-checkbox label span i{
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: none;
+    border-radius: 6rem;
+    scale: 1.2;
+    transition: 1.5s;
+    box-shadow: 0 0 0.5rem 0 #000;
+    top: 2px;
+}
+
+.theme-custom-checkbox label input:checked ~ span i{
+    left: calc(100% - 19px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:767px){
     .episode_choice_list{  
     width: 100%; 

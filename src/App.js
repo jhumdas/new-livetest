@@ -14,6 +14,8 @@ import '../src/View/ManageAddress/ManageAddress.css'
 import '../src/View/Checkout/Checkout.css'
 import '../src/View/Category/Category.css'
 import '../src/View/SelectPodcastDetails/Selectpodcastdetails.css'
+import '../src/View/SelectSong/SelectSong.css'
+import '../src/View/SelectPlaylist/SelectPlaylist.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -31,6 +33,8 @@ import Checkout from '../src/View/Checkout/Index'
 import Category from '../src/View/Category/Index'
 import SelectPodcastDetail from '../src/View/SelectPodcastDetails/Index'
 import SelectSong from '../src/View/SelectSong/Index'
+import SelectPlaylist from '../src/View/SelectPlaylist/Index'
+import FavouritePodcast from '../src/View/FavouritePodcust/Index'
 function App() {
   return (
     <React.Fragment>
@@ -54,6 +58,8 @@ function App() {
               <Route path="/category" element={<Category/>}/>
               <Route path="/selectpodcast-detail" element={<SelectPodcastDetail/>}/>
               <Route path="/select-song" element={<SelectSong/>}/>
+              <Route path="/select-playlist" element={<SelectPlaylist/>}/>
+              <Route path="/favourite-podcast" element={<FavouritePodcast/>}/>
             </Route>
           </Routes>
 

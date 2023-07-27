@@ -17,18 +17,32 @@
 .from_icon_whish_cart_main {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .from_icon_whish_cart1 {
     width: 45px;
     height: 45px;
     margin-left: 10px;
-}
+    border-radius: 23.44px;
+background: #FFF;
+box-shadow: 0px 0px 3.7671613693237305px 0px rgba(0, 0, 0, 0.20) inset;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
 
+}
+.from_icon_whish_cart1:focus-within{
+    background: #D9D9D9;
+    box-shadow: 0px 0px 3.7671613693237305px 0px rgba(0, 0, 0, 0.20) inset;
+
+}
+/* 
 .from_icon_whish_cart1 img {
     width: 100%;
     height: 100%;
-}
+} */
 
 .shop_bg {
     width: 100%;
@@ -232,7 +246,7 @@ p.best_selling_product_txt2 {
 
 .shop_best_selling_prdt {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 
 .shop_best_selling_prdt .slick-slide {

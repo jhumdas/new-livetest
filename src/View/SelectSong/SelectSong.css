@@ -1,0 +1,34 @@
+.shop_best_selling_prdt.selectsong-slider .slick-prev:before {
+    content: '\f104' !important;
+    border-radius: 52px;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: FontAwesome !important;
+    font-size: 27px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: rgb(0, 0, 0) !important;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+.shop_best_selling_prdt.selectsong-slider .slick-next:before {
+    content: '\f105' !important;
+    font-family: FontAwesome !important;
+    font-size: 26px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: rgb(0, 0, 0) !important;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    border-radius: 52px;
+    border: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

@@ -5,21 +5,22 @@ import f from '../../images/Ellipse 210.png'
 import i from '../../images/Ellipse 211.png'
 import Playfooter from '../../Component/Playfooter'
 import SelectPodcast from '../../Component/SelectPodcast'
+import EpisodeDetails from '../../Component/EpisodeDetails'
 export default function Index() {
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
         setToggleState(index);
     };
-  
+
     return (
         <>
 
             <section className='selectpodcast-details'>
                 <div className='container'>
-                   
-                    <SelectPodcast image={h} name="Horror Podcast"forPodName={true}ForPodtype={true}/>
-                    <div className='mt-5'>
+
+                    <SelectPodcast image={h} name="Horror Podcast" forPodName={true} ForPodtype={true} />
+                    <div className='mt-5 mb-4'>
                         <div className='episode_choice_list'>
                             <button
                                 className={toggleState === 1 ? "shop_tab active_episode_tab" : "shop_tab"}
@@ -112,7 +113,7 @@ export default function Index() {
                             className={toggleState === 2 ? "content  active-content" : "content"}
                         >
 
-                            <div className='episodeDetails mt-4'>
+                            {/* <div className='episodeDetails mt-4'>
 
                                 <h5>Description</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur. Morbi pretium cras fringilla amet platea lacinia. Nulla habitant nunc fusce hendrerit et molestie porttitor. Arcu suspendisse accumsan ullamcorper ac. Amet semper mi dui volutpat dui ut.<span>Read more</span> </p>
@@ -127,13 +128,14 @@ export default function Index() {
                                         <h6>Zaire Curtis</h6>
                                     </div>
                                 </div>
-                            </div>
-
+                            </div> */}
+                            <EpisodeDetails />
                         </div>
                     </div>
                 </div>
-                <Playfooter />
+             
             </section>
+            <Playfooter />
         </>
     )
 }
