@@ -15,7 +15,7 @@ export default function SongSearch() {
                             <input
                                 type="text"
                                 class="form-control"
-                                placeholder="Search for products"
+                                placeholder="Search Products"
                             ></input>
                             <div className="searchIcon">
                                 <img src={search} />

@@ -244,19 +244,21 @@ padding: 5px 8px;
   }
   .small-pop h5{
     display: flex;
-    font-size: 14px;
+    font-size: 13px;
     margin: 13px 0;
   }
   .small-pop h5 img{
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
     margin-right: 10px;
   }
 
-.favourite-podcuat{
+.favourite-podcast{
     padding: 30px 0;
 }
-
+.Favourite-song{
+    padding: 30px 0;
+}
 
 
 .theme-custom-checkbox label{
