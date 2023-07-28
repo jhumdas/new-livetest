@@ -211,7 +211,7 @@ text-align: center;
 .best_selling_product_bg {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 200px;
 }
 
 .shop_best_selling_prdt .slick-slide img {
@@ -307,6 +307,7 @@ p.best_selling_product_txt2 {
     right: 15px;
     width: 33px;
     height: 33px;
+    cursor: pointer;
     /* display: flex; */
 }
 

@@ -29,18 +29,18 @@ export default function Playlist(props) {
                             <td className=''>
                                 <div style={{ display: "flex", alignItems: "center", justifyContent: "end" }}>
                                     <span className='h-vol' style={{ border: "1px solid #716E6e", fontSize: "12px" }}>04 min 20 sec</span>
-                                     <span className='icons'>{heart}</span>
-                                <div>
-                                     <span style={{ position: "relative" }} className='icons' onClick={toggolePop}><i class="fa-solid fa-ellipsis-vertical"></i></span>   
-                                                    {smallPop && <div className='small-pop'>
-                                    <h5><img src={g} />Share</h5>
-                                    <h5><img src={s} />Remove Download</h5>
-                                    <h5><img src={n} />Add to Playlist</h5>
+                                    <span className='icons'>{heart}</span>
+                                    <div style={{ position: "relative" }}>
+                                        <span style={{ position: "relative" }} className='icons' onClick={toggolePop}><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                                        {smallPop && <div className='small-pop forSong box-shadow'>
+                                            <h5><img src={g} />Share</h5>
+                                            <h5><img src={s} />Remove Download</h5>
+                                            <h5><img src={n} />Add to Playlist</h5>
 
-                                </div>}
+                                        </div>}
+                                    </div>
                                 </div>
-                                </div>
-                                </td>
+                            </td>
                         </tr>
                         <tr>
                             <td><div><img src={c} /><span>Lorem ipsum dolor sit</span></div></td>

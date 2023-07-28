@@ -3,9 +3,9 @@ import SongSearch from '../../Component/SongSearch'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import best_selling1 from '../../images/best_selling1.png';
-import best_selling2 from '../../images/best_selling2.png';
-import best_selling3 from '../../images/best_selling3.png';
+import best_selling1 from '../../images/p1 (4).png';
+import best_selling2 from '../../images/p1 (3).png';
+import best_selling3 from '../../images/p1 (2).png';
 import best_selling_icon from '../../images/ph_heart-light.png';
 export default function Index() {
     var settings1 = {
@@ -45,7 +45,7 @@ export default function Index() {
         <>
             <section className='favourite-podcast'>
                 <div className='container'>
-                    <SongSearch />
+                    <SongSearch searchText="Search Podcast"/>
                     
                     <section className='shop_best_selling_prdt selectsong-slider'>
                         <div className='container'>

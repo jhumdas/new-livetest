@@ -1,0 +1,147 @@
+.Podcast {
+    padding: 30px 0;
+}
+
+.podcastTab {
+
+    display: flex;
+    align-items: center;
+    gap: 43px;
+    margin: 0 auto;
+}
+
+.podcast_tab {
+    background-color: transparent;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+}
+
+.podcast_tab.active_episode_tab {
+    border-bottom: 1px solid #FF3A44;
+    background: #EBEBEB;
+}
+
+.podcast-banner-slidewrap {
+    margin: 40px 0;
+}
+
+.podcast-banner-slide {
+
+    background-image: url(../../images/Rectangle430.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 232px;
+    border-radius: 10px;
+    /* background: linear-gradient(133deg, #000 0%, rgba(0, 0, 0, 0.00) 100%); */
+}
+
+.podcast-banner-slide .box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.boxCnt {
+    padding-left: 30px;
+    width: 51%;
+}
+
+.podcast-banner-slide .box h3 {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.podcast-banner-slide .box p {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px 0;
+}
+.podcast-banner-slide.song-banner-slide .box p{
+    margin: 10px 0 20px 0;
+}
+.podcast-banner-slide.song-banner-slide .box h6{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 10px;
+}
+.podcast-banner-slide .box a {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 5px;
+    background: #FFF;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.podcast-banner-slidewrap .slick-slide {
+    padding: 0 10px;
+}
+
+
+.podcast-banner-slidewrap .slick-prev:before {
+    content: '\f104' !important;
+    border-radius: 52px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: FontAwesome !important;
+    font-size: 27px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: rgb(0, 0, 0) !important;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+.podcast-banner-slidewrap .slick-next:before {
+    content: '\f105' !important;
+    font-family: FontAwesome !important;
+    font-size: 26px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: rgb(0, 0, 0) !important;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    border-radius: 52px;
+    border: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.podcast-banner-slidewrap .slick-prev {
+    left: 5px;
+    z-index: 2;
+}
+.podcast-banner-slidewrap .slick-next {
+    right: 31px;
+}
+.recent-played-slide{
+    padding: 0 40px;
+}

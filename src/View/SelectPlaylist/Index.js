@@ -12,7 +12,7 @@ export default function Index() {
                 <div className='container'>
                     <SelectPodcast image={v} name="Lorem ipsum dolor sit amet consectetur." Forsongtype={true} forSongName={true} queue={true} />
                    
-                    <Playlist heart={<i class="fa-regular fa-heart"></i>}/>
+                    <Playlist heart={<i class="fa-regular fa-heart"></i>} />
                 </div>
             </section>
             <Playfooter />

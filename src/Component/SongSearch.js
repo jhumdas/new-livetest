@@ -4,7 +4,8 @@ import icon1 from '../images/threeline.png';
 import icon2 from '../images/bi_download.png';
 import icon3 from '../images/love.png';
 import { Link } from 'react-router-dom';
-export default function SongSearch() {
+export default function SongSearch(props) {
+    const{searchText}=props
     return (
         <>
             <div className="row">
@@ -15,7 +16,7 @@ export default function SongSearch() {
                             <input
                                 type="text"
                                 class="form-control"
-                                placeholder="Search Products"
+                                placeholder={searchText}
                             ></input>
                             <div className="searchIcon">
                                 <img src={search} />
@@ -39,12 +40,12 @@ export default function SongSearch() {
 
                        <div> <h6>Music</h6></div>
                         <div className="from_icon_whish_cart1">
-                            <Link to="">
+                            <Link to="/favourite-podcast">
                                 <img src={icon3} alt="" />
                             </Link>
                         </div>
                         <div className="from_icon_whish_cart1">
-                            <Link to="">
+                            <Link to="/download-podcast">
                                 <img src={icon2} alt="" />
                             </Link>
                         </div>

@@ -3,6 +3,7 @@ import h from '../../images/Rectangle 443.png'
 import d from '../../images/bi_download.png'
 import f from '../../images/Ellipse 210.png'
 import i from '../../images/Ellipse 211.png'
+import videoIcon from '../../images/video-icon.png'
 import Playfooter from '../../Component/Playfooter'
 import SelectPodcast from '../../Component/SelectPodcast'
 import EpisodeDetails from '../../Component/EpisodeDetails'
@@ -44,6 +45,7 @@ export default function Index() {
                                 <div className='episode'>
                                     <div className='img-part'>
                                         <img src={h} />
+                                       
                                     </div>
                                     <div className='cnt'>
                                         <div className=''>
@@ -57,6 +59,7 @@ export default function Index() {
                                 <div className='episode'>
                                     <div className='img-part'>
                                         <img src={h} />
+                                      
                                     </div>
                                     <div className='cnt'>
                                         <div className=''>
@@ -69,7 +72,9 @@ export default function Index() {
                                 <hr />
                                 <div className='episode'>
                                     <div className='img-part'>
+                                        
                                         <img src={h} />
+                                        
                                     </div>
                                     <div className='cnt'>
                                         <div className=''>
@@ -83,6 +88,7 @@ export default function Index() {
                                 <div className='episode'>
                                     <div className='img-part'>
                                         <img src={h} />
+                                        
                                     </div>
                                     <div className='cnt'>
                                         <div className=''>
@@ -96,6 +102,7 @@ export default function Index() {
                                 <div className='episode'>
                                     <div className='img-part'>
                                         <img src={h} />
+                                        
                                     </div>
                                     <div className='cnt'>
                                         <div className=''>

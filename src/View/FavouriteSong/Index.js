@@ -8,7 +8,7 @@ export default function Index() {
 
             <section className='Favourite-song'>
                 <div className='container'>
-                    <SongSearch />
+                    <SongSearch searchText="Search Song"/>
                     <Playlist heart={<i class="fa-solid fa-heart" style={{color:"#FF3A44"}}></i>}/>
                 </div>
             </section>

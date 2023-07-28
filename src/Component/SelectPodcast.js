@@ -5,6 +5,7 @@ import s from '../images/bi_download.png'
 import n from '../images/ph_playlist-light.png'
 import g from '../images/openmoji_share.png'
 import x from '../images/subway_add-playlist.png'
+import videoIcon from '../images/video-icon.png'
 export default function SelectPodcast(props) {
     const {Forsongtype=false,forSongName=false,forPodName=false,ForPodtype=false,queue=false,name,image}=props;
     const [smallPop, setSmallPop] = useState(false);
@@ -17,6 +18,7 @@ export default function SelectPodcast(props) {
             <div className='wrap'>
                 <div className='img-part'>
                     <img src={image} />
+                    <div className='videoIcon'><img src={videoIcon}/></div>
                 </div>
                 <div className='cnt-part'>
                     <h3>{name}</h3>
