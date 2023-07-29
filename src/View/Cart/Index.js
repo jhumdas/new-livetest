@@ -148,7 +148,7 @@ export default function Index() {
                       <h6><strong>$ 150</strong></h6>
                     </div>
                     <Link
-                      to="/order"
+                      to="/checkout"
                       className="shop_bg_btn mt-3 d-block"
                       style={{ maxWidth: "100%" }}
                     >

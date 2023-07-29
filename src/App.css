@@ -165,6 +165,25 @@ padding: 30px;
   display: inline-block;
 }
 /****header****/
+.nav__link:after {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  margin: auto;
+  height: 1px;
+  background: #fff;
+  transition: ease all 0.2s;
+}
+.nav__link.active:after {
+  opacity: 1;
+  width: 75%;
+}
+.nav-link{
+  padding: 0;
+}
 .header{
   background: #E1D8D8;
   padding: 12px 0;
@@ -189,8 +208,9 @@ font-size: 15px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-padding-left: 36px;
+margin: 0 18px;
 text-transform: uppercase;
+position: relative;
 }
 .account{
   color: #000;

@@ -813,7 +813,7 @@ display: inline-block;
     }
 
     .from_icon_whish_cart_main {
-        justify-content: end;
+        justify-content: end !important;
     }
 
     .shop_u_choice .shop_choice_list {

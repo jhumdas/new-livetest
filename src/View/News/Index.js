@@ -61,7 +61,7 @@ export default function Index() {
 
         <>
 
-            <section className='today_news'>
+            <section className='today_news podcast-banner-slidewrap'>
                 <div className='container'>
                     <div className='tdnews'>
                         <h5>Today News</h5>
@@ -73,8 +73,8 @@ export default function Index() {
                                 <img src={news_sld1} alt="" />
                             </div>
                             <div className='tds_news_sld_txt'>
-                                <p className='tds_news_sld_txt1'>Lorem ipsum dolor sit amet consectetur. Sed <br></br> turpis nullam accumsan diam. Viverra erat  <br></br> enim eget ultrices quam sed.</p>
-                                <p className='tds_news_sld_txt2'>Lorem ipsum dolor sit amet consectetur. Auctor <br></br> consectetur cras elementum ut aliquet proin neque <br></br> mauris. Gravida est tortor natoque egestas amet<br></br> tempor. Suscipit dui hac diam est sit</p>
+                                <p className='tds_news_sld_txt1'>Lorem ipsum dolor sit amet consectetur. Sed  turpis nullam accumsan diam. Viverra erat   enim eget ultrices quam sed.</p>
+                                <p className='tds_news_sld_txt2'>Lorem ipsum dolor sit amet consectetur. Auctor consectetur cras elementum ut aliquet proin neque  mauris. Gravida est tortor natoque egestas amet<br></br> tempor. Suscipit dui hac diam est sit</p>
                                 <h5 className='tds_news_sld_txt_tdh'>Wednesday, 27th May 2021</h5>
                             </div>
 

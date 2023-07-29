@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import b from "../images/Mask group.png";
 export default function OrderAccount() {
     return (
         <>
 
             <div>
-                <div className="ReviewFirstBox">
+                <Link to="/order"><div className="ReviewFirstBox">
                     <img src={b} />
                     MY ORDERS
-                </div>
+                </div></Link>
                 <div className="ReviewSecondBox mt-3">
                     <div id="accordionExample" className="accordion ">
                         <div className="card">
@@ -37,8 +38,8 @@ export default function OrderAccount() {
                                 className="collapse show"
                             >
                                 <div className="card-body">
-                                    <a href="#">Manage Addresses</a>
-                                    <a href="#">Review & ratings</a>
+                                    <Link to="/manage-address">Manage Addresses</Link>
+                                    <Link to="/review">Review & ratings</Link>
                                     <a href="#">Notification</a>
                                 </div>
                             </div>

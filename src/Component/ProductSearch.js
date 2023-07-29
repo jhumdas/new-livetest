@@ -28,7 +28,7 @@ export default function ProductSearch() {
           </form>
         </div>
         <div className="col-xl-3 col-lg-3 col-md-6 col-6 ordr3">
-          <div className="from_icon_whish_cart_main">
+          <div className="from_icon_whish_cart_main" style={{justifyContent:"flex-start"}}>
           <div className="from_icon_whish_cart1">
               <Link to="/cart">
                 <img src={icon3} alt="" />
@@ -40,7 +40,7 @@ export default function ProductSearch() {
               </Link>
             </div>
             <div className="from_icon_whish_cart1">
-              <Link to="/review">
+              <Link to="/manage-address">
                 <img src={icon1} alt="" />
               </Link>
             </div>
