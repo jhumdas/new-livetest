@@ -6,12 +6,9 @@ export default function Index() {
     return (
         <>
 
-            <section className='Favourite-song'>
-                <div className='container'>
-                    <SongSearch searchText="Search Song"/>
+       
                     <Playlist heart={<i class="fa-regular fa-heart"></i>}/>
-                </div>
-            </section>
+    
         </>
     )
 }

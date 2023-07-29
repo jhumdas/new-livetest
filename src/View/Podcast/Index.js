@@ -106,9 +106,7 @@ export default function Index() {
     };
     return (
         <>
-            <section className='Podcast'>
-                <div className='container'>
-                    <SongSearch searchText="Search Podcast" />
+         
                     <div className='mt-4 mb-4'>
                         <div className=' podcastTab'>
                             <button
@@ -842,8 +840,7 @@ export default function Index() {
                             <div></div>
                         </div>
                     </div>
-                </div>
-            </section>
+            
 
         </>
     )

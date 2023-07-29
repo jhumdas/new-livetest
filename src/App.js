@@ -42,8 +42,12 @@ import DownloadPodcast from '../src/View/DownloadPodcast/Index'
 import DownloadSong from '../src/View/DownloadSong/Index'
 import Music from '../src/View/Music/Index'
 import Podcast from '../src/View/Podcast/Index'
+import MusicPodcastlayout from './Layout/MusicPodcastlayout';
 
 function App() {
+
+
+
   return (
     <React.Fragment>
         <Router>
@@ -67,12 +71,21 @@ function App() {
               <Route path="/selectpodcast-detail" element={<SelectPodcastDetail/>}/>
               <Route path="/select-song" element={<SelectSong/>}/>
               <Route path="/select-playlist" element={<SelectPlaylist/>}/>
-              <Route path="/favourite-podcast" element={<FavouritePodcast/>}/>
-              <Route path="/favourite-song" element={<FavouriteSong/>}/>
-              <Route path="/download-podcast" element={<DownloadPodcast/>}/>
-              <Route path="/download-song" element={<DownloadSong/>}/>
-              <Route path="/podcast" element={<Podcast/>}/>
+             
+              <Route element={<MusicPodcastlayout/>}>
               <Route path="/music" element={<Music/>}/>
+              <Route path="/music/favourite-song" element={<FavouriteSong/>}/>
+              <Route path="/music/download-song" element={<DownloadSong/>}/>
+              <Route path="/podcast" element={<Podcast/>}/>
+              <Route path="/podcast/favourite-podcast" element={<FavouritePodcast/>}/>
+              <Route path="/podcast/download-podcast" element={<DownloadPodcast/>}/>
+
+
+
+
+
+
+              </Route>
             </Route>
           </Routes>
 

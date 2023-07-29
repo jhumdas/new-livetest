@@ -9,9 +9,9 @@ export default function ProductSearch() {
     <>
       <div className="row">
         <div className="col-xl-1 col-lg-1 col-md-6 col-6 ordr1">
-          <a className="nav_icon_search">
+          <Link to="/category" className="nav_icon_search">
             <i class="fa-solid fa-bars"></i>
-          </a>
+          </Link>
         </div>
         <div className="col-xl-8 col-lg-8 col-md-12 col-12 ordr2">
           <form action="">

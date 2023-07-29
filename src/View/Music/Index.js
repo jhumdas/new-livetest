@@ -111,796 +111,742 @@ export default function Index() {
   };
   return (
     <>
-      <section className='Podcast'>
-        <div className='container'>
-          {/* <SongSearch searchText="Search Song" /> */}
-          <div className="row">
 
-            <div className="col-xl-8 col-lg-8 col-md-12 col-12 ordr2">
-              <form action="">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Search Song"
-                  ></input>
-                  <div className="searchIcon">
-                    <img src={search} />
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-6 ordr3">
-              <div className="from_icon_whish_cart_main">
-                <div><h6>Podcast</h6></div>
+      <div className='mt-4 mb-4'>
+        <div className=' podcastTab'>
+          <button
+            className={toggleState === 1 ? "podcast_tab active_episode_tab" : "podcast_tab"}
+            onClick={() => toggleTab(1)}
+          >
+            All
+          </button>
+
+
+          <button
+            className={toggleState === 2 ? "podcast_tab active_episode_tab" : "podcast_tab"}
+            onClick={() => toggleTab(2)}
+          >
+            Comedy
+          </button>
+          <button
+            className={toggleState === 3 ? "podcast_tab active_episode_tab" : "podcast_tab"}
+            onClick={() => toggleTab(3)}
+          >
+            Horror
+          </button>
+          <button
+            className={toggleState === 4 ? "podcast_tab active_episode_tab" : "podcast_tab"}
+            onClick={() => toggleTab(4)}
+          >
+            Motivational
+          </button>
+          <button
+            className={toggleState === 5 ? "podcast_tab active_episode_tab" : "podcast_tab"}
+            onClick={() => toggleTab(5)}
+          >
+            Spiritual
+          </button>
+          <button
+            className={toggleState === 6 ? "podcast_tab active_episode_tab" : "podcast_tab"}
+            onClick={() => toggleTab(6)}
+          >
+            Devotional
+          </button>
+          <button
+            className={toggleState === 7 ? "podcast_tab active_episode_tab" : "podcast_tab"}
+            onClick={() => toggleTab(7)}
+          >
+            Romantic
+          </button>
+          <button
+            className={toggleState === 8 ? "podcast_tab active_episode_tab" : "podcast_tab"}
+            onClick={() => toggleTab(8)}
+          >
+            Animal & Wildlife
+          </button>
 
-                <div className='theme-custom-checkbox'>
-                  <label>
-                    <input type="checkbox" />
-                    <span className=''>
-                      <i />
-                    </span>
-                  </label>
-
-                </div>
-
-                <div> <h6>Music</h6></div>
-                <div className="from_icon_whish_cart1">
-                  <Link to="/favourite-song">
-                    <img src={icon3} alt="" />
-                  </Link>
-                </div>
-                <div className="from_icon_whish_cart1">
-                  <Link to="/download-song">
-                    <img src={icon2} alt="" />
-                  </Link>
-                </div>
-                <div className="from_icon_whish_cart1">
-                  <Link to="">
-                    <img src={icon1} alt="" />
-                  </Link>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-          <div className='mt-4 mb-4'>
-            <div className=' podcastTab'>
-              <button
-                className={toggleState === 1 ? "podcast_tab active_episode_tab" : "podcast_tab"}
-                onClick={() => toggleTab(1)}
-              >
-                All
-              </button>
-
-
-              <button
-                className={toggleState === 2 ? "podcast_tab active_episode_tab" : "podcast_tab"}
-                onClick={() => toggleTab(2)}
-              >
-                Comedy
-              </button>
-              <button
-                className={toggleState === 3 ? "podcast_tab active_episode_tab" : "podcast_tab"}
-                onClick={() => toggleTab(3)}
-              >
-                Horror
-              </button>
-              <button
-                className={toggleState === 4 ? "podcast_tab active_episode_tab" : "podcast_tab"}
-                onClick={() => toggleTab(4)}
-              >
-                Motivational
-              </button>
-              <button
-                className={toggleState === 5 ? "podcast_tab active_episode_tab" : "podcast_tab"}
-                onClick={() => toggleTab(5)}
-              >
-                Spiritual
-              </button>
-              <button
-                className={toggleState === 6 ? "podcast_tab active_episode_tab" : "podcast_tab"}
-                onClick={() => toggleTab(6)}
-              >
-                Devotional
-              </button>
-              <button
-                className={toggleState === 7 ? "podcast_tab active_episode_tab" : "podcast_tab"}
-                onClick={() => toggleTab(7)}
-              >
-                Romantic
-              </button>
-              <button
-                className={toggleState === 8 ? "podcast_tab active_episode_tab" : "podcast_tab"}
-                onClick={() => toggleTab(8)}
-              >
-                Animal & Wildlife
-              </button>
-
-            </div>
-            <div
-              className={toggleState === 1 ? "content  active-content" : "content"}
-            >
-              <div>
-                <div className='podcast-banner-slidewrap'>
-                  <Slider {...settings1}>
-                    {loop.map((item, index) => {
-                      return (
-                        <div className='podcast-banner-slide song-banner-slide'>
-                          <div className='box'>
-                            <div className='boxCnt'>
-                              <h3>Lorem ipsum dolor</h3>
-                              <h6>New<br />Releases</h6>
-                              <p>English Song</p>
-                              <a href="#">Listen now</a>
-                            </div>
-                          </div>
-                        </div>
-                      )
-                    }
-
-                    )}
-
-
-                  </Slider>
-                </div>
-                <div className='podcast-banner-slidewrap recent-played-slidewrap'>
-                  <div className='best_selling_txt'>
-                    <h2>Recently Played </h2>
-                  </div>
-                  <Slider {...settings2}>
-                    {loop.map((item, index) => {
-                      return (
-                        <div className='recent-played-slide'>
-                          <div className='episode'>
-                            <div className='img-part'>
-                              <img src={h} />
-
-                            </div>
-                            <div className='cnt'>
-                              <div className=''>
-                                <h5>Lorem ipsum dolor sit </h5>
-                                <div className='Movietype'><span>Lorem ipsum dolor sit amet consectetur.</span></div>
-                              </div>
-                              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
-                            </div>
-                          </div>
-                          <div className='episode pt-3'>
-                            <div className='img-part'>
-                              <img src={h} />
-
-                            </div>
-                            <div className='cnt'>
-                              <div className=''>
-                                <h5>Lorem ipsum dolor sit </h5>
-                                <div className='Movietype'><span>Lorem ipsum dolor sit amet consectetur.</span></div>
-                              </div>
-                              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
-                            </div>
-                          </div>
-                        </div>
-                      )
-                    }
-
-                    )}
-
-
-                  </Slider>
-                </div>
-                <section className='shop_best_selling_prdt selectsong-slider'>
-                  <div className=''>
-                    <div className='best_selling_txt'>
-                      <h2>Trending playlist</h2>
-                    </div>
-                    <Slider {...settings3}>
-                      <div className='best_selling_product'>
-                        <Link to="/select-song"> <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling1} alt='/'></img>
-
-                          </div>
-
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Product Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div></Link>
-                      </div>
-
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling2} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling3} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling1} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling2} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling3} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-                      </div>
-                    </Slider>
-                  </div>
-                </section>
-                <section className='shop_best_selling_prdt selectsong-slider'>
-                  <div className=''>
-                    <div className='best_selling_txt'>
-                      <h2>New Released</h2>
-                    </div>
-                    <Slider {...settings3}>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling1} alt='/'></img>
-
-                          </div>
-
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Product Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling2} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling3} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling1} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling2} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling3} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-                      </div>
-                    </Slider>
-                  </div>
-                </section>
-                <section className='shop_best_selling_prdt selectsong-slider'>
-                  <div className=''>
-                    <div className='best_selling_txt'>
-                      <h2>Top Search Song</h2>
-                    </div>
-                    <Slider {...settings3}>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling1} alt='/'></img>
-
-                          </div>
-
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Product Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling2} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling3} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling1} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling2} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling3} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-                      </div>
-                    </Slider>
-                  </div>
-                </section>
-                <section className='shop_best_selling_prdt selectsong-slider'>
-                  <div className=''>
-                    <div className='best_selling_txt'>
-                      <h2>Top Motivation Song</h2>
-                    </div>
-                    <Slider {...settings3}>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling1} alt='/'></img>
-
-                          </div>
-
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Product Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling2} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling3} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling1} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling2} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling3} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-                      </div>
-                    </Slider>
-                  </div>
-                </section>
-                <section className='shop_best_selling_prdt selectsong-slider'>
-                  <div className=''>
-                    <div className='best_selling_txt'>
-                      <h2>Top searches Artist</h2>
-                    </div>
-                    <Slider {...settings3}>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling1} alt='/'></img>
-
-                          </div>
-
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Product Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling2} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling3} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling1} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling2} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='best_selling_product'>
-                        <div className='best_selling_product_bg_img_txt'>
-                          <div className='best_selling_product_bg'>
-                            <img src={best_selling3} alt='/'></img>
-
-                          </div>
-                          <div className='best_selling_product_txt_main'>
-                            <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
-                              Song Name
-                            </h4>
-                            <p className='' style={{ fontSize: "12px" }}>
-                              Lorem ipsum dolor sit amet consectetur.
-                            </p>
-                          </div>
-
-                        </div>
-                      </div>
-                    </Slider>
-                  </div>
-                </section>
-                <div className='see_option'>
-                  <a href="#" className='see_option_btn'>Load more</a>
-                </div>
-              </div>
-
-            </div>
-            <div
-              className={toggleState === 2 ? "content  active-content" : "content"}
-            >
-
-
-              <div></div>
-            </div>
-            <div
-              className={toggleState === 3 ? "content  active-content" : "content"}
-            >
-
-
-              <div></div>
-            </div>
-            <div
-              className={toggleState === 4 ? "content  active-content" : "content"}
-            >
-
-
-              <div></div>
-            </div>
-            <div
-              className={toggleState === 5 ? "content  active-content" : "content"}
-            >
-
-
-              <div></div>
-            </div>
-            <div
-              className={toggleState === 6 ? "content  active-content" : "content"}
-            >
-
-
-              <div></div>
-            </div>
-            <div
-              className={toggleState === 7 ? "content  active-content" : "content"}
-            >
-
-
-              <div></div>
-            </div>
-            <div
-              className={toggleState === 8 ? "content  active-content" : "content"}
-            >
-
-
-              <div></div>
-            </div>
-          </div>
         </div>
-      </section>
+        <div
+          className={toggleState === 1 ? "content  active-content" : "content"}
+        >
+          <div>
+            <div className='podcast-banner-slidewrap'>
+              <Slider {...settings1}>
+                {loop.map((item, index) => {
+                  return (
+                    <div className='podcast-banner-slide song-banner-slide'>
+                      <div className='box'>
+                        <div className='boxCnt'>
+                          <h3>Lorem ipsum dolor</h3>
+                          <h6>New<br />Releases</h6>
+                          <p>English Song</p>
+                          <a href="#">Listen now</a>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                }
+
+                )}
+
+
+              </Slider>
+            </div>
+            <div className='podcast-banner-slidewrap recent-played-slidewrap'>
+              <div className='best_selling_txt'>
+                <h2>Recently Played </h2>
+              </div>
+              <Slider {...settings2}>
+                {loop.map((item, index) => {
+                  return (
+                    <div className='recent-played-slide'>
+                      <div className='episode'>
+                        <div className='img-part'>
+                          <img src={h} />
+
+                        </div>
+                        <div className='cnt'>
+                          <div className=''>
+                            <h5>Lorem ipsum dolor sit </h5>
+                            <div className='Movietype'><span>Lorem ipsum dolor sit amet consectetur.</span></div>
+                          </div>
+                          <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                        </div>
+                      </div>
+                      <div className='episode pt-3'>
+                        <div className='img-part'>
+                          <img src={h} />
+
+                        </div>
+                        <div className='cnt'>
+                          <div className=''>
+                            <h5>Lorem ipsum dolor sit </h5>
+                            <div className='Movietype'><span>Lorem ipsum dolor sit amet consectetur.</span></div>
+                          </div>
+                          <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                }
+
+                )}
+
+
+              </Slider>
+            </div>
+            <section className='shop_best_selling_prdt selectsong-slider'>
+              <div className=''>
+                <div className='best_selling_txt'>
+                  <h2>Trending playlist</h2>
+                </div>
+                <Slider {...settings3}>
+                  <div className='best_selling_product'>
+                    <Link to="/select-song"> <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling1} alt='/'></img>
+
+                      </div>
+
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Product Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div></Link>
+                  </div>
+
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling2} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling3} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling1} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling2} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling3} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </Slider>
+              </div>
+            </section>
+            <section className='shop_best_selling_prdt selectsong-slider'>
+              <div className=''>
+                <div className='best_selling_txt'>
+                  <h2>New Released</h2>
+                </div>
+                <Slider {...settings3}>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling1} alt='/'></img>
+
+                      </div>
+
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Product Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling2} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling3} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling1} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling2} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling3} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </Slider>
+              </div>
+            </section>
+            <section className='shop_best_selling_prdt selectsong-slider'>
+              <div className=''>
+                <div className='best_selling_txt'>
+                  <h2>Top Search Song</h2>
+                </div>
+                <Slider {...settings3}>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling1} alt='/'></img>
+
+                      </div>
+
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Product Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling2} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling3} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling1} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling2} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling3} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </Slider>
+              </div>
+            </section>
+            <section className='shop_best_selling_prdt selectsong-slider'>
+              <div className=''>
+                <div className='best_selling_txt'>
+                  <h2>Top Motivation Song</h2>
+                </div>
+                <Slider {...settings3}>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling1} alt='/'></img>
+
+                      </div>
+
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Product Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling2} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling3} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling1} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling2} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling3} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </Slider>
+              </div>
+            </section>
+            <section className='shop_best_selling_prdt selectsong-slider'>
+              <div className=''>
+                <div className='best_selling_txt'>
+                  <h2>Top searches Artist</h2>
+                </div>
+                <Slider {...settings3}>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling1} alt='/'></img>
+
+                      </div>
+
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Product Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling2} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling3} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling1} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling2} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='best_selling_product'>
+                    <div className='best_selling_product_bg_img_txt'>
+                      <div className='best_selling_product_bg'>
+                        <img src={best_selling3} alt='/'></img>
+
+                      </div>
+                      <div className='best_selling_product_txt_main'>
+                        <h4 className='best_selling_product_txt1' style={{ paddingBottom: "0", fontSize: "16px" }}>
+                          Song Name
+                        </h4>
+                        <p className='' style={{ fontSize: "12px" }}>
+                          Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </Slider>
+              </div>
+            </section>
+            <div className='see_option'>
+              <a href="#" className='see_option_btn'>Load more</a>
+            </div>
+          </div>
+
+        </div>
+        <div
+          className={toggleState === 2 ? "content  active-content" : "content"}
+        >
+
+
+          <div></div>
+        </div>
+        <div
+          className={toggleState === 3 ? "content  active-content" : "content"}
+        >
+
+
+          <div></div>
+        </div>
+        <div
+          className={toggleState === 4 ? "content  active-content" : "content"}
+        >
+
+
+          <div></div>
+        </div>
+        <div
+          className={toggleState === 5 ? "content  active-content" : "content"}
+        >
+
+
+          <div></div>
+        </div>
+        <div
+          className={toggleState === 6 ? "content  active-content" : "content"}
+        >
+
+
+          <div></div>
+        </div>
+        <div
+          className={toggleState === 7 ? "content  active-content" : "content"}
+        >
+
+
+          <div></div>
+        </div>
+        <div
+          className={toggleState === 8 ? "content  active-content" : "content"}
+        >
+
+
+          <div></div>
+        </div>
+      </div>
+
 
     </>
   )

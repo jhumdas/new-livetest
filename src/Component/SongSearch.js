@@ -3,9 +3,13 @@ import search from '../images/search.png';
 import icon1 from '../images/threeline.png';
 import icon2 from '../images/bi_download.png';
 import icon3 from '../images/love.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate ,useLocation} from 'react-router-dom';
 export default function SongSearch(props) {
-    const{searchText}=props
+    const navigate = useNavigate()
+    const location = useLocation()
+    
+
+    const { searchText } = props
     return (
         <>
             <div className="row">
@@ -30,22 +34,32 @@ export default function SongSearch(props) {
 
                         <div className='theme-custom-checkbox'>
                             <label>
-                                <input type="checkbox" />
-                                <span className=''>
+                                <input type="checkbox" onChange={(val) => {
+                                    if (val.target.checked) {
+                                        navigate("/music")
+                                    }
+                                    else {
+                                        navigate("/podcast")
+                                    }
+
+                                }} 
+                                checked={location.pathname.includes("/music")}
+                                />
+                                <span className='' >
                                     <i />
                                 </span>
                             </label>
 
                         </div>
 
-                       <div> <h6>Music</h6></div>
+                        <div> <h6>Music</h6></div>
                         <div className="from_icon_whish_cart1">
-                            <Link to="/favourite-podcast">
+                            <Link to={location.pathname.includes("/podcast")? "/podcast/favourite-podcast":"/music/favourite-song"}>
                                 <img src={icon3} alt="" />
                             </Link>
                         </div>
                         <div className="from_icon_whish_cart1">
-                            <Link to="/download-podcast">
+                            <Link to={location.pathname.includes("/podcast")? "/podcast/download-podcast":"/music/download-song"}>
                                 <img src={icon2} alt="" />
                             </Link>
                         </div>

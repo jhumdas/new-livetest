@@ -137,7 +137,7 @@ justify-content: center;
   font-size: 23px;
   position: absolute;
   right: 17px;
-  top: 19px;
+  top: 65px;
 }
 .Sidebar{
   position: fixed;
@@ -165,6 +165,25 @@ padding: 30px;
   display: inline-block;
 }
 /****header****/
+.header .small-pop{
+  opacity: 0;
+  visibility: hidden;
+
+}
+.header .wraper ul li{
+  padding: 2px 0;
+}
+.small-pop h5{
+  cursor: pointer;
+}
+
+.header .wraper ul li:hover .small-pop{
+opacity: 1;
+visibility: visible;
+}
+.header .small-pop h5 {
+  font-size: 17px;
+}
 .nav__link:after {
   content: '';
   position: absolute;
@@ -212,6 +231,11 @@ margin: 0 18px;
 text-transform: uppercase;
 position: relative;
 }
+.header .wraper ul li .small-pop h5 a{
+  margin: 0;
+  text-transform: capitalize;
+}
+
 .account{
   color: #000;
   font-family: Open Sans;
@@ -351,6 +375,9 @@ width: 100%;
 }
 }
 @media (max-width:767px){
+  .bb-box{
+    margin-bottom: 30px;
+  }
   .loginModal{
     flex-wrap: wrap;
  overflow-y: auto;

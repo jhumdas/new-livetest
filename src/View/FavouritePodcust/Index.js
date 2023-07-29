@@ -43,9 +43,7 @@ export default function Index() {
     };
     return (
         <>
-            <section className='favourite-podcast'>
-                <div className='container'>
-                    <SongSearch searchText="Search Podcast"/>
+        
                     
                     <section className='shop_best_selling_prdt selectsong-slider'>
                         <div className='container'>
@@ -333,8 +331,7 @@ export default function Index() {
                             </Slider>
                         </div>
                     </section>
-                </div>
-            </section>
+              
 
         </>
     )
