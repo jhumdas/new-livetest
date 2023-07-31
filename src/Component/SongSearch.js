@@ -14,12 +14,12 @@ export default function SongSearch(props) {
         <>
             <div className="row">
 
-                <div className="col-xl-8 col-lg-8 col-md-12 col-12 ordr2">
-                    <form action="">
+                <div className="col-xl-8 col-lg-7 col-md-12 col-12 ordr2">
+                    <form action="" className='searchInput'>
                         <div class="input-group">
                             <input
                                 type="text"
-                                class="form-control"
+                                class="form-control searchInput"
                                 placeholder={searchText}
                             ></input>
                             <div className="searchIcon">
@@ -28,7 +28,7 @@ export default function SongSearch(props) {
                         </div>
                     </form>
                 </div>
-                <div className="col-xl-4 col-lg-4 col-md-6 col-6 ordr3">
+                <div className="col-xl-4 col-lg-5 col-md-12 col-12 ordr3">
                     <div className="from_icon_whish_cart_main">
                         <div><h6>Podcast</h6></div>
 
@@ -53,6 +53,7 @@ export default function SongSearch(props) {
                         </div>
 
                         <div> <h6>Music</h6></div>
+                        <div className='d-flex'>
                         <div className="from_icon_whish_cart1">
                             <Link to={location.pathname.includes("/podcast")? "/podcast/favourite-podcast":"/music/favourite-song"}>
                                 <img src={icon3} alt="" />
@@ -67,6 +68,7 @@ export default function SongSearch(props) {
                             <Link to="">
                                 <img src={icon1} alt="" />
                             </Link>
+                        </div>
                         </div>
 
 

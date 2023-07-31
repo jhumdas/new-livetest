@@ -29,7 +29,19 @@ export default function Index() {
             {
                 breakpoint: 1024,
                 settings: {
+                    slidesToShow: 2.5
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
                     slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
                 }
             },
             {
@@ -59,6 +71,18 @@ export default function Index() {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
                 }
             },
             {

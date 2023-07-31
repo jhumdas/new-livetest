@@ -65,18 +65,19 @@ a:hover{
   right: 0;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 2%;
-  z-index: 1;
+  z-index: 6;
 }
 .loginModal{
   display: flex;
   margin: 0 auto;
   width: 937px;
   border-radius: 10px;
-background: #FFF;
-  height: 512px;
-  padding: 60px 45px 30px 45px;
+  background: #FFF;
+  height: 448px;
+  padding: 14px 45px 30px 45px;
   justify-content: space-between;
   align-items: center;
+  margin-top: 66px;
   
 }
 .loginModal h5{
@@ -111,26 +112,21 @@ justify-content: center;
 .barCode{
   border: 1px solid #000;
   padding: 20px;
+  width: 265px;
+  height: 265px;
+}
+.barCode img{
+width: 100%;
+height: 100%;
 }
 /****sidebar***/
-.slide-right {
-  animation: .7s slide-right;
-}
-@keyframes slide-right {
-  from {
-    margin-left: -100%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-@keyframes fadeIn{
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+
+.Sidebar.slide-right.show-example{
+  
+  transform: translate(0%, 0);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+
 }
 .SidebarClose{
   color: #000;
@@ -138,6 +134,11 @@ justify-content: center;
   position: absolute;
   right: 17px;
   top: 65px;
+}
+.Sidebar.slide-right{
+  transform: translate(100%, 0);
+  -webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
 }
 .Sidebar{
   position: fixed;
@@ -147,11 +148,32 @@ justify-content: center;
   background-color: #E1D8D8;
   right: 0;
   z-index:2;
-  display: none;
+  display: block;
   height: 100vh;
+  -webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+
 }
+
 .Sidebar ul{
 padding: 30px;
+}
+.Sidebar ul li .small-pop{
+  opacity: 0;
+  visibility: hidden;
+}
+.Sidebar ul li .small-pop a{
+  padding-bottom: 0;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 13px;
+}
+.Sidebar ul li:hover .small-pop {
+  opacity: 1;
+  visibility: visible;
+}
+.Sidebar ul li:hover i{
+  transform: rotate(178deg);
 }
 .Sidebar ul li a{
   color: #000;
@@ -180,6 +202,9 @@ padding: 30px;
 .header .wraper ul li:hover .small-pop{
 opacity: 1;
 visibility: visible;
+}
+.header .wraper ul li:hover i{
+  transform: rotate(178deg);
 }
 .header .small-pop h5 {
   font-size: 17px;
@@ -344,6 +369,13 @@ margin-right: 20px;
 }
 }
 @media (max-width:991px){
+  .barCode {
+    width: 220px;
+    height: 220px;
+}
+  .loginModal ul li {
+    margin-bottom: 17px;
+}
   .loginModal{
 width: 100%;
   }
@@ -375,6 +407,23 @@ width: 100%;
 }
 }
 @media (max-width:767px){
+  .loginModal a {
+    width: 210px;
+    margin-top: 25px;
+}
+.barCode {
+  width: 172px;
+  height: 172px;
+  padding: 15px;
+}
+  .loginModal h5 {
+    font-size: 20px;
+    margin-bottom: 23px;
+}
+.loginModal ul li{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
   .bb-box{
     margin-bottom: 30px;
   }
@@ -382,7 +431,7 @@ width: 100%;
     flex-wrap: wrap;
  overflow-y: auto;
  overflow-x: hidden;
- justify-content: center;
+
   }
   .barCode{
     margin: 20px auto 0 auto;

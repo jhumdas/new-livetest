@@ -8,7 +8,6 @@ import { Link, NavLink } from 'react-router-dom';
 import MobileSidebar from './MobileSidebar'
 import LoginModal from '../Component/Modal/LoginModal'
 import { useLocation } from 'react-router-dom';
-
 export default function Header() {
   const location = useLocation()
   const [modal, setModal] = useState(false);
@@ -16,10 +15,12 @@ export default function Header() {
     setModal(!modal)
   }
   const toggleSidebarOpen = () => {
-    document.getElementById('Sidebar').style.display = "block";
+    // document.getElementById('Sidebar').style.display = "block";
+    document.getElementById("Sidebar").classList.add("show-example");
   }
   const toggleSidebarClose = () => {
-    document.getElementById('Sidebar').style.display = "none";
+    // document.getElementById('Sidebar').style.display = "none";
+    document.getElementById("Sidebar").classList.remove("show-example");
 
 
   }
@@ -49,7 +50,7 @@ export default function Header() {
                 <li style={{position:"relative"}} className='explore'><a href="/#explore" className={location.hash == "#explore" ? "nav__link active" : "nav-link"}>EXPLORE <i class="fa-solid fa-angle-down"></i></a>
                   <div className='small-pop box-shadow' style={{top:"25px"}}>
                     <h5><Link to="/podcast"><img src={g} />Podcast</Link></h5>
-                    <h5><img src={s} />OTT</h5>
+                    <h5><Link to="/ott-home"><img src={s} />OTT</Link></h5>
                     <h5><img src={n} />Learning</h5>
 
                   </div>

@@ -10,9 +10,6 @@ function MusicPodcastlayout() {
             <div className='container'>
                 <SongSearch searchText="Search Song" />
                 <Outlet/>
-
-
-
             </div>
         </section>
     )

@@ -686,9 +686,16 @@ display: inline-block;
     top: 7px;
     height: 19px;
     width: 19px;
-
 }
-
+.searchInput{
+    width: 100%;
+    border: 1px solid #ced4da;
+    position: relative;
+}
+.searchInput input{
+    max-width: 90%;
+    border: 0;
+}
 .searchIcon img {
     width: 100%;
 }
@@ -814,6 +821,7 @@ display: inline-block;
 
     .from_icon_whish_cart_main {
         justify-content: end !important;
+        gap: 15px;
     }
 
     .shop_u_choice .shop_choice_list {
@@ -840,6 +848,9 @@ display: inline-block;
 }
 
 @media screen and (max-width:767px) {
+    .see_option{
+        margin-top: 0;
+    }
     .shop_dnm_bg .rgtCnt a{
         margin-top: 13px;
         font-size: 17px;
@@ -1014,9 +1025,18 @@ display: inline-block;
     .shop_best_selling_prdt_ftw .slick-next {
         right: 6% !important;
     }
+    .shop_best_selling_prdt {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
 }
 
 @media screen and (max-width:576px) {
+    .see_option_btn {
+     font-size: 19px;
+        line-height: 30px;
+        padding: 10px 15px
+    }
     h4.shop_facility_text {
         font-size: 18px;
         line-height: 23px;
@@ -1105,6 +1125,11 @@ display: inline-block;
 }
 
 @media screen and (max-width:480px) {
+    .from_icon_whish_cart_main{
+        flex-wrap: wrap;
+        justify-content: center !important;
+
+    }
     .best_selling_txt h2 {
         font-size: 22px;
         line-height: 27px;
@@ -1238,11 +1263,6 @@ display: inline-block;
         padding: 7px;
         color: #fff;
         font-size: 15px;
-    }
-
-    .shop_best_selling_prdt {
-        padding-top: 30px;
-        padding-bottom: 50px;
     }
 
     .best_selling_txt h2 {

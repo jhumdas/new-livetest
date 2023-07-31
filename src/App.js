@@ -18,6 +18,7 @@ import '../src/View/SelectSong/SelectSong.css'
 import '../src/View/SelectPlaylist/SelectPlaylist.css'
 import '../src/View/Music/Music.css'
 import '../src/View/Podcast/Podcast.css'
+import '../src/View/OTTHome/OTThome.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -43,55 +44,52 @@ import DownloadSong from '../src/View/DownloadSong/Index'
 import Music from '../src/View/Music/Index'
 import Podcast from '../src/View/Podcast/Index'
 import MusicPodcastlayout from './Layout/MusicPodcastlayout';
-
+import OTThome from '../src/View/OTTHome/Index'
 function App() {
 
 
 
   return (
     <React.Fragment>
-        <Router>
+      <Router>
 
 
-          <Routes>
-            <Route element={<MainLayout/>}>
-              <Route path="/" element={< Home />} />
-              <Route path="/about" element={< About />} />
-              <Route path="/news" element={< News />} />
-              <Route path="/newsdetails" element={<Newsdetails/>}/>
-              <Route path="/shop" element={<Shop/>}/>
-              <Route path="/single-product" element={<SingleProduct/>}/>
-              <Route path="/cart" element={<Cart/>}/>
-              <Route path="/wishlist" element={<Wishlist/>}/>
-              <Route path="/order" element={<Order/>}/>
-              <Route path="/review" element={<Review/>}/>
-              <Route path="/manage-address" element={<ManageAddress/>}/>
-              <Route path="/checkout" element={<Checkout/>}/>
-              <Route path="/category" element={<Category/>}/>
-              <Route path="/selectpodcast-detail" element={<SelectPodcastDetail/>}/>
-              <Route path="/select-song" element={<SelectSong/>}/>
-              <Route path="/select-playlist" element={<SelectPlaylist/>}/>
-             
-              <Route element={<MusicPodcastlayout/>}>
-              <Route path="/music" element={<Music/>}/>
-              <Route path="/music/favourite-song" element={<FavouriteSong/>}/>
-              <Route path="/music/download-song" element={<DownloadSong/>}/>
-              <Route path="/podcast" element={<Podcast/>}/>
-              <Route path="/podcast/favourite-podcast" element={<FavouritePodcast/>}/>
-              <Route path="/podcast/download-podcast" element={<DownloadPodcast/>}/>
+        <Routes>
+          <Route element={<MainLayout />}>
+            <Route path="/" element={< Home />} />
+            <Route path="/about" element={< About />} />
+            <Route path="/news" element={< News />} />
+            <Route path="/newsdetails" element={<Newsdetails />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/single-product" element={<SingleProduct />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/order" element={<Order />} />
+            <Route path="/review" element={<Review />} />
+            <Route path="/manage-address" element={<ManageAddress />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/category" element={<Category />} />
+            <Route path="/selectpodcast-detail" element={<SelectPodcastDetail />} />
+            <Route path="/select-song" element={<SelectSong />} />
+            <Route path="/select-playlist" element={<SelectPlaylist />} />
+            <Route path="/ott-home" element={<OTThome />} />
 
-
-
-
-
-
-              </Route>
+            <Route element={<MusicPodcastlayout />}>
+              <Route path="/music" element={<Music />} />
+              <Route path="/music/favourite-song" element={<FavouriteSong />} />
+              <Route path="/music/download-song" element={<DownloadSong />} />
+              <Route path="/podcast" element={<Podcast />} />
+              <Route path="/podcast/favourite-podcast" element={<FavouritePodcast />} />
+              <Route path="/podcast/download-podcast" element={<DownloadPodcast />} />
             </Route>
-          </Routes>
 
 
-        </Router>
-      </React.Fragment>
+          </Route>
+        </Routes>
+
+
+      </Router>
+    </React.Fragment>
   );
 }
 
