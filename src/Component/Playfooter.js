@@ -47,7 +47,7 @@ export default function Playfooter() {
                                     <span>1:25 / 10:00</span>
                                     <span className='h-vol'>Audio: High</span>
                                     <span><img src={s} /></span>
-                                    <input type="range" style={{ width: "99px", height: "9px" }}></input>
+                                    <input color='red' type="range" style={{ width: "99px", height: "9px" }}></input>
                                     <span><img src={b} /></span>
                                 </div>
                             </div>

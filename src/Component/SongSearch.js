@@ -20,7 +20,7 @@ export default function SongSearch(props) {
                             <input
                                 type="text"
                                 class="form-control searchInput"
-                                placeholder={searchText}
+                                placeholder={location.pathname.includes("/music")? "Search Song":"Search Products"}
                             ></input>
                             <div className="searchIcon">
                                 <img src={search} />
