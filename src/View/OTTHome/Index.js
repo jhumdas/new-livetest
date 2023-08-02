@@ -135,9 +135,7 @@ export default function Index() {
   };
   return (
     <>
-      <section className='Ott-home'>
-        <div className='container'>
-          <ProductSearch iconD={true} iconA={false} iconB={false} iconC={false} iconE={true} iconF={true} />
+ 
           <div className='mt-4 mb-4'>
             <div className=' podcastTab'>
               <button
@@ -220,13 +218,13 @@ export default function Index() {
                       <h2>New Released</h2>
                     </div>
                     <Slider {...settings3}>
-                      <div className='best_selling_product'>
+                     <Link to="/single-movie"> <div className='best_selling_product'>
                         <div className='best_selling_product_bg_img_txt'>
                           <div className='best_selling_product_bg'>
                             <img src={best_selling1} alt='/'></img>
                           </div>
                         </div>
-                      </div>
+                      </div></Link>
 
                       <div className='best_selling_product'>
                         <div className='best_selling_product_bg_img_txt'>
@@ -537,8 +535,7 @@ export default function Index() {
               <div></div>
             </div>
           </div>
-        </div>
-      </section>
+     
 
 
     </>

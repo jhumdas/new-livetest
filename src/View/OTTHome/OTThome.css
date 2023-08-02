@@ -1,7 +1,8 @@
 /***ott-home***/
-.best_selling_product_bg {
+.Ott-home{
     padding: 30px 0;
 }
+
 
 .Ott-home .best_selling_product_bg_img_txt {
     padding: 0;
@@ -41,6 +42,7 @@
     top: 41%;
     left: 50%;
     transform: inherit;
+    cursor: pointer;
 }
 .movie-screen h3{
     color: #FFF;
@@ -112,20 +114,24 @@ background: linear-gradient(133deg, #000 0%, rgba(0, 0, 0, 0.00) 100%),url(../..
 }
 .podcast-banner-slide.tvSeries .boxCnt {
     padding: 10px;
-    width: 109%;
+    width: 100%;
 }
 .podcast-banner-slide.tvSeries .box {
     height: 100%;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    justify-content: end;
 }
 .podcast-banner-slide.tvSeries .box p {
     margin: 6px 0;
 }
+.show-movie{
+    display: flex;
+}
 /***subscription***/
 .ott-subscription{
     background:linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, #000 100%), url(../../images/grpImage.png);
-    padding: 100px 30px 51px 30px;
+    padding: 260px 30px 51px 30px;
 }
 .ott-subscription .wrap{
 display: flex;
@@ -145,7 +151,6 @@ background: rgba(217, 217, 217, 0.00); */
 }
 .ott-subscription h3{
     color: #FFF;
-font-family: Plus Jakarta Sans;
 font-size: 28.525px;
 font-style: normal;
 font-weight: 600;
@@ -189,9 +194,156 @@ text-transform: capitalize;
     border-radius: 9.508px;
 border: 3.423px solid #FF003D;
 background: rgba(217, 217, 217, 0.00);
+margin-bottom: 20px;
 
 }
+.sub-btn{
+    border: 1px solid #FF3A44;
+    color: #FF3A44;
+font-family: Open Sans;
+font-size: 17.115px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.369px;
+text-transform: capitalize;
+width: 100%;
+display: block;
+text-align: center;
+padding: 10px;
+}
+/***download***/
+.watch-btn{
+    border-radius: 5px;
+background: rgba(255, 255, 255, 0.77);
+color: #000;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+width: 100%;
+display: block;
+text-align: center;
+padding: 10px;
+}
+.Ott-download-bg{
+    /* background: url(../../images/Rectangle\ 508.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 192px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.Ott-download-bg .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.ott-watch {
+    padding: 30px 0;
+}
+.ott-watch h3{
+    color: #000;
+font-family: Open Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 20px;
+}
+/***video-screen***/
+.videowrap{
+    position: relative;
+    color: #fff;
+  
+}
+.videowrap .top{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 15px 0 15px;
+}
+.videowrap .middle{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    top: 45%;
+    left: 39%;
+}
+.lftText{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.rgtText{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 21.2px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.696px;
+text-transform: capitalize;
+
+}
+.videowrap .bottom{
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-between; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 15px 20px 15px;
+    align-items: center;
+}
+.videowrap .rgtText img{
+    margin-right: 10px;
+}
+@media (max-width:991px){
+    .lftText {
+        font-size: 20px;
+    }  
+    .videowrap .bottom img{
+        width: 26px;
+        height: 26px;
+    }
+    .videowrap .middle img{
+        width: 40px;
+        height: 40px;
+    }
+    .videowrap .middle img.v-rgt-arrow{
+
+        width: 23px;
+        height: 23px;
+    
+    }
+    .rgtText {
+
+        font-size: 16px;
+    } 
+    .rgtText img{
+        width: 40px;
+        height: 40px;
+    } 
+}
 @media (max-width:767px){
+    .Ott-download-bg{
+        margin-bottom: 30px;
+    }
     .movie-screen {
         height: 430px;
     }
@@ -215,4 +367,73 @@ font-size: 12px;
     .movie-screen{
         padding-left: 15px;
     }
+}
+@media (max-width:480px){
+    .videowrap .bottom img {
+        width: 20px;
+        height: 20px;
+    }
+    .videowrap .bottom {
+
+        gap: 5px;
+      
+        padding: 0 10px 20px 10px;
+
+    }
+    .videowrap .bottom h6{
+        font-size: 12px;
+    }
+    .videowrap .middle{
+        gap: 20px;
+        left: 32%;
+    }
+    .videowrap .middle img {
+        width: 28px;
+        height: 28px;
+    }
+    .videowrap .middle img.v-rgt-arrow {
+        width: 16px;
+        height: 16px;
+    }
+    .videowrap .top {
+        padding: 20px 10px 0 10px;
+    }
+    .rgtText {
+
+        font-size: 10px;
+    } 
+    .rgtText img{
+        width: 20px;
+        height: 20px;
+    } 
+    .lftText {
+        font-size: 12px;
+    }
+    .movie-screen .show-movie img {
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+    }
+    .show-movie{
+       flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .ott-subscription h3 {
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+    .ott-subscription h6 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .ott-subscription h2 {
+        font-size: 26px;
+    } 
+    .ott-subscription h5 {
+        font-size: 15px;
+    }  
+    .ott-subscription {
+        
+        padding: 40px 15px 15px 15px;
+    } 
 }

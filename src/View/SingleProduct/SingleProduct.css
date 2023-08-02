@@ -19,9 +19,9 @@
     position: relative;
 }
 
-.single_product .single_product_img_main1 img {
+/* .single_product .single_product_img_main1 img {
     border: 1px solid #D9D9D9;
-}
+} */
 
 .single_product .best_selling_product_icon {
     position: absolute;

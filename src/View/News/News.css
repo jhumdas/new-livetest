@@ -1,7 +1,4 @@
-.today_news {
-    padding-top: 40px;
-    padding-bottom: 52px;
-}
+
 
 .tdnews h5 {
     color: #000;
@@ -69,7 +66,14 @@ h5.tds_news_sld_txt_tdh {
     padding-bottom: 17px;
 
 }
-
+.news_local_txt h4{
+    color: #000;
+font-family: Open Sans;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
 .news_local_news {
     padding-top: 20px;
     padding-bottom: 30px;

@@ -113,7 +113,7 @@ export default function Index() {
         <>
             <section className='shop_page_product_search'>
                 <div className='container'>
-                    <ProductSearch/>
+                    <ProductSearch searchText="Search Product"/>
                 </div>
             </section>
             <section className='shop_bg'>

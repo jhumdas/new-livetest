@@ -48,6 +48,10 @@ import OTThome from '../src/View/OTTHome/Index'
 import SingleMovie from '../src/View/OTTHome/SingleMovie'
 import SingleTvSeries from '../src/View/OTTHome/SingleTVseries'
 import Subscription from '../src/View/OTTHome/Subscription'
+import OTTLayout from './Layout/OTTLayout';
+import OTTDownload from '../src/View/OTTHome/OTTDowmload'
+import OTTWatchlist from '../src/View/OTTHome/OTTWatchlist'
+import VideoScreen from './View/OTTHome/VideoScreen';
 function App() {
 
 
@@ -75,10 +79,10 @@ function App() {
             <Route path="/selectpodcast-detail" element={<SelectPodcastDetail />} />
             <Route path="/select-song" element={<SelectSong />} />
             <Route path="/select-playlist" element={<SelectPlaylist />} />
-            <Route path="/ott-home" element={<OTThome />} />
             <Route path="/single-movie" element={<SingleMovie />} />
             <Route path="/singleTv-series" element={<SingleTvSeries />} />
-            <Route path="/subscription" element={<Subscription />} />
+            <Route path="/video-screen" element={<VideoScreen />} />
+      
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />
@@ -88,6 +92,13 @@ function App() {
               <Route path="/podcast/favourite-podcast" element={<FavouritePodcast />} />
               <Route path="/podcast/download-podcast" element={<DownloadPodcast />} />
             </Route>
+            <Route element={<OTTLayout />}>
+              <Route path="/ott-home" element={<OTThome />} />
+              <Route path="/subscription" element={<Subscription />} />
+              <Route path="/ott-download" element={<OTTDownload />} />
+              <Route path="/ott-watchlist" element={<OTTWatchlist />} />
+            </Route>
+
 
 
           </Route>

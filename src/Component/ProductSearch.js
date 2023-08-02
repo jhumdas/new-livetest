@@ -8,7 +8,7 @@ import icon5 from '../images/pepicons-pencil_crown.png';
 import icon6 from '../images/bi_download.png';
 import { Link } from 'react-router-dom';
 export default function ProductSearch(props) {
-  const { iconA = true, iconB = true, iconC = true, iconD = false, iconE = false, iconF = false } = props;
+  const { searchText ,iconA = true, iconB = true, iconC = true, iconD = false, iconE = false, iconF = false } = props;
   return (
     <>
       <div className="row">
@@ -23,7 +23,7 @@ export default function ProductSearch(props) {
               <input
                 type="text"
                 class="form-control"
-                placeholder="Search for products"
+                placeholder={searchText}
               ></input>
               <div className="searchIcon">
                 <img src={search} />
@@ -49,17 +49,17 @@ export default function ProductSearch(props) {
               </Link>
             </div>}
             {iconD && <div className="from_icon_whish_cart1">
-              <Link to="">
+              <Link to="/ott-watchlist">
                 <img src={icon4} alt="" />
               </Link>
             </div>}
             {iconE && <div className="from_icon_whish_cart1">
-              <Link to="">
+              <Link to="/subscription">
                 <img src={icon5} alt="" />
               </Link>
             </div>}
             {iconF && <div className="from_icon_whish_cart1">
-              <Link to="">
+              <Link to="ott-download">
                 <img src={icon6} alt="" />
               </Link>
             </div>}

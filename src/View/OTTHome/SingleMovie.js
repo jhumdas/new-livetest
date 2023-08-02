@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -91,13 +92,13 @@ export default function SingleMovie() {
                                 <h2>More Suggestion</h2>
                             </div>
                             <Slider {...settings3}>
-                                <div className='best_selling_product'>
-                                    <div className='best_selling_product_bg_img_txt'>
+                               <Link to="/singleTv-series"> <div className='best_selling_product'>
+                                     <div className='best_selling_product_bg_img_txt'>
                                         <div className='best_selling_product_bg'>
                                             <img src={best_selling1} alt='/'></img>
                                         </div>
                                     </div>
-                                </div>
+                                </div></Link>
 
                                 <div className='best_selling_product'>
                                     <div className='best_selling_product_bg_img_txt'>

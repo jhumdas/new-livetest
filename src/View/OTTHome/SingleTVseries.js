@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,11 +8,11 @@ import a from '../../images/iconoir_movie.png'
 import b from '../../images/video-icon.png'
 import z from '../../images/ppp.png'
 export default function SingleTVseries() {
-    const loop = [1, 2, 3, 4, 5,6,7];
+    const loop = [1, 2, 3, 4, 5, 6, 7];
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
-      setToggleState(index);
+        setToggleState(index);
     };
     var settings1 = {
         dots: false,
@@ -20,40 +21,40 @@ export default function SingleTVseries() {
         speed: 500,
         slidesToShow: 4.10,
         slidesToScroll: 1,
-    
+
         responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 4
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
             }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1
-            }
-          }
         ]
-      };
+    };
     return (
         <>
 
@@ -73,7 +74,7 @@ export default function SingleTVseries() {
                             <span className="v-line" />
                             <span>2017</span>
                         </div>
-                        <div className='d-flex' style={{ alignItems: "center" }}>
+                        <div className='show-movie' style={{ alignItems: "center" }}>
                             <h6><img src={a} />Watch TV Show</h6>
                             <a className='movie-btn ml-3'><img src={c} />Subscribe now</a>
                             <h6 className='ml-3'><img src={z} />Add to watchlist</h6>
@@ -104,7 +105,7 @@ export default function SingleTVseries() {
                                 className={toggleState === 1 ? "podcast_tab active_episode_tab" : "podcast_tab"}
                                 onClick={() => toggleTab(1)}
                             >
-                                All
+                              Season 1
                             </button>
 
 
@@ -112,38 +113,27 @@ export default function SingleTVseries() {
                                 className={toggleState === 2 ? "podcast_tab active_episode_tab" : "podcast_tab"}
                                 onClick={() => toggleTab(2)}
                             >
-                                Movies
+                                Season 2
                             </button>
                             <button
                                 className={toggleState === 3 ? "podcast_tab active_episode_tab" : "podcast_tab"}
                                 onClick={() => toggleTab(3)}
                             >
-                                Tv shows
+                               Season 3
                             </button>
                             <button
                                 className={toggleState === 4 ? "podcast_tab active_episode_tab" : "podcast_tab"}
                                 onClick={() => toggleTab(4)}
                             >
-                                Action
+                                Season 4
                             </button>
                             <button
                                 className={toggleState === 5 ? "podcast_tab active_episode_tab" : "podcast_tab"}
                                 onClick={() => toggleTab(5)}
                             >
-                                Drama
+                                Season 5
                             </button>
-                            <button
-                                className={toggleState === 6 ? "podcast_tab active_episode_tab" : "podcast_tab"}
-                                onClick={() => toggleTab(6)}
-                            >
-                                Romance
-                            </button>
-                            <button
-                                className={toggleState === 7 ? "podcast_tab active_episode_tab" : "podcast_tab"}
-                                onClick={() => toggleTab(7)}
-                            >
-                                Crime
-                            </button>
+                         
 
 
                         </div>
@@ -155,15 +145,18 @@ export default function SingleTVseries() {
                                     <Slider {...settings1}>
                                         {loop.map((item, index) => {
                                             return (
-                                                <div className='podcast-banner-slide tvSeries'>
+                                               <Link to="/video-screen"> <div className='podcast-banner-slide tvSeries'>
                                                     <div className='box'>
+                                                        <div className="">
+                                                            <img src={b} style={{height:"40px",width:"40px"}}/>
+                                                        </div>
                                                         <div className='boxCnt'>
-                                                            <div className='d-flex' style={{justifyContent:"space-between"}}><p>Episode 1</p><p>01:05:00</p></div>
+                                                            <div className='d-flex' style={{ justifyContent: "space-between" }}><p>Episode 1</p><p>01:05:00</p></div>
                                                             <p>Lorem ipsum dolor sit amet consectetur. Nulla interdum dictum faucibus nullam nibh fringilla amet at.</p>
-                                                          
+
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div></Link>
                                             )
                                         }
 

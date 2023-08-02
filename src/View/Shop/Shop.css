@@ -393,10 +393,10 @@ line-height: normal;
 margin-top: 30px;
 display: inline-block;
 }
-.shop_best_selling_prdt_ftw {
+/* .shop_best_selling_prdt_ftw {
     padding-top: 87px;
     padding-bottom: 90px;
-}
+} */
 
 .shop_best_selling_prdt_ftw .slick-slide img {
     width: 100%;
