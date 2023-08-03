@@ -19,6 +19,7 @@ import '../src/View/SelectPlaylist/SelectPlaylist.css'
 import '../src/View/Music/Music.css'
 import '../src/View/Podcast/Podcast.css'
 import '../src/View/OTTHome/OTThome.css'
+import '../src/View/Learning/Learning.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -52,6 +53,8 @@ import OTTLayout from './Layout/OTTLayout';
 import OTTDownload from '../src/View/OTTHome/OTTDowmload'
 import OTTWatchlist from '../src/View/OTTHome/OTTWatchlist'
 import VideoScreen from './View/OTTHome/VideoScreen';
+import LearningLayout from './Layout/LearningLayout';
+import Learning from '../src/View/Learning/Index'
 function App() {
 
 
@@ -82,7 +85,7 @@ function App() {
             <Route path="/single-movie" element={<SingleMovie />} />
             <Route path="/singleTv-series" element={<SingleTvSeries />} />
             <Route path="/video-screen" element={<VideoScreen />} />
-      
+
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />
@@ -99,7 +102,9 @@ function App() {
               <Route path="/ott-watchlist" element={<OTTWatchlist />} />
             </Route>
 
-
+            <Route element={<LearningLayout />}>
+            <Route path="/learning" element={<Learning />} />
+            </Route>
 
           </Route>
         </Routes>

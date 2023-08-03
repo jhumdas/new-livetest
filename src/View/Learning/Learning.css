@@ -1,0 +1,144 @@
+.Learning {
+    padding: 30px 0;
+}
+
+.cart-number {
+    border-radius: 29px;
+    background: #FF3A44;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    line-height: 20px;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+}
+.podcast-banner-slide.learning-home{
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%),url(../../images/Rectangle512.png);
+    height: 427px;
+}
+.podcast-banner-slide.learning-home h3{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.podcast-banner-slide.learning-home p{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+}
+.popular-course .box{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+.popular-course .box img{
+    width: 100%;
+}
+.popular-course h2{
+    color: #000;
+font-family: Open Sans;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 30px;
+}
+.popCourse-boxCnt h4{
+    color: #000;
+font-family: Open Sans;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin: 10px 0;
+
+/* height: 65px;
+overflow: hidden; */
+
+}
+.popCourse-boxCnt h5{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 0;
+}
+.popCourse-boxCnt h6{
+    color: #25333A;
+font-family: Open Sans;
+font-size: 19.166px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin: 12px 0;
+}
+.popCourse-boxCnt h6 i{
+    color: #EB830D;
+    margin: 0 5px;
+}
+.popCourse-boxCnt h3{
+    color: #005C8F;
+font-family: Open Sans;
+font-size: 31px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2.48px;
+text-transform: capitalize;
+}
+.dream-job{
+padding: 50px 0;
+}
+.dream-job .box{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+padding: 10px;
+
+}
+.dream-job .box .imge{
+    padding-right: 30px;
+}
+.m-dot.Lcourse{
+    background-color: #263238;
+}
+.dream-job .popCourse-boxCnt{
+    padding-right: 30px;
+}
+.dream-job .popCourse-boxCnt h5 {
+
+    font-size: 18px;
+}
+@media (max-width:991px){
+    .popCourse-boxCnt h4 {
+        font-size: 22px;
+    }
+    .popCourse-boxCnt h6 {
+        font-size: 14px;
+    }
+    .popCourse-boxCnt h3 {
+
+        font-size: 24px;
+    }
+}
+@media (max-width:767px){
+    .popular-course .box{
+        margin-bottom: 30px;
+    }
+}

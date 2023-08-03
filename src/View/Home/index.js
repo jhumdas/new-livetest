@@ -2,7 +2,7 @@ import React from 'react'
 import a from "../../images/pana2.png"
 import b from '../../images/Vector 6.png'
 import c from '../../images/pana.png'
-import d from '../../images/bro.png'
+import d from '../../images/Charity-cuate 1.82a746d10aacb163d065.png'
 import e from '../../images/pana3.png'
 import f from '../../images/pana4.png'
 import g from '../../images/rafiki.png'
@@ -28,17 +28,18 @@ export default function index() {
                 </h3>
                 <ul>
                   <li>
+                    <span>
                     Get involved, showcase or join communities and Projects
 
+                    </span>
+                  </li>
+                  <li>
+                    <span>Contribute to growth content that helps others prosper and grow</span>
+
 
                   </li>
                   <li>
-                    Contribute to growth content that helps others prosper and grow
-
-
-                  </li>
-                  <li>
-                    Earn Loyalty points and Donate to projects of your choice
+                   <span> Earn Loyalty points and Donate to projects of your choice</span>
 
 
                   </li>
@@ -85,7 +86,7 @@ export default function index() {
           </div>
         </div>
       </section>
-
+      <About />
       <section className='zigzag donation'>
         <div className='cust-container'>
           <div className='row' style={{ alignItems: "center" }}>
@@ -143,34 +144,35 @@ export default function index() {
           </div>
         </div>
       </section>
+      <Gallery />
       <section className='zigzag'>
         <div className='cust-container'>
           <div className='row' style={{ alignItems: "center" }}>
 
             <div className='col-lg-6 col-md-6 col-12 orderTwo'>
               <div className='right'>
-                <h3>Manage Your selling item to be more organised</h3>
+                <h3>Together we make a bigger difference</h3>
                 <ul>
                   <li>
-                  Investing in Transformative Change through Community, Social & Impact Investment. 
+                 <span>Investing in Transformative Change through Community, Social & Impact Investment. </span> 
 
                    
                   </li>
                   <li>
-                  Community – use our platform to create online virtual communities and talks / showcases 
+                 <span> Community – use our platform to create online virtual communities and talks / showcases 
 
-                   
+                 </span>
                   </li>
                   <li>
-                  Create new social and impact investing initiatives
+                 <span> Create new social and impact investing initiatives
 
-                  
+                 </span>
                   </li>
-                  <li>
+                  <li><span>
                   Be part of the one of the biggest personal and business growth platforms which rewards you for making a difference
 
 
-                  
+                  </span>
                   </li>
                   <a href="#" className='exploreBtn'>Explore</a>
                 </ul>
@@ -254,8 +256,8 @@ export default function index() {
         </div>
       </section> */}
 
-      <About />
-      <Gallery />
+
+
       <Faq />
       <Application />
       <Newsletter />

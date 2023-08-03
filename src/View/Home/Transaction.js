@@ -12,7 +12,7 @@ export default function Transaction() {
                         <div className='topPart'>
                             <div className='row' style={{ alignItems: "center" }}>
                                 <div className='col-md-8 col-12'>
-                                    <h2>Safe & Convenient<br /> transaction</h2>
+                                    <h2>Create enhanced<br /> impact and Legacies</h2>
                                 </div>
                                 <div className='col-md-4 col-12'>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>

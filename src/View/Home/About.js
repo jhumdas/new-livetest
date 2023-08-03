@@ -8,7 +8,7 @@ export default function About() {
                     <div>
                         <h2>About Bushido</h2>
                         <p>
-                        Is a global community of like-minded souls who want to expand and grow, we provide a range of tools and services to help everyone prosper and shift from the norm to extraordinary growth. 
+                        Bushido is a global community of like-minded souls who want to expand and grow, we provide a range of tools and services to help everyone prosper and shift from the norm to extraordinary growth. 
 
                         </p>
                         <a className='read-more'>Read More</a>

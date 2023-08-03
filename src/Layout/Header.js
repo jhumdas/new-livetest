@@ -51,7 +51,7 @@ export default function Header() {
                   <div className='small-pop box-shadow' style={{top:"25px"}}>
                     <h5><Link to="/podcast"><img src={g} />Podcast</Link></h5>
                     <h5><Link to="/ott-home"><img src={s} />OTT</Link></h5>
-                    <h5><img src={n} />Learning</h5>
+                    <h5><Link to="/learning"><img src={n} />Learning</Link></h5>
 
                   </div>
                 </li>

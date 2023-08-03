@@ -6,9 +6,10 @@ import icon3 from '../images/cart.png';
 import icon4 from '../images/threeplus.png';
 import icon5 from '../images/pepicons-pencil_crown.png';
 import icon6 from '../images/bi_download.png';
+import icon7 from '../images/fluent_hat-graduation-16-regular.png';
 import { Link } from 'react-router-dom';
 export default function ProductSearch(props) {
-  const { searchText ,iconA = true, iconB = true, iconC = true, iconD = false, iconE = false, iconF = false } = props;
+  const { searchText ,iconA = true, iconB = true, iconC = true, iconD = false, iconE = false, iconF = false ,iconG=false} = props;
   return (
     <>
       <div className="row">
@@ -64,7 +65,11 @@ export default function ProductSearch(props) {
               </Link>
             </div>}
 
-
+            {iconG && <div className="from_icon_whish_cart1">
+              <Link to="ott-download">
+                <img src={icon7} alt="" />
+              </Link>
+            </div>}
           </div>
         </div>
       </div>

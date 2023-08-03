@@ -12,7 +12,7 @@ export default function Footer() {
           <div className='wrap'>
             <div className='leftBox'>
               <img src={logo} />
-              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+              <p>Bushido is a global community of like-minded souls who want to expand and grow, we provide a range of tools and services to help everyone prosper and shift from the norm to extraordinary growth. </p>
               <span>Copyright © All rights reserved</span>
             </div>
             <div className='rgtBox'>
