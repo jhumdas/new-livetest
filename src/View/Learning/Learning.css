@@ -21,6 +21,8 @@
 .podcast-banner-slide.learning-home{
     background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%),url(../../images/Rectangle512.png);
     height: 427px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .podcast-banner-slide.learning-home h3{
     color: #FFF;
@@ -46,7 +48,7 @@ font-weight: 600;
 .popular-course .box img{
     width: 100%;
 }
-.popular-course h2{
+.popular-headline{
     color: #000;
 font-family: Open Sans;
 font-size: 25px;
@@ -54,6 +56,24 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 margin-bottom: 30px;
+}
+.topicBtn{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+.topicBtn .btn{
+    display: flex;
+width: 200px;
+height: 70px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+border: 1px solid #000;
+white-space: nowrap;
+margin-bottom: 10px;
 }
 .popCourse-boxCnt h4{
     color: #000;
@@ -80,7 +100,7 @@ overflow: hidden; */
 .popCourse-boxCnt h6{
     color: #25333A;
 font-family: Open Sans;
-font-size: 19.166px;
+font-size: 16;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -93,16 +113,14 @@ margin: 12px 0;
 .popCourse-boxCnt h3{
     color: #005C8F;
 font-family: Open Sans;
-font-size: 31px;
+font-size: 25px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 2.48px;
 text-transform: capitalize;
 }
-.dream-job{
-padding: 50px 0;
-}
+
 .dream-job .box{
     display: flex;
     align-items: center;
@@ -114,6 +132,12 @@ padding: 10px;
 }
 .dream-job .box .imge{
     padding-right: 30px;
+    width: 362px;
+    height: 284px;
+}
+.dream-job .box .imge img{
+    width: 100%;
+    height: 100%;
 }
 .m-dot.Lcourse{
     background-color: #263238;
@@ -123,9 +147,17 @@ padding: 10px;
 }
 .dream-job .popCourse-boxCnt h5 {
 
-    font-size: 18px;
+    font-size: 16px;
 }
 @media (max-width:991px){
+    .dream-job .box .imge{
+        margin: 0 auto;
+        padding-right: 0;
+
+    }
+    .dream-job .box{
+        flex-wrap: wrap;
+    }
     .popCourse-boxCnt h4 {
         font-size: 22px;
     }
@@ -138,7 +170,31 @@ padding: 10px;
     }
 }
 @media (max-width:767px){
+    .podcast-banner-slide.learning-home {
+     
+        height: 264px;
+    }
+    .podcast-banner-slide.learning-home .boxCnt{
+   
+            padding: 0 15px;
+            width: 100%;
+        
+    }
+    .podcast-banner-slide.learning-home h3 {
+
+        font-size: 24px;
+    }
+    .podcast-banner-slide.learning-home p {
+
+        font-size: 14px;
+    }
     .popular-course .box{
         margin-bottom: 30px;
+    }
+    .dream-job .popCourse-boxCnt h5 strong{
+        flex-wrap: wrap;
+    }
+    .dream-job .popCourse-boxCnt h5 span{
+        display: block;
     }
 }

@@ -6,6 +6,17 @@
 box-shadow: 4px 0px 13px 0px rgba(0, 0, 0, 0.11);
 padding: 30px;
 }
+.category .sidewrap .card-block{
+  padding: 0;
+}
+.category .sidewrap span{
+  color: #716E6E;
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 .shoe{
     border-radius: 10px;
     border: 1px solid #000;
@@ -59,9 +70,13 @@ line-height: normal;
 .category .form-check{
 margin: 15px 0;
 padding-left: 0;
+
 }
 
- 
+.all_course.category .form-check{
+  display: flex;
+justify-content: space-between;
+}
 .range-slide {
     position: relative;
     height: 4px;

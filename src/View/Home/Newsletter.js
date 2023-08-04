@@ -7,7 +7,8 @@ export default function Newsletter() {
             <section className='newsletter'>
                 <div className='container'>
                     <h3>Newsletter Subscription</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Enim adipiscing elementum scelerisque ultrices maecenas suspendisse. Dui aliquam sollicitudin augue non enim eros </p>
+                    <p>Sign up to our global newsletter where we will showcase projects and people who truly make a difference, learn about our progress and network with others. 
+ </p>
                     <div className='mailBox'>
                         <input type="email" placeholder='Type your Email address'></input>
                         <a href="#" className='subscription'>Subscription</a>
