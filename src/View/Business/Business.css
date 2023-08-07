@@ -1,3 +1,7 @@
+.business_home {
+    padding-top: 30px;
+}
+
 .podcastTab_explr_btn {
     display: flex;
     align-items: center;
@@ -194,8 +198,234 @@ p.business_available_txt_ppp {
     padding-top: 10px;
 }
 
+/**** business_all_companies ****/
+h4.business_companies_txt {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+}
 
+.business_companies_brdr_main {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
+.business_companies_brdr {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 50px;
+}
+
+.business_companies_brdr_img {
+    width: 42px;
+    height: 43px;
+}
+
+.business_companies_brdr_img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.business_companies_brdr_img_txt_date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.companies_amount_percentage {
+    margin-left: 28px;
+    margin-top: 20px;
+}
+
+p.business_companies_brdr_txt_ppp {
+    margin-left: 10px;
+}
+
+.business_companies_brdr_img_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.companies_graph_brdr {
+    background: linear-gradient(360deg, #1faf389e 0%, rgba(217, 217, 217, 0.00) 100%);
+    border-radius: 0px 0px 20px 20px;
+
+    padding-top: 30px;
+}
+
+.business_companies_brdr_main .slick-slide {
+    padding: 10px;
+}
+
+.business_companies_brdrpadding {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.companies_graph_brdr svg {
+    width: 100%;
+    height: auto;
+}
+
+p.business_companies_brdr_txt_ppp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+p.business_companies_brdr_date_txt {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+span.companies_amount_percentage_amnt {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+span.companies_amount_percentage_amnt_percentage {
+    color: #2EC914;
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-left: 20px;
+}
+
+.business_companies_brdr_main .slick-prev:before {
+    content: '\f104' !important;
+    border-radius: 59px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: FontAwesome !important;
+    font-size: 28px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: rgb(0, 0, 0) !important;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+.business_companies_brdr_main .slick-prev {
+    left: -15px;
+    z-index: 2;
+}
+
+.business_companies_brdr_main .slick-next {
+    right: 8px;
+
+}
+
+.business_companies_brdr_main .slick-next:before {
+    content: '\f105' !important;
+    border-radius: 59px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: FontAwesome !important;
+    font-size: 28px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: rgb(0, 0, 0) !important;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+/**** business_Gainers_companies  ****/
+.business_companies_hhead_btn {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn_mdm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #263238;
+    font-size: 15px;
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn_mdm:hover {
+    color: #fff;
+    background: #263238;
+    text-decoration: none;
+}
+
+.btn_mdm i {
+    margin-left: 5px;
+}
+
+/* .btn_mdm i:hover {
+    transform: rotate(178deg);
+} */
+/**** business_loosers_companies  ****/
+.companies_graph_brdr_rd {
+    border-radius: 0px 0px 20px 20px;
+    background: linear-gradient(360deg, #f44336e8 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+.btn_mdm_list {
+    border-radius: 5px 5px 4px 5px;
+    border-top: 1px solid rgba(38, 50, 56, 0.50);
+    border-right: 1px solid rgba(38, 50, 56, 0.50);
+    border-left: 1px solid rgba(38, 50, 56, 0.50);
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    border-bottom: 1px solid rgba(38, 50, 56, 0.50);
+}
+.btn_mdm_list_total{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.business_companies_brdr_main {
+    position: relative;
+}
+ul.btn_mdm_list {
+    position: absolute;
+    z-index: 9;
+    width: 130px;
+}
+/* .hhead_btn_mdm {
+    position: absolute;
+    right: 0;
+    z-index: 9;
+} */
 @media(max-Width:1199px) {}
 
 @media(max-Width:991px) {
@@ -221,10 +451,12 @@ p.business_available_txt_ppp {
         font-size: 16px;
         line-height: 21px;
     }
+
     h5.business_available_txt_hhh {
         font-size: 18px;
         line-height: 24px;
     }
+
     p.business_available_txt_ppp {
         font-size: 21px;
         line-height: 26px;
@@ -239,6 +471,31 @@ p.business_available_txt_ppp {
         line-height: 20px;
         padding: 12px 20px;
     }
+
+    p.business_companies_brdr_txt_ppp {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    p.business_companies_brdr_date_txt {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    span.companies_amount_percentage_amnt {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    span.companies_amount_percentage_amnt_percentage {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .business_companies_brdr_img {
+        width: 37px;
+        height: 37px;
+    }
 }
 
 @media(max-Width:480px) {
@@ -246,11 +503,13 @@ p.business_available_txt_ppp {
         font-size: 16px;
         line-height: 22px;
     }
+
     p.business_available_txt_ppp {
         font-size: 18px;
         line-height: 22px;
         padding-top: 6px;
     }
+
     .business_mny_btn {
         font-size: 14px;
         line-height: 18px;
@@ -274,45 +533,93 @@ p.business_available_txt_ppp {
         padding-bottom: 35px;
 
     }
+
     h5.business_available_txt_hhh {
         font-size: 14px;
         line-height: 18px;
     }
+
     .business_available_txt_main {
         padding-top: 18px;
         padding-bottom: 18px;
         padding-left: 18px;
         padding-right: 18px;
     }
+
     p.business_available_txt_ppp {
         font-size: 16px;
         line-height: 21px;
         padding-top: 5px;
     }
+
     .business_mny_btn {
         font-size: 14px;
         line-height: 18px;
         padding: 6px 9px;
     }
-    
+
+    p.business_companies_brdr_txt_ppp {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    p.business_companies_brdr_date_txt {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    span.companies_amount_percentage_amnt {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    span.companies_amount_percentage_amnt_percentage {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
 }
-@media (max-width:350px){
+
+@media (max-width:350px) {
     .business_available_txt_main {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     h5.business_available_txt_hhh {
         font-size: 13px;
         line-height: 17px;
     }
+
     p.business_available_txt_ppp {
         font-size: 15px;
         line-height: 19px;
         padding-top: 4px;
     }
+
     .business_mny_btn {
         font-size: 13px;
         line-height: 17px;
         padding: 5px 7px;
+    }
+
+    p.business_companies_brdr_txt_ppp {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    p.business_companies_brdr_date_txt {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    span.companies_amount_percentage_amnt {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    span.companies_amount_percentage_amnt_percentage {
+        font-size: 15px;
+        line-height: 20px;
     }
 }
