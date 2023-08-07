@@ -108,15 +108,15 @@ export default function Index() {
                         <h2 className='popular-headline'>Most Popular Course</h2>
                         <div className='row'>
                             <div className='col-lg-4 col-md-4 col-12'>
-                                <div className='box'>
+                               <Link to="/single-course"> <div className='box'>
                                     <img src={a} />
                                     <div className='popCourse-boxCnt'>
                                         <h4>Designing Course</h4>
                                         <h5>Phillip Press</h5>
-                                        <h6>4.9<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>( 50k)</h6>
+                                        <h6>4.9<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>( 50k)20,000 students</h6>
                                         <h3>$500</h3>
                                     </div>
-                                </div>
+                                </div></Link>
                             </div>
                             <div className='col-lg-4 col-md-4 col-12'>
                                 <div className='box'>
@@ -198,15 +198,15 @@ export default function Index() {
                     <div className='all_course category'>
                         <h2 className='popular-headline'>All Courses</h2>
                         <div className='row'>
-                            <div className='col-lg-3 col-md-3 col-12'>
+                            <div className='col-lg-3 col-md-5 col-12'>
                                 <div className='sidewrap'>
 
                                     <div className='pop-select'>
-                                        <label>Short by :</label>
+                                        <span>Short by :</span>
                                         <select multiple="" className="form-control" id="exampleFormControlSelect2">
                                             <option>Most Popular</option>
-                                            <option>Most Popular</option>
-                                            <option>Most Popular</option>
+                                            <option>Most Popular2</option>
+                                            <option>Most Popular3</option>
                                           
                                         </select>
 
@@ -769,7 +769,7 @@ export default function Index() {
 
                                 </div>
                             </div>
-                            <div className='col-lg-9 col-md-9 col-12'>
+                            <div className='col-lg-9 col-md-7 col-12'>
                                 <div className='dream-job course'>
                                     <div className='box'>
                                         <div className='imge'>

@@ -150,16 +150,145 @@ padding: 10px;
 .pop-select{
     display: flex;
     border: 1px solid #000;
-    color: #000;
-font-family: Open Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+align-items: center;
 
+}
+.category .sidewrap .pop-select span{
+    padding-left: 4px;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.pop-select .form-control{
+width: 64%;
+font-size: 14px;
 }
 .pop-select select{
     border: 0;
+}
+/****single-course****/
+.single-course{
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%),url(../../images/course.png);
+    height: 427px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.single-course .box{
+    display: flex;
+    gap: 50px;
+    color: #fff;
+    align-items: center;
+    height: 100%;
+}
+.single-course .box h3{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 10px;
+}
+.single-course .rgtImg{
+    border-radius: 10px;
+background: #FFF;
+border: 10px solid;
+position: relative;
+}
+.single-course .rgtImg .videoIcon {
+    position: absolute;
+    top: 43%;
+    left: 42%;
+    transform: inherit;
+}
+.single-course .box p{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-bottom: 20px;
+}
+.single-course .box h6{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.28px;
+text-transform: capitalize;
+padding-bottom: 30px;
+}
+.single-course .box h6 img{
+    margin-right: 10px;
+}
+.single-course .box h6 span{
+    color: #eb830d;
+    margin: 0 7px;
+
+}
+.single-course .box h6 span i{
+    padding: 0 3px;
+}
+.courseBtn{
+    background: #FFF;
+    color: #000;
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.92px;
+padding: 10px 20px;
+}
+.course-fee-btn{
+    border: 1px solid #FFF;
+    color: #FFF;
+font-family: Open Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 2.08px;
+padding: 10px 20px;
+margin-left: 10px;
+}
+.you-learn{
+    border: 1px solid #000;
+    max-width: 80%;
+    padding: 15px;
+}
+.you-learn h4{
+    color: #000;
+font-family: Open Sans;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.75px;
+margin-bottom:20px;
+}
+.you-learn ul{
+    display: flex;
+    justify-content: space-between;
+}
+.you-learn ul li{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    margin-bottom: 20px;
+}
+.you-learn ul li i{
+    margin-right: 10px;
 }
 @media (max-width:991px){
     .dream-job .box .imge{
@@ -182,6 +311,9 @@ line-height: normal;
     }
 }
 @media (max-width:767px){
+    .pop-select .form-control {
+        width: 80%;
+    }
     .popCourse-boxCnt h3 {
         font-size: 19px;
     }

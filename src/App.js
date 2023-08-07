@@ -58,6 +58,7 @@ import LearningLayout from './Layout/LearningLayout';
 import Learning from '../src/View/Learning/Index';
 import BusinessLayout from './Layout/BusinessLayout';
 import Businesshome from '../src/View/Business/Index';
+import SingleCourse from './View/Learning/SingleCourse';
 
 function App() {
 
@@ -109,6 +110,7 @@ function App() {
 
             <Route element={<LearningLayout />}>
               <Route path="/learning" element={<Learning />} />
+              <Route path="/single-course" element={<SingleCourse />} />
             </Route>
 
             <Route element={<BusinessLayout />}>
