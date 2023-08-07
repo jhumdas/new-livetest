@@ -11,6 +11,7 @@ import { useLocation } from 'react-router-dom';
 export default function Header() {
   const location = useLocation()
   const [modal, setModal] = useState(false);
+  const [stickyfix,setStickyfix] =useState (false); 
   const handClickLogin = () => {
     setModal(!modal)
   }
@@ -21,18 +22,26 @@ export default function Header() {
   const toggleSidebarClose = () => {
     // document.getElementById('Sidebar').style.display = "none";
     document.getElementById("Sidebar").classList.remove("show-example");
-
-
+}
+  function setFixed () {
+    if(window.scrollY > 200){
+      setStickyfix (true);
+      // alert("yes");
+    }
+    else {
+      setStickyfix (false)
+    }
   }
+ 
 
   console.log(window.location.hash);
   console.log("location", location);
-
+  window.addEventListener("scroll" ,setFixed);
 
   return (
     <>
 
-      <header className='header'>
+      <header className={stickyfix ? 'header fixed':'header'}>
         <div className='container'>
           <div className='wraper'>
             <Link to="/">
