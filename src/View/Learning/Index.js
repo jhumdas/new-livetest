@@ -10,7 +10,7 @@ import d from '../../images/Rectangle 522.png';
 import e from '../../images/Rectangle 500.png';
 import f from '../../images/Rectangle 498 (1).png';
 import g from '../../images/Rectangle 502.png';
-
+import icon3 from '../../images/cart.png';
 
 
 export default function Index() {
@@ -201,9 +201,148 @@ export default function Index() {
                             <div className='col-lg-3 col-md-3 col-12'>
                                 <div className='sidewrap'>
 
+                                    <div className='pop-select'>
+                                        <label>Short by :</label>
+                                        <select multiple="" className="form-control" id="exampleFormControlSelect2">
+                                            <option>Most Popular</option>
+                                            <option>Most Popular</option>
+                                            <option>Most Popular</option>
+                                          
+                                        </select>
 
+                                    </div>
                                     <div id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div className="card">
+                                            <div className="card-header" role="tab" id="accordionHeadingFive">
+                                                <div className="mb-0 row">
+                                                    <div className="col-12 no-padding accordion-head">
+                                                        <a
+                                                            data-toggle="collapse"
+                                                            data-parent="#accordion"
+                                                            href="#accordionBodyFive"
+                                                            aria-expanded="false"
+                                                            aria-controls="accordionBodyFive"
+                                                            className="collapsed"
+                                                        >
+                                                            <i className="fa fa-angle-down" aria-hidden="true" />
+                                                            <h3>Rating</h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                id="accordionBodyFive"
+                                                className="collapse"
+                                                role="tabpanel"
+                                                aria-labelledby="accordionHeadingFive"
+                                                aria-expanded="false"
+                                                data-parent="accordion"
+                                                style={{}}
+                                            >
+                                                <div className="card-block col-12">
+                                                    <div className="widget dz-widget_services">
+                                                        <div className="">
+                                                            <div className="form-check search-content">
+                                                                <div style={{ display: "flex", alignItems: "center" }}>
+                                                                    <input
+                                                                        name="language[]"
+                                                                        id="allLanguage"
+                                                                        className="form-check-input"
+                                                                        type="checkbox"
+                                                                        defaultValue="all"
+                                                                    />
+                                                                    <label className="form-check-label" htmlFor="allLanguage">
+                                                                        5.0
+                                                                    </label>
+                                                                </div>
+                                                                <div> <span className='star'>
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                </span></div>
+                                                                <div><span>(12,000)</span></div>
+                                                            </div>
+                                                            <div className="form-check search-content">
+                                                                <div>
+                                                                    <input
+                                                                        name="language[]"
+                                                                        id="English"
+                                                                        className="form-check-input"
+                                                                        type="checkbox"
+                                                                        defaultValue="English"
+                                                                        onclick="ifAllSelected()"
+                                                                    />
+                                                                    <label className="form-check-label" htmlFor="English">
+                                                                        4.5
+                                                                    </label>
+                                                                </div>
+                                                                <div> <span className='star'>
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                </span></div>
+                                                                <div><span>(10,000)</span></div>
+                                                            </div>
+                                                            <div className="form-check search-content">
+                                                                <div>
+                                                                    <input
+                                                                        name="language[]"
+                                                                        id="Bengali"
+                                                                        className="form-check-input"
+                                                                        type="checkbox"
+                                                                        defaultValue="Bengali"
+                                                                        onclick="ifAllSelected()"
+                                                                    />
+                                                                    <label className="form-check-label" htmlFor="Bengali">
+                                                                        4.0
+                                                                    </label>
+                                                                </div>
+                                                                <div> <span className='star'>
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                </span></div>
+                                                                <div><span>(8,000)</span></div>
+                                                            </div>
+                                                            <div className="form-check search-content">
+                                                                <div>
+                                                                    <input
+                                                                        name="language[]"
+                                                                        id="English"
+                                                                        className="form-check-input"
+                                                                        type="checkbox"
+                                                                        defaultValue="English"
+                                                                        onclick="ifAllSelected()"
+                                                                    />
 
+
+                                                                    <label className="form-check-label" htmlFor="English">
+                                                                        3.5
+                                                                    </label>
+                                                                </div>
+                                                                <div> <span className='star'>
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                    <i className="fa-solid fa-star" />
+                                                                </span></div>
+                                                                <div>
+                                                                    <span>(6,000)</span></div>
+                                                            </div>
+
+                                                            <span className='more-disc'>Show more</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div className="card">
                                             <div className="card-header" role="tab" id="accordionHeadingFour">
                                                 <div className="mb-0 row">
@@ -344,7 +483,7 @@ export default function Index() {
                                                                         defaultValue="all"
                                                                     />
                                                                     <label className="form-check-label" htmlFor="allLanguage">
-                                                                    Java Script 
+                                                                        Java Script
                                                                     </label>
                                                                 </div>
                                                                 <div><span>(2500)</span></div>
@@ -360,7 +499,7 @@ export default function Index() {
                                                                         onclick="ifAllSelected()"
                                                                     />
                                                                     <label className="form-check-label" htmlFor="English">
-                                                                    Python 
+                                                                        Python
                                                                     </label>
                                                                 </div>
                                                                 <div><span>(2000)</span></div>
@@ -376,7 +515,7 @@ export default function Index() {
                                                                         onclick="ifAllSelected()"
                                                                     />
                                                                     <label className="form-check-label" htmlFor="Bengali">
-                                                                    Web Development 
+                                                                        Web Development
                                                                     </label>
                                                                 </div>
                                                                 <div><span>(3500)</span></div>
@@ -392,7 +531,7 @@ export default function Index() {
                                                                         onclick="ifAllSelected()"
                                                                     />
                                                                     <label className="form-check-label" htmlFor="English">
-                                                                    Excel 
+                                                                        Excel
                                                                     </label>
                                                                 </div>
                                                                 <div><span>(3500)</span></div>
@@ -433,7 +572,7 @@ export default function Index() {
                                                 style={{}}
                                             >
                                                 <div className="card-block col-12">
-                                                <div className="widget dz-widget_services">
+                                                    <div className="widget dz-widget_services">
                                                         <div className="">
                                                             <div className="form-check search-content">
                                                                 <div style={{ display: "flex", alignItems: "center" }}>
@@ -445,7 +584,7 @@ export default function Index() {
                                                                         defaultValue="all"
                                                                     />
                                                                     <label className="form-check-label" htmlFor="allLanguage">
-                                                                    Beginner 
+                                                                        Beginner
                                                                     </label>
                                                                 </div>
                                                                 <div><span>(2500)</span></div>
@@ -461,7 +600,7 @@ export default function Index() {
                                                                         onclick="ifAllSelected()"
                                                                     />
                                                                     <label className="form-check-label" htmlFor="English">
-                                                                    All levels 
+                                                                        All levels
                                                                     </label>
                                                                 </div>
                                                                 <div><span>(2000)</span></div>
@@ -477,7 +616,7 @@ export default function Index() {
                                                                         onclick="ifAllSelected()"
                                                                     />
                                                                     <label className="form-check-label" htmlFor="Bengali">
-                                                                    Intermediate
+                                                                        Intermediate
                                                                     </label>
                                                                 </div>
                                                                 <div><span>(3500)</span></div>
@@ -493,7 +632,7 @@ export default function Index() {
                                                                         onclick="ifAllSelected()"
                                                                     />
                                                                     <label className="form-check-label" htmlFor="English">
-                                                                    Expert
+                                                                        Expert
                                                                     </label>
                                                                 </div>
                                                                 <div><span>(3500)</span></div>
@@ -505,7 +644,7 @@ export default function Index() {
                                                 </div>
                                             </div>
                                         </div>
-                                           
+
                                         <div className="card">
                                             <div className="card-header" role="tab" id="accordionHeadingSix">
                                                 <div className="mb-0 row">
@@ -545,7 +684,7 @@ export default function Index() {
                                                                     defaultValue="all"
                                                                 />
                                                                 <label className="form-check-label" htmlFor="allLanguage">
-                                                                $100 
+                                                                    $100
                                                                 </label>
                                                             </div>
                                                             <div className="form-check search-content">
@@ -558,7 +697,7 @@ export default function Index() {
                                                                     onclick="ifAllSelected()"
                                                                 />
                                                                 <label className="form-check-label" htmlFor="English">
-                                                                $300 
+                                                                    $300
                                                                 </label>
                                                             </div>
                                                             <div className="form-check search-content">
@@ -571,7 +710,7 @@ export default function Index() {
                                                                     onclick="ifAllSelected()"
                                                                 />
                                                                 <label className="form-check-label" htmlFor="Bengali">
-                                                                $500
+                                                                    $500
                                                                 </label>
                                                             </div>
                                                             <div className="form-check search-content">
@@ -584,10 +723,10 @@ export default function Index() {
                                                                     onclick="ifAllSelected()"
                                                                 />
                                                                 <label className="form-check-label" htmlFor="English">
-                                                                $800
+                                                                    $800
                                                                 </label>
                                                             </div>
-                                                    
+
                                                             <span className='more-disc'>Show more</span>
                                                         </div>
                                                     </div>
@@ -613,7 +752,7 @@ export default function Index() {
                                                 </div>
                                             </div>
                                             <div
-                                                id="accordionBodyThree"
+                                                id="accordionBodyTwo"
                                                 className="collapse"
                                                 role="tabpanel"
                                                 aria-labelledby="accordionHeadingTwo"
@@ -621,37 +760,62 @@ export default function Index() {
                                                 data-parent="accordion"
                                                 style={{}}
                                             >
-                                                <div className="card-block col-12">
-                                                    <div className="widget dz-widget_services d-flex justify-content-between">
-                                                        <div className="">
-                                                            <div className="form-check search-content">
-                                                                <input
-                                                                    name="language[]"
-                                                                    id="allLanguage"
-                                                                    className="form-check-input"
-                                                                    type="checkbox"
-                                                                    defaultValue="all"
-                                                                />
-                                                                <label className="form-check-label" htmlFor="allLanguage">
-                                                                    2.5
-                                                                </label>
-                                                            </div>
 
-
-
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
-                                  
+
                                     </div>
 
 
                                 </div>
                             </div>
                             <div className='col-lg-9 col-md-9 col-12'>
-
+                                <div className='dream-job course'>
+                                    <div className='box'>
+                                        <div className='imge'>
+                                            <img src={d} />
+                                        </div>
+                                        <div className='popCourse-boxCnt'>
+                                            <div style={{ display: "flex", justifyContent: "space-between" }}><h4>Relational Database Design</h4>
+                                                <div className="from_icon_whish_cart1">
+                                                    <a href="/ott-download">
+                                                        <img
+                                                            src={icon3}
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur. Natoque tempus ut semper at cras.</p>
+                                            <h5><strong>By Angel Levin</strong></h5>
+                                            <h5><strong style={{ display: "flex", alignItems: "center" }}>5 hours<span className='m-dot Lcourse'></span>36 Lecture<span className='m-dot Lcourse'></span>All Levels</strong></h5>
+                                            <h6>4.9<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>( 50k)</h6>
+                                            <h3>$500</h3>
+                                        </div>
+                                    </div>
+                                    <div className='box mt-3'>
+                                        <div className='imge'>
+                                            <img src={d} />
+                                        </div>
+                                        <div className='popCourse-boxCnt'>
+                                            <div style={{ display: "flex", justifyContent: "space-between" }}><h4>Relational Database Design</h4>
+                                                <div className="from_icon_whish_cart1">
+                                                    <a href="/ott-download">
+                                                        <img
+                                                            src={icon3}
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur. Natoque tempus ut semper at cras.</p>
+                                            <h5><strong>By Angel Levin</strong></h5>
+                                            <h5><strong style={{ display: "flex", alignItems: "center" }}>5 hours<span className='m-dot Lcourse'></span>36 Lecture<span className='m-dot Lcourse'></span>All Levels</strong></h5>
+                                            <h6>4.9<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>( 50k)</h6>
+                                            <h3>$500</h3>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

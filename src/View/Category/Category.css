@@ -4,7 +4,7 @@
 .category .sidewrap{
     background: #FFF;
 box-shadow: 4px 0px 13px 0px rgba(0, 0, 0, 0.11);
-padding: 30px;
+padding: 30px 15px;
 }
 .category .sidewrap .card-block{
   padding: 0;
@@ -59,7 +59,7 @@ border-bottom: 0;
     line-height: normal;
     margin-bottom:10px;
 }
-.more-disc{
+.category .sidewrap span.more-disc{
     color: #FF3A44;
 font-family: Open Sans;
 font-size: 12px;
@@ -72,7 +72,13 @@ margin: 15px 0;
 padding-left: 0;
 
 }
-
+.dream-job.course .box .imge {
+  height: 235px;
+}
+.category .sidewrap span.star i{
+color: #ffce40;
+margin: 0 2px;
+}
 .all_course.category .form-check{
   display: flex;
 justify-content: space-between;

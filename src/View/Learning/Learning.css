@@ -113,7 +113,7 @@ margin: 12px 0;
 .popCourse-boxCnt h3{
     color: #005C8F;
 font-family: Open Sans;
-font-size: 25px;
+font-size: 22px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -142,12 +142,24 @@ padding: 10px;
 .m-dot.Lcourse{
     background-color: #263238;
 }
-.dream-job .popCourse-boxCnt{
-    padding-right: 30px;
-}
-.dream-job .popCourse-boxCnt h5 {
 
+.dream-job .popCourse-boxCnt h5 {
+  
     font-size: 16px;
+}
+.pop-select{
+    display: flex;
+    border: 1px solid #000;
+    color: #000;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+.pop-select select{
+    border: 0;
 }
 @media (max-width:991px){
     .dream-job .box .imge{
@@ -170,6 +182,21 @@ padding: 10px;
     }
 }
 @media (max-width:767px){
+    .popCourse-boxCnt h3 {
+        font-size: 19px;
+    }
+    .popCourse-boxCnt{
+margin-top: 15px;
+    }
+    .dream-job .popCourse-boxCnt h5 {
+        font-size: 14px;
+    }
+    .popCourse-boxCnt h4 {
+        font-size: 20px;
+    }
+    .popCourse-boxCnt p {
+        font-size: 14px;
+    }
     .podcast-banner-slide.learning-home {
      
         height: 264px;
@@ -182,7 +209,7 @@ padding: 10px;
     }
     .podcast-banner-slide.learning-home h3 {
 
-        font-size: 24px;
+        font-size: 20px;
     }
     .podcast-banner-slide.learning-home p {
 
