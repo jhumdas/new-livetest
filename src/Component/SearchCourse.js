@@ -7,10 +7,12 @@ import icon4 from '../images/threeplus.png';
 import icon5 from '../images/pepicons-pencil_crown.png';
 import icon6 from '../images/bi_download.png';
 import icon7 from '../images/fluent_hat-graduation-16-regular.png';
+import icon9 from '../images/icon9.png';
+import icon8 from '../images/icon8.png';
 import { Link } from 'react-router-dom';
 
 export default function SearchCourse(props) {
-    const { searchText, iconA = true,  iconD = false, iconE = false, iconF = false, iconG = false } = props;
+    const { searchText, iconA = true,  iconD = false, iconE = false, iconF = false, iconG = false ,iconH =false, iconI=false} = props;
     return (
         <>
 
@@ -60,6 +62,17 @@ export default function SearchCourse(props) {
                                 <img src={icon7} alt="" />
                             </Link>
                         </div>}
+                        {iconH   && <div className="from_icon_whish_cart1">
+                            <Link to="">
+                               <img src={icon9} alt=""/>
+                            </Link>
+                          </div>}
+
+                        {iconI &&  <div className="from_icon_whish_cart1">
+                            <Link to="">
+                                <img src={icon8} alt=""/>
+                            </Link>
+                          </div>}
                     </div>
                 </div>
             </div>

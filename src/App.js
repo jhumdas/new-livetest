@@ -20,6 +20,7 @@ import '../src/View/Music/Music.css'
 import '../src/View/Podcast/Podcast.css'
 import '../src/View/OTTHome/OTThome.css'
 import '../src/View/Learning/Learning.css'
+import '../src/View/Business/Business.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -54,7 +55,10 @@ import OTTDownload from '../src/View/OTTHome/OTTDowmload'
 import OTTWatchlist from '../src/View/OTTHome/OTTWatchlist'
 import VideoScreen from './View/OTTHome/VideoScreen';
 import LearningLayout from './Layout/LearningLayout';
-import Learning from '../src/View/Learning/Index'
+import Learning from '../src/View/Learning/Index';
+import BusinessLayout from './Layout/BusinessLayout';
+import Businesshome from '../src/View/Business/Index';
+
 function App() {
 
 
@@ -87,6 +91,7 @@ function App() {
             <Route path="/video-screen" element={<VideoScreen />} />
 
 
+
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />
               <Route path="/music/favourite-song" element={<FavouriteSong />} />
@@ -103,7 +108,11 @@ function App() {
             </Route>
 
             <Route element={<LearningLayout />}>
-            <Route path="/learning" element={<Learning />} />
+              <Route path="/learning" element={<Learning />} />
+            </Route>
+
+            <Route element={<BusinessLayout />}>
+              <Route path="/businesshome" element={<Businesshome />} />
             </Route>
 
           </Route>

@@ -54,7 +54,7 @@ export default function Header() {
               <ul>
                 <li><a href='/#partners' className={location.hash == "#partners" ? "nav__link active" : "nav-link"}>PARTNERS</a></li>
                 <li><a href='/#consumer' className={location.hash == "#consumer" ? "nav__link active" : "nav-link"}>CONSUMER</a></li>
-                <li><a href="/#business" className={location.hash == "#business" ? "nav__link active" : "nav-link"}>Business</a></li>
+                <li><a href="/businesshome" className={location.hash == "#businesshome" ? "nav__link active" : "nav-link"}>Business</a></li>
                 <li><NavLink to="/shop" className={({ isActive }) => isActive ? "nav__link active" : "nav-link"}>SHOP</NavLink></li>
                 <li style={{position:"relative"}} className='explore'><a href="/#explore" className={location.hash == "#explore" ? "nav__link active" : "nav-link"}>EXPLORE <i class="fa-solid fa-angle-down"></i></a>
                   <div className='small-pop box-shadow' style={{top:"25px"}}>
