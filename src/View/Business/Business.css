@@ -42,8 +42,42 @@
     margin-left: 5px;
 }
 
-.business-explr_btn i:hover {
+/* .business-explr_btn i:hover {
     transform: rotate(178deg);
+} */
+.business_explr {
+    position: relative;
+}
+
+.exploreul {
+    border-radius: 5px 5px 4px 5px;
+    border-top: 1px solid rgba(38, 50, 56, 0.50);
+    border-right: 1px solid rgba(38, 50, 56, 0.50);
+    border-left: 1px solid rgba(38, 50, 56, 0.50);
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    border-bottom: 1px solid rgba(38, 50, 56, 0.50);
+
+}
+
+ul.exploreul {
+    position: absolute;
+    z-index: 9;
+    width: 130px;
+}
+
+.exploreli {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
 }
 
 /**** business_investment_return  ****/
@@ -103,7 +137,7 @@ p.business_investment_total {
 .business_invst_crd {
     border-radius: 20px;
     background: #FFF;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 4px -1px rgba(0, 0, 0, 0.25);
     padding: 34px 20px;
 
 }
@@ -216,7 +250,7 @@ h4.business_companies_txt {
 .business_companies_brdr {
     border-radius: 20px;
     background: #FFF;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.25);
     padding-top: 50px;
 }
 
@@ -409,23 +443,308 @@ span.companies_amount_percentage_amnt_percentage {
     z-index: 9;
     border-bottom: 1px solid rgba(38, 50, 56, 0.50);
 }
-.btn_mdm_list_total{
+
+.btn_mdm_list_total {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .business_companies_brdr_main {
     position: relative;
 }
+
 ul.btn_mdm_list {
     position: absolute;
     z-index: 9;
     width: 130px;
 }
+
 /* .hhead_btn_mdm {
     position: absolute;
     right: 0;
     z-index: 9;
 } */
+
+/* business_watchlist_edit */
+.watchlist_edit {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.edit_watch {
+    color: #2EC914;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    background-color: transparent;
+}
+
+.comapnises_nmbr p {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.companies_rcntly {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p.recntly {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+/**** business_company_list ****/
+.business_company_img_amnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.business_company_img_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/* span.company_lrm {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-left: 10px;
+} */
+.company_lrm_name_stck {
+    margin-left: 17px;
+    margin-top: 6px;
+}
+
+p.company_lrm {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+p.company_stck {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-top: 5px;
+}
+
+.business_company_img {
+    width: 56px;
+    height: 57px;
+}
+
+.business_company_img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .business_company_img_graph {
+    width: 170px;
+    height: 75px;
+} */
+
+.business_company_img_graph img {
+    width: 160px;
+    height: 70px;
+}
+
+.companies_amnt_price {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.companies_amnt_percentage {
+    color: #2EC914;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-left: 15px;
+}
+
+/* .companies_edit_cross {
+    width: 36px;
+    height: 36px;
+} */
+.companies_edit_cross img {
+    width: 37px;
+    height: 53px;
+}
+
+.left_chevron {
+    width: 36px;
+    height: auto;
+}
+
+.left_chevron img {
+    width: 100%;
+    height: 100%;
+}
+
+.right_chevron {
+    width: 36px;
+    height: auto;
+}
+
+.right_chevron img {
+    width: 100%;
+    height: 100%;
+}
+
+/**** Business Portfolio ****/
+.business_porfolio_img img {
+    width: 100%;
+    height: auto;
+}
+
+/**** business_portfolio_amont_percnt ****/
+.business_portfolio_amont_bg {
+    border-radius: 20px;
+    background: #E1D7D7;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.business_portfolio_amont_percnt {
+    display: flex;
+    justify-content: center;
+}
+
+.business_portflo_amnt {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+p.business_portflo_amnt_ppp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+p.business_portflo_percnt_ppp {
+    color: #2EC914;
+    font-family: 'Open Sans';
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.business_holdsong {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.business_holdsong.active_business_holdsong {
+    background: #FA4127;
+}
+.content-business{
+ 
+    display: none;
+}
+.active-content-business{
+    display: block;
+}
+/* .business_holdsong:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #FA4127;
+} */
+
+.business_holdsong_position {
+    display: flex;
+    gap: 4%;
+    justify-content: space-around;
+}
+
+.business_position {
+    border-radius: 10px;
+    background: #E1D7D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    line-height: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.business_position:hover {
+    background: #E1D7D7;
+    color: #25333A;
+}
+
+/**** business_available_quality_rtrns  ****/
+.business_available_quality_rtrns {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.business_available_quality_rtrns_flx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.business_available_quality_rtrns_flx_cntnt {
+    width: 100%;
+    max-width: 50%;
+}
+
 @media(max-Width:1199px) {}
 
 @media(max-Width:991px) {
@@ -437,7 +756,41 @@ ul.btn_mdm_list {
     p.business_investment_total {
         font-size: 18px;
         line-height: 23px;
+    }
 
+    p.company_lrm {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    p.company_stck {
+        font-size: 17px;
+        line-height: 21px;
+        margin-top: 4px;
+    }
+
+    .company_lrm_name_stck {
+        margin-top: 0;
+    }
+
+    .business_company_img {
+        width: 49px;
+        height: 50px;
+    }
+
+    .business_company_img_graph {
+        width: 150px;
+        height: 70px;
+    }
+
+    .companies_amnt_price {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .companies_amnt_percentage {
+        font-size: 20px;
+        line-height: 26px;
     }
 }
 
@@ -461,6 +814,48 @@ ul.btn_mdm_list {
         font-size: 21px;
         line-height: 26px;
         padding-top: 8px;
+    }
+
+    .business_company_img_graph {
+        width: 110px;
+        height: 58px;
+    }
+
+    .business_company_img {
+        width: 42px;
+        height: 42px;
+    }
+
+    p.company_lrm {
+        font-size: 14px;
+        line-height: 18px;
+        white-space: nowrap;
+    }
+
+    p.company_stck {
+        font-size: 15px;
+        line-height: 19px;
+        margin-top: 3px;
+    }
+
+    .companies_amnt_price {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .companies_amnt_percentage {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .business_company_img_amnt {
+        gap: 90px;
+        justify-content: inherit;
+    }
+
+
+    .business_company_list {
+        overflow-x: auto;
     }
 }
 
@@ -495,6 +890,31 @@ ul.btn_mdm_list {
     .business_companies_brdr_img {
         width: 37px;
         height: 37px;
+    }
+
+    .comapnises_nmbr p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    p.recntly {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .comapnises_nmbr p {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .left_chevron {
+        width: 29px;
+    }
+
+    .right_chevron {
+        width: 29px;
     }
 }
 

@@ -63,7 +63,7 @@ export default function SearchCourse(props) {
                             </Link>
                         </div>}
                         {iconH   && <div className="from_icon_whish_cart1">
-                            <Link to="">
+                            <Link to="/portfolio">
                                <img src={icon9} alt=""/>
                             </Link>
                           </div>}

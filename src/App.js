@@ -63,6 +63,9 @@ import CourseCart from './View/Learning/CourseCart';
 import MyCourse from './View/Learning/MyCourse';
 import Instructor from './View/Learning/Instructor';
 
+import Watchlist from '../src/View/Business/Watchlist';
+import Portfolio from '../src/View/Business/Portfolio';
+// import Position from '../src/View/Business/Position';
 function App() {
 
 
@@ -121,6 +124,9 @@ function App() {
 
             <Route element={<BusinessLayout />}>
               <Route path="/businesshome" element={<Businesshome />} />
+              <Route path="/watchlist" element={<Watchlist/>}/>
+              <Route path="/portfolio" element={<Portfolio/>}/>
+              {/* <Route path='/position' element={<Position/>}/> */}
             </Route>
 
           </Route>
