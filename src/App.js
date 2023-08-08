@@ -58,7 +58,9 @@ import LearningLayout from './Layout/LearningLayout';
 import Learning from '../src/View/Learning/Index';
 import BusinessLayout from './Layout/BusinessLayout';
 import Businesshome from '../src/View/Business/Index';
-
+import Watchlist from '../src/View/Business/Watchlist';
+import Portfolio from '../src/View/Business/Portfolio';
+// import Position from '../src/View/Business/Position';
 function App() {
 
 
@@ -113,6 +115,9 @@ function App() {
 
             <Route element={<BusinessLayout />}>
               <Route path="/businesshome" element={<Businesshome />} />
+              <Route path="/watchlist" element={<Watchlist/>}/>
+              <Route path="/portfolio" element={<Portfolio/>}/>
+              {/* <Route path='/position' element={<Position/>}/> */}
             </Route>
 
           </Route>

@@ -3,15 +3,21 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import business_img_profile from '../../images/business_img_profile.png';
+import { Link } from 'react-router-dom';
+
 export default function Index() {
   const loop = [1, 2, 3, 4, 5];
   const [toggleState, setToggleState] = useState(1);
-  const [mediumlist,setMediumlist] =useState(true)
+  const [mediumlist, setMediumlist] = useState(true);
+  const [explore, setExplore] = useState(true);
   const toggleTab = (index) => {
     setToggleState(index);
   };
-  const handleClick = ()=>{
-    setMediumlist(!mediumlist)
+  const handleClick = () => {
+    setMediumlist(!mediumlist);
+  }
+  const handleClickexplore = () => {
+    alert("yes")
   }
   var settings1 = {
     dots: false,
@@ -138,10 +144,15 @@ export default function Index() {
               </button>
             </div>
             <div className='business_explr'>
-              <a href="#" className='business-explr_btn'>
+              <a href="#" className='business-explr_btn' Onclick={() => handleClickexplore(setExplore)}>
                 EXPLORE
                 <i class="fa-solid fa-angle-down"></i>
               </a>
+              <ul className='exploreul'>
+                <li className='exploreli'>
+                  <Link to="/watchlist" className='exploreali'>My watchlist</Link>
+                </li>
+              </ul>
             </div>
           </div>
           <div
@@ -155,7 +166,7 @@ export default function Index() {
                 </div>
                 <div className='business_return'>
                   <h5 className='business_investment_amnt'>$29,757</h5>
-                  <p className='business_investment_total'>Total ReturnS</p>
+                  <p className='business_investment_total'>Total Return</p>
                 </div>
               </div>
             </div>
@@ -304,10 +315,25 @@ export default function Index() {
                   Gainers
                 </h4>
                 <div className='hhead_btn_mdm'>
-                  <a href="#" className='btn_mdm'>
+                  <a href="#" className='btn_mdm' onClick={() => handleClick(setMediumlist)}>
                     Medium
                     <i class="fa-solid fa-angle-down"></i>
                   </a>
+                  {mediumlist ?
+                    <ul className='btn_mdm_list'>
+                      <li className='btn_mdm_list_total'>
+                        <a href="" >Large</a>
+                      </li>
+                      <li className='btn_mdm_list_total'>
+                        <a href="" >Medium</a>
+                      </li>
+                      <li className='btn_mdm_list_total'>
+                        <a href="" >Small</a>
+                      </li>
+                    </ul>
+                    :
+                    <></>
+                  }
                 </div>
               </div>
               <div className='business_companies_brdr_main'>
@@ -360,25 +386,25 @@ export default function Index() {
                   loosers
                 </h4>
                 <div className='hhead_btn_mdm'>
-                  <a href="#" className='btn_mdm' onClick={()=>handleClick(setMediumlist)}>
+                  <a href="#" className='btn_mdm' >
                     Medium
                     <i class="fa-solid fa-angle-down"></i>
                   </a>
-                  {mediumlist?
-                   <ul className='btn_mdm_list'>
-                    <li className='btn_mdm_list_total'>
-                      <a href="" >Large</a>
-                    </li>
-                    <li className='btn_mdm_list_total'>
-                    <a href="" >Medium</a>
-                    </li>
-                    <li className='btn_mdm_list_total'>
-                    <a href="" >Small</a>
-                    </li>
-                   </ul>
-                   :
-                   <></>
-                  }
+                  {/* {mediumlist ?
+                    <ul className='btn_mdm_list'>
+                      <li className='btn_mdm_list_total'>
+                        <a href="" >Large</a>
+                      </li>
+                      <li className='btn_mdm_list_total'>
+                        <a href="" >Medium</a>
+                      </li>
+                      <li className='btn_mdm_list_total'>
+                        <a href="" >Small</a>
+                      </li>
+                    </ul>
+                    :
+                    <></>
+                  } */}
                 </div>
               </div>
               <div className='business_companies_brdr_main'>
@@ -426,6 +452,33 @@ export default function Index() {
             </div>
 
           </div>
+          <div
+            className={toggleState === 2 ? "content  active-content" : "content"}
+          >
+
+          </div>
+          <div
+            className={toggleState === 3 ? "content  active-content" : "content"}
+          >
+
+
+          </div>
+
+          <div
+            className={toggleState === 4 ? "content  active-content" : "content"}
+          >
+
+
+          </div>
+
+
+          <div
+            className={toggleState === 5 ? "content  active-content" : "content"}
+          >
+
+
+          </div>
+          
         </div>
       </section>
     </>
