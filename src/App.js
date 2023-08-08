@@ -59,6 +59,9 @@ import Learning from '../src/View/Learning/Index';
 import BusinessLayout from './Layout/BusinessLayout';
 import Businesshome from '../src/View/Business/Index';
 import SingleCourse from './View/Learning/SingleCourse';
+import CourseCart from './View/Learning/CourseCart';
+import MyCourse from './View/Learning/MyCourse';
+import Instructor from './View/Learning/Instructor';
 
 function App() {
 
@@ -111,6 +114,9 @@ function App() {
             <Route element={<LearningLayout />}>
               <Route path="/learning" element={<Learning />} />
               <Route path="/single-course" element={<SingleCourse />} />
+              <Route path="/course-cart" element={<CourseCart />} />
+              <Route path="/my-course" element={<MyCourse />} />
+              <Route path="/instructor" element={<Instructor />} />
             </Route>
 
             <Route element={<BusinessLayout />}>

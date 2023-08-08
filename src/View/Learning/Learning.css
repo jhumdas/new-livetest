@@ -197,6 +197,12 @@ margin-bottom: 10px;
 background: #FFF;
 border: 10px solid;
 position: relative;
+width: 35%;
+height: 325px;
+}
+.single-course .rgtImg img{
+    width: 100%;
+    height: 100%;
 }
 .single-course .rgtImg .videoIcon {
     position: absolute;
@@ -260,8 +266,8 @@ margin-left: 10px;
 }
 .you-learn{
     border: 1px solid #000;
-    max-width: 80%;
     padding: 15px;
+    max-width: 85%;
 }
 .you-learn h4{
     color: #000;
@@ -271,26 +277,350 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 0.75px;
-margin-bottom:20px;
+margin-bottom:10px;
 }
-.you-learn ul{
+.instructor img{
+    width: 100px;
+    height: 100px;
+}
+.you-learn .wrap{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+
+}
+.lftSide{
+    width: 50%;
+}
+.rgtSide{
+width: 50%;
+}
+.you-learn img{
+    margin-right: 10px;
+}
+.you-learn ul.list{
+    padding-left: 23px;
+}
+.you-learn ul.list li{
+    list-style: disc;
+}
+.you-learn p{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+.moreBtn{
+    color: #005C8F;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
 }
 .you-learn ul li{
     color: #000;
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.54px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+.give-ur-thought{
+max-width: 80%;
+margin-top: 30px;
+}
+.give-ur-thought textarea{
+    border: 1px solid #716E6E;
+    height: 132px;
+    resize: none;
+    color: #716E6E;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.6px;
+margin-bottom: 30px;
+}
+.submitBtn{
+    background: #FF3A44;
+    color: #FFF;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.6px;
+padding: 10px 40px;
+display: inline-block;
 }
 .you-learn ul li i{
     margin-right: 10px;
 }
+.wrap.instructor-detail{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.singleBox{
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    margin-top: 30px;
+}
+.singleBox p{
+    color: #716E6E;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; 
+letter-spacing: 0.48px;
+text-transform: capitalize;
+margin: 10px 0;
+}
+.singleBox img{
+width: 50px;
+height: 50px;
+}
+.singleBox .box{
+    display: flex;
+    align-items: center;
+}
+.singleBox .box .cnt{
+    padding-left: 20px;
+}
+.singleBox .box .cnt h5{
+    color: #000;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.6px;
+margin-bottom: 10px;
+}
+.singleBox .box .cnt h6{
+    color: #716E6E;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.28px;
+text-transform: capitalize;
+}
+.feedbackBtn{
+    border: 1px solid #716E6E;
+    color: #000;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+padding: 10px 20px;
+display: inline-block;
+}
+.singleBox .box .cnt h6 span i{
+    color: #EB830D;
+    pad: 0 3px;
+}
+.feedback{
+    margin-bottom: 30px;
+}
+/***buycourse-modal***/
+.Buycourse{
+background-color: rgba(0, 0, 0, 0.3);
+width: 100%;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+position: fixed;
+z-index: 9;
+display: grid;
+justify-content: center;
+align-content: center;
+padding: 2%;
+}
+.BuycourseModal{
+    background-color: #fff;
+    width: 746px;
+
+height: 216px;
+margin: 0 auto;
+display: flex;
+gap: 30px;
+align-items: center;
+padding: 20px;
+position: relative;
+}
+.BuycourseModal .tick{
+    border-radius: 2px;
+background: #FAFAFA;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+height: 34px;
+width: 34px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 10px;
+}
+.BuycourseModal .video{
+    width: 189px;
+    height: 166px;
+    display: inline-block;
+}
+.BuycourseModal .video img {
+    width: 100%;
+    height: 100%;
+}
+.BuycourseModal .rgt h3{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.BuycourseModal .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+.BuycourseModal .left{
+    display: flex;
+}
+/****cart****/
+.cart-amount{
+    border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+padding: 15px;
+}
+.cart-amount h4{
+    color: #716E6E;
+font-family: Open Sans;
+font-size: 23px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.75px;
+text-transform: capitalize;
+margin-bottom: 10px;
+}
+.cart-amount h2{
+    color: #000;
+font-family: Open Sans;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.2px;
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+/***my-course***/
+.social-media{
+    margin-top: 30px;
+}
+.social-media h4{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    margin-bottom: 10px;
+}
+.social-media i{
+    color: #716e6e;
+    font-size: 27px;
+    margin-right: 20px;
+}
+.review-no span{
+    color: #716E6E;
+text-align: center;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.66px;
+}
+.review-no h2{
+    color: #263238;
+text-align: center;
+font-family: Open Sans;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.2px;
+}
+.ins-about{
+    margin-top: 20px;
+}
+.ins-about h4{
+    color: #000;
+font-size: 25px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.9px;
+margin-bottom: 10px;
+}
+.ins-about p{
+    color: #716E6E;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+text-align: justify;
+}
+.instructor-detail .A{
+    color: #716E6E;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.75px;
+}
+.instructor-detail .B{
+    color: #005C8F;
+font-family: Open Sans;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.5px;
+}
+.instructor-detail .C{
+    color: #000;
+text-align: center;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.75px;
+}
 @media (max-width:991px){
+    .single-course{
+        height: auto;
+        padding: 15px;
+    }
+    .single-course .boxCnt {
+     padding-left: 0;
+        width: 100%;
+    }
+    .single-course .rgtImg{
+        width: 100%;
+    }
+    .single-course .box{
+        flex-wrap: wrap;
+    }
     .dream-job .box .imge{
         margin: 0 auto;
         padding-right: 0;
@@ -311,6 +641,24 @@ margin-bottom:20px;
     }
 }
 @media (max-width:767px){
+    .cart-amount{
+        margin-top: 20px;
+    }
+    .BuycourseModal .left {
+        margin: 0 auto;
+    }
+    .BuycourseModal {
+        gap: 13px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .BuycourseModal .rgt h3 {
+        font-size: 20px;
+
+    }
+    .BuycourseModal{
+        width: 100%;
+    }
     .pop-select .form-control {
         width: 80%;
     }
@@ -333,7 +681,7 @@ margin-top: 15px;
      
         height: 264px;
     }
-    .podcast-banner-slide.learning-home .boxCnt{
+    .podcast-banner-slide .boxCnt{
    
             padding: 0 15px;
             width: 100%;
@@ -356,4 +704,62 @@ margin-top: 15px;
     .dream-job .popCourse-boxCnt h5 span{
         display: block;
     }
+    .you-learn {
+
+        max-width: 100%;
+    }
+    .you-learn .wrap{
+        flex-wrap: wrap;
+    }
+    .lftSide{
+        width: 100%;
+    }
+    .rgtSide {
+        width: 100%;
+    }
+ 
+        
+    .give-ur-thought{
+        max-width: 100%;
+    }
+    .wrap.instructor-detail ul{
+        margin-left: 0 !important;
+    }
+}
+@media (max-width:480px){
+    .instructor{
+margin-bottom: 10px;
+    }
+    .wrap.instructor-detail{
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .course-fee-btn {
+        font-size: 15px;
+        padding: 5px 14px;
+    }
+    .courseBtn{
+        font-size: 14px;
+        padding: 7px 14px;
+    }
+    .single-course .box h3 {
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 23px;
+    }
+    .single-course .box p {
+        font-size: 14px;
+        padding-bottom: 8px;
+    } 
+    .single-course .box h6 {
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 15px;
+        padding-bottom: 15px;
+    }  
+    .single-course .rgtImg {
+        height: 240px;
+    } 
 }
