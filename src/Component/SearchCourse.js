@@ -9,10 +9,12 @@ import icon6 from '../images/bi_download.png';
 import icon7 from '../images/fluent_hat-graduation-16-regular.png';
 import icon9 from '../images/icon9.png';
 import icon8 from '../images/icon8.png';
+import iconv from '../images/carbon_result-new.png';
+import iconw from '../images/icon-park-solid_more-four.png';
 import { Link } from 'react-router-dom';
 
 export default function SearchCourse(props) {
-    const { searchText, iconA = true,  iconD = false, iconE = false, iconF = false, iconG = false ,iconH =false, iconI=false} = props;
+    const { searchText, iconA = true,  iconD = false, iconE = false, iconF = false, iconG = false ,iconH =false, iconI=false,iconV=false,iconW=false} = props;
     return (
         <>
 
@@ -58,7 +60,7 @@ export default function SearchCourse(props) {
                         </div>}
 
                         {iconG && <div className="from_icon_whish_cart1">
-                            <Link to="ott-download">
+                            <Link to="/my-course">
                                 <img src={icon7} alt="" />
                             </Link>
                         </div>}
@@ -71,6 +73,16 @@ export default function SearchCourse(props) {
                         {iconI &&  <div className="from_icon_whish_cart1">
                             <Link to="">
                                 <img src={icon8} alt=""/>
+                            </Link>
+                          </div>}
+                          {iconV &&  <div className="from_icon_whish_cart1">
+                            <Link to="">
+                                <img src={iconv} alt=""/>
+                            </Link>
+                          </div>}
+                          {iconW &&  <div className="from_icon_whish_cart1">
+                            <Link to="">
+                                <img src={iconw} alt=""/>
                             </Link>
                           </div>}
                     </div>

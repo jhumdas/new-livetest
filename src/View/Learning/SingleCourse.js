@@ -51,8 +51,8 @@ export default function SingleCourse() {
                             </div>
                         </div>
                         <div className='rgtImg'>
-                            <img src={d} />
-                            <div className='videoIcon'><img src={videoIcon} /></div>
+                        <Link to="/videosingle-page"><img src={d} />
+                            <div className='videoIcon'><img src={videoIcon} /></div></Link>
                         </div>
                     </div>
                 </div>
