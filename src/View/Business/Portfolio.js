@@ -17,7 +17,9 @@ import Companies_img8 from "../../images/Companies_img8.png";
 import business_graph1 from "../../images/business_graph1.png";
 import business_graph from "../../images/business_graph.png";
 import system_uicons_cross from "../../images/system_uicons_cross.png";
-
+import simple_icons_cashapp from '../../images/simple_icons_cashapp.png';
+import mdi_money from '../../images/mdi_money.png';
+import material_symbols_done_all from '../../images/material_symbols_done_all.png'
 export default function Portfolio() {
     const [toggleState, setToggleState] = useState(1);
     const [togglebuttonstate, setTogglebuttonstate] = useState(1);
@@ -139,16 +141,17 @@ export default function Portfolio() {
                                 </div>
                                 <div className='business_company_img_amnt_all'>
                                     <div className='business_company_img_amnt mb-4'>
-                                        <div className='business_company_img_txt'>
-                                            <div className='business_company_img'>
-                                                <img src={Companies_img1} alt="/" />
+                                        <Link to="/stockpage">
+                                            <div className='business_company_img_txt'>
+                                                <div className='business_company_img'>
+                                                    <img src={Companies_img1} alt="/" />
+                                                </div>
+                                                <div className='company_lrm_name_stck'>
+                                                    <p className='company_lrm'>lorem ipsum</p>
+                                                    <p className='company_stck'>Stock</p>
+                                                </div>
                                             </div>
-                                            <div className='company_lrm_name_stck'>
-                                                <p className='company_lrm'>lorem ipsum</p>
-                                                <p className='company_stck'>Stock</p>
-                                            </div>
-                                        </div>
-
+                                        </Link>
                                         <div className='business_company_img_graph'>
                                             <img src={business_graph1} alt='/' />
                                         </div>
@@ -165,16 +168,17 @@ export default function Portfolio() {
 
                                 <div className='business_company_img_amnt_all'>
                                     <div className='business_company_img_amnt mb-4'>
-                                        <div className='business_company_img_txt'>
-                                            <div className='business_company_img'>
-                                                <img src={Companies_img2} alt="/" />
+                                        <Link to="/stockpage">
+                                            <div className='business_company_img_txt'>
+                                                <div className='business_company_img'>
+                                                    <img src={Companies_img2} alt="/" />
+                                                </div>
+                                                <div className='company_lrm_name_stck'>
+                                                    <p className='company_lrm'>lorem ipsum</p>
+                                                    <p className='company_stck'>Stock</p>
+                                                </div>
                                             </div>
-                                            <div className='company_lrm_name_stck'>
-                                                <p className='company_lrm'>lorem ipsum</p>
-                                                <p className='company_stck'>Stock</p>
-                                            </div>
-                                        </div>
-
+                                        </Link>
                                         <div className='business_company_img_graph'>
                                             <img src={business_graph} alt='/' />
                                         </div>
@@ -191,16 +195,17 @@ export default function Portfolio() {
 
                                 <div className='business_company_img_amnt_all'>
                                     <div className='business_company_img_amnt mb-4'>
-                                        <div className='business_company_img_txt'>
-                                            <div className='business_company_img'>
-                                                <img src={Companies_img3} alt="/" />
+                                        <Link to="/stockpage">
+                                            <div className='business_company_img_txt'>
+                                                <div className='business_company_img'>
+                                                    <img src={Companies_img3} alt="/" />
+                                                </div>
+                                                <div className='company_lrm_name_stck'>
+                                                    <p className='company_lrm'>lorem ipsum</p>
+                                                    <p className='company_stck'>Stock</p>
+                                                </div>
                                             </div>
-                                            <div className='company_lrm_name_stck'>
-                                                <p className='company_lrm'>lorem ipsum</p>
-                                                <p className='company_stck'>Stock</p>
-                                            </div>
-                                        </div>
-
+                                        </Link>
                                         <div className='business_company_img_graph'>
                                             <img src={business_graph1} alt='/' />
                                         </div>
@@ -217,16 +222,17 @@ export default function Portfolio() {
 
                                 <div className='business_company_img_amnt_all'>
                                     <div className='business_company_img_amnt mb-4'>
-                                        <div className='business_company_img_txt'>
-                                            <div className='business_company_img'>
-                                                <img src={Companies_img4} alt="/" />
+                                        <Link to="/stockpage">
+                                            <div className='business_company_img_txt'>
+                                                <div className='business_company_img'>
+                                                    <img src={Companies_img4} alt="/" />
+                                                </div>
+                                                <div className='company_lrm_name_stck'>
+                                                    <p className='company_lrm'>lorem ipsum</p>
+                                                    <p className='company_stck'>Stock</p>
+                                                </div>
                                             </div>
-                                            <div className='company_lrm_name_stck'>
-                                                <p className='company_lrm'>lorem ipsum</p>
-                                                <p className='company_stck'>Stock</p>
-                                            </div>
-                                        </div>
-
+                                        </Link>
                                         <div className='business_company_img_graph'>
                                             <img src={business_graph1} alt='/' />
                                         </div>
@@ -242,16 +248,17 @@ export default function Portfolio() {
                                 </div>
                                 <div className='business_company_img_amnt_all'>
                                     <div className='business_company_img_amnt mb-4'>
-                                        <div className='business_company_img_txt'>
-                                            <div className='business_company_img'>
-                                                <img src={Companies_img5} alt="/" />
+                                        <Link to="/stockpage">
+                                            <div className='business_company_img_txt'>
+                                                <div className='business_company_img'>
+                                                    <img src={Companies_img5} alt="/" />
+                                                </div>
+                                                <div className='company_lrm_name_stck'>
+                                                    <p className='company_lrm'>lorem ipsum</p>
+                                                    <p className='company_stck'>Stock</p>
+                                                </div>
                                             </div>
-                                            <div className='company_lrm_name_stck'>
-                                                <p className='company_lrm'>lorem ipsum</p>
-                                                <p className='company_stck'>Stock</p>
-                                            </div>
-                                        </div>
-
+                                        </Link>
                                         <div className='business_company_img_graph'>
                                             <img src={business_graph} alt='/' />
                                         </div>
@@ -268,16 +275,17 @@ export default function Portfolio() {
 
                                 <div className='business_company_img_amnt_all'>
                                     <div className='business_company_img_amnt mb-4'>
-                                        <div className='business_company_img_txt'>
-                                            <div className='business_company_img'>
-                                                <img src={Companies_img6} alt="/" />
+                                        <Link to="/stockpage">
+                                            <div className='business_company_img_txt'>
+                                                <div className='business_company_img'>
+                                                    <img src={Companies_img6} alt="/" />
+                                                </div>
+                                                <div className='company_lrm_name_stck'>
+                                                    <p className='company_lrm'>lorem ipsum</p>
+                                                    <p className='company_stck'>Stock</p>
+                                                </div>
                                             </div>
-                                            <div className='company_lrm_name_stck'>
-                                                <p className='company_lrm'>lorem ipsum</p>
-                                                <p className='company_stck'>Stock</p>
-                                            </div>
-                                        </div>
-
+                                        </Link>
                                         <div className='business_company_img_graph'>
                                             <img src={business_graph} alt='/' />
                                         </div>
@@ -294,15 +302,17 @@ export default function Portfolio() {
 
                                 <div className='business_company_img_amnt_all'>
                                     <div className='business_company_img_amnt mb-4'>
-                                        <div className='business_company_img_txt'>
-                                            <div className='business_company_img'>
-                                                <img src={Companies_img7} alt="/" />
+                                        <Link to="/stockpage">
+                                            <div className='business_company_img_txt'>
+                                                <div className='business_company_img'>
+                                                    <img src={Companies_img7} alt="/" />
+                                                </div>
+                                                <div className='company_lrm_name_stck'>
+                                                    <p className='company_lrm'>lorem ipsum</p>
+                                                    <p className='company_stck'>Stock</p>
+                                                </div>
                                             </div>
-                                            <div className='company_lrm_name_stck'>
-                                                <p className='company_lrm'>lorem ipsum</p>
-                                                <p className='company_stck'>Stock</p>
-                                            </div>
-                                        </div>
+                                        </Link>
 
                                         <div className='business_company_img_graph'>
                                             <img src={business_graph1} alt='/' />
@@ -320,16 +330,17 @@ export default function Portfolio() {
 
                                 <div className='business_company_img_amnt_all'>
                                     <div className='business_company_img_amnt mb-4'>
-                                        <div className='business_company_img_txt'>
-                                            <div className='business_company_img'>
-                                                <img src={Companies_img8} alt="/" />
+                                        <Link to="/stockpage">
+                                            <div className='business_company_img_txt'>
+                                                <div className='business_company_img'>
+                                                    <img src={Companies_img8} alt="/" />
+                                                </div>
+                                                <div className='company_lrm_name_stck'>
+                                                    <p className='company_lrm'>lorem ipsum</p>
+                                                    <p className='company_stck'>Stock</p>
+                                                </div>
                                             </div>
-                                            <div className='company_lrm_name_stck'>
-                                                <p className='company_lrm'>lorem ipsum</p>
-                                                <p className='company_stck'>Stock</p>
-                                            </div>
-                                        </div>
-
+                                        </Link>
                                         <div className='business_company_img_graph'>
                                             <img src={business_graph1} alt='/' />
                                         </div>
@@ -349,18 +360,51 @@ export default function Portfolio() {
                         <div
                             className={togglebuttonstate === 2 ? "content-business  active-content-business" : "content-business"}
                         >
-                            <div className='business_available_quality_rtrns mt-4'>
-                                  <div className='business_available_quality_rtrns_flx'>
-                                    <div className='business_available_quality_rtrns_flx_cntnt'>
-                                          
-                                    </div>
-                                    <div className='business_available_quality_rtrns_flx_cntnt'>
+                            <div className='business-position_main mt-4 mb-4'>
+                                <div className='business_position_main_brdr'>
+                                    <div className='row'>
+                                        <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
+                                            <div className='business_main_brdr_img_txt'>
+                                                <div className='business_main_brdr'>
+                                                    <div className='business_main_img'>
+                                                        <img src={simple_icons_cashapp} alt='/' />
+                                                    </div>
+                                                </div>
+                                                <div className='business_main_brdr_txt'>
+                                                    <p className='business_txt_position_cash'>cash available</p>
+                                                    <p className='business_txt_position_amnt'>$8,756.98</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
+                                            <div className='business_main_brdr_img_txt'>
+                                                <div className='business_main_brdr'>
+                                                    <div className='business_main_img'>
+                                                        <img src={material_symbols_done_all} alt='/' />
+                                                    </div>
+                                                </div>
+                                                <div className='business_main_brdr_txt'>
+                                                    <p className='business_txt_position_cash'>Total Returns</p>
+                                                    <p className='business_txt_position_amnt'>$586,156.09</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='col-xl-6 col-lg-6 col-md-6 col-12'>
 
+                                            <div className='business_main_brdr_img_txt'>
+                                                <div className='business_main_brdr'>
+                                                    <div className='business_main_img'>
+                                                        <img src={mdi_money} alt='/' />
+                                                    </div>
+                                                </div>
+                                                <div className='business_main_brdr_txt'>
+                                                    <p className='business_txt_position_cash'>Equity</p>
+                                                    <p className='business_txt_position_amnt'>$808,76.98</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className='business_available_quality_rtrns_flx_cntnt'>
-
-                                    </div>
-                                  </div>
+                                </div>
                             </div>
                         </div>
 

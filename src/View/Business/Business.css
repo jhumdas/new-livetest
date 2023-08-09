@@ -673,7 +673,7 @@ p.business_portflo_percnt_ppp {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFF;
+    color: #25333A;
     font-family: 'Open Sans';
     font-size: 22px;
     font-weight: 600;
@@ -682,17 +682,23 @@ p.business_portflo_percnt_ppp {
     padding-bottom: 20px;
     padding-left: 100px;
     padding-right: 100px;
+    background: #E1D7D7;
 }
+
 .business_holdsong.active_business_holdsong {
     background: #FA4127;
+    color: #FFF;
 }
-.content-business{
- 
+
+.content-business {
+
     display: none;
 }
-.active-content-business{
+
+.active-content-business {
     display: block;
 }
+
 /* .business_holdsong:hover {
     color: #fff;
     text-decoration: none;
@@ -729,23 +735,315 @@ p.business_portflo_percnt_ppp {
 }
 
 /**** business_available_quality_rtrns  ****/
-.business_available_quality_rtrns {
+.business_position_main_brdr {
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 80%;
+    padding-top: 11px;
+    padding-bottom: 11px;
 
 }
-.business_available_quality_rtrns_flx {
+
+.business-position_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business_main_brdr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #135A07;
+    border-radius: 30px;
+    width: 54px;
+    height: 55px;
+}
+
+p.business_txt_position_cash {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 17px;
+}
+
+p.business_txt_position_amnt {
+    color: #25333A;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 2px;
+
+}
+
+.business_main_brdr_img_txt {
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 50px;
+    /* gap: 2px; */
+    margin-left: 30px;
+
+}
+
+.business_main_brdr_txt {
+    margin-left: 20px;
+}
+
+/**** businessnews_main_pg  ****/
+.business_main_txt_day {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.business_available_quality_rtrns_flx_cntnt {
-    width: 100%;
-    max-width: 50%;
+
+p.business_main_txt_pp {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 2px;
 }
 
-@media(max-Width:1199px) {}
+p.business_main_txt_dd {
+    color: rgba(37, 51, 58, 0.80);
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+p.business_news_txt_ppp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+/**** stock_single_page ****/
+.stock_single_page_img {
+    width: 100%;
+    height: 517px;
+}
+
+.stock_single_page_img img {
+    width: 100%;
+    height: 100%;
+}
+
+h2.business_perftmne {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 2px;
+
+}
+
+.business_performance .collapsible-link::before {
+    content: "\f107";
+    position: absolute;
+    top: 50%;
+    right: 2.8rem;
+    transform: translateY(-50%);
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 32px;
+    border-radius: 35px;
+    /* background: #E0E0E0; */
+    width: 30px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    color: #25333A;
+    font-weight: 400;
+    transition: .5s all ease-in-out;
+}
+
+.business_performance .collapsible-link[aria-expanded="true"]::before {
+
+    content: "\f106";
+    top: 10%;
+}
+
+.business_performance .btn-link:hover {
+    color: #25333A !important;
+}
+
+.business_performance .btn-link {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-left: 30px;
+    letter-spacing: 2px;
+}
+
+.performace_high_low {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.input_high_low_grn {
+    border-radius: 10px;
+    background: #1FAF38;
+    width: 100%;
+    height: 5px;
+}
+
+.input_high_low {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+p.today_low_pp {
+    color: rgba(37, 51, 58, 0.80);
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+
+.business_market_strt .collapsible-link::before {
+    content: "\f107";
+    position: absolute;
+    top: 50%;
+    right: 2.8rem;
+    transform: translateY(-50%);
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 32px;
+    border-radius: 35px;
+    /* background: #E0E0E0; */
+    width: 30px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    color: #25333A;
+    font-weight: 400;
+    transition: .5s all ease-in-out;
+}
+
+.business_market_strt .collapsible-link[aria-expanded="true"]::before {
+
+    content: "\f106";
+    top: 5%;
+}
+
+.spot_market_point {
+    background: #1FAF38;
+    width: 14px;
+    display: inline-block;
+    border-radius: 16px;
+    height: 14px;
+    /* margin-left: 11px; */
+    margin-right: 15px;
+}
+
+h6.spot_market_point_txt {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    margin-left: 40px;
+}
+
+.spot_market_txt_main {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h5.spot_market_point_lrm {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 2px;
+    margin-right: 47px;
+}
+
+.company_news_about_flx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company_news_abt_update {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h5.company_news_about_txt_hhh {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+p.company_news_about_txt_ppp {
+    color: rgba(37, 51, 58, 0.80);
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+p.company_news_update_txt {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.company_news_update {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+    margin-bottom: 10px;
+}
+
+
+
+@media(max-Width:1199px) {
+    .business_holdsong_position {
+        gap: 0%;
+    }
+
+    .business_holdsong {
+        padding-left: 60px;
+        padding-right: 60px;
+
+    }
+}
 
 @media(max-Width:991px) {
     h5.business_investment_amnt {
@@ -791,6 +1089,10 @@ p.business_portflo_percnt_ppp {
     .companies_amnt_percentage {
         font-size: 20px;
         line-height: 26px;
+    }
+
+    .business_holdsong_position {
+        justify-content: space-evenly;
     }
 }
 
@@ -856,6 +1158,40 @@ p.business_portflo_percnt_ppp {
 
     .business_company_list {
         overflow-x: auto;
+    }
+
+    p.business_portflo_amnt_ppp {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    p.business_portflo_percnt_ppp {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .business_holdsong {
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 19px;
+    }
+
+    p.business_main_txt_pp {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    p.business_main_txt_dd {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    p.business_news_txt_ppp {
+        font-size: 15px;
+        line-height: 20px;
     }
 }
 
@@ -935,6 +1271,40 @@ p.business_portflo_percnt_ppp {
         line-height: 18px;
         padding: 9px 16px;
     }
+
+    .business_holdsong {
+        padding-left: 28px;
+        padding-right: 28px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 17px;
+    }
+
+    p.business_portflo_amnt_ppp {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    p.business_portflo_percnt_ppp {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    p.business_main_txt_pp {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    p.business_main_txt_dd {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    p.business_news_txt_ppp {
+        font-size: 13px;
+        line-height: 19px;
+        margin-bottom: 2px;
+    }
 }
 
 @media(max-Width:420px) {
@@ -996,6 +1366,14 @@ p.business_portflo_percnt_ppp {
     span.companies_amount_percentage_amnt_percentage {
         font-size: 17px;
         line-height: 23px;
+    }
+
+    .business_holdsong {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
     }
 
 }

@@ -62,10 +62,10 @@ import SingleCourse from './View/Learning/SingleCourse';
 import CourseCart from './View/Learning/CourseCart';
 import MyCourse from './View/Learning/MyCourse';
 import Instructor from './View/Learning/Instructor';
-
 import Watchlist from '../src/View/Business/Watchlist';
 import Portfolio from '../src/View/Business/Portfolio';
-// import Position from '../src/View/Business/Position';
+import Businessnews from '../src/View/Business/Businessnews';
+import Stockpage from '../src/View/Business/Stockpage'
 function App() {
 
 
@@ -96,7 +96,7 @@ function App() {
             <Route path="/single-movie" element={<SingleMovie />} />
             <Route path="/singleTv-series" element={<SingleTvSeries />} />
             <Route path="/video-screen" element={<VideoScreen />} />
-
+            <Route path="/stockpage" element={<Stockpage/>}/>
 
 
             <Route element={<MusicPodcastlayout />}>
@@ -126,7 +126,7 @@ function App() {
               <Route path="/businesshome" element={<Businesshome />} />
               <Route path="/watchlist" element={<Watchlist/>}/>
               <Route path="/portfolio" element={<Portfolio/>}/>
-              {/* <Route path='/position' element={<Position/>}/> */}
+              <Route path='/businessnews' element={<Businessnews/>}/>
             </Route>
 
           </Route>

@@ -191,16 +191,17 @@ export default function Watchlist() {
                             </div>
                             <div className='business_company_img_amnt_all'>
                                 <div className='business_company_img_amnt mb-4'>
-                                    <div className='business_company_img_txt'>
-                                        <div className='business_company_img'>
-                                            <img src={Companies_img1} alt="/" />
+                                    <Link to="/stockpage">
+                                        <div className='business_company_img_txt'>
+                                            <div className='business_company_img'>
+                                                <img src={Companies_img1} alt="/" />
+                                            </div>
+                                            <div className='company_lrm_name_stck'>
+                                                <p className='company_lrm'>lorem ipsum</p>
+                                                <p className='company_stck'>Stock</p>
+                                            </div>
                                         </div>
-                                        <div className='company_lrm_name_stck'>
-                                            <p className='company_lrm'>lorem ipsum</p>
-                                            <p className='company_stck'>Stock</p>
-                                        </div>
-                                    </div>
-
+                                    </Link>
                                     <div className='business_company_img_graph'>
                                         <img src={business_graph1} alt='/' />
                                     </div>
@@ -210,23 +211,24 @@ export default function Watchlist() {
                                         <span className='companies_amnt_percentage'>+86.28(0.34%)</span>
                                     </div>
                                     <div className='companies_edit_cross'>
-                                       <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
+                                        <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
                                     </div>
                                 </div>
                             </div>
 
                             <div className='business_company_img_amnt_all'>
                                 <div className='business_company_img_amnt mb-4'>
-                                    <div className='business_company_img_txt'>
-                                        <div className='business_company_img'>
-                                            <img src={Companies_img2} alt="/" />
+                                    <Link to="/stockpage">
+                                        <div className='business_company_img_txt'>
+                                            <div className='business_company_img'>
+                                                <img src={Companies_img2} alt="/" />
+                                            </div>
+                                            <div className='company_lrm_name_stck'>
+                                                <p className='company_lrm'>lorem ipsum</p>
+                                                <p className='company_stck'>Stock</p>
+                                            </div>
                                         </div>
-                                        <div className='company_lrm_name_stck'>
-                                            <p className='company_lrm'>lorem ipsum</p>
-                                            <p className='company_stck'>Stock</p>
-                                        </div>
-                                    </div>
-
+                                    </Link>
                                     <div className='business_company_img_graph'>
                                         <img src={business_graph} alt='/' />
                                     </div>
@@ -236,23 +238,24 @@ export default function Watchlist() {
                                         <span className='companies_amnt_percentage'>+86.28(0.34%)</span>
                                     </div>
                                     <div className='companies_edit_cross'>
-                                       <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
+                                        <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
                                     </div>
                                 </div>
                             </div>
 
                             <div className='business_company_img_amnt_all'>
                                 <div className='business_company_img_amnt mb-4'>
-                                    <div className='business_company_img_txt'>
-                                        <div className='business_company_img'>
-                                            <img src={Companies_img3} alt="/" />
+                                    <Link to="/stockpage">
+                                        <div className='business_company_img_txt'>
+                                            <div className='business_company_img'>
+                                                <img src={Companies_img3} alt="/" />
+                                            </div>
+                                            <div className='company_lrm_name_stck'>
+                                                <p className='company_lrm'>lorem ipsum</p>
+                                                <p className='company_stck'>Stock</p>
+                                            </div>
                                         </div>
-                                        <div className='company_lrm_name_stck'>
-                                            <p className='company_lrm'>lorem ipsum</p>
-                                            <p className='company_stck'>Stock</p>
-                                        </div>
-                                    </div>
-
+                                    </Link>
                                     <div className='business_company_img_graph'>
                                         <img src={business_graph1} alt='/' />
                                     </div>
@@ -262,23 +265,24 @@ export default function Watchlist() {
                                         <span className='companies_amnt_percentage'>+86.28(0.34%)</span>
                                     </div>
                                     <div className='companies_edit_cross'>
-                                       <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
+                                        <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
                                     </div>
                                 </div>
                             </div>
 
                             <div className='business_company_img_amnt_all'>
                                 <div className='business_company_img_amnt mb-4'>
-                                    <div className='business_company_img_txt'>
-                                        <div className='business_company_img'>
-                                            <img src={Companies_img4} alt="/" />
+                                    <Link to="/stockpage">
+                                        <div className='business_company_img_txt'>
+                                            <div className='business_company_img'>
+                                                <img src={Companies_img4} alt="/" />
+                                            </div>
+                                            <div className='company_lrm_name_stck'>
+                                                <p className='company_lrm'>lorem ipsum</p>
+                                                <p className='company_stck'>Stock</p>
+                                            </div>
                                         </div>
-                                        <div className='company_lrm_name_stck'>
-                                            <p className='company_lrm'>lorem ipsum</p>
-                                            <p className='company_stck'>Stock</p>
-                                        </div>
-                                    </div>
-
+                                    </Link>
                                     <div className='business_company_img_graph'>
                                         <img src={business_graph1} alt='/' />
                                     </div>
@@ -288,22 +292,23 @@ export default function Watchlist() {
                                         <span className='companies_amnt_percentage'>+86.28(0.34%)</span>
                                     </div>
                                     <div className='companies_edit_cross'>
-                                       <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
+                                        <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
                                     </div>
                                 </div>
                             </div>
                             <div className='business_company_img_amnt_all'>
                                 <div className='business_company_img_amnt mb-4'>
-                                    <div className='business_company_img_txt'>
-                                        <div className='business_company_img'>
-                                            <img src={Companies_img5} alt="/" />
+                                    <Link to="/stockpage">
+                                        <div className='business_company_img_txt'>
+                                            <div className='business_company_img'>
+                                                <img src={Companies_img5} alt="/" />
+                                            </div>
+                                            <div className='company_lrm_name_stck'>
+                                                <p className='company_lrm'>lorem ipsum</p>
+                                                <p className='company_stck'>Stock</p>
+                                            </div>
                                         </div>
-                                        <div className='company_lrm_name_stck'>
-                                            <p className='company_lrm'>lorem ipsum</p>
-                                            <p className='company_stck'>Stock</p>
-                                        </div>
-                                    </div>
-
+                                    </Link>
                                     <div className='business_company_img_graph'>
                                         <img src={business_graph} alt='/' />
                                     </div>
@@ -313,23 +318,24 @@ export default function Watchlist() {
                                         <span className='companies_amnt_percentage'>+86.28(0.34%)</span>
                                     </div>
                                     <div className='companies_edit_cross'>
-                                       <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
+                                        <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
                                     </div>
                                 </div>
                             </div>
 
                             <div className='business_company_img_amnt_all'>
                                 <div className='business_company_img_amnt mb-4'>
-                                    <div className='business_company_img_txt'>
-                                        <div className='business_company_img'>
-                                            <img src={Companies_img6} alt="/" />
+                                    <Link to="/stockpage">
+                                        <div className='business_company_img_txt'>
+                                            <div className='business_company_img'>
+                                                <img src={Companies_img6} alt="/" />
+                                            </div>
+                                            <div className='company_lrm_name_stck'>
+                                                <p className='company_lrm'>lorem ipsum</p>
+                                                <p className='company_stck'>Stock</p>
+                                            </div>
                                         </div>
-                                        <div className='company_lrm_name_stck'>
-                                            <p className='company_lrm'>lorem ipsum</p>
-                                            <p className='company_stck'>Stock</p>
-                                        </div>
-                                    </div>
-
+                                    </Link>
                                     <div className='business_company_img_graph'>
                                         <img src={business_graph} alt='/' />
                                     </div>
@@ -339,13 +345,14 @@ export default function Watchlist() {
                                         <span className='companies_amnt_percentage'>+86.28(0.34%)</span>
                                     </div>
                                     <div className='companies_edit_cross'>
-                                       <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
+                                        <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
                                     </div>
                                 </div>
                             </div>
 
                             <div className='business_company_img_amnt_all'>
                                 <div className='business_company_img_amnt mb-4'>
+                                <Link to="/stockpage"> 
                                     <div className='business_company_img_txt'>
                                         <div className='business_company_img'>
                                             <img src={Companies_img7} alt="/" />
@@ -355,7 +362,7 @@ export default function Watchlist() {
                                             <p className='company_stck'>Stock</p>
                                         </div>
                                     </div>
-
+                                    </Link>
                                     <div className='business_company_img_graph'>
                                         <img src={business_graph1} alt='/' />
                                     </div>
@@ -365,13 +372,14 @@ export default function Watchlist() {
                                         <span className='companies_amnt_percentage'>+86.28(0.34%)</span>
                                     </div>
                                     <div className='companies_edit_cross'>
-                                       <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
+                                        <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
                                     </div>
                                 </div>
                             </div>
 
                             <div className='business_company_img_amnt_all'>
                                 <div className='business_company_img_amnt mb-4'>
+                                <Link to="/stockpage"> 
                                     <div className='business_company_img_txt'>
                                         <div className='business_company_img'>
                                             <img src={Companies_img8} alt="/" />
@@ -381,7 +389,7 @@ export default function Watchlist() {
                                             <p className='company_stck'>Stock</p>
                                         </div>
                                     </div>
-
+                                    </Link>
                                     <div className='business_company_img_graph'>
                                         <img src={business_graph1} alt='/' />
                                     </div>
@@ -391,13 +399,13 @@ export default function Watchlist() {
                                         <span className='companies_amnt_percentage'>+86.28(0.34%)</span>
                                     </div>
                                     <div className='companies_edit_cross'>
-                                       <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
+                                        <a href="#" ><img src={system_uicons_cross} alt="/" /></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                     
+
                     <div
                         className={toggleState === 2 ? "content  active-content" : "content"}
                     >
@@ -423,7 +431,7 @@ export default function Watchlist() {
                         className={toggleState === 5 ? "content  active-content" : "content"}
                     >
 
-                        
+
                     </div>
 
                 </div>

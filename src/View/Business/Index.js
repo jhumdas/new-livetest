@@ -10,15 +10,16 @@ export default function Index() {
   const [toggleState, setToggleState] = useState(1);
   const [mediumlist, setMediumlist] = useState(true);
   const [explore, setExplore] = useState(true);
+  const exploreClick = () => {
+    setExplore(!explore);
+  }
   const toggleTab = (index) => {
     setToggleState(index);
   };
   const handleClick = () => {
     setMediumlist(!mediumlist);
   }
-  const handleClickexplore = () => {
-    alert("yes")
-  }
+  
   var settings1 = {
     dots: false,
     arrows: false,
@@ -144,7 +145,7 @@ export default function Index() {
               </button>
             </div>
             <div className='business_explr'>
-              <a href="#" className='business-explr_btn' Onclick={() => handleClickexplore(setExplore)}>
+              <a href="#" className='business-explr_btn' Onclick={() => exploreClick(setExplore)}>
                 EXPLORE
                 <i class="fa-solid fa-angle-down"></i>
               </a>

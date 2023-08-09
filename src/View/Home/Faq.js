@@ -71,7 +71,7 @@ export default function Faq() {
                         data-target="#collapseTwo"
                         aria-expanded="false"
                         aria-controls="collapseTwo"
-                        className="btn btn-link collapsed  collapsible-link"
+                        className="btn btn-link collapsible-link"
                       >
                         Lorem ipsum dolor sit amet consectetur. Volutpat magna?
                       </button>
