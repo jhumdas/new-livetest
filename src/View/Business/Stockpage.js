@@ -387,6 +387,50 @@ export default function Singlestock() {
                         </div>
 
                     </div>
+                     
+                    <div className='business-position_main business_performance business_market_strt mt-4 mb-4'>
+                        <div className='business_position_main_brdr'>
+                            <div id="accordionExample" className="accordion2">
+                                {/* Accordion item 2 */}
+                                <div className="card">
+                                    <div
+                                        id="headingFive"
+                                        className="card-header bg-white border-0"
+                                    >
+                                        <h2 className="mb-0">
+                                            <button
+                                                type="button"
+                                                data-toggle="collapse"
+                                                data-target="#collapseFive"
+                                                aria-expanded="true"
+                                                aria-controls="collapseFive"
+                                                className="btn btn-link collapsible-link"
+                                            >
+                                             People Also Bought
+                                            </button>
+                                        </h2>
+                                        {/* <div className='icon'></div> */}
+                                    </div>
+                                    <div
+                                        id="collapseFive"
+                                        aria-labelledby="headingFive"
+                                        data-parent="#accordionExample"
+                                        className="collapse show"
+                                    >
+                                        <div className="card-body">
+                                            <div className='people_bought_compamy_txt_price_amnt'>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* End */}
+
+                            </div>
+                        </div>
+
+                    </div>
+
 
 
                 </div>
