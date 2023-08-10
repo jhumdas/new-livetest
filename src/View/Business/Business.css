@@ -1016,6 +1016,7 @@ p.company_news_about_txt_ppp {
     line-height: 22px;
     letter-spacing: 1px;
 }
+
 p.company_news_update_txt {
     color: #000;
     font-family: 'Open Sans';
@@ -1026,18 +1027,167 @@ p.company_news_update_txt {
     margin-top: 10px;
     margin-bottom: 15px;
 }
+
 .company_news_update {
     border-bottom: 1px solid rgba(0, 0, 0, 0.50);
     margin-bottom: 10px;
 }
 
 .people_bought_compamy_txt_price_amnt {
+ 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+
 }
 
+/* .people_bought_compamy_txt_price_amnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.people_bought_company_img_txt {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.people_bought_company_flx {
+    margin-left: 40px;
+    margin-right: 45px;
+}
+
+.people_bought_company_img {
+    width: 50px;
+    height: 50px;
+}
+
+.people_bought_company_img img {
+    width: 100%;
+    height: 100%;
+}
+
+h5.bought_company_name {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+p.bought_company_stck {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 10px;
+}
+span.bought_company_amnt {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+span.bought_company_percent{
+    color: #2EC914;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: 15px;
+}
+.bought_company_amnt_percnt {
+    margin-top: 20px;
+}
+.share_holding_month_date_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 46px;
+    margin-right: 48px;
+}
+.content-business-share {
+    display: none;
+}
+.active-content-business-shre {
+    display: block;
+}
+.share_holding_pattrn_flx_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 46px;
+    margin-right: 48px;
+    margin-top: 20PX;
+    margin-bottom: 20PX;
+}
+.progress.progress_share {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+    margin-left: 46px;
+    margin-right: 48px;
+    height: 8px;
+}
+.progress-bar.progress_shre_bar {
+    background: #1FAF38;
+    height: 20px;
+}
+.share_holdsong.active_share_holdsong {
+    border-radius: 10px;
+    border: 1px solid rgba(37, 51, 58, 0.50);
+    background: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+}
+.share_holdsong {
+    background: transparent;
+    border: none;
+}
+.business_sell_buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 40px; */
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+.business-cell_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.3px solid #1FAF38;
+    background: rgba(255, 255, 255, 0.00);
+    /* padding: 40px; */
+    padding-top: 9px;
+    padding-bottom: 8px;
+   padding-left: 150px;
+   padding-right: 150px;
+}
+/* .business-buy_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.3px solid #1FAF38;
+    background: rgba(255, 255, 255, 0.00);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 114px;
+    padding-right: 114px;
+} */
 @media(max-Width:1199px) {
     .business_holdsong_position {
         gap: 0%;
@@ -1098,6 +1248,16 @@ p.company_news_update_txt {
 
     .business_holdsong_position {
         justify-content: space-evenly;
+    }
+    .business_sell_buy {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .people_bought_compamy_txt_price_amnt {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
     }
 }
 
@@ -1198,16 +1358,24 @@ p.company_news_update_txt {
         font-size: 15px;
         line-height: 20px;
     }
+
     .business_performance .collapsible-link::before {
         font-size: 25px;
     }
+
     .business_performance .btn-link {
         font-size: 17px;
         line-height: 23px;
     }
+
     p.today_low_pp {
         font-size: 16px;
         line-height: 21px;
+    }
+    .share_holding_month_date_main {
+        flex-wrap: wrap;
+        justify-content: inherit;
+        gap:20px
     }
 }
 
@@ -1268,6 +1436,7 @@ p.company_news_update_txt {
     .right_chevron {
         width: 29px;
     }
+
     p.today_low_pp {
         font-size: 14px;
         line-height: 19px;
@@ -1325,10 +1494,11 @@ p.company_news_update_txt {
         line-height: 19px;
         margin-bottom: 2px;
     }
+
     .input_high_low {
-       
+
         margin-top: 9px;
-     
+
     }
 }
 
@@ -1400,9 +1570,15 @@ p.company_news_update_txt {
         padding-bottom: 10px;
         font-size: 14px;
     }
+
     p.today_low_pp {
         font-size: 12px;
         line-height: 19px;
+    }
+
+    .performace_high_low {
+        justify-content: inherit;
+        gap: 46px;
     }
 
 }

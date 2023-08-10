@@ -3,9 +3,18 @@ import single_stock_image from '../../images/single_stock_image.png';
 import material_symbols_done_all from '../../images/material_symbols_done_all.png'
 import simple_icons_cashapp from '../../images/simple_icons_cashapp.png';
 import mdi_money from '../../images/mdi_money.png';
-import triangle from '../../images/triangle.png'
+import triangle from '../../images/triangle.png';
+import bought_company1 from '../../images/bought_company1.png';
+import bought_company2 from '../../images/bought_company2.png';
+import bought_company3 from '../../images/bought_company3.png'
+import { useState } from 'react';
+
 export default function Singlestock() {
+    const [togglestockState, setTogglestockState] = useState(1);
     const loop = [1, 2];
+    const togglestockButton = (index) => {
+        setTogglestockState(index)
+    }
     return (
         <>
             <section className='stock_single_page'>
@@ -296,28 +305,221 @@ export default function Singlestock() {
                                         className="collapse show"
                                     >
                                         <div className="card-body">
-                                            <div className='spot_market_txt'>
-                                                <div className='spot_market_txt_main'>
-                                                    <h6 className='spot_market_point_txt'><span className='spot_market_point'></span>Parent Organisation</h6>
-                                                    <h5 className='spot_market_point_lrm'>Lorem</h5>
-                                                </div>
-                                                <div className='spot_market_txt_main'>
-                                                    <h6 className='spot_market_point_txt'><span className='spot_market_point'></span>CEO</h6>
-                                                    <h5 className='spot_market_point_lrm'>Lorem</h5>
-                                                </div>
-                                                <div className='spot_market_txt_main'>
-                                                    <h6 className='spot_market_point_txt'><span className='spot_market_point'></span>Founded In</h6>
-                                                    <h5 className='spot_market_point_lrm'>1990</h5>
-                                                </div>
-                                                <div className='spot_market_txt_main'>
-                                                    <h6 className='spot_market_point_txt'><span className='spot_market_point'></span>Number Of Share Holders 564,03.01</h6>
-                                                    <h5 className='spot_market_point_lrm'>Lorem</h5>
-                                                </div>
-                                                <div className='spot_market_txt_main'>
-                                                    <h6 className='spot_market_point_txt'><span className='spot_market_point'></span>NSE Symbol</h6>
-                                                    <h5 className='spot_market_point_lrm'>Lorem</h5>
-                                                </div>
+                                            <div className='share_holding_month_date_main'>
+                                                <button
+                                                    className={togglestockState === 1 ? "share_holdsong  active_share_holdsong" : "share_holdsong"}
+                                                    onClick={() => togglestockButton(1)}
+                                                >
+                                                    Mar’22
+                                                </button>
+                                                <button
+                                                    className={togglestockState === 2 ? "share_holdsong  active_share_holdsong" : "share_holdsong"}
+                                                    onClick={() => togglestockButton(2)}
+                                                >
+                                                    Jun’21
+                                                </button>
+                                                <button
+                                                    className={togglestockState === 3 ? "share_holdsong  active_share_holdsong" : "share_holdsong"}
+                                                    onClick={() => togglestockButton(3)}
+                                                >
+                                                    Sep’24
+                                                </button>
+                                                <button
+                                                    className={togglestockState === 4 ? "share_holdsong  active_share_holdsong" : "share_holdsong"}
+                                                    onClick={() => togglestockButton(4)}
+                                                >
+                                                    Dec’27
+                                                </button>
+                                                <button
+                                                    className={togglestockState === 5 ? "share_holdsong  active_share_holdsong" : "share_holdsong"}
+                                                    onClick={() => togglestockButton(5)}
+                                                >
+                                                    Mar’22
+                                                </button>
                                             </div>
+
+                                            <div
+                                                className={togglestockState === 1 ? "content-business-share  active-content-business-shre" : "content-business-share"}
+                                            >
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Retail</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-75" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Foreign Institutes</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-50" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Other Domestic Institutes</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-25" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div
+                                                className={togglestockState === 2 ? "content-business-share  active-content-business-shre" : "content-business-share"}
+                                            >
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Retail</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-75" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Foreign Institutes</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-50" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Other Domestic Institutes</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-25" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div
+                                                className={togglestockState === 3 ? "content-business-share  active-content-business-shre" : "content-business-share"}
+                                            >
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Retail</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-75" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Foreign Institutes</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-50" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Other Domestic Institutes</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-25" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div
+                                                className={togglestockState === 4 ? "content-business-share  active-content-business-shre" : "content-business-share"}
+                                            >
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Retail</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-75" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Foreign Institutes</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-50" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Other Domestic Institutes</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-25" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div
+                                                className={togglestockState === 5 ? "content-business-share  active-content-business-shre" : "content-business-share"}
+                                            >
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Retail</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-75" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Foreign Institutes</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-50" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div className='share_holding_pattrn_main'>
+                                                    <div className='share_holding_pattrn_flx_main'>
+                                                        <h5 className='shre_holding_txt_main'>Other Domestic Institutes</h5>
+                                                        <p className='shre_holding_prcnt_main'>98.65%</p>
+                                                    </div>
+                                                    <div class="progress progress_share">
+                                                        <div class="progress-bar progress_shre_bar w-25" role="progressbar" aria-valuenow="" aria-valuemin="" aria-valuemax=""></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -360,24 +562,24 @@ export default function Singlestock() {
                                         className="collapse show"
                                     >
                                         <div className="card-body">
-                                        {loop.map((item, index) => {
-                                            return(
-                                            <div className='company_news_abt_update'>
-                                                <div className='company_news_about_flx'>
-                                                    <div className='company_news_about_txt'>
-                                                        <h5 className='company_news_about_txt_hhh'>Lorem ipsum</h5>
-                                                    </div>
-                                                    <div className='company_news_about_txt'>
-                                                        <p className='company_news_about_txt_ppp'>1 day</p>
-                                                    </div>
-                                                </div>
+                                            {loop.map((item, index) => {
+                                                return (
+                                                    <div className='company_news_abt_update'>
+                                                        <div className='company_news_about_flx'>
+                                                            <div className='company_news_about_txt'>
+                                                                <h5 className='company_news_about_txt_hhh'>Lorem ipsum</h5>
+                                                            </div>
+                                                            <div className='company_news_about_txt'>
+                                                                <p className='company_news_about_txt_ppp'>1 day</p>
+                                                            </div>
+                                                        </div>
 
-                                                <div className='company_news_update' style={index == loop.length-1 ? { border:"none"} : {}}>
-                                                    <p className='company_news_update_txt'>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,...</p>
-                                                </div>
-                                            </div>
-                                            )
-                                        })}
+                                                        <div className='company_news_update' style={index == loop.length - 1 ? { border: "none" } : {}}>
+                                                            <p className='company_news_update_txt'>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,...</p>
+                                                        </div>
+                                                    </div>
+                                                )
+                                            })}
                                         </div>
                                     </div>
                                 </div>
@@ -387,7 +589,7 @@ export default function Singlestock() {
                         </div>
 
                     </div>
-                     
+
                     <div className='business-position_main business_performance business_market_strt mt-4 mb-4'>
                         <div className='business_position_main_brdr'>
                             <div id="accordionExample" className="accordion2">
@@ -406,7 +608,7 @@ export default function Singlestock() {
                                                 aria-controls="collapseFive"
                                                 className="btn btn-link collapsible-link"
                                             >
-                                             People Also Bought
+                                                People Also Bought
                                             </button>
                                         </h2>
                                         {/* <div className='icon'></div> */}
@@ -419,7 +621,53 @@ export default function Singlestock() {
                                     >
                                         <div className="card-body">
                                             <div className='people_bought_compamy_txt_price_amnt'>
-                                                
+                                                <div className='people_bought_company_flx'>
+                                                    <div className='people_bought_company_img_txt'>
+                                                        <div className='people_bought_company_img'>
+                                                            <img src={bought_company1} alt="/" />
+                                                        </div>
+                                                        <div className='people_bought_company_txt'>
+                                                            <h5 className='bought_company_name'>Lorem Ipsum</h5>
+                                                            <p className='bought_company_stck'>Stock</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className='bought_company_amnt_percnt'>
+                                                        <span className='bought_company_amnt'>$20.05</span>
+                                                        <span className='bought_company_percent'>+86.28(0.34%)</span>
+                                                    </div>
+                                                </div>
+
+                                                <div className='people_bought_company_flx'>
+                                                    <div className='people_bought_company_img_txt'>
+                                                        <div className='people_bought_company_img'>
+                                                            <img src={bought_company2} alt="/" />
+                                                        </div>
+                                                        <div className='people_bought_company_txt'>
+                                                            <h5 className='bought_company_name'>Lorem Ipsum</h5>
+                                                            <p className='bought_company_stck'>Stock</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className='bought_company_amnt_percnt'>
+                                                        <span className='bought_company_amnt'>$20.05</span>
+                                                        <span className='bought_company_percent'>+86.28(0.34%)</span>
+                                                    </div>
+                                                </div>
+
+                                                <div className='people_bought_company_flx'>
+                                                    <div className='people_bought_company_img_txt'>
+                                                        <div className='people_bought_company_img'>
+                                                            <img src={bought_company3} alt="/" />
+                                                        </div>
+                                                        <div className='people_bought_company_txt'>
+                                                            <h5 className='bought_company_name'>Lorem Ipsum</h5>
+                                                            <p className='bought_company_stck'>Stock</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className='bought_company_amnt_percnt'>
+                                                        <span className='bought_company_amnt'>$20.05</span>
+                                                        <span className='bought_company_percent'>+86.28(0.34%)</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -429,6 +677,19 @@ export default function Singlestock() {
                             </div>
                         </div>
 
+                    </div>
+
+                    <div className='business-position_main business_performance business_market_strt mt-4 mb-4'>
+                    <div className='business_position_main_brdr'>
+                        <div className='business_sell_buy'>
+                            <div className='business_cell'>
+                                <a href="" className='business-cell_btn'>Sell</a>
+                            </div>
+                            <div className='business_buy'>
+                                <a href="" className='business-cell_btn'>Buy</a>
+                            </div>
+                        </div>
+                    </div>
                     </div>
 
 

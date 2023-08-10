@@ -14,7 +14,7 @@ export default function VideoScreen() {
             <div className='video-screen single-movie'>
                 <div className='container'>
                     <div className='videowrap'>
-                        <div><img src={v} style={{ width: "100%" }} /></div>
+                        <div className='video'><img src={v} style={{ width: "100%" }} /></div>
                         <div className='top'>
                             <div className='lftText'><i class="fa-solid fa-chevron-left mr-3"></i>Dora The Explorer</div>
                             <div className='rgtText'><img src={a} className=''/>subtitles <img src={b} className='' /></div>

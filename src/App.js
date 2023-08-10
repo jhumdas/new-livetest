@@ -21,6 +21,7 @@ import '../src/View/Podcast/Podcast.css'
 import '../src/View/OTTHome/OTThome.css'
 import '../src/View/Learning/Learning.css'
 import '../src/View/Business/Business.css'
+import '../src/View/Donation/Donation.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -66,6 +67,16 @@ import Watchlist from '../src/View/Business/Watchlist';
 import Portfolio from '../src/View/Business/Portfolio';
 import Businessnews from '../src/View/Business/Businessnews';
 import Stockpage from '../src/View/Business/Stockpage'
+import Donation from './View/Donation/Index'
+import DonationLayout from './Layout/DonationLayout';
+
+
+
+
+
+import VideoSingle from './View/Learning/VideoSingle';
+
+// import Position from '../src/View/Business/Position';
 function App() {
 
 
@@ -97,6 +108,7 @@ function App() {
             <Route path="/singleTv-series" element={<SingleTvSeries />} />
             <Route path="/video-screen" element={<VideoScreen />} />
             <Route path="/stockpage" element={<Stockpage/>}/>
+            <Route path="/videosingle-page" element={<VideoSingle />} />
 
 
             <Route element={<MusicPodcastlayout />}>
@@ -121,12 +133,17 @@ function App() {
               <Route path="/my-course" element={<MyCourse />} />
               <Route path="/instructor" element={<Instructor />} />
             </Route>
-
+            <Route element={<DonationLayout />}>
+              <Route path="/donation" element={<Donation />} />
+            </Route>
             <Route element={<BusinessLayout />}>
               <Route path="/businesshome" element={<Businesshome />} />
               <Route path="/watchlist" element={<Watchlist/>}/>
               <Route path="/portfolio" element={<Portfolio/>}/>
               <Route path='/businessnews' element={<Businessnews/>}/>
+              {/* <Route path="/watchlist" element={<Watchlist />} />
+              <Route path="/portfolio" element={<Portfolio />} /> */}
+              {/* <Route path='/position' element={<Position/>}/> */}
             </Route>
 
           </Route>
