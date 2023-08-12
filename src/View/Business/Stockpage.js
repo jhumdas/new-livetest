@@ -108,48 +108,46 @@ export default function Singlestock() {
                                         className="collapse show"
                                     >
                                         <div className="card-body">
-                                            <div className='performace_high_low'>
-                                                <div className='performane_today_low'>
-                                                    <p className='today_low_pp'>Today's Low</p>
-                                                    <p className='today_low_pp'>798.08</p>
+                                            <div className='card_body_high_perfrmce_lw'>
+                                                <div className='performace_high_low'>
+                                                    <div className='performane_today_low'>
+                                                        <p className='today_low_pp'>Today's Low</p>
+                                                        <p className='today_low_pp'>798.08</p>
+                                                    </div>
+                                                    <div className='performane_today_low'>
+                                                        <p className='today_low_pp'>Today's High</p>
+                                                        <p className='today_low_pp'>798.08</p>
+                                                    </div>
                                                 </div>
-                                                <div className='performane_today_low'>
-                                                    <p className='today_low_pp'>Today's High</p>
-                                                    <p className='today_low_pp'>798.08</p>
-                                                </div>
-                                            </div>
 
-                                            <div className='input_high_low'>
-                                                <div className='input_high_low_grn'>
-                                                    <div className='input_high_low_btn'>
-                                                        <img src={triangle} alt='/' />
+                                                <div className='input_high_low'>
+                                                    <div className='input_high_low_grn'>
+                                                        <div className='input_high_low_btn'>
+                                                            <img src={triangle} alt='/' />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div className='performace_high_low'>
+                                                    <div className='performane_today_low'>
+                                                        <p className='today_low_pp'>Today's Low</p>
+                                                        <p className='today_low_pp'>798.08</p>
+                                                    </div>
+                                                    <div className='performane_today_low'>
+                                                        <p className='today_low_pp'>Today's High</p>
+                                                        <p className='today_low_pp'>798.08</p>
+                                                    </div>
+                                                </div>
+
+                                                <div className='input_high_low'>
+                                                    <div className='input_high_low_grn'>
+                                                        <div className='input_high_low_btn'>
+                                                            <img src={triangle} alt='/' />
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-
-
-                                            <div className='performace_high_low'>
-                                                <div className='performane_today_low'>
-                                                    <p className='today_low_pp'>Today's Low</p>
-                                                    <p className='today_low_pp'>798.08</p>
-                                                </div>
-                                                <div className='performane_today_low'>
-                                                    <p className='today_low_pp'>Today's High</p>
-                                                    <p className='today_low_pp'>798.08</p>
-                                                </div>
-                                            </div>
-
-                                            <div className='input_high_low'>
-                                                <div className='input_high_low_grn'>
-                                                    <div className='input_high_low_btn'>
-                                                        <img src={triangle} alt='/' />
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -564,6 +562,7 @@ export default function Singlestock() {
                                         <div className="card-body">
                                             {loop.map((item, index) => {
                                                 return (
+                                                    
                                                     <div className='company_news_abt_update'>
                                                         <div className='company_news_about_flx'>
                                                             <div className='company_news_about_txt'>
@@ -679,17 +678,17 @@ export default function Singlestock() {
 
                     </div>
 
-                    <div className='business-position_main business_performance business_market_strt mt-4 mb-4'>
-                    <div className='business_position_main_brdr'>
-                        <div className='business_sell_buy'>
-                            <div className='business_cell'>
-                                <a href="" className='business-cell_btn'>Sell</a>
-                            </div>
-                            <div className='business_buy'>
-                                <a href="" className='business-cell_btn'>Buy</a>
+                    <div className='business-position_main business_performance business_market_btn mt-4 mb-4'>
+                        <div className='business_position_main_brdr business_market_btn_brdr'>
+                            <div className='business_sell_buy'>
+                                <div className='business_cell'>
+                                    <a href="" className='business-cell_btn'>Sell</a>
+                                </div>
+                                <div className='business_buy'>
+                                    <a href="" className='business-cell_btn'>Buy</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
 
 
