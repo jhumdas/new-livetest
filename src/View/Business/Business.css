@@ -1188,6 +1188,22 @@ span.bought_company_percent{
     padding-left: 114px;
     padding-right: 114px;
 } */
+.business_abt_company .collapsible-link[aria-expanded="true"]::before {
+    content: "\f106";
+    top: 10%;
+}
+.business_shareholding .collapsible-link[aria-expanded="true"]::before {
+    content: "\f106";
+    top: 10%;
+}
+.business_abt_news_cmpny .collapsible-link[aria-expanded="true"]::before {
+    content: "\f106";
+    top: 13%;
+}
+.business_peopls_bought .collapsible-link[aria-expanded="true"]::before {
+    content: "\f106";
+    top: 13%;
+}
 @media(max-Width:1199px) {
     .business_holdsong_position {
         gap: 0%;

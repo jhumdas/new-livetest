@@ -213,7 +213,7 @@ export default function Singlestock() {
 
                     </div>
 
-                    <div className='business-position_main business_performance business_market_strt mt-4 mb-4'>
+                    <div className='business-position_main business_performance business_abt_company mt-4 mb-4'>
                         <div className='business_position_main_brdr'>
                             <div id="accordionExample" className="accordion2">
                                 {/* Accordion item 2 */}
@@ -275,7 +275,7 @@ export default function Singlestock() {
 
                     </div>
 
-                    <div className='business-position_main business_performance business_market_strt mt-4 mb-4'>
+                    <div className='business-position_main business_performance business_shareholding mt-4 mb-4'>
                         <div className='business_position_main_brdr'>
                             <div id="accordionExample" className="accordion2">
                                 {/* Accordion item 2 */}
@@ -532,7 +532,7 @@ export default function Singlestock() {
 
 
 
-                    <div className='business-position_main business_performance business_market_strt mt-4 mb-4'>
+                    <div className='business-position_main business_performance business_abt_news_cmpny mt-4 mb-4'>
                         <div className='business_position_main_brdr'>
                             <div id="accordionExample" className="accordion2">
                                 {/* Accordion item 2 */}
@@ -590,7 +590,7 @@ export default function Singlestock() {
 
                     </div>
 
-                    <div className='business-position_main business_performance business_market_strt mt-4 mb-4'>
+                    <div className='business-position_main business_performance business_peopls_bought mt-4 mb-4'>
                         <div className='business_position_main_brdr'>
                             <div id="accordionExample" className="accordion2">
                                 {/* Accordion item 2 */}
