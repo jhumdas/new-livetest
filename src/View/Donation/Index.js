@@ -7,13 +7,17 @@ import a from "../../images/donate1.png"
 import b from '../../images/Vector 6.png'
 import bbb from '../../images/pppp.png'
 import c from '../../images/poorboy.png';
-import d from '../../images/Rectangle 522.png';
+import d1 from '../../images/donar1.png';
+import d2 from '../../images/donar2.png';
+import d3 from '../../images/donar3.png';
+import d4 from '../../images/donar4.png';
 import e from '../../images/dn3.png';
 import f from '../../images/d98.png';
 import g from '../../images/d23.png';
 import bannerimage from '../../images/New Project (1).png'
+import DonateModal from '../../Component/Modal/DonateModal';
 export default function Index() {
-    const loop = [1, 2, 3];
+    const loop = [1, 2, 3,4,6];
 
     const [toggleState, setToggleState] = useState(1);
 
@@ -32,17 +36,24 @@ export default function Index() {
 
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 4
-                }
-            },
-            {
-                breakpoint: 600,
+                breakpoint: 1199,
                 settings: {
                     slidesToShow: 3
                 }
             },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+         
             {
                 breakpoint: 480,
                 settings: {
@@ -67,17 +78,18 @@ export default function Index() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 991,
                 settings: {
                     slidesToShow: 2
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 1
                 }
             }
+        
         ]
     };
     return (
@@ -314,10 +326,49 @@ export default function Index() {
                         <div className='highlight'>
                             <div className='container'>
                                 <h2>highlights for today</h2>
-                                <div className='slider shop_best_selling_prdt selectsong-slider' style={{paddingTop:"0"}}>
+                                <div className='slider shop_best_selling_prdt selectsong-slider' style={{ paddingTop: "0" }}>
                                     <Slider {...settings}>
-                                        <div className='box'>
-                                            <div style={{position:"relative"}}>
+                                        {loop.map((item,index)=>{
+                                            return(
+                                                <div className='box'>
+                                                <div style={{ position: "relative" }}>
+                                                    <img src={c} />
+                                                    <div className='img-cnt'>5 days left</div>
+                                                </div>
+                                                <div className='cnt'>
+                                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua </p>
+                                                    <h6>$ 9,80,765 raised</h6>
+                                                    <div className="progress progress_line">
+                                                        <div
+                                                            className="progress-bar progress_shre_bar w-50"
+                                                            role="progressbar"
+                                                            aria-valuenow=""
+                                                            aria-valuemin=""
+                                                            aria-valuemax=""
+                                                        />
+                                                    </div>
+    
+                                                    <h6 style={{ color: "#25333a" }}>last donation 3 hr ago</h6>
+                                                    <div className='donars'>
+                                                        <div className='more-images'>
+                                                            <img src={d1} className='image1'/>
+                                                            <img src={d2} className='image2'/>
+                                                            <img src={d3} className='image3'/>
+                                                            <img src={d4} className='image4'/>
+                                                        </div>
+                                                        <h5>25,565  donars</h5>
+                                                        <div><a href="#">Donate</a></div>
+    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            )
+                                        }
+
+                                        )}
+                                    
+                                        {/* <div className='box'>
+                                            <div style={{ position: "relative" }}>
                                                 <img src={c} />
                                                 <div className='img-cnt'>5 days left</div>
                                             </div>
@@ -328,7 +379,7 @@ export default function Index() {
                                             </div>
                                         </div>
                                         <div className='box'>
-                                            <div style={{position:"relative"}}>
+                                            <div style={{ position: "relative" }}>
                                                 <img src={c} />
                                                 <div className='img-cnt'>5 days left</div>
                                             </div>
@@ -339,7 +390,7 @@ export default function Index() {
                                             </div>
                                         </div>
                                         <div className='box'>
-                                            <div style={{position:"relative"}}>
+                                            <div style={{ position: "relative" }}>
                                                 <img src={c} />
                                                 <div className='img-cnt'>5 days left</div>
                                             </div>
@@ -348,18 +399,7 @@ export default function Index() {
                                                 <h6>$ 9,80,765 raised</h6>
                                                 <h6 style={{ color: "#25333a" }}>last donation 3 hr ago</h6>
                                             </div>
-                                        </div>
-                                        <div className='box'>
-                                            <div style={{position:"relative"}}>
-                                                <img src={c} />
-                                                <div className='img-cnt'>5 days left</div>
-                                            </div>
-                                            <div className='cnt'>
-                                                <p>Amet minim mollit non deserunt ullamco est sit aliqua </p>
-                                                <h6>$ 9,80,765 raised</h6>
-                                                <h6 style={{ color: "#25333a" }}>last donation 3 hr ago</h6>
-                                            </div>
-                                        </div>
+                                        </div> */}
                                     </Slider>
                                 </div>
                             </div>
@@ -476,6 +516,9 @@ export default function Index() {
                     <div></div>
                 </div>
             </div>
+
+
+            {/* <DonateModal/> */}
 
         </>
     )
