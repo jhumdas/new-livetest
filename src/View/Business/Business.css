@@ -743,8 +743,21 @@ p.business_portflo_percnt_ppp {
     max-width: 80%;
     padding-top: 11px;
     padding-bottom: 11px;
-
 }
+
+/* .business_sprts_mrkt {
+    height: 100vh;
+    overflow-y: auto;
+} */
+/* .business_performane_brdr {
+    width: 100%;
+    overflow-x: auto;
+} */
+.sptmrtyscrl {
+    height: 60vh;
+    overflow-y: auto;
+}
+
 .business_position_main_brdr.business_market_btn_brdr {
     border-radius: 20px 20px 0px 0px;
     background: #FFF;
@@ -779,11 +792,13 @@ p.business_portflo_percnt_ppp {
     height: 50px;
     border-radius: 31px;
 }
+
 .business_main_img img {
     width: 25px;
     height: 25px;
     object-fit: cover;
 }
+
 p.business_txt_position_cash {
     color: #25333A;
     font-family: 'Open Sans';
@@ -812,6 +827,16 @@ p.business_txt_position_amnt {
     margin-right: 30px;
     margin-top: 20px;
 }
+
+h5.busnprtxt {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
 /* .business_pstn_flx {
     display: flex;
     justify-content: center;
@@ -932,14 +957,21 @@ h2.business_perftmne {
     background: #1FAF38;
     width: 100%;
     height: 5px;
+    position: relative;
+}
+
+.input_high_low_btn {
+    position: absolute;
+    top: 0
 }
 
 .input_high_low {
 
     margin-top: 20px;
-    position: relative;
+    /* position: relative; */
     margin-bottom: 35px;
 }
+
 .card_body_high_perfrmce_lw {
     margin-left: 40px;
     margin-right: 40px;
@@ -1001,6 +1033,7 @@ h6.spot_market_point_txt {
     letter-spacing: 2px;
 
 }
+
 .spot_market_txt {
     margin-left: 40px;
 }
@@ -1068,8 +1101,8 @@ p.company_news_update_txt {
 
 .people_bought_compamy_txt_price_amnt {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     /* gap: 85px; */
 
@@ -1118,6 +1151,7 @@ p.bought_company_stck {
     line-height: 22px;
     margin-top: 10px;
 }
+
 span.bought_company_amnt {
     color: #000;
     font-family: 'Open Sans';
@@ -1125,7 +1159,8 @@ span.bought_company_amnt {
     font-weight: 400;
     line-height: 25px;
 }
-span.bought_company_percent{
+
+span.bought_company_percent {
     color: #2EC914;
     font-family: 'Open Sans';
     font-size: 20px;
@@ -1133,9 +1168,11 @@ span.bought_company_percent{
     line-height: 25px;
     margin-left: 15px;
 }
+
 .bought_company_amnt_percnt {
     margin-top: 20px;
 }
+
 .share_holding_month_date_main {
     display: flex;
     justify-content: space-between;
@@ -1143,21 +1180,50 @@ span.bought_company_percent{
     margin-left: 46px;
     margin-right: 48px;
 }
+
 .content-business-share {
     display: none;
 }
+
 .active-content-business-shre {
     display: block;
 }
+
 .share_holding_pattrn_flx_main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 46px;
-    margin-right: 48px;
+    /* margin-left: 46px;
+    margin-right: 48px; */
     margin-top: 20PX;
     margin-bottom: 20PX;
 }
+
+.share_holding_pattrn_main {
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+h5.shre_holding_txt_main {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+
+}
+
+p.shre_holding_prcnt_main {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+
+}
+
 .progress.progress_share {
     display: flex;
     height: 1rem;
@@ -1166,14 +1232,15 @@ span.bought_company_percent{
     font-size: .75rem;
     background-color: #e9ecef;
     border-radius: 0.25rem;
-    margin-left: 46px;
-    margin-right: 48px;
+    /* margin-left: 46px;
+    margin-right: 48px; */
     height: 8px;
 }
+
 .progress-bar.progress_shre_bar {
     background: #1FAF38;
-    height: 20px;
 }
+
 .share_holdsong.active_share_holdsong {
     border-radius: 10px;
     border: 1px solid rgba(37, 51, 58, 0.50);
@@ -1183,16 +1250,19 @@ span.bought_company_percent{
     align-items: center;
     padding: 5px 15px;
 }
+
 .share_holdsong {
     background: transparent;
     border: none;
 }
+
 .business_sell_buy {
     display: flex;
     gap: 40px;
     justify-content: center;
-    
+
 }
+
 .business-cell_btn {
     display: flex;
     justify-content: center;
@@ -1203,9 +1273,11 @@ span.bought_company_percent{
     /* padding: 40px; */
     padding-top: 9px;
     padding-bottom: 8px;
-   padding-left: 150px;
-   padding-right: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    color: #1FAF38;
 }
+
 /* .business-buy_btn {
     display: flex;
     justify-content: center;
@@ -1222,18 +1294,22 @@ span.bought_company_percent{
     content: "\f106";
     top: 10%;
 }
+
 .business_shareholding .collapsible-link[aria-expanded="true"]::before {
     content: "\f106";
     top: 10%;
 }
+
 .business_abt_news_cmpny .collapsible-link[aria-expanded="true"]::before {
     content: "\f106";
     top: 13%;
 }
+
 .business_peopls_bought .collapsible-link[aria-expanded="true"]::before {
     content: "\f106";
     top: 13%;
 }
+
 @media(max-Width:1199px) {
     .business_holdsong_position {
         gap: 0%;
@@ -1244,6 +1320,12 @@ span.bought_company_percent{
         padding-right: 60px;
 
     }
+    .people_bought_compamy_txt_price_amnt {
+        gap: 20px;
+    }
+    /* .people_bought_compamy_txt_price_amnt {
+        justify-content: space-between;
+    } */
 }
 
 @media(max-Width:991px) {
@@ -1295,25 +1377,97 @@ span.bought_company_percent{
     .business_holdsong_position {
         justify-content: space-evenly;
     }
+
     .business_sell_buy {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
+
     .people_bought_compamy_txt_price_amnt {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         gap: 25px;
     }
+
     p.business_txt_position_cash {
         font-size: 21px;
         line-height: 25px;
         margin-bottom: 14px;
         white-space: nowrap;
     }
+
     .business_main_brdr_img_txt {
         margin-left: 20px;
     }
+
+    h5.busnprtxt {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    p.today_low_pp {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 3px;
+    }
+
+    .business_performance .btn-link {
+        margin-left: 20px;
+    }
+
+    .card_body_high_perfrmce_lw {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .business_performance .collapsible-link::before {
+        right: 1.8rem;
+    }
+
+    .business_portfolio_amont_bg {
+        max-width: 95%;
+    }
+
+    .business_portflo_amnt {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .business_position_main_brdr {
+        max-width: 95%;
+    }
+
+    .spot_market_txt {
+        margin-left: 30px;
+    }
+
+    h6.spot_market_point_txt {
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+
+    h5.spot_market_point_lrm {
+        font-size: 18px;
+        line-height: 23px;
+        margin-right: 31px;
+    }
+
+    .share_holding_month_date_main {
+        margin-left: 33px;
+        margin-right: 36px;
+    }
+
+    .share_holding_pattrn_main {
+        margin-left: 34px;
+        margin-right: 39px;
+    }
+    .business_position_main_brdr.business_market_btn_brdr {
+        max-width: 95%;
+    }
+
+
 }
 
 @media(max-Width:767px) {
@@ -1427,11 +1581,25 @@ span.bought_company_percent{
         font-size: 16px;
         line-height: 21px;
     }
+
     .share_holding_month_date_main {
         flex-wrap: wrap;
         justify-content: inherit;
-        gap:20px
+        gap: 20px
     }
+
+    h5.busnprtxt {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .business_peopls_bought .collapsible-link[aria-expanded="true"]::before {
+        top: 6%;
+    }
+    .business-cell_btn {
+        padding-left: 83px;
+        padding-right: 83px;
+    }
+
 }
 
 @media(max-Width:576px) {
@@ -1496,6 +1664,50 @@ span.bought_company_percent{
         font-size: 14px;
         line-height: 19px;
     }
+
+    .business_performance .btn-link {
+        margin-left: 15px;
+    }
+
+    .card_body_high_perfrmce_lw {
+        margin-left: 25px;
+    }
+
+    h5.shre_holding_txt_main {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    p.shre_holding_prcnt_main {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .progress.progress_share {
+        height: 6px;
+    }
+    .company_news_abt_update {
+        margin-left: 24px;
+        margin-right: 32px;
+    }
+    h5.company_news_about_txt_hhh {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    p.company_news_about_txt_ppp {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    p.company_news_update_txt {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    .business-cell_btn {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
 }
 
 @media(max-Width:480px) {
@@ -1555,15 +1767,62 @@ span.bought_company_percent{
         margin-top: 9px;
 
     }
+
     p.business_txt_position_cash {
         font-size: 17px;
         line-height: 22px;
         margin-bottom: 7px;
         white-space: nowrap;
     }
+
     .business_main_brdr_img_txt {
         margin-bottom: 15px;
         margin-top: 15px;
+    }
+
+    .spot_market_point {
+        width: 11px;
+        height: 11px;
+    }
+
+    h6.spot_market_point_txt {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 13px;
+        /* white-space: nowrap; */
+    }
+
+    h5.spot_market_point_lrm {
+        font-size: 15px;
+        line-height: 20px;
+        margin-right: 29px;
+    }
+
+    .business_performance .btn-link {
+        margin-left: 8px;
+    }
+
+    .card_body_high_perfrmce_lw {
+        margin-left: 19px;
+        margin-right: 20px;
+    }
+
+    .spot_market_txt {
+        margin-left: 20px;
+    }
+
+    .share_holding_month_date_main {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+    .share_holding_pattrn_main {
+        margin-left: 20px;
+        margin-right: 28px;
+    }
+    .business_position_main_brdr.business_market_btn_brdr {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
 
@@ -1637,14 +1896,41 @@ span.bought_company_percent{
     }
 
     p.today_low_pp {
-        font-size: 12px;
-        line-height: 19px;
+        font-size: 13px;
+        line-height: 17px;
+        white-space: nowrap;
     }
 
-    .performace_high_low {
-        justify-content: inherit;
-        gap: 46px;
+    .spot_market_point {
+
+        margin-right: 10px;
     }
+
+    h5.spot_market_point_lrm {
+        font-size: 14px;
+        line-height: 18px;
+        margin-right: 25px;
+    }
+
+    .h5.shre_holding_txt_main {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    p.shre_holding_prcnt_main {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .business_performance .collapsible-link::before {
+        right: 0.8rem;
+    }
+  
+
+
+    /* .performace_high_low {
+        justify-content: inherit;
+        gap: 65px;
+    } */
 
 }
 
@@ -1690,6 +1976,7 @@ span.bought_company_percent{
         font-size: 15px;
         line-height: 20px;
     }
+
     .business_main_brdr_txt {
         margin-left: 11px;
     }

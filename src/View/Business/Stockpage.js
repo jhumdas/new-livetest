@@ -79,7 +79,7 @@ export default function Singlestock() {
                     </div>
 
                     <div className='business-position_main business_performance  mt-4 mb-4'>
-                        <div className='business_position_main_brdr'>
+                        <div className='business_position_main_brdr business_performane_brdr'>
                             <div id="accordionExample" className="accordion1">
                                 {/* Accordion item 1 */}
                                 <div className="card">
@@ -96,7 +96,7 @@ export default function Singlestock() {
                                                 aria-controls="collapseOne"
                                                 className="btn btn-link collapsible-link"
                                             >
-                                                Performance
+                                               <h5 className='busnprtxt'>Performance</h5> 
                                             </button>
                                         </h2>
                                         {/* <div className='icon'></div> */}
@@ -158,7 +158,7 @@ export default function Singlestock() {
                     </div>
 
                     <div className='business-position_main business_performance business_market_strt mt-4 mb-4'>
-                        <div className='business_position_main_brdr'>
+                        <div className='business_position_main_brdr business_sprts_mrkt'>
                             <div id="accordionExample" className="accordion2">
                                 {/* Accordion item 2 */}
                                 <div className="card">
@@ -175,7 +175,7 @@ export default function Singlestock() {
                                                 aria-controls="collapseTwo"
                                                 className="btn btn-link collapsible-link"
                                             >
-                                                Spot Market Stats
+                                               <h5 className='busnprtxt'>Spot Market Stats</h5>  
                                             </button>
                                         </h2>
                                         {/* <div className='icon'></div> */}
@@ -187,7 +187,7 @@ export default function Singlestock() {
                                         className="collapse show"
                                     >
                                         <div className="card-body">
-                                            <div className='spot_market_txt'>
+                                            <div className='spot_market_txt sptmrtyscrl'>
                                                 <h6 className='spot_market_point_txt'><span className='spot_market_point'></span>Open 567.87</h6>
                                                 <h6 className='spot_market_point_txt'><span className='spot_market_point'></span>Volume 87,987.876</h6>
                                                 <h6 className='spot_market_point_txt'><span className='spot_market_point'></span>Prev.Close 087.02</h6>
@@ -200,6 +200,7 @@ export default function Singlestock() {
                                                 <h6 className='spot_market_point_txt'><span className='spot_market_point'></span>Earning Per Share N/A</h6>
                                                 <h6 className='spot_market_point_txt'><span className='spot_market_point'></span>1 Year High(52w) 456.04</h6>
                                                 <h6 className='spot_market_point_txt'><span className='spot_market_point'></span>1 Year Low(52w)110.01</h6>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -229,7 +230,7 @@ export default function Singlestock() {
                                                 aria-controls="collapseThree"
                                                 className="btn btn-link collapsible-link"
                                             >
-                                                About Company
+                                                <h5 className='busnprtxt'>About Company</h5> 
                                             </button>
                                         </h2>
                                         {/* <div className='icon'></div> */}
@@ -291,7 +292,7 @@ export default function Singlestock() {
                                                 aria-controls="collapseFour"
                                                 className="btn btn-link collapsible-link"
                                             >
-                                                Share Holding Pattern
+                                                <h5 className='busnprtxt'>Share Holding Pattern</h5>
                                             </button>
                                         </h2>
                                         {/* <div className='icon'></div> */}
@@ -548,7 +549,7 @@ export default function Singlestock() {
                                                 aria-controls="collapseFive"
                                                 className="btn btn-link collapsible-link"
                                             >
-                                                News About This Company
+                                                <h5 className='busnprtxt'>News About This Company</h5>
                                             </button>
                                         </h2>
                                         {/* <div className='icon'></div> */}
@@ -607,7 +608,7 @@ export default function Singlestock() {
                                                 aria-controls="collapseFive"
                                                 className="btn btn-link collapsible-link"
                                             >
-                                                People Also Bought
+                                                 <h5 className='busnprtxt'>People Also Bought</h5>
                                             </button>
                                         </h2>
                                         {/* <div className='icon'></div> */}
