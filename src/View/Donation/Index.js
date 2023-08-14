@@ -7,6 +7,9 @@ import a from "../../images/donate1.png"
 import b from '../../images/Vector 6.png'
 import bbb from '../../images/pppp.png'
 import c from '../../images/poorboy.png';
+import w from '../../images/chita (4).png';
+import w1 from '../../images/chita (3).png';
+import w2 from '../../images/chita (2).png';
 import d1 from '../../images/donar1.png';
 import d2 from '../../images/donar2.png';
 import d3 from '../../images/donar3.png';
@@ -17,7 +20,8 @@ import g from '../../images/d23.png';
 import bannerimage from '../../images/New Project (1).png'
 import DonateModal from '../../Component/Modal/DonateModal';
 export default function Index() {
-    const loop = [1, 2, 3,4,6];
+    const [modal, setModal] = useState(false);
+    const loop = [1, 2, 3, 4, 6];
 
     const [toggleState, setToggleState] = useState(1);
 
@@ -53,7 +57,7 @@ export default function Index() {
                     slidesToShow: 2
                 }
             },
-         
+
             {
                 breakpoint: 480,
                 settings: {
@@ -89,7 +93,7 @@ export default function Index() {
                     slidesToShow: 1
                 }
             }
-        
+
         ]
     };
     return (
@@ -326,80 +330,48 @@ export default function Index() {
                         <div className='highlight'>
                             <div className='container'>
                                 <h2>highlights for today</h2>
-                                <div className='slider shop_best_selling_prdt selectsong-slider' style={{ paddingTop: "0" }}>
+                                <div className='slider shop_best_selling_prdt selectsong-slider donationslider' style={{ paddingTop: "0" }}>
                                     <Slider {...settings}>
-                                        {loop.map((item,index)=>{
-                                            return(
+                                        {loop.map((item, index) => {
+                                            return (
                                                 <div className='box'>
-                                                <div style={{ position: "relative" }}>
-                                                    <img src={c} />
-                                                    <div className='img-cnt'>5 days left</div>
-                                                </div>
-                                                <div className='cnt'>
-                                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua </p>
-                                                    <h6>$ 9,80,765 raised</h6>
-                                                    <div className="progress progress_line">
-                                                        <div
-                                                            className="progress-bar progress_shre_bar w-50"
-                                                            role="progressbar"
-                                                            aria-valuenow=""
-                                                            aria-valuemin=""
-                                                            aria-valuemax=""
-                                                        />
+                                                    <div style={{ position: "relative" }}>
+                                                        <img src={c} />
+                                                        <div className='img-cnt'>5 days left</div>
                                                     </div>
-    
-                                                    <h6 style={{ color: "#25333a" }}>last donation 3 hr ago</h6>
-                                                    <div className='donars'>
-                                                        <div className='more-images'>
-                                                            <img src={d1} className='image1'/>
-                                                            <img src={d2} className='image2'/>
-                                                            <img src={d3} className='image3'/>
-                                                            <img src={d4} className='image4'/>
+                                                    <div className='cnt'>
+                                                        <p>Amet minim mollit non deserunt ullamco est sit aliqua </p>
+                                                        <h6>$ 9,80,765 raised</h6>
+                                                        <div className="progress progress_line">
+                                                            <div
+                                                                className="progress-bar progress_shre_bar w-50"
+                                                                role="progressbar"
+                                                                aria-valuenow=""
+                                                                aria-valuemin=""
+                                                                aria-valuemax=""
+                                                            />
                                                         </div>
-                                                        <h5>25,565  donars</h5>
-                                                        <div><a href="#">Donate</a></div>
-    
+
+                                                        <h6 style={{ color: "#25333a" }}>last donation 3 hr ago</h6>
+                                                        <div className='donars'>
+                                                            <div className='more-images'>
+                                                                <img src={d1} className='image1' />
+                                                                <img src={d2} className='image2' />
+                                                                <img src={d3} className='image3' />
+                                                                <img src={d4} className='image4' />
+                                                            </div>
+                                                            <h5>25,565  donars</h5>
+                                                            <div><a href="#" onClick={() => { setModal(true) }}>Donate</a></div>
+
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
                                             )
                                         }
 
                                         )}
-                                    
-                                        {/* <div className='box'>
-                                            <div style={{ position: "relative" }}>
-                                                <img src={c} />
-                                                <div className='img-cnt'>5 days left</div>
-                                            </div>
-                                            <div className='cnt'>
-                                                <p>Amet minim mollit non deserunt ullamco est sit aliqua </p>
-                                                <h6>$ 9,80,765 raised</h6>
-                                                <h6 style={{ color: "#25333a" }}>last donation 3 hr ago</h6>
-                                            </div>
-                                        </div>
-                                        <div className='box'>
-                                            <div style={{ position: "relative" }}>
-                                                <img src={c} />
-                                                <div className='img-cnt'>5 days left</div>
-                                            </div>
-                                            <div className='cnt'>
-                                                <p>Amet minim mollit non deserunt ullamco est sit aliqua </p>
-                                                <h6>$ 9,80,765 raised</h6>
-                                                <h6 style={{ color: "#25333a" }}>last donation 3 hr ago</h6>
-                                            </div>
-                                        </div>
-                                        <div className='box'>
-                                            <div style={{ position: "relative" }}>
-                                                <img src={c} />
-                                                <div className='img-cnt'>5 days left</div>
-                                            </div>
-                                            <div className='cnt'>
-                                                <p>Amet minim mollit non deserunt ullamco est sit aliqua </p>
-                                                <h6>$ 9,80,765 raised</h6>
-                                                <h6 style={{ color: "#25333a" }}>last donation 3 hr ago</h6>
-                                            </div>
-                                        </div> */}
+
+
                                     </Slider>
                                 </div>
                             </div>
@@ -471,7 +443,177 @@ export default function Index() {
                 >
 
 
-                    <div></div>
+                    <div>
+                        <div className='container'>
+                            <div className='podcast-banner-slidewrap'>
+
+                                <div className='podcast-banner-slide learning-home donation-home wildlife'>
+                                    <div className='box'>
+                                        <div className='boxCnt'>
+                                            <h3>alone we can do so little. together we can do so much.</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur. Adipiscing eleifend nunc integer duis sed elit amet quam mauris. Sed ipsum massa ullamcorper et faucibus praesent.</p>
+                                            <a href="#">Donate</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className='highlight'>
+                            <div className='container'>
+                                <h2>help oceanic animals</h2>
+                                <div className='slider shop_best_selling_prdt selectsong-slider donationslider' style={{ paddingTop: "0" }}>
+                                    <Slider {...settings}>
+                                        {loop.map((item, index) => {
+                                            return (
+                                                <div className='box'>
+                                                    <div style={{ position: "relative" }}>
+                                                        <img src={w} />
+                                                        <div className='img-cnt'>5 days left</div>
+                                                    </div>
+                                                    <div className='cnt'>
+                                                        <p>Amet minim mollit non deserunt ullamco est sit aliqua </p>
+                                                        <h6>$ 9,80,765 raised</h6>
+                                                        <div className="progress progress_line">
+                                                            <div
+                                                                className="progress-bar progress_shre_bar w-50"
+                                                                role="progressbar"
+                                                                aria-valuenow=""
+                                                                aria-valuemin=""
+                                                                aria-valuemax=""
+                                                            />
+                                                        </div>
+
+                                                        <h6 style={{ color: "#25333a" }}>last donation 3 hr ago</h6>
+                                                        <div className='donars'>
+                                                            <div className='more-images'>
+                                                                <img src={d1} className='image1' />
+                                                                <img src={d2} className='image2' />
+                                                                <img src={d3} className='image3' />
+                                                                <img src={d4} className='image4' />
+                                                            </div>
+                                                            <h5>25,565  donars</h5>
+                                                            <div><a href="#" onClick={() => { setModal(true) }}>Donate</a></div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+
+                                        )}
+
+
+                                    </Slider>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='highlight'>
+                            <div className='container'>
+                                <div>
+                                <h2>help oceanic animals</h2>
+                                </div>
+                                <div className='slider shop_best_selling_prdt selectsong-slider donationslider' style={{ paddingTop: "0" }}>
+                                    <Slider {...settings}>
+                                        {loop.map((item, index) => {
+                                            return (
+                                                <div className='box'>
+                                                    <div style={{ position: "relative" }}>
+                                                        <img src={w1} />
+                                                        <div className='img-cnt'>5 days left</div>
+                                                    </div>
+                                                    <div className='cnt'>
+                                                        <p>Amet minim mollit non deserunt ullamco est sit aliqua </p>
+                                                        <h6>$ 9,80,765 raised</h6>
+                                                        <div className="progress progress_line">
+                                                            <div
+                                                                className="progress-bar progress_shre_bar w-50"
+                                                                role="progressbar"
+                                                                aria-valuenow=""
+                                                                aria-valuemin=""
+                                                                aria-valuemax=""
+                                                            />
+                                                        </div>
+
+                                                        <h6 style={{ color: "#25333a" }}>last donation 3 hr ago</h6>
+                                                        <div className='donars'>
+                                                            <div className='more-images'>
+                                                                <img src={d1} className='image1' />
+                                                                <img src={d2} className='image2' />
+                                                                <img src={d3} className='image3' />
+                                                                <img src={d4} className='image4' />
+                                                            </div>
+                                                            <h5>25,565  donars</h5>
+                                                            <div><a href="#" onClick={() => { setModal(true) }}>Donate</a></div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+
+                                        )}
+
+
+                                    </Slider>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='highlight'>
+                            <div className='container'>
+                                <h2>help oceanic animals</h2>
+                                <div className='slider shop_best_selling_prdt selectsong-slider donationslider' style={{ paddingTop: "0" }}>
+                                    <Slider {...settings}>
+                                        {loop.map((item, index) => {
+                                            return (
+                                                <div className='box'>
+                                                    <div style={{ position: "relative" }}>
+                                                        <img src={w2} />
+                                                        <div className='img-cnt'>5 days left</div>
+                                                    </div>
+                                                    <div className='cnt'>
+                                                        <p>Amet minim mollit non deserunt ullamco est sit aliqua </p>
+                                                        <h6>$ 9,80,765 raised</h6>
+                                                        <div className="progress progress_line">
+                                                            <div
+                                                                className="progress-bar progress_shre_bar w-50"
+                                                                role="progressbar"
+                                                                aria-valuenow=""
+                                                                aria-valuemin=""
+                                                                aria-valuemax=""
+                                                            />
+                                                        </div>
+
+                                                        <h6 style={{ color: "#25333a" }}>last donation 3 hr ago</h6>
+                                                        <div className='donars'>
+                                                            <div className='more-images'>
+                                                                <img src={d1} className='image1' />
+                                                                <img src={d2} className='image2' />
+                                                                <img src={d3} className='image3' />
+                                                                <img src={d4} className='image4' />
+                                                            </div>
+                                                            <h5>25,565  donars</h5>
+                                                            <div><a href="#" onClick={() => { setModal(true) }}>Donate</a></div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+
+                                        )}
+
+
+                                    </Slider>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                    </div>
                 </div>
                 <div
                     className={toggleState === 3 ? "content  active-content" : "content"}
@@ -518,7 +660,7 @@ export default function Index() {
             </div>
 
 
-            {/* <DonateModal/> */}
+            {modal && <DonateModal closeModal={setModal} />}
 
         </>
     )

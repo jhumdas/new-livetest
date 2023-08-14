@@ -8,7 +8,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.podcast-banner-slide.learning-home.donation-home.wildlife{
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%), url(../../images/chita1.png);
+}
 .podcast-banner-slide.learning-home.alone-home {
     background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%), url(../../images/unsplash_A4Ax1ApccfA.png);
     height: 427px;
@@ -227,14 +229,16 @@
     width: 42px;
     height: 42px;
 }
-.highlight .box .donars h5{
+
+.highlight .box .donars h5 {
     color: #25333A;
-font-family: Open Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
+
 .highlight .box .donars img.image3 {
     z-index: 3;
     left: 30px;
@@ -242,6 +246,7 @@ line-height: normal;
     width: 42px;
     height: 42px;
 }
+
 .highlight .box .donars img.image4 {
     z-index: 2;
     left: 48px;
@@ -249,59 +254,190 @@ line-height: normal;
     width: 42px;
     height: 42px;
 }
+.shop_best_selling_prdt.donationslider .slick-prev{
+    top: -11% !important;
+}
+.shop_best_selling_prdt.donationslider .slick-next{
+    top: -11% !important;
+    right:2% !important;
+}
 /***donate-modal****/
-.DonateModal{
+.DonateModal {
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 400px;
-    width: 746px;    
+    height: 500px;
+    width: 746px;
+    text-align: center;
+    padding: 30px;
 }
-@media (max-width:1024px){
+
+.DonateModal .boxwrap {
+    display: flex;
+    gap: 60px;
+    margin: 50px 0;
+    justify-content: center;
+}
+.btnnTwo{
+    margin-top: 10px;
+    color: #FF3A44;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 2px;
+text-transform: capitalize;
+display: block;
+}
+.btnnOne {
+    color: #25333A;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: 0.4px solid rgba(37, 51, 58, 0.40);
+    background: rgba(255, 255, 255, 0.00);
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.DonateModal .box {
+    border-radius: 10px;
+    border: 0.4px solid rgba(0, 0, 0, 0.40);
+    background: rgba(244, 67, 54, 0.40);
+    width: 167px;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.DonateModal h3 {
+    color: #25333A;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.DonateModal h4 {
+    color: #25333A;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  
+}
+
+@media (max-width:1024px) {
     .success-stories .slick-initialized .slick-slide {
         padding: 0 20px;
     }
 }
-@media (max-width:767px){
+
+@media (max-width:767px) {
+    .DonateModal h3{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .DonateModal h4 {
+        font-size: 16px;
+    }
+    .DonateModal .box {
+        width: 143px;
+        height: 116px;
+    }
+    .DonateModal .boxwrap{
+        flex-direction: column;
+        gap: 10px;
+        margin: 25px 0;
+        align-items: center;
+    }
+    .DonateModal{
+        width: 100%;
+   overflow-y: auto;
+   padding: 25px 15px;
+    }
     .podcast-banner-slide.learning-home.donation-home {
-    
+
         height: 260px;
     }
+
     .podcast-banner-slide.learning-home.alone-home {
-    
+
         height: 234px;
     }
-    .success-stories .top{
+
+    .success-stories .top {
         flex-wrap: wrap;
     }
-    .success-stories .top p{
+
+    .success-stories .top p {
         width: 100%;
 
     }
+
     .success-stories .top h3 {
         font-size: 23px;
     }
+
     .success-stories .slider {
         margin-top: 10px;
     }
 }
-@media (max-width:480px){
+
+@media (max-width:480px) {
     .highlight .box img {
         height: 210px;
     }
+
     .donars a {
         padding: 7px 10px;
         font-size: 16px;
     }
+
     .more-images {
         width: 127px;
     }
+
     .highlight .box .donars h5 {
         font-size: 14px;
     }
 }
-@media (max-width:420px){
-    .highlight .box{
-margin-top: 10%;
+
+@media (max-width:420px) {
+    .highlight h2 {
+    text-align: center;
+        font-size: 20px;
     }
+    .highlight .box {
+        margin-top: 10%;
+    }
+    .shop_best_selling_prdt.donationslider .slick-prev{
+        top: -2% !important;
+    }
+    .shop_best_selling_prdt.donationslider .slick-next{
+        top: -2% !important;
+    }
+    .shop_best_selling_prdt.donationslider .slick-next {
+        right: 42% !important;
+    }
+
 }
