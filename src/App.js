@@ -22,6 +22,7 @@ import '../src/View/OTTHome/OTThome.css'
 import '../src/View/Learning/Learning.css'
 import '../src/View/Business/Business.css'
 import '../src/View/Donation/Donation.css'
+import '../src/View/Impact/Impact.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -73,6 +74,8 @@ import Buynow from '../src/View/Business/Buynow';
 import VideoSingle from './View/Learning/VideoSingle';
 import Preview from '../src/View/Business/Preview';
 import Payment from '../src/View/Business/Payment';
+import ImpactLayout from './Layout/ImpactLayout';
+import Impact from '../src/View/Impact/Index'
 // import Position from '../src/View/Business/Position';
 function App() {
 
@@ -132,17 +135,20 @@ function App() {
               <Route path="/my-course" element={<MyCourse />} />
               <Route path="/instructor" element={<Instructor />} />
             </Route>
+
             <Route element={<DonationLayout />}>
               <Route path="/donation" element={<Donation />} />
             </Route>
+
             <Route element={<BusinessLayout />}>
               <Route path="/businesshome" element={<Businesshome />} />
               <Route path="/watchlist" element={<Watchlist/>}/>
               <Route path="/portfolio" element={<Portfolio/>}/>
               <Route path='/businessnews' element={<Businessnews/>}/>
-              {/* <Route path="/watchlist" element={<Watchlist />} />
-              <Route path="/portfolio" element={<Portfolio />} /> */}
-              {/* <Route path='/position' element={<Position/>}/> */}
+            </Route>
+
+            <Route element={<ImpactLayout/>}>
+              <Route path="/impact" element={<Impact/>}/>
             </Route>
 
           </Route>

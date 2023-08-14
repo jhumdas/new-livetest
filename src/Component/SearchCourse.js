@@ -9,12 +9,14 @@ import icon6 from '../images/bi_download.png';
 import icon7 from '../images/fluent_hat-graduation-16-regular.png';
 import icon9 from '../images/icon9.png';
 import icon8 from '../images/icon8.png';
+import icon10 from '../images/icon10.png';
+import icon11 from '../images/icon11.png';
 import iconv from '../images/carbon_result-new.png';
 import iconw from '../images/icon-park-solid_more-four.png';
 import { Link } from 'react-router-dom';
 
 export default function SearchCourse(props) {
-    const { searchText, iconA = true,  iconD = false, iconE = false, iconF = false, iconG = false ,iconH =false, iconI=false,iconV=false,iconW=false} = props;
+    const { searchText, iconA = true, iconD = false, iconE = false, iconF = false, iconG = false, iconH = false, iconI = false, iconV = false, iconW = false, iconT=false } = props;
     return (
         <>
 
@@ -42,7 +44,7 @@ export default function SearchCourse(props) {
                                 <span className="cart-number">2</span>
                             </Link>
                         </div>}
-                
+
                         {iconD && <div className="from_icon_whish_cart1">
                             <Link to="/ott-watchlist">
                                 <img src={icon4} alt="" />
@@ -64,27 +66,44 @@ export default function SearchCourse(props) {
                                 <img src={icon7} alt="" />
                             </Link>
                         </div>}
-                        {iconH   && <div className="from_icon_whish_cart1">
+                        {iconH && <div className="from_icon_whish_cart1">
                             <Link to="/portfolio">
-                               <img src={icon9} alt=""/>
+                                <img src={icon9} alt="" />
                             </Link>
-                          </div>}
+                        </div>}
 
-                        {iconI &&  <div className="from_icon_whish_cart1">
+                        {iconI && <div className="from_icon_whish_cart1">
                             <Link to="/businessnews">
-                                <img src={icon8} alt=""/>
+                                <img src={icon8} alt="" />
                             </Link>
-                          </div>}
-                          {iconV &&  <div className="from_icon_whish_cart1">
+                        </div>}
+                        {iconV && <div className="from_icon_whish_cart1">
                             <Link to="">
-                                <img src={iconv} alt=""/>
+                                <img src={iconv} alt="" />
                             </Link>
-                          </div>}
-                          {iconW &&  <div className="from_icon_whish_cart1">
+                        </div>}
+                        {iconW && <div className="from_icon_whish_cart1">
                             <Link to="">
-                                <img src={iconw} alt=""/>
+                                <img src={iconw} alt="" />
                             </Link>
-                          </div>}
+                        </div>}
+{/* 
+                        {iconS && <div className="impact_icon">
+                            <Link to="">
+                                <img src={carbon_result-new } alt="" />
+                            </Link>
+
+                        </div>} */}
+
+                        {iconT && <div className="impact_icon">
+
+                            <Link to="">
+                                <img src={icon11 } alt="" />
+                            </Link>
+                        </div>}
+
+
+
                     </div>
                 </div>
             </div>
