@@ -1278,6 +1278,10 @@ p.shre_holding_prcnt_main {
     color: #1FAF38;
 }
 
+.business-cell_btn:hover {
+    color: #1FAF38;
+}
+
 /* .business-buy_btn {
     display: flex;
     justify-content: center;
@@ -1310,6 +1314,277 @@ p.shre_holding_prcnt_main {
     top: 13%;
 }
 
+
+
+/* Buy Now Page */
+h4.buy {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.byu i {
+    color: #263238;
+    font-size: 18px;
+}
+
+.prvw i {
+    color: #263238;
+    font-size: 18px;
+}
+
+.buy_btn_arw {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.companname_txt {
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.comapny_prvw {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company_img_by {
+    width: 40px;
+    height: 40px;
+}
+
+.company_img_by img {
+    width: 100%;
+    height: 100%;
+}
+
+p.comapny_name_by {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 7px;
+}
+
+p.company_stck_by {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.company_prvw_imgtxt_buy {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.buy_now_csh_main {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 1005;
+    max-width: 95%;
+    margin: auto;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+
+.buy_now_sacsh_main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h4.bnuy_now_csh_blane_hhh {
+    color: #1FAF38;
+    font-family: 'Open Sans';
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    letter-spacing: 6px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+p.blance_csh_byt_pp {
+    text-align: center;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.buy_now_csh_btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.btn_buy_csh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #1FAF38;
+    width: 100%;
+    padding: 12px 10px;
+    width: 100%;
+    max-width: 42%;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.btn_buy_csh:hover {
+    color: #FFF;
+}
+
+/* .buy_now_sacsh_main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
+.prvw_mrkt_prc {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+h4.mrkt_prc {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+p.mrkt_prc_pp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+/**** Preview Page ****/
+.prvw_mrkt_prc_main {
+    border-bottom: 1px solid rgb(0 0 0 / 19%);
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 18px;
+    padding-bottom: 7px;
+
+}
+
+/**** business_companypayment_name_img ****/
+.companypayment_img {
+    width: 46px;
+    height: 48px;
+    margin: auto;
+}
+
+.companypayment_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.companypayment_txt {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.busimess_companypayment_img_txt {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+p.companypayment_txt_stck {
+    padding-top: 10px;
+}
+
+p.companypayment_txt_pp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+p.companypayment_txt_stck {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    border-bottom: 1px solid #0000004d;
+    width: 100%;
+    max-width: 71%;
+    margin: auto;
+    padding-bottom: 13px;
+}
+
+/* .busimess_companypayment_img_main {
+    display: flex;
+    justify-content: center;
+} */
+.busimess_companypayment_img {
+    width: 344px;
+    height: 269px;
+    margin: auto;
+}
+
+.busimess_companypayment_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.busimess_companypayment_img_txt_main {
+    text-align: center;
+}
+
+p.busimess_companypayment_prc {
+    color: #1FAF38;
+    font-family: 'Open Sans';
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 3px;
+}
+
+p.busimess_companypayment_rcvd {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+p.busimess_companypayment_opns_txt {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+
 @media(max-Width:1199px) {
     .business_holdsong_position {
         gap: 0%;
@@ -1320,9 +1595,11 @@ p.shre_holding_prcnt_main {
         padding-right: 60px;
 
     }
+
     .people_bought_compamy_txt_price_amnt {
         gap: 20px;
     }
+
     /* .people_bought_compamy_txt_price_amnt {
         justify-content: space-between;
     } */
@@ -1463,9 +1740,15 @@ p.shre_holding_prcnt_main {
         margin-left: 34px;
         margin-right: 39px;
     }
+
     .business_position_main_brdr.business_market_btn_brdr {
         max-width: 95%;
     }
+
+    .buy_now_csh_main {
+        max-width: 91%;
+    }
+
 
 
 }
@@ -1592,12 +1875,24 @@ p.shre_holding_prcnt_main {
         font-size: 17px;
         line-height: 22px;
     }
+
     .business_peopls_bought .collapsible-link[aria-expanded="true"]::before {
         top: 6%;
     }
+
     .business-cell_btn {
         padding-left: 83px;
         padding-right: 83px;
+    }
+
+    p.blance_csh_byt_pp {
+        font-size: 20px;
+        line-height: 27px;
+        padding-bottom: 4px;
+    }
+
+    .buy_now_csh_btn {
+        padding-bottom: 35px;
     }
 
 }
@@ -1686,27 +1981,74 @@ p.shre_holding_prcnt_main {
     .progress.progress_share {
         height: 6px;
     }
+
     .company_news_abt_update {
         margin-left: 24px;
         margin-right: 32px;
     }
+
     h5.company_news_about_txt_hhh {
         font-size: 16px;
         line-height: 20px;
     }
+
     p.company_news_about_txt_ppp {
         font-size: 16px;
         line-height: 20px;
     }
+
     p.company_news_update_txt {
         font-size: 14px;
         line-height: 20px;
         margin-top: 8px;
         margin-bottom: 12px;
     }
+
     .business-cell_btn {
         padding-left: 70px;
         padding-right: 70px;
+    }
+
+    h4.bnuy_now_csh_blane_hhh {
+        font-size: 60px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    p.blance_csh_byt_pp {
+        font-size: 17px;
+        line-height: 22px;
+
+    }
+
+    .btn_buy_csh {
+        padding: 10px 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .buy_now_sacsh_main {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .company_prvw_imgtxt_buy {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    h4.mrkt_prc {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    p.mrkt_prc_pp {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    h4.mrkt_prc {
+        margin-bottom: 12px;
     }
 }
 
@@ -1816,13 +2158,63 @@ p.shre_holding_prcnt_main {
         margin-right: 20px;
 
     }
+
     .share_holding_pattrn_main {
         margin-left: 20px;
         margin-right: 28px;
     }
+
     .business_position_main_brdr.business_market_btn_brdr {
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+
+    .companname_txt {
+        gap: 20px;
+    }
+
+    p.comapny_name_by {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    p.company_stck_by {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    h4.buy {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .byu i {
+        font-size: 15px;
+    }
+
+    .prvw i {
+        font-size: 15px;
+    }
+
+    h4.bnuy_now_csh_blane_hhh {
+        font-size: 50px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    h4.mrkt_prc {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    p.mrkt_prc_pp {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .prvw_mrkt_prc_main {
+        margin-left: 59px;
+        margin-right: 59px;
     }
 }
 
@@ -1921,16 +2313,70 @@ p.shre_holding_prcnt_main {
         font-size: 13px;
         line-height: 18px;
     }
+
     .business_performance .collapsible-link::before {
         right: 0.8rem;
     }
-  
 
+    .company_img_by {
+        width: 30px;
+        height: 30px;
+    }
 
-    /* .performace_high_low {
-        justify-content: inherit;
-        gap: 65px;
-    } */
+    p.comapny_name_by {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    p.company_stck_by {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    h4.buy {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .byu i {
+        font-size: 13px;
+    }
+
+    .prvw i {
+        font-size: 13px;
+    }
+
+    h4.bnuy_now_csh_blane_hhh {
+        font-size: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .buy_now_csh_main {
+        max-width: 85%;
+    }
+
+    p.blance_csh_byt_pp {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    h4.bnuy_now_csh_blane_hhh {
+        font-size: 40px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .btn_buy_csh {
+        padding: 8px 9px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .prvw_mrkt_prc_main {
+        margin-left: 39px;
+        margin-right: 39px;
+    }
 
 }
 
@@ -1979,5 +2425,20 @@ p.shre_holding_prcnt_main {
 
     .business_main_brdr_txt {
         margin-left: 11px;
+    }
+
+    h4.mrkt_prc {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    p.mrkt_prc_pp {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .prvw_mrkt_prc_main {
+        margin-left: 36px;
+        margin-right: 29px;
     }
 }

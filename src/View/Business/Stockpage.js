@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import single_stock_image from '../../images/single_stock_image.png';
 import material_symbols_done_all from '../../images/material_symbols_done_all.png'
 import simple_icons_cashapp from '../../images/simple_icons_cashapp.png';
@@ -7,7 +7,7 @@ import triangle from '../../images/triangle.png';
 import bought_company1 from '../../images/bought_company1.png';
 import bought_company2 from '../../images/bought_company2.png';
 import bought_company3 from '../../images/bought_company3.png'
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Singlestock() {
     const [togglestockState, setTogglestockState] = useState(1);
@@ -15,6 +15,7 @@ export default function Singlestock() {
     const togglestockButton = (index) => {
         setTogglestockState(index)
     }
+ 
     return (
         <>
             <section className='stock_single_page'>
@@ -683,10 +684,10 @@ export default function Singlestock() {
                         <div className='business_position_main_brdr business_market_btn_brdr'>
                             <div className='business_sell_buy'>
                                 <div className='business_cell'>
-                                    <a href="" className='business-cell_btn'>Sell</a>
+                                    <Link to="/" className='business-cell_btn'>Sell</Link>
                                 </div>
                                 <div className='business_buy'>
-                                    <a href="" className='business-cell_btn'>Buy</a>
+                                    <Link to="/buynow" className='business-cell_btn'>Buy</Link>
                                 </div>
                             </div>
                         </div>

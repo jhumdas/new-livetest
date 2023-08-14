@@ -69,13 +69,10 @@ import Businessnews from '../src/View/Business/Businessnews';
 import Stockpage from '../src/View/Business/Stockpage'
 import Donation from './View/Donation/Index'
 import DonationLayout from './Layout/DonationLayout';
-
-
-
-
-
+import Buynow from '../src/View/Business/Buynow';
 import VideoSingle from './View/Learning/VideoSingle';
-
+import Preview from '../src/View/Business/Preview';
+import Payment from '../src/View/Business/Payment';
 // import Position from '../src/View/Business/Position';
 function App() {
 
@@ -109,7 +106,9 @@ function App() {
             <Route path="/video-screen" element={<VideoScreen />} />
             <Route path="/stockpage" element={<Stockpage/>}/>
             <Route path="/videosingle-page" element={<VideoSingle />} />
-
+            <Route path="/buynow" element={<Buynow/>} />
+            <Route path="/preview" element ={<Preview/>}/>
+            <Route path="/payment" element ={<Payment/>} />
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />
