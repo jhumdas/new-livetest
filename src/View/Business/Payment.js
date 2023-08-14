@@ -35,6 +35,12 @@ export default function Payment() {
                             </p>
                         </div>
                     </div>
+
+                    <div className='business_paymnt_prtfl_stck'>
+                        <a href="#" className='business_paymnt_prtflo'>View my portfolio</a>
+                        <a href="#" className='business_paymnt_stcko'>Back to lorem ipsum stok</a>
+                    </div>
+
                 </div>
             </section>
         </>

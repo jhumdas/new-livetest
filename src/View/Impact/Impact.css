@@ -1,0 +1,168 @@
+.impact_home {
+    padding-top: 30px;
+}
+
+p.impct {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.impact_icon_txt {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+}
+
+.impact_icon_txt i {
+    font-size: 18px;
+    color: #000000a1;
+}
+
+p.impact_prgress_txt_ppp {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.impact_prgress_txt {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.impact_img_txt_prgrs_brdr {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    width: 100%;
+    max-width: 89%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.impact_img_txt_prgrs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.impact_img {
+    width: 320px;
+    height: 214px;
+}
+
+.impact_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+p.impact_txt_ppp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    width: 100%;
+    max-width: 80%;
+
+}
+
+p.impact_txt_prc {
+    color: #21920F;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.progress-bar.progress_impct {
+    border-radius: 5px;
+    background: #005C8F;
+}
+
+.progress-bar.progress_impct_rd {
+    border-radius: 5px;
+    background: #F44336;
+}
+
+.progress_share {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p.progress_txt_contribution_ppp {
+    color: #F44336;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+p.progress_goal_ppp {
+    text-align: center;
+    color: #008DE0;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+@media(max-width:1199px) {}
+
+@media(max-width:991px) {}
+
+@media(max-width:767px) {}
+
+@media(max-width:576px) {
+    .impact_icon_txt i {
+        font-size: 16px;
+
+    }
+
+    p.impct {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    p.impact_prgress_txt_ppp {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+}
+
+@media(max-width:480px) {
+    p.impct {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    p.impct {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    p.impact_prgress_txt_ppp {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width:420px) {
+    p.impact_prgress_txt_ppp {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
