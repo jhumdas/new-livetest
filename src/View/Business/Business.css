@@ -906,7 +906,7 @@ h2.business_perftmne {
 
 }
 
-.business_performance .collapsible-link::before {
+.donation_document .collapsible-link::before {
     content: "\f107";
     position: absolute;
     top: 50%;
@@ -926,17 +926,17 @@ h2.business_perftmne {
     transition: .5s all ease-in-out;
 }
 
-.business_performance .collapsible-link[aria-expanded="true"]::before {
+.donation_document .collapsible-link[aria-expanded="true"]::before {
 
     content: "\f106";
     top: 10%;
 }
 
-.business_performance .btn-link:hover {
+.donation_document .btn-link:hover {
     color: #25333A !important;
 }
 
-.business_performance .btn-link {
+.donation_document .btn-link {
     color: #25333A;
     font-family: 'Open Sans';
     font-size: 20px;
