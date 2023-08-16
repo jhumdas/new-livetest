@@ -12,7 +12,7 @@ export default function LoginModal() {
     return (
         <>
             <div className='loginModalWrapper'>
-                   {/* <Link to="/MoneyModal"> */}
+               
                 <div className='loginModal' onClick={()=>handleClickmoney(setModalmoney)}>
                     <div>
                         <h5>To Login into your Bushido web account</h5>
@@ -34,7 +34,9 @@ export default function LoginModal() {
                 
                     
                 </div>
-                {/* </Link> */}
+
+                <div className=''></div>
+                
 
             </div>
 
