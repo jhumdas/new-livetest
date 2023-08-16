@@ -9,7 +9,7 @@ export default function Index() {
                 <div className='container'>
                     <div className='impact_icon_txt'>
                         <Link to="/">
-                            <div className='impact_icon_txt_main' style={{ display: "flex", justifyContent: "center" }}>
+                            <div className='impact_icon_txt_main' style={{ display: "flex" }}>
                                 <i class="fa-solid fa-chevron-left"></i>
                                 <p className='impct'>Impact</p>
                             </div>

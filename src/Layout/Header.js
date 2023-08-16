@@ -3,6 +3,7 @@ import logo from '../images/logo.png'
 import profile from '../images/profile.png'
 import s from '../images/ph_video-thin.png'
 import n from '../images/ph_book-open-thin.png'
+import n1 from '../images/donation.png'
 import g from '../images/ph_apple-podcasts-logo-thin.png'
 import { Link, NavLink } from 'react-router-dom';
 import MobileSidebar from './MobileSidebar'
@@ -61,6 +62,7 @@ export default function Header() {
                     <h5><Link to="/podcast"><img src={g} />Podcast</Link></h5>
                     <h5><Link to="/ott-home"><img src={s} />OTT</Link></h5>
                     <h5><Link to="/learning"><img src={n} />Learning</Link></h5>
+                    <h5><Link to="/donation"><img src={n1} />Donation</Link></h5>
 
                   </div>
                 </li>

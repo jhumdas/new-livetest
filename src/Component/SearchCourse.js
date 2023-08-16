@@ -13,10 +13,11 @@ import icon10 from '../images/icon10.png';
 import icon11 from '../images/icon11.png';
 import iconv from '../images/carbon_result-new.png';
 import iconw from '../images/icon-park-solid_more-four.png';
+import iconw1 from '../images/impact.png';
 import { Link } from 'react-router-dom';
 
 export default function SearchCourse(props) {
-    const { searchText, iconA = true, iconD = false, iconE = false, iconF = false, iconG = false, iconH = false, iconI = false, iconV = false, iconW = false, iconT=false } = props;
+    const { searchText,iconS=false, iconA = true, iconD = false, iconE = false, iconF = false, iconG = false, iconH = false, iconI = false, iconV = false, iconW = false, iconT=false } = props;
     return (
         <>
 
@@ -83,17 +84,17 @@ export default function SearchCourse(props) {
                             </Link>
                         </div>}
                         {iconW && <div className="from_icon_whish_cart1">
-                            <Link to="">
+                            <Link to="/explore-donation">
                                 <img src={iconw} alt="" />
                             </Link>
                         </div>}
-{/* 
-                        {iconS && <div className="impact_icon">
-                            <Link to="">
-                                <img src={carbon_result-new } alt="" />
+
+                     {iconS && <div className="impact_icon">
+                            <Link to="/impact">
+                                <img src={iconw1 } alt="" />
                             </Link>
 
-                        </div>} */}
+                        </div>} 
 
                         {iconT && <div className="impact_icon">
 

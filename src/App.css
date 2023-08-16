@@ -298,6 +298,7 @@ a:hover {
 
 .header .wraper ul {
   display: flex;
+  align-items: center;
 }
 
 .header .wraper ul li a {
@@ -791,7 +792,7 @@ p.fundraiser_main_txt_ppp {
 @media (max-width:1199px) {
   .header .wraper ul li a {
     font-size: 14px;
-    padding-left: 17px;
+    margin: 0 14px;
   }
 }
 
@@ -828,7 +829,7 @@ p.fundraiser_main_txt_ppp {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-left: 22px;
+    margin-left: 10px;
     text-transform: uppercase;
     border-radius: 44px;
     border: 1px solid #25333A;
@@ -837,7 +838,7 @@ p.fundraiser_main_txt_ppp {
 
   .header .wraper ul li a {
     font-size: 12px;
-    padding-left: 14px;
+    margin: 0 7px;
   }
 }
 

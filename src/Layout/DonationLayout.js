@@ -7,7 +7,7 @@ export default function DonationLayout() {
 
             <section className='donation'>
                 <div className='container'>
-                    <SearchCourse searchText="Search Courses" iconA={false} iconB={false} iconV={true} iconC={false} iconW={true} />
+                    <SearchCourse searchText="Search Courses" iconS={true}iconA={false} iconB={false} iconV={true} iconC={false} iconW={true} />
                 </div>
                 <Outlet />
            
