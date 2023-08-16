@@ -77,7 +77,7 @@ import Payment from '../src/View/Business/Payment';
 import ImpactLayout from './Layout/ImpactLayout';
 import Impact from '../src/View/Impact/Index'
 import Singledonation from './View/Donation/Singledonation';
-// import Position from '../src/View/Business/Position';
+
 function App() {
 
 
@@ -113,7 +113,7 @@ function App() {
             <Route path="/buynow" element={<Buynow />} />
             <Route path="/preview" element={<Preview />} />
             <Route path="/payment" element={<Payment />} />
-            <Route path="/singledonation" element={<Singledonation />} />
+  
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />

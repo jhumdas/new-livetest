@@ -5,17 +5,22 @@
 p.impct {
     color: #000;
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
-    line-height: 25px;
+    line-height: 23px;
+    padding-left: 25px;
+}
+.impact_icon_txt {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.impact_icon_txt {
+/* .impact_icon_txt {
     display: flex;
     justify-content: start;
     gap: 20px;
     align-items: center;
-}
+} */
 
 .impact_icon_txt i {
     font-size: 18px;
