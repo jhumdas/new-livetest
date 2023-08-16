@@ -385,7 +385,7 @@ display: flex;
     height: 30px;
 }
 /** singledonation Page  **/
-.singledonation .singledonation_icon {
+/* .singledonation .singledonation_icon {
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -466,7 +466,7 @@ p.single_txt_pp {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 @media (max-width:1024px) {
     .success-stories .slick-initialized .slick-slide {
         padding: 0 20px;
