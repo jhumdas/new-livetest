@@ -251,7 +251,7 @@ export default function Index() {
                                                     </span>
                                                 </li>
 
-                                                <a href="#" className='exploreBtn'>Explore</a>
+                                                <Link to="/singledonation" className='exploreBtn'>Explore</Link>
                                             </ul>
 
                                         </div>
@@ -335,7 +335,7 @@ export default function Index() {
                                     <Slider {...settings}>
                                         {loop.map((item, index) => {
                                             return (
-                                                <Link to="/singledonation">
+                                             
                                                 <div className='box'>
                                                     <div style={{ position: "relative" }}>
                                                         <img src={c} />
@@ -368,7 +368,7 @@ export default function Index() {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                </Link>
+                                      
 
                                             )
                                         }
