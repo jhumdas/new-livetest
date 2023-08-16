@@ -266,9 +266,9 @@
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 500px;
+    /* height: 500px; */
+    height: auto;
     width: 746px;
-    text-align: center;
     padding: 30px;
 }
 
@@ -289,6 +289,7 @@ line-height: normal;
 letter-spacing: 2px;
 text-transform: capitalize;
 display: block;
+text-align: center;
 }
 .btnnOne {
     color: #25333A;
@@ -306,6 +307,7 @@ display: block;
     display: block;
     margin: 0 auto;
     padding: 10px 0;
+    text-align: center;
 
 }
 
@@ -332,6 +334,7 @@ display: block;
     letter-spacing: 2px;
     text-transform: capitalize;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .DonateModal h4 {
@@ -343,9 +346,44 @@ display: block;
     line-height: normal;
     letter-spacing: 2px;
     text-transform: capitalize;
-  
+  text-align: center;
 }
+.amountInput{
+    border-radius: 10px;
+border: 0.4px solid rgba(37, 51, 58, 0.40);
+background: rgba(255, 255, 255, 0.00);
+position: relative;
+height: 50px;
+display: flex;
+    align-items: center;
 
+}
+.donate-as-ur-wish{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.amountInput input{
+    color: #25333A;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: capitalize;
+    border: 0;
+    width: 85%;
+    padding: 0 10px;
+}
+.amountInput .icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.amountInput .icon img{
+    width: 30px;
+    height: 30px;
+}
 @media (max-width:1024px) {
     .success-stories .slick-initialized .slick-slide {
         padding: 0 20px;

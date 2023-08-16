@@ -77,7 +77,8 @@ import Payment from '../src/View/Business/Payment';
 import ImpactLayout from './Layout/ImpactLayout';
 import Impact from '../src/View/Impact/Index'
 import Singledonation from './View/Donation/Singledonation';
-// import Position from '../src/View/Business/Position';
+import ExploreDonation from './View/Donation/ExploreDonation';
+
 function App() {
 
 
@@ -113,7 +114,7 @@ function App() {
             <Route path="/buynow" element={<Buynow />} />
             <Route path="/preview" element={<Preview />} />
             <Route path="/payment" element={<Payment />} />
-            <Route path="/singledonation" element={<Singledonation />} />
+        
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />
@@ -142,6 +143,7 @@ function App() {
             <Route element={<DonationLayout />}>
               <Route path="/donation" element={<Donation />} />
               <Route path="/singledonation" element={<Singledonation />} />
+              <Route path="/explore-donation" element={<ExploreDonation />} />
             </Route>
 
             <Route element={<BusinessLayout />}>
