@@ -766,6 +766,7 @@ p.fundraiser_main_txt_ppp {
 .donation_amount_document_main .card-header {
   background: transparent !important;
 }
+
 .fundraiser_main_txt_main {
   padding: 10px 35px;
 }
@@ -938,7 +939,16 @@ p.fundraiser_main_txt_ppp {
 }
 
 /**** Singledonation ****/
-@media(max-width:991px) {}
+@media(max-width:991px) {
+  .donation_document.donation_fundarise .collapsible-link[aria-expanded="true"]::before {
+    content: "\f106";
+    top: 4%;
+}
+.donation_document.donation_fundarise.donation_supports .collapsible-link[aria-expanded="true"]::before {
+  content: "\f106";
+  top: 8%;
+}
+}
 
 @media(max-width:767px) {
   p.single_txt_pp {
@@ -976,9 +986,36 @@ p.fundraiser_main_txt_ppp {
     width: 390px;
     height: auto;
   }
+  .donation_fundarise .collapsible-link[aria-expanded="true"]::before {
+    content: "\f106";
+    top: 4%;
+}
 }
 
-@media (max-width:576px) {}
+@media (max-width:576px) {
+  .donation_document .collapsible-link[aria-expanded="true"]::before {
+    top: 15%;
+  }
+
+  p.donation_campaigner_txt_ppp {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .donation_campaigner_img {
+    width: 59px;
+    height: 58px;
+}
+.donation_document .btn-link {
+  margin-left: 7px !important;
+}
+.fundraiser_main_txt_main {
+  padding: 10px 25px;
+}
+.donation_supports_main_flax {
+ 
+  padding: 10px 17px;
+}
+}
 
 @media(max-width:480px) {
 
@@ -1012,8 +1049,36 @@ p.fundraiser_main_txt_ppp {
     width: 249px;
     height: auto;
   }
+  h5.donation_dctmn_hhh{
+    font-size: 17px;
+  }
+  p.fundraiser_main_txt_ppp {
+    font-size: 15px;
+    line-height: 20px;
+}
+/* .donation_document .collapsible-link[aria-expanded="true"]::before {
+  content: "\f106";
+  top: 14%;
+} */
+.donation_amount_document_main.donation_document .collapsible-link[aria-expanded="true"]::before {
+  content: "\f106";
+  top: 14%;
+  right: 2%;
+}
+.donation_document.donation_fundarise .collapsible-link[aria-expanded="true"]::before {
+  content: "\f106";
+  top: 3%;
+  right: 4%;
+}
 }
 
 
 
-@media (max-width:420px) {}
+@media (max-width:420px) {
+  h5.donation_dctmn_hhh {
+    font-size: 14px;
+}
+p.supports {
+  font-size: 14px;
+}
+}

@@ -73,7 +73,7 @@ export default function Singledonation() {
                         </div>
                     </div>
 
-                    <div className='donation_amount_document_main donation_document'>
+                    <div className='donation_amount_document_main donation_document '>
                         <div className='donation_amount_hour_bg'>
                             <div id="accordionExample" className="accordion1">
                                 {/* Accordion item 1 */}
@@ -189,7 +189,7 @@ export default function Singledonation() {
                                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                                     </p>
                                                     <p className='fundraiser_main_txt_ppp'>
-                                                        Thank Y
+                                                        Thank You
                                                     </p>
 
                                                 </div>
@@ -204,7 +204,7 @@ export default function Singledonation() {
 
                     </div>
 
-                    <div className='donation_amount_document_main  donation_document  donation_fundarise'>
+                    <div className='donation_amount_document_main  donation_document  donation_fundarise donation_supports'>
                     <div className='donation_amount_hour_bg'>
                             <div id="accordionExample" className="accordion1">
                                 {/* Accordion item 1 */}

@@ -264,6 +264,7 @@ export default function Index() {
                             <div className='cust-container'>
                                 <div className='row' style={{ alignItems: "center" }}>
                                     <div className='col-lg-6 col-md-6 col-12 orderTwo'>
+
                                         <div className='right'>
                                             <h3>Donate your old cloths to the children in help</h3>
                                             <ul>
@@ -334,6 +335,7 @@ export default function Index() {
                                     <Slider {...settings}>
                                         {loop.map((item, index) => {
                                             return (
+                                                <Link to="/singledonation">
                                                 <div className='box'>
                                                     <div style={{ position: "relative" }}>
                                                         <img src={c} />
@@ -366,6 +368,8 @@ export default function Index() {
                                                         </div>
                                                     </div>
                                                 </div>
+                                                </Link>
+
                                             )
                                         }
 
