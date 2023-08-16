@@ -763,9 +763,17 @@ p.business_portflo_percnt_ppp {
     background: #FFF;
     box-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.15);
     width: 100%;
-    max-width: 80%;
+    max-width: 100%;
     padding-top: 11px;
     padding-bottom: 11px;
+    margin: 0 auto;
+
+}
+.business_cell {
+    width: 66%;
+}
+.business_sell_buy {
+    width: 100%;
 }
 
 .business-position_main {
@@ -1268,18 +1276,19 @@ p.shre_holding_prcnt_main {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    border: 0.3px solid #1FAF38;
-    background: rgba(255, 255, 255, 0.00);
+    border: 0.3px solid red;
+    background: red;
     /* padding: 40px; */
     padding-top: 9px;
     padding-bottom: 8px;
-    padding-left: 150px;
-    padding-right: 150px;
-    color: #1FAF38;
+    /* padding-left: 150px;
+    padding-right: 150px; */
+    color: red;
+    color:#fff;
 }
 
 .business-cell_btn:hover {
-    color: #1FAF38;
+    color: #fff;
 }
 
 /* .business-buy_btn {

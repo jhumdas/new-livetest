@@ -6,7 +6,7 @@ import campaigner_email from '../../images/campaigner_email.png';
 import love_react from '../../images/love_react.png'
 export default function Singledonation() {
     const loop = [1, 2];
-    const loop1 =[1,2,3,4];
+    const loop1 = [1, 2, 3, 4];
     return (
         <>
             <section className='singledonation'>
@@ -145,7 +145,7 @@ export default function Singledonation() {
                     </div>
 
                     <div className='donation_amount_document_main  donation_document donation_fundarise'>
-                    <div className='donation_amount_hour_bg'>
+                        <div className='donation_amount_hour_bg'>
                             <div id="accordionExample" className="accordion1">
                                 {/* Accordion item 1 */}
                                 <div className="card">
@@ -205,7 +205,7 @@ export default function Singledonation() {
                     </div>
 
                     <div className='donation_amount_document_main  donation_document  donation_fundarise donation_supports'>
-                    <div className='donation_amount_hour_bg'>
+                        <div className='donation_amount_hour_bg'>
                             <div id="accordionExample" className="accordion1">
                                 {/* Accordion item 1 */}
                                 <div className="card">
@@ -238,32 +238,32 @@ export default function Singledonation() {
                                     >
                                         <div className="card-body">
 
-                                           {loop1.map((key,index)=>{
-                                           return(
-                                           <div className='donation_supports_main'>
-                                                <div className='donation_supports_main_flax'>
-                                                    <div className='donation_supports_main_img_txt'>
-                                                        <div className='donation_supports_main_img'>
-                                                            <img src={campaigner} alt="/" />
+                                            {loop1.map((key, index) => {
+                                                return (
+                                                    <div className='donation_supports_main'>
+                                                        <div className='donation_supports_main_flax'>
+                                                            <div className='donation_supports_main_img_txt'>
+                                                                <div className='donation_supports_main_img'>
+                                                                    <img src={campaigner} alt="/" />
+                                                                </div>
+                                                                <div className='donation_supports_main_txt'>
+                                                                    <p className='donation_supports_main_txt_ppp'>
+                                                                        Lorem ipsum
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div className='donation_prc'>
+                                                                <p className='donation_prc_ppp'>
+                                                                    $1000
+                                                                </p>
+
+                                                            </div>
                                                         </div>
-                                                        <div className='donation_supports_main_txt'>
-                                                            <p className='donation_supports_main_txt_ppp'>
-                                                                Lorem ipsum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className='donation_prc'>
-                                                        <p className='donation_prc_ppp'>
-                                                        $1000
-                                                        </p>
 
                                                     </div>
-                                                </div>
-
-                                            </div>
-                                           )
-                                             })}
+                                                )
+                                            })}
                                         </div>
                                     </div>
                                 </div>
@@ -272,6 +272,13 @@ export default function Singledonation() {
                             </div>
                         </div>
 
+                    </div>
+                    <div class="business_position_main_brdr business_market_btn_brdr">
+                        <div class="business_sell_buy">
+                            <div class="business_cell">
+                                <a class="business-cell_btn" href="/">Donate</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
