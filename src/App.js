@@ -76,6 +76,7 @@ import Preview from '../src/View/Business/Preview';
 import Payment from '../src/View/Business/Payment';
 import ImpactLayout from './Layout/ImpactLayout';
 import Impact from '../src/View/Impact/Index'
+import Singledonation from './View/Donation/Singledonation';
 // import Position from '../src/View/Business/Position';
 function App() {
 
@@ -107,11 +108,12 @@ function App() {
             <Route path="/single-movie" element={<SingleMovie />} />
             <Route path="/singleTv-series" element={<SingleTvSeries />} />
             <Route path="/video-screen" element={<VideoScreen />} />
-            <Route path="/stockpage" element={<Stockpage/>}/>
+            <Route path="/stockpage" element={<Stockpage />} />
             <Route path="/videosingle-page" element={<VideoSingle />} />
-            <Route path="/buynow" element={<Buynow/>} />
-            <Route path="/preview" element ={<Preview/>}/>
-            <Route path="/payment" element ={<Payment/>} />
+            <Route path="/buynow" element={<Buynow />} />
+            <Route path="/preview" element={<Preview />} />
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/singledonation" element={<Singledonation />} />
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />
@@ -121,6 +123,7 @@ function App() {
               <Route path="/podcast/favourite-podcast" element={<FavouritePodcast />} />
               <Route path="/podcast/download-podcast" element={<DownloadPodcast />} />
             </Route>
+
             <Route element={<OTTLayout />}>
               <Route path="/ott-home" element={<OTThome />} />
               <Route path="/subscription" element={<Subscription />} />
@@ -138,17 +141,18 @@ function App() {
 
             <Route element={<DonationLayout />}>
               <Route path="/donation" element={<Donation />} />
+              <Route path="/singledonation" element={<Singledonation />} />
             </Route>
 
             <Route element={<BusinessLayout />}>
               <Route path="/businesshome" element={<Businesshome />} />
-              <Route path="/watchlist" element={<Watchlist/>}/>
-              <Route path="/portfolio" element={<Portfolio/>}/>
-              <Route path='/businessnews' element={<Businessnews/>}/>
+              <Route path="/watchlist" element={<Watchlist />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path='/businessnews' element={<Businessnews />} />
             </Route>
 
-            <Route element={<ImpactLayout/>}>
-              <Route path="/impact" element={<Impact/>}/>
+            <Route element={<ImpactLayout />}>
+              <Route path="/impact" element={<Impact />} />
             </Route>
 
           </Route>
