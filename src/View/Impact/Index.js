@@ -9,9 +9,12 @@ export default function Index() {
                 <div className='container'>
                     <div className='impact_icon_txt'>
                         <Link to="/">
-                            <i class="fa-solid fa-chevron-left"></i>
+                            <div className='impact_icon_txt_main' style={{ display: "flex", justifyContent: "center" }}>
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <p className='impct'>Impact</p>
+                            </div>
                         </Link>
-                        <p className='impct'>Impact</p>
+
                     </div>
 
                     <div className='impact_prgress_txt'>

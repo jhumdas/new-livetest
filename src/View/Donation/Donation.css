@@ -384,6 +384,89 @@ display: flex;
     width: 30px;
     height: 30px;
 }
+/** singledonation Page  **/
+.singledonation .singledonation_icon {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.singledonation_book_img {
+    background: url(../../images/flight_img.png);
+    height: 427px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+
+.singledonation_left_txt {
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+}
+
+p.singledonation_txt {
+    color: #FFF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 1.2px;
+}
+
+.single_book_img_txt {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p.single_txt_pp {
+    color: #25333A;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.donation_icon_social_flx_main{
+    display: flex;
+    justify-content: start;
+    gap: 32px
+}
+
+.whtsapp_txt_icon_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 2px;
+    background: #60D669;
+    padding: 20px;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.whtsapp_txt_icon_btn:hover{
+    color: #fff;
+
+}
+
+.donation_icon_social_flx .fb_txt_icon_btn {
+    border-radius: 2px;
+    background: #1877F2;
+}
+.donation_amount_hour_bg {
+    background: rgba(217, 217, 217, 0.30);
+
+}
+.donation_amount_hour_amnt_pp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 @media (max-width:1024px) {
     .success-stories .slick-initialized .slick-slide {
         padding: 0 20px;
