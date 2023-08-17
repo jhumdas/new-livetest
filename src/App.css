@@ -446,15 +446,77 @@ a:hover {
   margin-right: 0;
 }
 
+.money_modal_wallet_money {
+  display: flex;
+  gap: 44px;
+  justify-content: center;
 
+}
+.moneyModalWrapper {
+  position: absolute;
+  right: 31px;
+  width: 26%;
+  border-radius: 0px 0px 10px 10px;
+  background: #ffffff;
+  padding: 17px;
+  z-index: 9;
+  top: 66px;
+  border-radius: 20px;
+}
 
+p.wallet_money_pp {
+  color: #000;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
 
+}
+
+.wallet_profile_main {
+  padding: 10px 32px;
+}
+
+p.wallet_money_pp {
+
+  color: #000;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+p.wallet_profile_pp {
+  color: #000;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 15px
+}
+
+h5.wallet_txt {
+  font-size: 13px;
+  font-weight: 600;
+}
 
 /****responsive*****/
 @media (max-width:1199px) {
   .header .wraper ul li a {
     font-size: 14px;
     margin: 0 14px;
+  }
+
+  .money_modal_wallet_money {
+    gap: 22px;
+  }
+
+  .wallet_profile_main {
+    padding: 10px 8px;
+  }
+
+  .moneyModalWrapper {
+    width: 28%;
   }
 }
 
@@ -502,6 +564,18 @@ a:hover {
   .header .wraper ul li a {
     font-size: 12px;
     margin: 0 7px;
+  }
+
+  .moneyModalWrapper {
+    width: 36%;
+  }
+
+  .money_modal_wallet_money {
+    gap: 26px;
+  }
+
+  .wallet_profile_main {
+    padding: 10px 20px;
   }
 }
 
@@ -581,6 +655,19 @@ a:hover {
     display: none;
   }
 
+  .moneyModalWrapper {
+    width: 55%;
+  }
+
+  .money_modal_wallet_money {
+    gap: 22px;
+    justify-content: space-around;
+  }
+
+  .wallet_profile_main {
+    padding: 10px 30px;
+  }
+
   /* p.single_txt_pp {
     font-size: 15px;
     line-height: 20px;
@@ -611,148 +698,20 @@ a:hover {
   }
 
 }
-
-/**** Singledonation ****/
-@media(max-width:991px) {
-  .donation_document.donation_fundarise .collapsible-link[aria-expanded="true"]::before {
-    content: "\f106";
-    top: 4%;
-}
-.donation_document.donation_fundarise.donation_supports .collapsible-link[aria-expanded="true"]::before {
-  content: "\f106";
-  top: 8%;
-}
-}
-
-@media(max-width:767px) {
-  p.single_txt_pp {
-    font-size: 15px;
-    line-height: 20px;
-
-  }
-
-  .singledonation_book_img {
-    background: url(../src/images/flight_img.png);
-    height: 280px;
-    background-position: center;
-  }
-
-  .donation_amount_hour_bg_flx {
-    padding: 20px 20px;
-  }
-
-  p.donation_amount_pp {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  p.donation_amount_raised_pp {
-    font-size: 15px;
-    line-height: 19px;
-  }
-
-  p.donation_txt_lst_pp {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .document_img_main {
-    width: 390px;
-    height: auto;
-  }
-  .donation_fundarise .collapsible-link[aria-expanded="true"]::before {
-    content: "\f106";
-    top: 4%;
-}
-}
-
-@media (max-width:576px) {
-  .donation_document .collapsible-link[aria-expanded="true"]::before {
-    top: 15%;
-  }
-
-  p.donation_campaigner_txt_ppp {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .donation_campaigner_img {
-    width: 59px;
-    height: 58px;
-}
-.donation_document .btn-link {
-  margin-left: 7px !important;
-}
-.fundraiser_main_txt_main {
-  padding: 10px 25px;
-}
-.donation_supports_main_flax {
- 
-  padding: 10px 17px;
-}
-}
-
 @media(max-width:480px) {
-
-  .donation_icon_social_flx_main {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  .wallet_profile_main {
+    padding: 10px 17px;
   }
 
-  p.donation_amount_pp {
-    font-size: 15px;
-    line-height: 20px;
+  .moneyModalWrapper {
+    width: 70%;
   }
-
-  p.donation_amount_raised_pp {
-    font-size: 13px;
-    line-height: 17px;
-  }
-
-  p.donation_txt_lst_pp {
-    font-size: 15px;
-    line-height: 18px;
-  }
-
-  p.single_txt_pp {
-    font-size: 13px;
-    line-height: 17px;
-  }
-
-  .document_img_main {
-    width: 249px;
-    height: auto;
-  }
-  h5.donation_dctmn_hhh{
-    font-size: 17px;
-  }
-  p.fundraiser_main_txt_ppp {
-    font-size: 15px;
-    line-height: 20px;
-}
-/* .donation_document .collapsible-link[aria-expanded="true"]::before {
-  content: "\f106";
-  top: 14%;
-} */
-.donation_amount_document_main.donation_document .collapsible-link[aria-expanded="true"]::before {
-  content: "\f106";
-  top: 14%;
-  right: 2%;
-}
-.donation_document.donation_fundarise .collapsible-link[aria-expanded="true"]::before {
-  content: "\f106";
-  top: 3%;
-  right: 4%;
-}
 }
 
 
 
 @media (max-width:420px) {
-  h5.donation_dctmn_hhh {
-    font-size: 14px;
-}
-p.supports {
-  font-size: 14px;
-}
+  .moneyModalWrapper {
+    width: 87%;
+  }
 }
