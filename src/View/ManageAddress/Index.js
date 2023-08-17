@@ -9,10 +9,10 @@ export default function Index() {
                 <div className='container'>
                     <ProfileBox />
                     <div className='row'>
-                        <div className='col-lg-4 col-md-4 col-12'>
+                        <div className='col-lg-4 col-md-12 col-12'>
                             <OrderAccount />
                         </div>
-                        <div className='col-lg-8 col-md-8 col-12'>
+                        <div className='col-lg-8 col-md-12 col-12'>
                             <div className='address'>
 
                                 <input

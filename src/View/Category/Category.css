@@ -17,6 +17,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+
 .shoe{
     border-radius: 10px;
     border: 1px solid #000;
@@ -248,4 +249,36 @@ justify-content: space-between;
     margin: -1px 0px 0 -1px;
     transform: rotate(45deg) translate(-50%, -50%);
     z-index: 2;
+  }
+  .filterIcon{
+    display: none;
+  }
+  .filterCloseBtn{
+display: none;
+  }
+  .filterPart h4{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  @media (max-width:767px){
+    .category .sidewrap {
+      padding: 15px 15px;
+    }
+    .filterPart{
+      display: none;
+      position: relative;
+      margin-top: 20px;
+    }
+    .filterIcon{
+      display: block;
+      font-size: 20px;
+
+    }
+    .filterCloseBtn{
+      display: block;
+      position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
+        }
   }

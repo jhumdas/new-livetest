@@ -46,7 +46,7 @@ export default function Index() {
           <ProductSearch />
 
           <div className="row">
-            <div className="col-lg-7 col-md-7 col-12">
+            <div className="col-lg-7 col-md-12 col-12">
               <div className="mt-5">
                 <div className="address-box">
                   <div>
@@ -109,7 +109,7 @@ export default function Index() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-5 col-md-5 col-12">
+            <div className="col-lg-5 col-md-12 col-12">
               <div className="mt-5">
                 <div className="couponBox">
                   <h3>

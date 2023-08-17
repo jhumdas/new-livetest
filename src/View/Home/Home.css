@@ -220,7 +220,7 @@ line-height: normal;
     font-style: normal;
     font-weight: 300;
     line-height: 26px;
-    max-width: 80%;
+    max-width: 100%;
     text-align: justify;
     
 }
@@ -595,7 +595,7 @@ height: 100%;
         margin-bottom: 30px;
     }
     .application .wrap h3 {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .application .wrap a {
@@ -604,6 +604,9 @@ height: 100%;
 }
 
 @media (max-width:767px) {
+    .footer .wrap .rgtBox ul li a{
+        padding-bottom: 7px;
+    }
     .zigzag .btnGroup{
         flex-wrap: wrap;
     }
@@ -700,6 +703,7 @@ height: 100%;
     } */
     .application .wrap {
         width: 100%;
+        padding: 0 0 20px 0;
     }
 
     .application .left {

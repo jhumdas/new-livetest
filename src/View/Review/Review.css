@@ -51,7 +51,7 @@ padding: 20px 30px;
 .ReviewSecondBox h2 button{
     color: #514848;
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -63,7 +63,7 @@ padding: 20px 30px;
     display: block;
     color: #000;
 font-family: Open Sans;
-font-size: 18px;
+font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -87,7 +87,7 @@ padding: 20px 0 20px 28px;
 }
 .starBox i{
     padding-left: 20px;
-    font-size: 30px;
+    font-size: 22px;
 }
 .review textarea{
     border-radius: 6.393px;
@@ -113,11 +113,12 @@ resize: none;
 
         padding: 20px 10px;
     }
-}
-@media (max-width:767px){
     .ReviewSecondBox{
         margin-bottom: 30px;
     }
+}
+@media (max-width:767px){
+ 
 
 
 }

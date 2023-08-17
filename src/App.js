@@ -78,7 +78,7 @@ import ImpactLayout from './Layout/ImpactLayout';
 import Impact from '../src/View/Impact/Index'
 import Singledonation from './View/Donation/Singledonation';
 import ExploreDonation from './View/Donation/ExploreDonation';
-
+import Reaward from '../src/View/Reaward/Index'
 function App() {
 
 
@@ -114,7 +114,7 @@ function App() {
             <Route path="/buynow" element={<Buynow />} />
             <Route path="/preview" element={<Preview />} />
             <Route path="/payment" element={<Payment />} />
-        
+            <Route path="/reaward" element={<Reaward />} />
   
 
             <Route element={<MusicPodcastlayout />}>

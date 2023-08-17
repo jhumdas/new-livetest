@@ -370,7 +370,7 @@ a:hover {
 }
 
 .footer .wrap .leftBox {
-  width: 36%;
+  width: 30%;
 
 }
 
@@ -394,14 +394,14 @@ a:hover {
 }
 
 .footer .wrap .rgtBox {
-  width: 60%;
+  width: 65%;
   display: flex;
   justify-content: end;
   padding: 50px 0 0 0;
 }
 
 .footer .wrap .rgtBox ul {
-  padding-right: 50px;
+  padding-right: 34px;
 }
 
 .footer .wrap .rgtBox h5 {
@@ -435,359 +435,20 @@ a:hover {
   display: inline-block;
 }
 
-.social-media a {
+.footer .social-media a {
   color: #000;
   font-size: 23px;
   margin-right: 20px;
+
 }
 
-.social-media a:nth-child(4) {
+.footer .social-media a:nth-child(4) {
   margin-right: 0;
 }
 
 
 
-/**** SingleDonation Page start ****/
-.singledonation .singledonation_icon {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
 
-.singledonation_book_img {
-  background: url(../src/images/flight_img.png);
-  height: 427px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  background-position: center;
-}
-
-.singledonation_left_txt {
-  position: absolute;
-  bottom: 12px;
-  left: 16px;
-}
-
-p.singledonation_txt {
-  color: #FFF;
-  font-family: 'Plus Jakarta Sans';
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: 1.2px;
-}
-
-.single_book_img_txt {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-p.single_txt_pp {
-  color: #25333A;
-  font-family: 'Open Sans';
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 23px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-
-.donation_icon_social_flx_main {
-  display: flex;
-  justify-content: start;
-  gap: 32px
-}
-
-.whtsapp_txt_icon_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 2px;
-  background: #60D669;
-  padding: 20px;
-  color: #FFF;
-  font-family: 'Open Sans';
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 20px;
-}
-
-.whtsapp_txt_icon_btn:hover {
-  color: #fff;
-
-}
-
-.donation_icon_social_flx .fb_txt_icon_btn {
-  border-radius: 2px;
-  background: #1877F2;
-}
-
-.donation_amount_hour_bg {
-  background: rgba(217, 217, 217, 0.30) !important;
-
-}
-
-.donation_amount_hour_amnt_pp {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-p.donation_amount_pp {
-  color: #21920F;
-  font-family: 'Open Sans';
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 25px;
-}
-
-p.donation_amount_raised_pp {
-  color: rgba(0, 0, 0, 0.90);
-  font-family: 'Open Sans';
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 21px;
-}
-
-.donation_amount_hour_main {
-  padding-top: 20px;
-  padding-bottom: 15PX;
-}
-
-.donation_amount_hour_bg_flx {
-  padding: 20px 54px;
-}
-
-p.donation_txt_lst_pp {
-  color: #25333A;
-  font-family: 'Open Sans';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-}
-
-h5.donation_dctmn_hhh {
-  color: #000;
-  font-family: 'Open Sans';
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: capitalize;
-}
-
-.document_img_main {
-  width: 547px;
-  height: 348px;
-  margin: auto;
-}
-
-.document_img_main img {
-  width: 100%;
-  height: 100%;
-}
-
-/* .donation_performance .collapsible-link[aria-expanded="true"]::before {
-  content: "\f106";
-  top: 5%;
-} */
-/* .business_performance .btn-link {
-  color: #25333A;
-  font-family: 'Open Sans';
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 25px;
-  margin-left: 30px;
-  letter-spacing: 2px;
-} */
-
-.business_performance .collapsible-link[aria-expanded="true"]::before {
-  content: "\f106";
-  top: 8%;
-  position: absolute;
-  right: 2.8rem;
-  transform: translateY(-50%);
-  display: block;
-  font-family: "FontAwesome";
-  font-size: 32px;
-  border-radius: 35px;
-  /* background: #E0E0E0; */
-  width: 30px;
-  height: 27px;
-  text-align: center;
-  line-height: 27px;
-  color: #25333A;
-  font-weight: 400;
-  transition: .5s all ease-in-out;
-}
-
-.business_performance .collapsible-link::before {
-  content: "\f107";
-  position: absolute;
-  top: 50%;
-  right: 2.8rem;
-  transform: translateY(-50%);
-  display: block;
-  font-family: "FontAwesome";
-  font-size: 32px;
-  border-radius: 35px;
-  /* background: #E0E0E0; */
-  width: 30px;
-  height: 27px;
-  text-align: center;
-  line-height: 27px;
-  color: #25333A;
-  font-weight: 400;
-  transition: .5s all ease-in-out;
-}
-
-.business_performance .collapsible-link[aria-expanded="true"]::before {
-
-  content: "\f106";
-  top: 8%;
-}
-
-.business_performance .btn-link:hover {
-  color: #25333A !important;
-}
-
-.business_performance .btn-link {
-  color: #25333A;
-  font-family: 'Open Sans';
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 25px;
-  margin-left: 30px;
-  letter-spacing: 2px;
-}
-
-.donation_campaigner_img_frm {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.donation_campaigner_main {
-  padding: 30px;
-  border-bottom: 1px solid #afaeae;
-}
-
-.donation_campaigner_img {
-  width: 70px;
-  height: 70px;
-}
-
-.donation_campaigner_img img {
-  width: 100%;
-  height: 100%;
-}
-
-p.donation_campaigner_txt_ppp {
-  color: #25333A;
-  font-family: 'Open Sans';
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 25px;
-}
-
-.donation_amount_document_main.business_performance {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.donation_amount_document_main.donation_campaigner {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.donation_fundarise .collapsible-link[aria-expanded="true"]::before {
-  content: "\f106";
-  top: 8%;
-  position: absolute;
-  right: 2.8rem;
-  transform: translateY(-50%);
-  display: block;
-  font-family: "FontAwesome";
-  font-size: 32px;
-  border-radius: 35px;
-  /* background: #E0E0E0; */
-  width: 30px;
-  height: 27px;
-  text-align: center;
-  line-height: 27px;
-  color: #25333A;
-  font-weight: 400;
-  transition: .5s all ease-in-out;
-}
-
-p.fundraiser_main_txt_ppp {
-  color: #000;
-  font-family: 'Open Sans';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-}
-
-.donation_bg_main {
-  background: rgba(217, 217, 217, 0.30);
-}
-
-.donation_supports_main_flax {
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* margin-left: 69px; */
-  padding: 10px 43px
-}
-
-.donation_supports_main_img_txt {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  padding-bottom: 10px;
-}
-
-.donation_amount_document_main.donation_document {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.donation_amount_document_main .card {
-  background: rgba(217, 217, 217, 0.30) !important;
-}
-
-.donation_amount_document_main .card-header {
-  background: transparent !important;
-}
-
-.fundraiser_main_txt_main {
-  padding: 10px 35px;
-}
-
-.donation_supports_main_img {
-  width: 40px;
-  height: 40px;
-}
-
-.donation_supports_main_img img {
-  width: 100%;
-  height: 100%;
-}
-
-.donation_dctmn_hhh {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-}
-
-/**** SingleDonation Page End ****/
 
 /****responsive*****/
 @media (max-width:1199px) {
@@ -820,7 +481,8 @@ p.fundraiser_main_txt_ppp {
   }
 
   .footer .wrap .rgtBox {
-    width: 100%
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .account {
@@ -844,6 +506,9 @@ p.fundraiser_main_txt_ppp {
 }
 
 @media (max-width:767px) {
+  .footer {
+    padding: 22px 0;
+  }
   .loginModal a {
     width: 210px;
     margin-top: 25px;
@@ -886,7 +551,7 @@ p.fundraiser_main_txt_ppp {
 
   .footer .wrap .rgtBox ul {
     padding-right: 41px;
-    width: 50%;
+    width: 45%;
   }
 
   .footer .wrap .rgtBox .servicePart {
@@ -905,6 +570,7 @@ p.fundraiser_main_txt_ppp {
     width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding: 20px 0 0 0;
   }
 
   .toggole {
@@ -923,9 +589,17 @@ p.fundraiser_main_txt_ppp {
 }
 
 @media (max-width:533px) {
+  .footer .social-media a {
+
+    margin-right: 10px;
+  }
+  .footer .social-media {
+    margin-top: 0px;
+}
 
   .footer .wrap .rgtBox h5 {
     display: inline-block;
+    margin-bottom: 10px;
   }
 
   .footer .wrap .rgtBox h5:after {

@@ -593,11 +593,11 @@ overflow: hidden; */
 }
 
 /***my-course***/
-.social-media {
+.Learning .social-media {
     margin-top: 30px;
 }
 
-.social-media h4 {
+.Learning .social-media h4 {
     color: #000;
     font-family: Open Sans;
     font-size: 25px;
@@ -608,7 +608,7 @@ overflow: hidden; */
     margin-bottom: 10px;
 }
 
-.social-media i {
+.Learning .social-media i {
     color: #716e6e;
     font-size: 27px;
     margin-right: 20px;

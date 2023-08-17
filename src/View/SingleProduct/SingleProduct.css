@@ -264,11 +264,14 @@ padding: 10px 20px;
 .secHeading{
     color: #000;
     font-family: Open Sans;
-    font-size: 35px;
+    font-size: 27px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 
+}
+.description-part{
+margin-top: 30px;
 }
 .description-part p{
     margin-top: 20px;

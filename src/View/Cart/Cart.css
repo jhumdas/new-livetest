@@ -28,6 +28,10 @@ border: 0.92px solid #FF3A44;
 background: #FFF;
 padding: 10px 15px;
 display: inline-block;
+margin-right: 15px;
+}
+.CartPage .AddressBtn{
+    margin-right: 0;
 }
 .removeProduct{
     display: flex;
@@ -49,6 +53,9 @@ padding: 10px;
 .Productdetails{
     padding-left: 40px;
 }
+.Productdetails h4{
+    font-size: 20px;
+}
 .Productdetails p{
     color: #455A64;
 font-family: Open Sans;
@@ -64,7 +71,7 @@ margin: 10px 0;
 .Productdetails .form-group select{
     color: #000;
 font-family: Open Sans;
-font-size: 19px;
+font-size: 17px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -162,13 +169,17 @@ margin-bottom: 20px;
     .AddressBtn {
       
         display: inline-block;
-        margin-top: 20px;
+        margin-top: 10px;
     }
  
     .Productdetails .form-group select {
     
         font-size: 17px;
-    }    
+    }  
+    .AddressBtn{
+        font-size: 15px;
+        padding: 7px;
+    }  
     
 }
 @media (max-width:575px){
@@ -178,5 +189,11 @@ margin-bottom: 20px;
     }
     .Productdetails {
         padding-left: 0;
+        width: 100%;
+    }
+}
+@media (max-width:420px){
+    .AddressBtn{
+        margin-right: 7px;
     }
 }

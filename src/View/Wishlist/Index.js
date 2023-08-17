@@ -30,7 +30,7 @@ export default function Index() {
                   <strong>$ 100</strong>
                 </h6>
                 <div className="mt-2">
-                  <a href="#" className="AddressBtn mr-4">
+                  <a href="#" className="AddressBtn">
                   <img src={cart} className="mr-2"/>
                     Move to cart
                   </a>
@@ -61,7 +61,7 @@ export default function Index() {
                   <strong>$ 100</strong>
                 </h6>
                 <div className="mt-2">
-                  <a href="#" className="AddressBtn mr-4">
+                  <a href="#" className="AddressBtn">
                     <img src={cart} className="mr-2"/>
                     Move to cart
                   </a>

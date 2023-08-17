@@ -135,18 +135,18 @@ span.shop_facility_spn {
 p.shop_bg_txt_main1 {
     color: #000;
     font-family: 'Open Sans';
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     line-height: 55px;
 }
 
 p.shop_bg_txt_main2 {
     font-family: 'Open Sans';
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    padding-top: 45px;
-    margin-bottom: 65px;
+    padding-top: 21px;
+    margin-bottom: 43px;
 }
 
 .shop_bg_btn {
@@ -203,9 +203,10 @@ p.shop_bg_txt_main2 {
     text-align: center;
     color: #000;
     font-family: 'Open Sans';
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 29px;
+    margin-top: 10px;
 }
 
 .shop_details_category {
@@ -236,9 +237,11 @@ p.shop_bg_txt_main2 {
 .best_selling_product_bg {
     position: relative;
     width: 100%;
-    height: 200px;
+  
 }
-
+.Podcast .best_selling_product_bg{
+  height: 200px;
+}
 .shop_best_selling_prdt .slick-slide img {
     display: block;
     width: 100%;
@@ -441,10 +444,12 @@ p.best_selling_product_txt2 {
 }
 
 .shop_best_selling_prdt_wmn_fsh {
-    padding-top: 87px;
-    padding-bottom: 90px;
+    padding-top: 45px;
+    padding-bottom: 26px;
 }
-
+.shop_details_category_main_img_txt{
+margin-bottom: 20px;
+}
 .shop_best_selling_prdt_wmn_fsh .slick-slide img {
     width: 100%;
     height: 100%;
@@ -790,8 +795,14 @@ p.best_selling_product_txt2 {
 }
 
 @media screen and (max-width:991px) {
+    .shop_dnm_bg .rgtCnt h6{
+        margin-bottom: 5px;
+    }
+    .shop_dnm_bg .rgtCnt a{
+        margin-top: 16px;
+    }
     .shop_dnm_bg .rgtCnt h2 {
-        font-size: 37px;
+        font-size: 27px;
     }
 
     .shop_facility {
@@ -809,9 +820,9 @@ p.best_selling_product_txt2 {
 
     }
 
-    .shop_bg_btn {
+    .shop_bg .shop_bg_btn {
         max-width: 50%;
-        margin-top: 27px;
+
     }
 
     .shop_bg {
@@ -826,13 +837,10 @@ p.best_selling_product_txt2 {
     }
 
     p.shop_bg_txt_main2 {
-        font-size: 22px;
+        font-size: 16px;
         line-height: 27px;
         padding-top: 20px;
-    }
-
-    .shop_bg_btn {
-        margin-top: 30px;
+        margin-bottom: 15px;
     }
 
     .shop_bg_img_main {
@@ -862,7 +870,7 @@ p.best_selling_product_txt2 {
 
     .shop_u_choice .shop_choice_list {
         flex-wrap: wrap;
-        justify-content: inherit;
+        justify-content: center;
     }
 
     .shop_u_choice .best_selling_product_icon {
@@ -884,8 +892,17 @@ p.best_selling_product_txt2 {
 }
 
 @media screen and (max-width:767px) {
+    .shop_bg_btn {
+        color: #fff;
+        font-size: 15px;
+    }
+ 
+    .shop_details_category_main_img{
+        width: 100px;
+        height: 100px;
+    }
     .see_option {
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .shop_dnm_bg .rgtCnt a {
@@ -921,7 +938,7 @@ p.best_selling_product_txt2 {
     }
 
     p.shop_bg_txt_main2 {
-        font-size: 22px;
+        font-size: 16px;
         line-height: 26px;
         padding-top: 13px;
     }
@@ -950,12 +967,13 @@ p.best_selling_product_txt2 {
     .shop_bg_txt_main {
 
         max-width: 100%;
+        margin-bottom: 30px;
 
     }
 
     .shop_bg_btn {
         max-width: 35%;
-        margin-top: 27px;
+
     }
 
     .shop_bg_img_main {
@@ -1069,12 +1087,16 @@ p.best_selling_product_txt2 {
     }
 
     .shop_best_selling_prdt {
-        padding-top: 10px;
+        padding-top: 30px;
         padding-bottom: 20px;
     }
 }
 
 @media screen and (max-width:576px) {
+    .nav_icon_search i {
+        font-size: 24px;
+
+    }
     .see_option_btn {
         font-size: 19px;
         line-height: 30px;
@@ -1123,9 +1145,7 @@ p.best_selling_product_txt2 {
         padding-top: 7px;
     }
 
-    .shop_bg_btn {
-        margin-top: 18px;
-    }
+
 
     .shop_bg_img_main {
         max-width: 60%;
@@ -1171,7 +1191,7 @@ p.best_selling_product_txt2 {
 @media screen and (max-width:480px) {
     .from_icon_whish_cart_main {
         flex-wrap: wrap;
-        justify-content: center !important;
+        /* justify-content: center !important; */
 
     }
 
@@ -1201,9 +1221,7 @@ p.best_selling_product_txt2 {
         padding-top: 7px;
     }
 
-    .shop_bg_btn {
-        margin-top: 11px;
-    }
+   
 
     .shop_page_product_search {
         padding-top: 15px;
@@ -1300,15 +1318,11 @@ p.best_selling_product_txt2 {
     }
 
     .shop_bg_btn {
-        margin-top: 10px;
+ 
         max-width: 40%;
     }
 
-    .shop_bg_btn {
-        padding: 7px;
-        color: #fff;
-        font-size: 15px;
-    }
+ 
 
     .best_selling_txt h2 {
         text-align: center;
