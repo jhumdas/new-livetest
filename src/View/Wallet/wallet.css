@@ -1,0 +1,223 @@
+.wallet_main_bg {
+    background: #FF3A44;
+    width: 100%;
+    height: 80px;
+
+}
+
+.wallet_main_bg_brdr {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    transform: translate(10px, 10px);
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: -60px;
+}
+
+.wallet_blance {
+    border-bottom: 1px solid #939393;
+    padding: 16px;
+
+}
+
+.wallet_wallet_blance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p.wallet_txt_ppp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+p.wallet_balance_txt_ppp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+/* .wallet_main .wallet_amnt_add::-webkit-outer-spin-button,
+.wallet_main .wallet_amnt_add::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+} */
+.wallet_amnt {
+    width: 407px;
+    border: 1px solid #0b0a0a8a;
+    height: 43px;
+    border-radius: 4px
+}
+
+.wallet_amnt input {
+    width: 403px;
+    height: 38px;
+    border-radius: 3px;
+    border: 0;
+}
+
+.wallet_amnt ::placeholder {
+    color: #C7C7C7;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 15px;
+
+}
+
+.wallet_amnt_add {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding-top: 13px;
+}
+
+.wallet_add_btn {
+    border-radius: 5px;
+    background: #FF3A44;
+    width: 100%;
+    max-width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 12px;
+}
+
+.wallet_add_btn:hover {
+    color: #fff;
+
+}
+
+.wallt_trancsit_amnt_stts {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.wallet_add {
+    width: 100%;
+}
+
+.paid_img_txt {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    width: 33%;
+}
+
+.paid_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E6E6E6;
+    width: 41px;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 24px;
+}
+
+p.paid_txt_p {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+p.time_txt_p {
+    color: #737373;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 5px;
+}
+
+.paid_amnt_succs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #8E8E8E;
+}
+
+.wallet_blance_month_txt {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+p.wallt_trancsit_txt_ppp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.amnt_prc {
+    width: 11%;
+
+}
+
+.amnt_succs {
+    width: 33%;
+}
+
+p.amnt_succs_txt_pp {
+    text-align: right;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+p.amnt_prc_txt_pp {
+    text-align: right;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.bushido_wallet_logo_icon {
+    display: flex;
+    justify-content: center;
+    /* gap: 30px; */
+    background: #F5F8FA;;
+    padding: 20px;
+}
+.bushido_img {
+    margin: auto;
+}
+.bushido_logo_icon {
+    margin-left: auto;
+}
+.bushido_wallet_main {
+    width: 100%;
+    max-width: 32%;
+}
+.wallet_modal{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 9;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 2%;
+}

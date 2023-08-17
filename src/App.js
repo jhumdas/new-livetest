@@ -23,6 +23,7 @@ import '../src/View/Learning/Learning.css'
 import '../src/View/Business/Business.css'
 import '../src/View/Donation/Donation.css'
 import '../src/View/Impact/Impact.css'
+import '../src/View/Wallet/wallet.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -78,7 +79,7 @@ import ImpactLayout from './Layout/ImpactLayout';
 import Impact from '../src/View/Impact/Index'
 import Singledonation from './View/Donation/Singledonation';
 import ExploreDonation from './View/Donation/ExploreDonation';
-
+import Wallet from '../src/View/Wallet/Index'
 function App() {
 
 
@@ -114,7 +115,7 @@ function App() {
             <Route path="/buynow" element={<Buynow />} />
             <Route path="/preview" element={<Preview />} />
             <Route path="/payment" element={<Payment />} />
-        
+            <Route path="/wallet" element={<Wallet/>}/>
   
 
             <Route element={<MusicPodcastlayout />}>
