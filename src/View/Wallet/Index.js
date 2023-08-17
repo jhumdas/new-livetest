@@ -124,6 +124,19 @@ export default function Index() {
                                 <a href='#' onClick={handleClickcross}><i class="fa-solid fa-xmark"></i></a>
                             </div>
                         </div>
+                        <div className='bushido_wallet_body'>
+                            <div className='bushido_wallet_blance'>
+                                <div className='bushido_wallet_txt'>
+                                    <p className='bushido_wallet_txt_pp'>
+                                    Bushido Wallet
+                                    </p>
+
+                                    <p className='bushido_wallet_txt_pp'>
+                                    Total Balance : $ 0
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>}
         </>
