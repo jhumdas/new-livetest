@@ -25,6 +25,7 @@ import '../src/View/Donation/Donation.css'
 import '../src/View/Impact/Impact.css'
 import '../src/View/Wallet/wallet.css'
 import './View/Reward/Reward.css'
+import '../src/View/Flightingbook/Flightbook.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -83,11 +84,9 @@ import ExploreDonation from './View/Donation/ExploreDonation';
 import BalanceEarned from '../src/View/Reward/Index'
 import Reaward from '../src/View/Reward/Reward'
 import Wallet from '../src/View/Wallet/Index'
+import Flightbook from '../src/View/Flightingbook/Index'
 function App() {
-
-
-
-  return (
+return (
     <React.Fragment>
       <Router>
 
@@ -122,7 +121,7 @@ function App() {
             <Route path="/reward" element={<Reaward />} />
             
             <Route path="/wallet" element={<Wallet/>}/>
-  
+            <Route path="/flightbook" element={<Flightbook/>}/>
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />
