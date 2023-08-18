@@ -24,6 +24,7 @@ import '../src/View/Business/Business.css'
 import '../src/View/Donation/Donation.css'
 import '../src/View/Impact/Impact.css'
 import '../src/View/Wallet/wallet.css'
+import './View/Reward/Reward.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -79,7 +80,8 @@ import ImpactLayout from './Layout/ImpactLayout';
 import Impact from '../src/View/Impact/Index'
 import Singledonation from './View/Donation/Singledonation';
 import ExploreDonation from './View/Donation/ExploreDonation';
-import Reaward from '../src/View/Reaward/Index'
+import BalanceEarned from '../src/View/Reward/Index'
+import Reaward from '../src/View/Reward/Reward'
 import Wallet from '../src/View/Wallet/Index'
 function App() {
 
@@ -116,7 +118,9 @@ function App() {
             <Route path="/buynow" element={<Buynow />} />
             <Route path="/preview" element={<Preview />} />
             <Route path="/payment" element={<Payment />} />
-            <Route path="/reaward" element={<Reaward />} />
+            <Route path="/balance-earned" element={<BalanceEarned />} />
+            <Route path="/reward" element={<Reaward />} />
+            
             <Route path="/wallet" element={<Wallet/>}/>
   
 

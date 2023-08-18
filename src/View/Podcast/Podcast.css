@@ -37,10 +37,12 @@
     background-position: center;
     background-size: cover;
     height: 232px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background: linear-gradient(133deg, #000 0%, rgba(0, 0, 0, 0.00) 100%),url(../../images/Rectangle430.png);
 }
-
+.podcast-banner-slide.PBS{
+    border-radius: 10px;
+}
 .podcast-banner-slide .box {
     height: 100%;
     display: flex;
