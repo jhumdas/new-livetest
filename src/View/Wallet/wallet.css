@@ -110,9 +110,9 @@ p.wallet_balance_txt_ppp {
 
 .paid_img_txt {
     display: flex;
-    justify-content: start;
-    gap: 20px;
-    width: 33%;
+    gap: 10px;
+    justify-content: center;
+    margin-left: 67px;
 }
 
 .paid_bg {
@@ -152,12 +152,77 @@ p.time_txt_p {
     border-bottom: 1px solid #8E8E8E;
 }
 
-.wallet_blance_month_txt {
-    margin-left: 40px;
-    margin-right: 40px;
+.transaction_main th.table_transition {
+    text-align: center;
+    white-space: nowrap;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    padding: 15px 40px;
+    white-space: nowrap;
+
 }
 
-p.wallt_trancsit_txt_ppp {
+.transaction_main td.table_data_transition {
+    padding: 15px 40px;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    white-space: nowrap;
+    text-align: center;
+
+}
+
+.transaction_main td.table_data_transition_paid {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    white-space: nowrap;
+
+}
+
+/* th.table_transotion1 {
+    text-align: left;
+}
+th.table_transotion2 {
+    text-align: center;
+}
+th.table_transotion3 {
+    text-align: right;
+}
+td.table_data_transition1{
+    text-align: center;
+}
+td.table_data_transitio2 {
+    text-align: right;
+} */
+p.month_txt_ppp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    /* padding: 10px 40px;
+text-align: center; */
+}
+
+.transaction_main .month_txt {
+    padding: 15px 40px;
+    text-align: center;
+}
+
+/* .wallet_blance_month_txt {
+    margin-left: 40px;
+    margin-right: 40px;
+} */
+
+/* p.wallt_trancsit_txt_ppp {
     color: #000;
     font-family: 'Open Sans';
     font-size: 15px;
@@ -193,7 +258,6 @@ p.amnt_prc_txt_pp {
 .bushido_wallet_logo_icon {
     display: flex;
     justify-content: center;
-    /* gap: 30px; */
     background: #F5F8FA;;
     padding: 20px;
 }
@@ -206,8 +270,8 @@ p.amnt_prc_txt_pp {
 .bushido_wallet_main {
     width: 100%;
     max-width: 32%;
-}
-.wallet_modal{
+} */
+.wallet_modal {
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     top: 0;
@@ -220,4 +284,267 @@ p.amnt_prc_txt_pp {
     justify-content: center;
     align-content: center;
     padding: 2%;
+}
+
+.bushido_wallet_main {
+    border-radius: 10px;
+    width: 400px;
+    height: 590px;
+}
+
+.bushido_wallet_logo_icon {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.bushido_img {
+    margin: auto;
+}
+
+.bushido_wallet_logo_icon {
+    background: #F5F8FA;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 15px;
+}
+
+.bushido_wallet_txt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bushido_wallet_body {
+    background-color: #fff;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.busshido_payment_main {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+p.bushido_wallet_txt_pp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+p.paymnt_txt {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+p.paymnt_blnce {
+    color: #B7B2B2;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bushido_wallet_txt {
+    padding: 15px;
+}
+
+p.enter_pin_txt {
+    color: #B7B2B2;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    width: 70%;
+}
+
+
+
+.wallet_pin {
+
+    width: 205px;
+    height: 42px;
+    border: 1px solid #00000069;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.wallet_pin input {
+    width: 200px;
+    height: 37px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.wallet_pin ::placeholder {
+    color: #676767;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 15px;
+}
+
+.paymny_pay {
+    width: 100%;
+
+}
+
+.paymnt_pay_btn {
+    border-radius: 5px;
+    background: #FF3A44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 20px 15px;
+}
+
+.paymnt_pay_btn:hover {
+    color: #fff;
+}
+
+.bushido_wallet_body_brdrbtm {
+    border-bottom: 1px solid #606060;
+}
+
+p.bushido_wallt_txt_pp {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.bushido_wallet_crd_paymnt {
+    border-radius: 10px;
+    border: 1px solid #B7B7B7;
+    background: #FFF;
+    padding: 20px;
+}
+
+.bushido_wallet_crd {
+    padding: 20px;
+}
+
+.bushido_wallt_txt_imput {
+    border-bottom: 1px solid #606060;
+}
+
+/* .bushido_wallt_txt_imput input {
+    width: 100%;
+
+} */
+.bushido_wallt_txt_imput {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+/* .bushido_wallt_txt_imput::placeholder {
+    color: #737373;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+} */
+.paumnt_option {
+    color: #737373;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.paumnt_option:hover{
+    color: #737373;
+}
+.bushido_wallt_txt_option {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.footer_pymnt {
+    background: #F5F8FA;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.footer_pymnt_logo {
+    width: 67px;
+    height: 25px;
+    margin: auto;
+    
+}
+.footer_pymnt_logo img {
+  width: 100%;
+  height: 100%;
+}
+
+@media(max-width:991px) {
+    .wallet_amnt_add {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media(max-width:480px) {
+    .wallet_amnt {
+        width: 360px;
+    }
+
+    .wallet_amnt input {
+        width: 350px;
+    }
+    .bushido_wallet_main {
+        width: 100%;
+    }
+}
+
+@media(max-width:420px) {
+    p.wallet_txt_ppp {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    p.wallet_balance_txt_ppp {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .wallet_amnt {
+        width: 300px;
+    }
+
+    .wallet_amnt input {
+        width: 264px;
+    }
+    p.bushido_wallet_txt_pp {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+@media(max-width:1199px){
+    .bushido_wallet_main {
+        
+        height: 480px;
+        overflow-y: auto;
+    }
 }

@@ -445,6 +445,7 @@ a:hover {
   margin-right: 0;
 }
 
+
 .money_modal_wallet_money {
   display: flex;
   gap: 44px;
@@ -478,8 +479,7 @@ p.wallet_money_pp {
 }
 
 p.wallet_money_pp {
-  /* margin-left: 8px; */
-  /* margin-top: 10px; */
+
   color: #000;
   font-family: 'Open Sans';
   font-size: 16px;
@@ -552,7 +552,7 @@ h5.wallet_txt {
 
   .account {
     color: #000;
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
