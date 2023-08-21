@@ -85,6 +85,7 @@ import BalanceEarned from '../src/View/Reward/Index'
 import Reaward from '../src/View/Reward/Reward'
 import Wallet from '../src/View/Wallet/Index'
 import Flightbook from '../src/View/Flightingbook/Index'
+import Flightresult from '../src/View/Flightingbook/Flightresult'
 function App() {
 return (
     <React.Fragment>
@@ -122,6 +123,7 @@ return (
             
             <Route path="/wallet" element={<Wallet/>}/>
             <Route path="/flightbook" element={<Flightbook/>}/>
+            <Route path="/flightressult" element={<Flightresult/>}/>
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />

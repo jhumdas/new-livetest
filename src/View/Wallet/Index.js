@@ -108,13 +108,13 @@ export default function Index() {
 
                         <div className='transaction_main table-responsive'>
                             <table className='table'>
-                                <thead>
+                                <tbody>
                                     <tr style={{ borderBottom: "1px solid #8E8E8E", width: "100%" }}>
-                                        <th className='table_transition '>Transactions</th>
-                                        <th className='table_transition'>Amount</th>
-                                        <th className='table_transition  '>Status</th>
+                                        <td className='table_transition '>Transactions</td>
+                                        <td className='table_transition'>Amount</td>
+                                        <td className='table_transition  '>Status</td>
                                     </tr>
-                                </thead>
+                                </tbody>
 
                                 <div className='month_txt'>
                                     <p className='month_txt_ppp'>

@@ -89,7 +89,7 @@ export default function Index() {
                                                     className="slider__input_slider"
                                                     type="range"
                                                     min="0"
-                                                    max="100"
+                                                  
                                                     step="0.05"
                                                     value={value}
                                                     onChange={e => setValue(e.target.value)}
@@ -97,7 +97,7 @@ export default function Index() {
                                                 <input
                                                     className="slider__input_slider"
                                                     type="range"
-                                                    min="0"
+                                                   
                                                     max="100"
                                                     step="0.05"
                                                     value={value2}
