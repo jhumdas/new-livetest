@@ -1,5 +1,6 @@
 .flight_book_bg {
-    background: red;
+    background: rgba(0, 0, 0, 0.08);
+    ;
     height: 152px;
     width: 100%;
 }
@@ -37,10 +38,12 @@ p.flighimg_txt {
     font-weight: 600;
     line-height: 22px;
 }
+
 .flight_way {
     display: flex;
     align-items: center;
 }
+
 .flight_book_way {
     display: flex;
     justify-content: start;
@@ -48,10 +51,352 @@ p.flighimg_txt {
     margin-left: 9px;
     margin-top: 10px;
 }
+
 p.flight_way_txt_ppp {
     color: #000;
     font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
+}
+
+.bushido_flight {
+    /* background: linear-gradient(90.12deg, #000000 0.12%, rgba(255, 58, 68, 0) 101.98%),url(../../images/flight_img_sld.png); */
+    height: 232px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #000 0%, rgba(255, 58, 68, 0.00) 100%), url(../../images/flight_img_sld.png);
+    background-size: cover;
+}
+
+.flight_book_slckslide .slick-slide {
+    padding: 0 10px;
+}
+
+.bushido_flight_img_logo_flx {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+
+}
+
+.bushido_flight_dcnmt {
+    padding: 15px;
+}
+
+.bushido_img_logo {
+
+    width: 101px;
+    height: 30px;
+
+}
+
+.bushido_img_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.bushido_txt_dcmnt h4 {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #FFF;
+    padding-top: 10px;
+}
+
+.srch_flght_btn {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.srch_flght_btn_rd {
+    padding: 10px 15px;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 6px;
+    background: #FF3A44;
+}
+
+.bushido_txt_dcmnt {
+    padding-top: 10px;
+}
+
+.srch_flght_btn_rd:hover {
+    color: #fff;
+}
+
+.flght_srch_frm_to {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px 15px;
+}
+
+/* .flght_srch_frm_to_flx {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+} */
+
+.btnsrchflght {
+    border-radius: 6px;
+    border: 1px solid #FF3A44;
+    padding: 5px 5px;
+    color: #FF3A44;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-left: 44px;
+}
+
+.btnsrchflght:hover {
+    color: #FF3A44;
+}
+
+.flght_srch_frm_to_main td .placefrm {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.flght_srch_frm_to_main td .placefrm span {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.flght_srch_frm_to_main table td {
+    border-top: none !important;
+}
+
+.flght_srch_frm_to_main td .placefrm i {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.flght_srch_frm_to_main {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+p.tp_internrts {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-left: 12px;
+}
+
+.flight_book_slckslide .slick-prev:before {
+    content: '\f104' !important;
+    border-radius: 52px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: FontAwesome !important;
+    font-size: 27px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: rgb(0, 0, 0) !important;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+.flight_book_slckslide .slick-next:before {
+    content: '\f105' !important;
+    font-family: FontAwesome !important;
+    font-size: 26px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: rgb(0, 0, 0) !important;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    border-radius: 52px;
+    border: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.flight_book_slckslide .slick-next {
+    right: -2px;
+    z-index: 9;
+}
+
+.flight_book_slckslide .slick-prev {
+    left: -20px;
+    z-index: 9;
+}
+
+.side_fltrwrap {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px
+}
+
+.flght_fltr {
+    padding-top: 20px;
+}
+
+.fltr_icon_txt {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fltr_clr_all {
+    margin-left: auto;
+}
+
+h5.fltr_clr_all_hhh {
+    color: #716E6E;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+h5.fltr_txt_hh {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+h4.stps_hhh {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    ;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.flightreslt_main .stps_fltr .form-check {
+    padding-left: 0;
+    margin: 15px 0;
+}
+
+.flightreslt_main .stps_fltr .form-check-input {
+    vertical-align: baseline;
+}
+
+.stps_fltr {
+    padding-top: 11px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #716E6E;
+}
+
+.stpspn {
+    color: #716E6E;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.fltr_prc_flx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fltr_prc p {
+    color: #716E6E;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.fltr_prc h4 {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.fltr_prc_main{
+    padding-top: 11px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #716E6E;
+}
+.flightreslt_main .fltr_prc_main input[type="range"] {
+    position: absolute;
+    pointer-events: none;
+    z-index: 3;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    background: rgb(237 231 231 / 60%);
+    border-radius: 5px;
+    background-image: linear-gradient(#FF3A44, #FF3A44);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+.flightreslt_main .fltr_prc_main input[type="range"] {
+    position: absolute;
+    pointer-events: none;
+    z-index: 3;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    background: rgb(237 231 231 / 60%);
+    border-radius: 5px;
+    background-image: linear-gradient(#FF3A44, #FF3A44);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+@media(max-width:576px) {
+    .bushido_txt_dcmnt h4 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .srch_flght_btn_rd {
+        padding: 8px 12px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .flight_book_slckslide .slick-next:before {
+        font-size: 20px !important;
+        width: 24px;
+        height: 25px;
+
+    }
+
+    .flight_book_slckslide .slick-prev:before {
+        font-size: 20px !important;
+        width: 24px;
+        height: 25px;
+    }
+
+    .flight_book_slckslide .slick-prev {
+        left: -6px;
+        z-index: 9;
+    }
 }
