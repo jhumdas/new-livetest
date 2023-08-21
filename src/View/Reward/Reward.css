@@ -118,8 +118,99 @@ align-items: center;
     background-repeat: no-repeat;
 }
 .podcast-banner-slide.learning-home.reward-home .boxCnt{
-    width: 66%;
+    width: 63%;
+    padding-left: 0;
+    align-items: center;
 }
+.reward_box{
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+background: #FFF3CA;
+padding: 10px;
+margin-bottom: 10px;
+}
+.reward_box.sndone{
+    background: #FFDCE2;
+}
+.reward_box .content{
+display: block;
+width: 80%;
+
+}
+.reward_box .content h6{
+    color: #000;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 10px;
+}
+.reward_box .content p{
+    color: #4D4D4D;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: lowercase;
+}
+.reward_box .favourite{
+    display: flex;
+    width: 34px;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #FFF;
+    align-items: center;
+}
+.reward_box .rightBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.reward_box .rightBoxflex{
+display: flex;
+justify-content: space-between;
+  }
+  .icon-wishlist {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: url('../../images/love.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .icon-wishlist.in-wishliste{
+    background: url('../../images/love_react.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  
+.clock{
+    border-radius: 3.936px;
+    background: #FFF;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    justify-content: center;
+    margin-left: auto;
+}
+  
+ 
+
 @media (max-width:991px){
     .rewrad{
         height: 246px;
@@ -130,6 +221,22 @@ align-items: center;
     }
 }
 @media (max-width:767px){
+    .podcast-banner-slide.learning-home.reward-home {
+        
+        height: 263px;
+    }    
+    .reward_box .image{
+        margin: 0 auto;
+    }
+    .reward_box{
+        flex-wrap: wrap;
+    }
+    .podcast-banner-slide.learning-home.reward-home .boxCnt {
+        width: 100%;
+    }
+    .reward_box .content p{
+        font-size: 14px;
+    }
     .rewrad p {
         font-size: 15px;
 

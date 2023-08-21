@@ -72,27 +72,27 @@ export default function LoginModal() {
                     </div>
                     <div className='wallet_profile'>
                         <p className='wallet_profile_pp'>
-                            View Profile
+                           <Link to=""> View Profile</Link>
                         </p>
                     </div>
                     <div className='wallet_profile'>
                         <p className='wallet_profile_pp'>
-                            Your Wallet
+                            <Link to="">Your Wallet</Link>
                         </p>
                     </div>
                     <div className='wallet_profile'>
                         <p className='wallet_profile_pp'>
-                            Rewards
+                           <Link to="/balance-earned"> Rewards</Link>
                         </p>
                     </div>
                     <div className='wallet_profile'>
                         <p className='wallet_profile_pp'>
-                            Orders
+                            <Link to="">Orders</Link>
                         </p>
                     </div>
                     <div className='wallet_profile'>
                         <p className='wallet_profile_pp'>
-                            Virtual ID Card
+                            <Link to="">Virtual ID Card</Link>
                         </p>
                     </div>
                     <div className='wallet_profile'>
@@ -102,7 +102,7 @@ export default function LoginModal() {
                     </div>
                     <div className='wallet_profile'>
                         <p className='wallet_profile_pp'>
-                            Sign out
+                           <Link to=""> Sign out</Link>
                         </p>
                     </div>
                 </div>

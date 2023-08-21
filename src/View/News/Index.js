@@ -244,10 +244,11 @@ export default function Index() {
                         </button>
                     </div>
 
-                   
-                        <div
-                            className={toggleState === 1 ? "content  active-content row" : "content" }
-                        >
+
+                    <div
+                        className={toggleState === 1 ? "news_chnlcontent  news_chnlactive-content " : "news_chnlcontent"}
+                    >
+                        <div className='row'>
                             <div className='col-xl-6 col-lg-6 col-md-12 col-12 '>
 
                                 <div className='news_local_img_txt1'>
@@ -312,9 +313,12 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div
-                            className={toggleState === 2 ? "content  active-content row" : "content"}
-                        >
+                    </div>
+                    <div
+                        className={toggleState === 2 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
+                    >
+                        <div className='row'>
+                  
                             <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
 
                                 <div className='news_local_img_txt1'>
@@ -379,9 +383,11 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div
-                            className={toggleState === 3 ? "content  active-content row" : "content"}
-                        >
+                    </div>
+                    <div
+                        className={toggleState === 3 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
+                    >
+                        <div className='row'>
                             <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
 
                                 <div className='news_local_img_txt1'>
@@ -446,9 +452,11 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div
-                            className={toggleState === 4 ? "content  active-content row" : "content"}
-                        >
+                    </div>
+                    <div
+                        className={toggleState === 4 ? "news_chnlcontent   news_chnlactive-content" : "news_chnlcontent "}
+                    >
+                        <div className='row'>
                             <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
 
                                 <div className='news_local_img_txt1'>
@@ -513,9 +521,11 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div
-                            className={toggleState === 5 ? "content  active-content row" : "content"}
-                        >
+                    </div>
+                    <div
+                        className={toggleState === 5 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent "}
+                    >
+                        <div className='row'>
                             <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
 
                                 <div className='news_local_img_txt1'>
@@ -580,9 +590,11 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div
-                            className={toggleState === 6 ? "content  active-content row" : "content"}
-                        >
+                    </div>
+                    <div
+                        className={toggleState === 6 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
+                    >
+                        <div className='row'>
                             <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
 
                                 <div className='news_local_img_txt1'>
@@ -647,9 +659,11 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div
-                            className={toggleState === 7 ? "content  active-content row" : "content"}
-                        >
+                    </div>
+                    <div
+                        className={toggleState === 7 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
+                    >
+                        <div className='row'>
                             <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
 
                                 <div className='news_local_img_txt1'>
@@ -714,9 +728,11 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div
-                            className={toggleState === 8 ? "content  active-content row" : "content"}
-                        >
+                    </div>
+                    <div
+                        className={toggleState === 8 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
+                    >
+                        <div className='row'>
                             <div className='col-xl-6 col-lg-6 col-md-12 col-12'>
 
                                 <div className='news_local_img_txt1'>
@@ -781,7 +797,8 @@ export default function Index() {
                                 </div>
                             </div>
                         </div>
-                    
+                    </div>
+
                 </div>
 
 

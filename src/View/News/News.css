@@ -160,17 +160,22 @@ button {
     height: 100%;
 }
 
-.content {
+.news_chnlcontent  {
     display: none;
 }
 
+.news_chnlactive-content {
+    display: block;
+}
+.content{
+display: none;
+}
 .active-content {
     display: block;
 }
-
-.news_chnl .row {
+/* .news_chnl .row {
     display: flex !important;
-}
+} */
 
 @media screen and (max-width:1199px) {
     .news_local_news p.news_local_txt1 {

@@ -113,7 +113,7 @@ export default function Index() {
         <>
             <section className='shop_page_product_search'>
                 <div className='container'>
-                    <ProductSearch searchText="Search Product"/>
+                    <ProductSearch searchText="Search Product" />
                 </div>
             </section>
             <section className='shop_bg'>
@@ -470,10 +470,72 @@ export default function Index() {
                         </button>
                     </div>
                     <div
-                        className={toggleState === 1 ? "content  active-content row" : "content"}
+                        className={toggleState === 1 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
                     >
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <Link to="/single-product">
+                        <div className='row'>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <Link to="/single-product">
+                                    <div className='best_selling_shop'>
+                                        <div className='best_selling_product_bg'>
+                                            <img src={best_selling4} alt='/'></img>
+                                            <div className='best_selling_product_icon'>
+                                                <img src={best_selling_icon} alt='' />
+                                            </div>
+                                        </div>
+
+
+                                        <div className='best_selling_product_txt_main'>
+                                            <h4 className='best_selling_product_txt1'>
+                                                Product Name
+                                            </h4>
+                                            <p className='best_selling_product_txt2'>
+                                                $ 100
+                                            </p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling5} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling6} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
                                 <div className='best_selling_shop'>
                                     <div className='best_selling_product_bg'>
                                         <img src={best_selling4} alt='/'></img>
@@ -492,1478 +554,1259 @@ export default function Index() {
                                         </p>
                                     </div>
                                 </div>
-                            </Link>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
+                            </div>
+
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling8} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
 
 
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling9} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling8} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling9} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <div
-                        className={toggleState === 2 ? "content  active-content row" : "content"}
+                        className={toggleState === 2 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
                     >
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
+                        <div className='row'>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling5} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
 
 
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling6} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling8} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling9} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling8} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling9} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <div
-                        className={toggleState === 3 ? "content  active-content row" : "content"}
+                        className={toggleState === 3 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
                     >
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
+                        <div className='row'>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling5} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
 
 
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling6} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling8} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling9} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling8} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling9} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <div
-                        className={toggleState === 4 ? "content  active-content row" : "content"}
+                        className={toggleState === 4 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
                     >
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
+                        <div className='row'>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling5} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
 
 
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling6} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling8} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling9} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling8} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling9} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <div
-                        className={toggleState === 5 ? "content  active-content row" : "content"}
+                        className={toggleState === 5 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
                     >
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
+                        <div className='row'>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling5} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
 
 
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling6} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling8} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling9} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling8} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling9} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <div
-                        className={toggleState === 6 ? "content  active-content row" : "content"}
+                        className={toggleState === 6 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
                     >
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
+                        <div className='row'>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling5} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
 
 
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling6} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling8} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling9} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
+                    </div>
+       
+                    <div
+                        className={toggleState === 7 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
+                    >
+                        <div className='row'>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling5} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
 
 
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling5} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling6} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling9} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling8} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling6} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling8} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling9} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <div
-                        className={toggleState === 6 ? "content  active-content row" : "content"}
+                        className={toggleState === 8 ? "news_chnlcontent  news_chnlactive-content" : "news_chnlcontent"}
                     >
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
+                        <div className='row'>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling5} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling4} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
 
 
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling7} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling5} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling6} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling9} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling8} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
+                                <div className='best_selling_shop'>
+                                    <div className='best_selling_product_bg'>
+                                        <img src={best_selling6} alt='/'></img>
+                                        <div className='best_selling_product_icon'>
+                                            <img src={best_selling_icon} alt='' />
+                                        </div>
+                                    </div>
+
+
+                                    <div className='best_selling_product_txt_main'>
+                                        <h4 className='best_selling_product_txt1'>
+                                            Product Name
+                                        </h4>
+                                        <p className='best_selling_product_txt2'>
+                                            $ 100
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling8} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling9} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div
-                        className={toggleState === 7 ? "content  active-content row" : "content"}
-                    >
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling9} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling8} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div
-                        className={toggleState === 8 ? "content  active-content row" : "content"}
-                    >
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling4} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling7} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling5} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling9} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling8} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-xl-3 col-lg-3 col-md-6 col-12'>
-                            <div className='best_selling_shop'>
-                                <div className='best_selling_product_bg'>
-                                    <img src={best_selling6} alt='/'></img>
-                                    <div className='best_selling_product_icon'>
-                                        <img src={best_selling_icon} alt='' />
-                                    </div>
-                                </div>
-
-
-                                <div className='best_selling_product_txt_main'>
-                                    <h4 className='best_selling_product_txt1'>
-                                        Product Name
-                                    </h4>
-                                    <p className='best_selling_product_txt2'>
-                                        $ 100
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
