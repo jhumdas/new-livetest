@@ -82,7 +82,12 @@ export default function LoginModal() {
                     </div>
                     <div className='wallet_profile'>
                         <p className='wallet_profile_pp'>
-                           <Link to="/balance-earned"> Rewards</Link>
+                           <Link to="/reward"> Rewards</Link>
+                        </p>
+                    </div>
+                    <div className='wallet_profile'>
+                        <p className='wallet_profile_pp'>
+                           <Link to="/balance-earned"> Social Wallet</Link>
                         </p>
                     </div>
                     <div className='wallet_profile'>

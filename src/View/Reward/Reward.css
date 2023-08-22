@@ -1,11 +1,12 @@
-.rewrad{
+.rewrad {
     background: linear-gradient(88deg, #EB830D 0%, rgba(235, 186, 13, 0.33) 100%);
     height: 400px;
     display: grid;
     align-items: center;
 
 }
-.rewrad-bg-img{
+
+.rewrad-bg-img {
     background-repeat: no-repeat;
     background-size: 43%;
     background-position: left center;
@@ -13,36 +14,41 @@
     height: 252px;
     display: grid;
     align-items: center;
-    
+
 }
-.rewrad p{
+
+.rewrad p {
     color: #FFF;
-font-family: Open Sans;
-font-size: 22px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-width: 56%;
-margin-left: auto;
+    font-family: Open Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 56%;
+    margin-left: auto;
 }
-.total-balance-earned .top{
+
+.total-balance-earned .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
 }
-.total-balance-earned{
+
+.total-balance-earned {
     padding: 30px 0;
 }
-.total-balance-earned  h4{
+
+.total-balance-earned h4 {
     color: #000;
-font-family: Open Sans;
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
-.balance-earnedBox{
+
+.balance-earnedBox {
     border-radius: 4.391px;
     border: 0.878px solid #E9E9E9;
     background: #FFF;
@@ -50,113 +56,128 @@ line-height: normal;
     padding: 15px;
     margin-bottom: 20px;
 }
-.balance-earnedBox h5{
+
+.balance-earnedBox h5 {
     color: #000;
-font-family: Open Sans;
-font-size: 21.078px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-bottom: 10px;
+    font-family: Open Sans;
+    font-size: 21.078px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
 }
-.balance-earnedBox p{
+
+.balance-earnedBox p {
     color: #716E6E;
-font-family: Open Sans;
-font-size: 11.417px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: capitalize;
-margin-bottom: 10px;
-text-align: justify;
+    font-family: Open Sans;
+    font-size: 11.417px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    text-align: justify;
 }
-.balance-earnedBox h6{
+
+.balance-earnedBox h6 {
     color: #9C9C9C;
-font-family: Plus Jakarta Sans;
-font-size: 11.644px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.932px;
-text-transform: capitalize;
+    font-family: Plus Jakarta Sans;
+    font-size: 11.644px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.932px;
+    text-transform: capitalize;
 }
-.reddemBtn{
+
+.reddemBtn {
     color: #FFF;
-font-family: Open Sans;
-font-size: 15.07px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-width: 100%;
-display: block;
-padding: 10px;
-border-radius: 3.617px;
-background: #FF3A44;
-box-shadow: 0px 1.205636978149414px 6.028184413909912px 0px rgba(0, 0, 0, 0.10);
-text-align: center;
+    font-family: Open Sans;
+    font-size: 15.07px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 3.617px;
+    background: #FF3A44;
+    box-shadow: 0px 1.205636978149414px 6.028184413909912px 0px rgba(0, 0, 0, 0.10);
+    text-align: center;
 }
-.balance-earnedBox img{
+
+.balance-earnedBox img {
     width: 182px;
-height: 110px;
-margin-left: auto;
-display: block;
+    height: 110px;
+    margin-left: auto;
+    display: block;
 }
-.balance-earnedBox .top{
-display: flex;
-justify-content: space-between;
-border-bottom: 1px solid #EBEBEB;
-margin-bottom: 10px;
-align-items: center;
+
+.balance-earnedBox .top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 10px;
+    align-items: center;
 }
-.earnModal{
+
+.earnModal {
     width: 370px;
 }
+
 .podcast-banner-slide.learning-home.reward-home {
     background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%), url(../../images/reward1.png);
     height: 427px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.podcast-banner-slide.learning-home.reward-home .boxCnt{
+
+.podcast-banner-slide.learning-home.reward-home .boxCnt {
     width: 63%;
     padding-left: 0;
     align-items: center;
 }
-.reward_box{
+
+.reward_box {
     display: flex;
     gap: 10px;
     border-radius: 10px;
-background: #FFF3CA;
-padding: 10px;
-margin-bottom: 10px;
+    background: #FFF3CA;
+    padding: 10px;
+    margin-bottom: 10px;
 }
-.reward_box.sndone{
+
+.reward_box.sndone {
     background: #FFDCE2;
 }
-.reward_box .content{
-display: block;
-width: 80%;
+
+.reward_box .content {
+    display: block;
+    width: 80%;
 
 }
-.reward_box .content h6{
+
+.reward_box .content h6 {
     color: #000;
-font-family: Open Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-margin-bottom: 10px;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
 }
-.reward_box .content p{
+
+.reward_box .content p {
     color: #4D4D4D;
-font-family: Open Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-transform: lowercase;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: lowercase;
 }
-.reward_box .favourite{
+
+.reward_box .favourite {
     display: flex;
     width: 34px;
     height: 32px;
@@ -167,16 +188,19 @@ text-transform: lowercase;
     background: #FFF;
     align-items: center;
 }
-.reward_box .rightBox{
+
+.reward_box .rightBox {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.reward_box .rightBoxflex{
-display: flex;
-justify-content: space-between;
-  }
-  .icon-wishlist {
+
+.reward_box .rightBoxflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-wishlist {
     cursor: pointer;
     width: 20px;
     height: 20px;
@@ -184,15 +208,16 @@ justify-content: space-between;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-  }
-  .icon-wishlist.in-wishliste{
+}
+
+.in-wishlist {
     background: url('../../images/love_react.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-  }
-  
-.clock{
+}
+
+.reward_box .clock {
     border-radius: 3.936px;
     background: #FFF;
     color: #000;
@@ -208,48 +233,191 @@ justify-content: space-between;
     justify-content: center;
     margin-left: auto;
 }
-  
- 
 
-@media (max-width:991px){
-    .rewrad{
+.reward_singleBG {
+    background-image: url(../../images/rsingle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 192px;
+    position: relative;
+}
+
+.reward_singleBG:after {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.40);
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.reward_single_box_wrap{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 690px;
+    margin-top: -5%;
+    position: relative;
+    padding-bottom: 50px;
+
+}
+
+.reward_single_box {
+    border-top: 15px solid #FF3A44;
+
+    height: auto;
+    border-radius: 16.585px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(244, 67, 54, 0.20);
+    text-align: center;
+    padding: 0 60px 30px 60px;
+}
+
+.reward_single_box h3 {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 24.878px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.99px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.reward_single_box p {
+    color: #434343;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    margin-bottom: 30px;
+}
+
+.codeBox {
+    border-radius: 7px;
+    border: 1px dashed #BDBDBD;
+    background: #FBFBFB;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+}
+.codeBox h6{
+    font-size: 15px;
+}
+.codeBox a{
+    color: #FF3A44;
+}
+.giftCode {
+    display: flex;
+    gap: 10px;
+}
+.giftBtn{
+    color: #F44336;
+font-family: Open Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border-radius: 7px;
+border: 1px solid #FF3A44;
+background: #FBFBFB;
+width: 117px;
+height: 45px;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.reward_single_boxBottom{
+    border-radius: 16.585px;
+background: #FFF;
+box-shadow: 0px 2.8333334922790527px 10.625000953674316px 0px rgba(0, 0, 0, 0.25);
+height: auto;
+margin-top: 20px;
+padding: 20px;
+}
+.offer-box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.offer-box-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.arrow{
+    width: 8px;
+}
+@media (max-width:991px) {
+    .rewrad {
         height: 246px;
     }
+
     .rewrad p {
         font-size: 17px;
 
     }
 }
-@media (max-width:767px){
+
+@media (max-width:767px) {
+    .reward_single_box_wrap{
+        margin-top: -15%;
+    }
+    .codeBox h6{
+        font-size: 14px;
+    }
+    .codeBox{
+        font-size: 14px;
+    }
+    .reward_single_box{
+        padding: 0 15px 30px 15px;
+    }
+    .reward_single_box_wrap{
+        padding: 2%;
+    }
     .podcast-banner-slide.learning-home.reward-home {
-        
+
         height: 263px;
-    }    
-    .reward_box .image{
+    }
+
+    .reward_box .image {
         margin: 0 auto;
     }
-    .reward_box{
+
+    .reward_box {
         flex-wrap: wrap;
     }
+
     .podcast-banner-slide.learning-home.reward-home .boxCnt {
         width: 100%;
     }
-    .reward_box .content p{
+
+    .reward_box .content p {
         font-size: 14px;
     }
+
     .rewrad p {
         font-size: 15px;
 
     }
-    .rewrad{
+
+    .rewrad {
         height: 162px;
     }
-    .rewrad-bg-img{
+
+    .rewrad-bg-img {
         height: auto;
     }
 }
-@media (max-width:400px){
-    .earnModal{
-        width:100%
+
+@media (max-width:400px) {
+    .earnModal {
+        width: 100%
     }
 }
