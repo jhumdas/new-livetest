@@ -26,6 +26,7 @@ import '../src/View/Impact/Impact.css'
 import '../src/View/Wallet/wallet.css'
 import './View/Reward/Reward.css'
 import '../src/View/Flightingbook/Flightbook.css'
+import '../src/View/HotelBooking/Hotelbooking.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -87,8 +88,12 @@ import Wallet from '../src/View/Wallet/Index'
 import Flightbook from '../src/View/Flightingbook/Index'
 import Flightresult from '../src/View/Flightingbook/Flightresult'
 import RewardSingle from './View/Reward/RewardSingle';
+import HotelLayout from './Layout/HotelLayout';
+import HotelBooking from '../src/View/HotelBooking/HotelBooking'
+import HotelSearch from './View/HotelBooking/HotelSearch';
+
 function App() {
-return (
+  return (
     <React.Fragment>
       <Router>
 
@@ -122,9 +127,9 @@ return (
             <Route path="/balance-earned" element={<BalanceEarned />} />
             <Route path="/reward" element={<Reaward />} />
             <Route path="/reward-single" element={<RewardSingle />} />
-            <Route path="/wallet" element={<Wallet/>}/>
-            <Route path="/flightbook" element={<Flightbook/>}/>
-            <Route path="/flightressult" element={<Flightresult/>}/>
+            <Route path="/wallet" element={<Wallet />} />
+            <Route path="/flightbook" element={<Flightbook />} />
+            <Route path="/flightressult" element={<Flightresult />} />
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />
@@ -166,7 +171,10 @@ return (
             <Route element={<ImpactLayout />}>
               <Route path="/impact" element={<Impact />} />
             </Route>
-
+            <Route element={<HotelLayout />}>
+              <Route path="/hotel-booking" element={<HotelBooking />} />
+              <Route path="/hotel-search" element={<HotelSearch />} />
+            </Route>
           </Route>
         </Routes>
 

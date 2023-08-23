@@ -1,0 +1,229 @@
+.hotel_searchBG {
+    background-image: url(../../images/hotel.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 244px;
+}
+
+.hotel_search {
+    border-radius: 0px 0px 8.283px 8.283px;
+    background: #FFF;
+    box-shadow: 0px 3.31333327293396px 10.768332481384277px 0px rgba(0, 0, 0, 0.10);
+    width: 994px;
+    height: 490.373px;
+    margin: 0 auto;
+    margin-top: -10%;
+
+}
+
+.hotel_slider .rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hotel_slider .rating h6 {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.hotel_slider .rating h6 img{
+    display: inline-block;
+}
+.hotel_slider .rating i {
+    color: #eb830d;
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+.hotel_slider .rating a {
+    border-radius: 2px;
+    background: #FF3A44;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 5px 30px;
+}
+
+.hotel_slider .rating p {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hotel_slider .img_content {
+    padding: 10px;
+}
+
+.hotel_slider_heading {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.hotel_slider .box {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 6px;
+}
+
+.hotel_slider .slick-initialized .slick-slide {
+    padding: 0 10px;
+}
+
+.hotel_slider .image_box {
+    position: relative;
+}
+
+.hotel_slider .image_box img {
+    width: 100%;
+
+}
+
+.hotel_slider .wish_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+}
+
+.popular_destination {
+    padding-bottom: 50px;
+}
+
+.popular_destination p {
+    color: #716E6E;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.gallery_box {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery_box .leftBox {
+    position: relative;
+}
+
+.gallery_box .leftBox img {
+    height: 413px;
+}
+
+.gallery_box .rightBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery_box .img_div {
+    width: 49%;
+    height: 200px;
+    position: relative;
+}
+
+.gallery_box .img_div img {
+    width: 100%;
+    height: 100%;
+}
+
+.cntOnImg {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+flex-direction: column;
+}
+.cntOnImg h5{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+margin-bottom: 10px;
+}
+.cntOnImg p{
+    color: #FFF;
+font-family: Open Sans;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+margin: 0;
+}
+.all_course.category.hotel-search .form-check{
+justify-content: inherit;
+}
+.all_course.category.hotel-search .form-check label{
+    
+    font-size: 14px;
+    line-height: 15px;
+
+}
+.category.hotel-search .card-header h3 {
+
+    font-size: 16px;
+}
+.all_course.category.hotel-search .card{
+border-top: 1px solid #222;
+border-radius: 0;
+}
+.all_course.category.hotel-search .card h6{
+    color: #716E6E;
+text-align: center;
+font-family: Open Sans;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+@media (max-width:767px){
+    .cntOnImg {
+        padding: 15px;
+    }
+    .cntOnImg h5{
+        font-size: 14px;
+    }
+    .gallery_box .leftBox img {
+        height: 260px;
+    }
+    .gallery_box{
+        flex-wrap: wrap;
+    }
+    .gallery_box .leftBox{
+        width: 100%;
+    }
+    .gallery_box .leftBox img{
+        width: 100%;
+    }
+}
