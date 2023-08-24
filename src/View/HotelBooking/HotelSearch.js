@@ -1,8 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
 import icon3 from '../../images/cart.png';
-import d from '../../images/Rectangle 522.png';
+import d from '../../images/hotel3.png';
 import f from '../../images/system_uicons_filtering.png'
+import l from '../../images/location.png'
+import tick from '../../images/mdi_tick-circle.png'
+import a from '../../images/hotel4.png'
+import a1 from '../../images/hotel5.png'
+import a2 from '../../images/hotel6.png'
+import a3 from '../../images/hotel7.png'
+import Index from '../Learning/Index';
 export default function HotelSearch() {
+    const loop=[1,2,3,4]
+    const[isActiveImg, setIsActiveImg]=useState(1);
+    const handleOpenImg=(Index)=>{
+        setIsActiveImg(Index)
+    }
     return (
         <>
             <div className='container mt-5'>
@@ -479,50 +491,47 @@ export default function HotelSearch() {
                         </div>
                         <div className='col-lg-9 col-md-7 col-12'>
                             <div className='dream-job course'>
-                                <div className='box'>
-                                    <div className='imge'>
-                                        <img src={d} />
-                                    </div>
-                                    <div className='popCourse-boxCnt'>
-                                        <div style={{ display: "flex", justifyContent: "space-between" }}><h4>Relational Database Design</h4>
-                                            <div className="from_icon_whish_cart1">
-                                                <a href="/ott-download">
-                                                    <img
-                                                        src={icon3}
-                                                        alt=""
-                                                    />
-                                                </a>
-                                            </div>
+                                {loop.map(()=>{
+                                    return(
+                                        <div className='box'>
+                                        <div className='onclickImageBox'>
+                                        <div className='imge'>
+                                            <img src={d} className={isActiveImg === 1 ?'invisiblee visible':'invisiblee'}/>
+                                            <img src={a1} className={isActiveImg === 2 ?'invisiblee visible':'invisiblee'}/>
+                                            <img src={a2} className={isActiveImg === 3 ?'invisiblee visible':'invisiblee'}/>
+                                            <img src={a3} className={isActiveImg === 4 ?'invisiblee visible':'invisiblee'}/>
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur. Natoque tempus ut semper at cras.</p>
-                                        <h5><strong>By Angel Levin</strong></h5>
-                                        <h5><strong style={{ display: "flex", alignItems: "center" }}>5 hours<span className='m-dot Lcourse'></span>36 Lecture<span className='m-dot Lcourse'></span>All Levels</strong></h5>
-                                        <h6>4.9<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>( 50k)</h6>
-                                        <h3>$500</h3>
-                                    </div>
-                                </div>
-                                <div className='box mt-3'>
-                                    <div className='imge'>
-                                        <img src={d} />
-                                    </div>
-                                    <div className='popCourse-boxCnt'>
-                                        <div style={{ display: "flex", justifyContent: "space-between" }}><h4>Relational Database Design</h4>
-                                            <div className="from_icon_whish_cart1">
-                                                <a href="/ott-download">
-                                                    <img
-                                                        src={icon3}
-                                                        alt=""
-                                                    />
-                                                </a>
-                                            </div>
+                                        <div className='small_gallery_img'>
+                                            <img src={a} className={isActiveImg === 1 ?'image_Tab activeimage_Tab':'image_Tab'} onClick={()=>handleOpenImg (1)}/>
+                                            <img src={a1} className={isActiveImg === 2 ?'image_Tab activeimage_Tab':'image_Tab'} onClick={()=>handleOpenImg (2)}/>
+                                            <img src={a2} className={isActiveImg=== 3 ?'image_Tab activeimage_Tab':'image_Tab'} onClick={()=>handleOpenImg (3)}/>
+                                            <img src={a3} className={isActiveImg === 4 ?'image_Tab activeimage_Tab':'image_Tab'} onClick={()=>handleOpenImg (4)}/>
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet consectetur. Natoque tempus ut semper at cras.</p>
-                                        <h5><strong>By Angel Levin</strong></h5>
-                                        <h5><strong style={{ display: "flex", alignItems: "center" }}>5 hours<span className='m-dot Lcourse'></span>36 Lecture<span className='m-dot Lcourse'></span>All Levels</strong></h5>
-                                        <h6>4.9<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>( 50k)</h6>
-                                        <h3>$500</h3>
+                                        </div>
+                                        <div className='popCourse-boxCnt hotel_about_content'>
+                                            <div style={{ display: "flex", justifyContent: "space-between" }}><h4>Manson Place</h4>
+                                                <div className="">
+                                                    <a href="" className='discount'>
+                                                    10% Off
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <p><img src={l}/>Kingstone - Near Hyde Park</p>
+                                            <p>1.9 KM for Kingstone Park</p>
+                                            <h6><span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>5.0</h6>
+                                            <h5><strong>$3,000</strong></h5>
+                                            <p>+$1,259 Taxes & Fees</p>
+                                            <span>1 Room per night</span>
+                                            <div style={{ display: "flex", alignItems: "center" }} className='my-2'><img src={tick} className='mr-2'/><span className='mr-2'>Gym</span><img src={tick} className='mr-2'/><span className=''>Spa</span></div>
+                                            <a className='cancelBtn mt-2'>Free cancellation till 11Aug, 23</a>
+                                       
+                                        </div>
                                     </div>
-                                </div>
+                                    )
+                                }
+
+                                )}
+                         
                             </div>
                         </div>
                     </div>

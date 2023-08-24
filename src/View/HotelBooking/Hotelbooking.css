@@ -14,6 +14,7 @@
     height: 490.373px;
     margin: 0 auto;
     margin-top: -10%;
+    padding: 30px;
 
 }
 
@@ -206,6 +207,123 @@ font-size: 11px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+.popCourse-boxCnt.hotel_about_content{
+    width: 100%;
+}
+.popCourse-boxCnt.hotel_about_content p{
+    color: #000;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 5px;
+}
+.popCourse-boxCnt.hotel_about_content span{
+    color: #716E6E;
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.popCourse-boxCnt.hotel_about_content .cancelBtn{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 8px;
+background: rgba(217, 217, 217, 0.36);
+padding: 10px;
+display: inline-block;
+
+}
+.popCourse-boxCnt.hotel_about_content .discount{
+    border-radius: 4px;
+background: #FF3A44;
+color: #FFF;
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 5px 12px;
+}
+.hotel-search .dream-job .box .imge{
+    width: 292px;
+    padding-right: 0;
+}
+.hotel-search  .dream-job .box{
+gap: 30px;
+}
+.hotel-search .dream-job .box .imge img{
+    width: 292px;
+}
+.small_gallery_img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.small_gallery_img img{
+    border-radius: 10px;
+    width: 64px;
+height: 59px;
+cursor: pointer;
+}
+.popCourse-boxCnt.hotel_about_content h6{
+    margin: 7px 0;
+}
+.popCourse-boxCnt.hotel_about_content h5{
+    font-size: 26px;
+}
+.popCourse-boxCnt.hotel_about_content p img{
+    margin-right: 5px;
+}
+.invisiblee{
+    display: none;
+}
+.invisiblee.visible{
+display: block;
+}
+.hotel-search .dream-job .box{
+    margin-bottom: 20px;
+}
+.hotel_search .location{
+    padding-bottom: 10px;
+border-bottom: 1px solid #000;
+}
+.hotel_search .inputBox{
+position: relative;
+}
+.hotel_search .inputBox Img{
+    position: absolute;
+    top: -5px;
+    right: 10px;
+}
+.hotel_search h6{
+    color: #000;
+font-family: Open Sans;
+font-size: 16.567px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 30px;
+}
+.hotel_search label{
+    color: #716E6E;
+font-family: Open Sans;
+font-size: 14.91px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+@media (max-width:991px){
+    .onclickImageBox{
+    margin: 0 auto;
+    }
 }
 @media (max-width:767px){
     .cntOnImg {

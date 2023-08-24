@@ -253,7 +253,7 @@
     bottom: 0;
 }
 
-.reward_single_box_wrap{
+.reward_single_box_wrap {
     margin: 0 auto;
     width: 100%;
     max-width: 690px;
@@ -305,54 +305,71 @@
     justify-content: space-between;
     width: 77%;
 }
-.codeBox h6{
+
+.codeBox h6 {
     font-size: 15px;
 }
-.codeBox a{
+
+.codeBox a {
     color: #FF3A44;
 }
+
 .giftCode {
     display: flex;
     gap: 10px;
 }
-.giftBtn{
+
+.giftBtn {
     color: #F44336;
-font-family: Open Sans;
-font-size: 15px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-border-radius: 7px;
-border: 1px solid #FF3A44;
-background: #FBFBFB;
-width: 117px;
-height: 45px;
-justify-content: center;
-align-items: center;
-display: flex;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 7px;
+    border: 1px solid #FF3A44;
+    background: #FBFBFB;
+    width: 117px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
-.reward_single_boxBottom{
+
+.reward_single_boxBottom {
     border-radius: 16.585px;
-background: #FFF;
-box-shadow: 0px 2.8333334922790527px 10.625000953674316px 0px rgba(0, 0, 0, 0.25);
-height: auto;
-margin-top: 20px;
-padding: 20px;
+    background: #FFF;
+    box-shadow: 0px 2.8333334922790527px 10.625000953674316px 0px rgba(0, 0, 0, 0.25);
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
 }
-.offer-box{
+
+.offer-box {
     display: flex;
     gap: 10px;
     align-items: center;
     margin-bottom: 20px;
 }
-.offer-box-wrap{
+
+.offer-box-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+
 }
-.arrow{
+
+.arrow {
     width: 8px;
+}
+.reward_box:nth-child(odd) {
+    background-color: #FFF3CA;
+
+}
+
+.reward_box:nth-child(even) {
+
+    background-color: #FFDCE2;
 }
 @media (max-width:991px) {
     .rewrad {
@@ -366,21 +383,26 @@ padding: 20px;
 }
 
 @media (max-width:767px) {
-    .reward_single_box_wrap{
+    .reward_single_box_wrap {
         margin-top: -15%;
     }
-    .codeBox h6{
+
+    .codeBox h6 {
         font-size: 14px;
     }
-    .codeBox{
+
+    .codeBox {
         font-size: 14px;
     }
-    .reward_single_box{
+
+    .reward_single_box {
         padding: 0 15px 30px 15px;
     }
-    .reward_single_box_wrap{
+
+    .reward_single_box_wrap {
         padding: 2%;
     }
+
     .podcast-banner-slide.learning-home.reward-home {
 
         height: 263px;
@@ -421,3 +443,4 @@ padding: 20px;
         width: 100%
     }
 }
+
