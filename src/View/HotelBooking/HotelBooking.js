@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -51,7 +52,7 @@ export default function HotelBooking() {
               <Slider {...settings}>
                 {loop.map(() => {
                   return (
-                    <div className='box'>
+                    <Link to="/single-booking"><div className='box'>
                       <div className='image_box'>
                         <img src={a} />
                         <div className='wish_icon'>
@@ -68,7 +69,7 @@ export default function HotelBooking() {
                           <a href="#">$1,750</a>
                         </div>
                       </div>
-                    </div>
+                    </div></Link>
                   )
                 }
 

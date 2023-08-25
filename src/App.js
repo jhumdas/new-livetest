@@ -91,6 +91,7 @@ import RewardSingle from './View/Reward/RewardSingle';
 import HotelLayout from './Layout/HotelLayout';
 import HotelBooking from '../src/View/HotelBooking/HotelBooking'
 import HotelSearch from './View/HotelBooking/HotelSearch';
+import SingleBooking from './View/HotelBooking/SingleBooking';
 
 function App() {
   return (
@@ -130,6 +131,7 @@ function App() {
             <Route path="/wallet" element={<Wallet />} />
             <Route path="/flightbook" element={<Flightbook />} />
             <Route path="/flightressult" element={<Flightresult />} />
+            <Route path="/single-booking" element={<SingleBooking />} />
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />
