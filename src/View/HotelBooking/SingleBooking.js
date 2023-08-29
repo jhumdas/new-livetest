@@ -5,6 +5,7 @@ import a from '../../images/hotel11.png'
 import b from '../../images/hotel12.png'
 import e from '../../images/hotel14.png'
 export default function SingleBooking() {
+    const loop = [1, 2, 3];
     return (
         <>
 
@@ -120,17 +121,85 @@ export default function SingleBooking() {
                                     <h5>Room Options</h5>
                                     <h5>Price</h5>
                                 </div>
-                                <div className='room_box'>
-                                    <h5>1 . Room Only | Free Cancellation</h5>
-                                    <div>
-                                        <h6>Risk Free Booking!</h6>
-                                        <h6>10 % Discount On F&B Services</h6>
-                                        <h6><strong>Free Cancellation till Check in</strong></h6>
-                                        <h6><strong>View Plan Details & Policies</strong></h6>
-                                    </div>
-                                </div>
+                                {loop.map((item, index) => {
+                                    return (
+                                        <div className='room_box_wrap' style={index == loop.length - 1 ? { border: "0" } : {}}>
+                                            <h5>1 . Room Only | Free Cancellation</h5>
+                                            <div className='room_box'>
+                                                <div className='left'>
+                                                    <h6>Risk Free Booking!</h6>
+                                                    <h6>10 % Discount On F&B Services</h6>
+                                                    <h6><strong>Free Cancellation till Check in</strong></h6>
+                                                    <h6><strong>View Plan Details & Policies</strong></h6>
+                                                </div>
+                                                <div className='right'>
+                                                    <h4>$ 0000</h4>
+                                                    <h6>$ 0000</h6>
+                                                    <h6>0 Room per Day</h6>
+                                                    <a className='btnn'>Select Room</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                }
+
+                                )}
+
+
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='Amenities'>
+                <div className='container'>
+                    <h3>Amenities at Xyz hotel</h3>
+                    <a className='btnnn mt-2'>POPULAR AMENITIES</a>
+                    <div className='service'>
+                        <h5>Free Internet</h5>
+                        <h5>Air Coediting</h5>
+                        <h5>Power Backup</h5>
+                        <h5>Doctor On Call</h5>
+                    </div>
+                    <div className='options'>
+                        <ul>
+                            <h5>Dining</h5>
+                            <li>Special Diet Meals</li>
+                        </ul>
+                        <ul>
+                            <h5>Internet</h5>
+                            <li>Free Wi- Fi</li>
+                        </ul>
+                        <ul>
+                            <h5>Service</h5>
+                            <li>Ticket/ Tour
+                                Assistance</li>
+                            <li>Business
+                                Services</li>
+                        </ul>
+                        <ul>
+                            <h5>General</h5>
+                            <li>luggage Storage</li>
+                            <li>Fine
+                                Extinguishers</li>
+                        </ul>
+                        <ul>
+                            <h5>Room</h5>
+                            <li>Safety kit</li>
+                            <li>Electronic Keycard</li>
+                        </ul>
+                        <ul>
+                            <h5>Safety & Hygiene</h5>
+                            <li>Dispensers For Disinfectants</li>
+                            
+                        </ul>
+                        <ul>
+                            <h5>Others</h5>
+                            <li>Cycling</li>
+                            <li>Entertainment</li>
+                            
+                        </ul>
                     </div>
                 </div>
             </div>

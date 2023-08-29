@@ -651,7 +651,7 @@ line-height: normal;
     background: rgba(255, 0, 0, 0.02);
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .For_Hotel_rooms .right_side .top h5{
     color: #000;
@@ -660,12 +660,125 @@ font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+width: 50%;
+}
+.For_Hotel_rooms{
+margin-bottom: 30px;
 }
 .room_box_wrap{
-    display: flex;
-    justify-content: space-around;
+border-bottom: 1px solid #BABABA;
+padding: 20px 10px;
 }
+.room_box_wrap h5{
+    color: #000;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 20px;
+}
+.room_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 35px;
+}
+.room_box .left{
+    width: 40%;
+}
+.room_box .right{
+    width: 52%;
+}
+.room_box h6{
+    margin: 10px 0;
+    color: #000;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.btnn{
+    border-radius: 5px;
+border: 1px solid #FF3A44;
+color: #FF3A44;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding: 5px 15px;
+display: inline-block;
+}
+.Amenities{
+    background: rgba(255, 0, 0, 0.02);
+    padding: 20px 0 30px 0;
+}
+.Amenities h3{
+    color: #000;
+font-family: Open Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.btnnn{
+    border-radius: 1px;
+background: #DD2730;
+color: #FFF;
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 5px 20px;
+display: inline-block;
+}
+.Amenities .service{
+    display: flex;
+   width: 60%;
+   justify-content: space-between;
+   margin-top: 30px;
+}
+.Amenities  h5{
+    color: #000;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+.Amenities  .options{
+display: flex;
+justify-content: space-between;
+margin-top: 30px;
+gap: 20px;
+
+}
+
+.Amenities  .options li{
+    color: #515151;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 5px;
+width: 99%;
+}
+
 @media (max-width:991px) {
+    .Amenities .service{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .hotel_needthings{
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 20px;
+    }
     .topRedPart{
         flex-wrap: wrap;
     }
@@ -678,6 +791,20 @@ line-height: normal;
 }
 
 @media (max-width:767px) {
+    .Amenities .options li{
+        width: 100%;
+    }
+    .Amenities .options{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .Amenities .service h5{
+        margin: 5px 10px;
+    }
+    .Amenities  h5{
+        
+        font-size: 16px;
+    }
     .Singlehotel_details .lastImg{
         margin-top: 0;
     }
@@ -713,5 +840,13 @@ line-height: normal;
 
     .gallery_box .leftBox img {
         width: 100%;
+    }
+}
+@media (max-width:480px){
+    .room_box{
+        padding-left: 15px;
+    }
+    .room_box .left{
+        width: auto;
     }
 }
