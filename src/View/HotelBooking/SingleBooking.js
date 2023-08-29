@@ -4,8 +4,17 @@ import sh1 from '../../images/hotel10.png'
 import a from '../../images/hotel11.png'
 import b from '../../images/hotel12.png'
 import e from '../../images/hotel14.png'
+import ac from '../../images/Frame 163263.png'
+import ab from '../../images/Frame 163264.png'
+import d1 from '../../images/dinner1 (1).png'
+import af from '../../images/Frame 163268.png'
+import ah from '../../images/Frame 163269.png'
+import com from '../../images/com.png'
+import t from '../../images/greentick.png'
+import cc from '../../images/redcross.png'
 export default function SingleBooking() {
     const loop = [1, 2, 3];
+    const loop1 = [1, 2, 3];
     return (
         <>
 
@@ -154,7 +163,7 @@ export default function SingleBooking() {
 
             <div className='Amenities'>
                 <div className='container'>
-                    <h3>Amenities at Xyz hotel</h3>
+                    <h3 className='single_hotel_heading'>Amenities at Xyz hotel</h3>
                     <a className='btnnn mt-2'>POPULAR AMENITIES</a>
                     <div className='service'>
                         <h5>Free Internet</h5>
@@ -192,14 +201,192 @@ export default function SingleBooking() {
                         <ul>
                             <h5>Safety & Hygiene</h5>
                             <li>Dispensers For Disinfectants</li>
-                            
+
                         </ul>
                         <ul>
                             <h5>Others</h5>
                             <li>Cycling</li>
                             <li>Entertainment</li>
-                            
+
                         </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className='food-dining'>
+                <div className='container'>
+                    <h3 className='single_hotel_heading'>Food & Dining</h3>
+                    <div className='d-flex align-items-center rating'>
+                        <h6>Ambience
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </h6>
+                        <div className='v-line'></div>
+                        <h6>Ambience
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </h6>
+                    </div>
+
+                    <div className='foodBox'>
+                        <h5><img src={ac} />Both Vegetarian & Non-Vegetarian food</h5>
+                        <h5><img src={ac} />Both Vegetarian & Non-Vegetarian food</h5>
+                    </div>
+                    <div className='foodBox'>
+                        <h5><img src={ab} />Both Vegetarian & Non-Vegetarian food</h5>
+                        <h5><img src={ab} />Both Vegetarian & Non-Vegetarian food</h5>
+                    </div>
+
+                    <div className='menu'>
+                        <h6>Menu & Dining</h6>
+                        <div className='img-box'>
+                            <img src={d1} />
+                            <img src={d1} />
+                            <img src={d1} />
+                            <img src={d1} />
+                        </div>
+                    </div>
+                    <div className='menu mt-3'>
+                        <h6>Offers</h6>
+                        <p className='mt-2'>Special dishes: Chicken Tikka sizzler, Kung Pao mushroom sizzler</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className='property'>
+                <div className='container'>
+                    <h3 className='single_hotel_heading'>Property Rules</h3>
+                    <span>For Food & Beverages</span>
+                    <div className='foodBox'>
+                        <div>
+                            <h5><strong>Allowed</strong></h5>
+                            <h5><img src={ac} />Both Vegetarian & Non-Vegetarian food</h5>
+                            <h5><img src={af} />Both Vegetarian & Non-Vegetarian food</h5>
+                            <h5><img src={ah} />Both Vegetarian & Non-Vegetarian food</h5>
+                        </div>
+                        <div>
+                            <h5><strong>Not Allowed</strong></h5>
+                            <h5><img src={ac} />Both Vegetarian & Non-Vegetarian food</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div className='review_rating'>
+                <div className='container'>
+                    <h3 className='single_hotel_heading'>Guest Reviews & Rating for xyz Hotel</h3>
+                    <div className='box_Wrap'>
+                        <div className='redBox'>
+                            <h5>Rating</h5>
+                            <h4>0.0/5</h4>
+                            <div> <p>0000 Ratings</p>
+                                <p>900 Reviews</p></div>
+                        </div>
+                        <div className='w-100'>
+                            <div className='progress_barLine'>
+                                <div className="progress">
+                                    <div className="progress-bar" style={{ width: "90%" }} />
+                                </div>
+                                <div className='point'>0000</div>
+
+                            </div>
+                            <div className='progress_barLine'>
+                                <div className="progress">
+                                    <div className="progress-bar" style={{ width: "80%" }} />
+                                </div>
+                                <div className='point'>0000</div>
+
+                            </div>
+                            <div className='progress_barLine'>
+                                <div className="progress">
+                                    <div className="progress-bar" style={{ width: "60%" }} />
+                                </div>
+                                <div className='point'>0000</div>
+
+                            </div>
+                            <div className='progress_barLine'>
+                                <div className="progress">
+                                    <div className="progress-bar" style={{ width: "40%" }} />
+                                </div>
+                                <div className='point'>0000</div>
+
+                            </div>
+                            <div className='progress_barLine'>
+                                <div className="progress">
+                                    <div className="progress-bar" style={{ width: "20%" }} />
+                                </div>
+                                <div className='point'>0000</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div className='bg_pink'>
+                <div className='container'>
+                    <div className='customer_comments'>
+                        {loop1.map((key, index) => {
+                            return (
+                                <div className='box'>
+                                    <img src={com} />
+                                    <div className='cnt'>
+                                        <h5>María Fernanda Castro <span>20 hours ago</span></h5>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,</p>
+                                    </div>
+
+                                </div>
+                            )
+                        })}
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div className='property_policies'>
+                <div className='container'>
+                    <h3 className='single_hotel_heading'>Property Policies</h3>
+                    <hr />
+                    <div>
+                        <h5><img src={t} />Unmarried couples are not allowed</h5>
+                        <h5><img src={cc} />Guest below 00 year of age are not allowed at the prototype.</h5>
+                        <h5><img src={t} />Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+                        <h5><img src={t} />Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+                    </div>
+                    <a style={{ color: "#FF3A44", fontSize: "14px" }}>View all 00 property policies</a>
+                </div>
+            </div>
+
+            <div className='container'>
+                <div className='hotel_location'>
+                    <h3 className='single_hotel_heading'>Property Policies</h3>
+                    <div className='map'>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58932.609445275135!2d88.35919891286824!3d22.605714715131008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027606dc300fb1%3A0x1e8c3008eba56670!2sSouth%20Dumdum%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1693309731004!5m2!1sen!2sin"
+                           
+                            height={300}
+                            style={{ border: 0,width:"100%" }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        />
+
                     </div>
                 </div>
             </div>
