@@ -1,4 +1,7 @@
 import React from 'react'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import l from '../../images/location.png'
 import sh1 from '../../images/hotel10.png'
 import a from '../../images/hotel11.png'
@@ -12,9 +15,41 @@ import ah from '../../images/Frame 163269.png'
 import com from '../../images/com.png'
 import t from '../../images/greentick.png'
 import cc from '../../images/redcross.png'
+import sm1 from '../../images/sm1.png'
+import Pegination from '../../Component/Pagination'
 export default function SingleBooking() {
     const loop = [1, 2, 3];
     const loop1 = [1, 2, 3];
+    const loop2 = [1, 2, 3, 4, 5, 6];
+    var settings = {
+        dots: false,
+        infinite: true,
+        navs: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        initialSlide: 0,
+
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    };
     return (
         <>
 
@@ -97,16 +132,18 @@ export default function SingleBooking() {
 
             <div className='container'>
                 <div className='hotel_needthings'>
-                    <a href="#">Room</a>
-                    <a href="#">Amenities</a>
-                    <a href="#">Food & Dining</a>
-                    <a href="#">Guest Review</a>
-                    <a href="#">Policies</a>
-                    <a href="#">Location</a>
+                    <a href="#For_Hotel_rooms">Room</a>
+                    <a href="#Amenities">Amenities</a>
+                    <a href="#food-dining">Food & Dining</a>
+                    <a href="#review_rating">Guest Review</a>
+                    <a href="#property_policies">Policies</a>
+                    <a href="#hotel_location">Location</a>
                     <a href="#">About</a>
                     <a href="#">QNA</a>
-                    <a href="#">Similar Properties</a>
+                    <a href="#similar_properties">Similar Properties</a>
                 </div>
+            </div>
+            <div className='container' id="For_Hotel_rooms">
                 <div className='For_Hotel_rooms'>
                     <div className='row'>
                         <div className='col-lg-4 col-md-4 col-12'>
@@ -160,8 +197,7 @@ export default function SingleBooking() {
                     </div>
                 </div>
             </div>
-
-            <div className='Amenities'>
+            <div className='Amenities' id='Amenities'>
                 <div className='container'>
                     <h3 className='single_hotel_heading'>Amenities at Xyz hotel</h3>
                     <a className='btnnn mt-2'>POPULAR AMENITIES</a>
@@ -214,7 +250,7 @@ export default function SingleBooking() {
             </div>
 
 
-            <div className='food-dining'>
+            <div className='food-dining' id='food-dining'>
                 <div className='container'>
                     <h3 className='single_hotel_heading'>Food & Dining</h3>
                     <div className='d-flex align-items-center rating'>
@@ -264,7 +300,7 @@ export default function SingleBooking() {
                 </div>
             </div>
 
-            <div className='property'>
+            <div className='property' id='property'>
                 <div className='container'>
                     <h3 className='single_hotel_heading'>Property Rules</h3>
                     <span>For Food & Beverages</span>
@@ -284,7 +320,7 @@ export default function SingleBooking() {
                 </div>
             </div>
 
-            <div className='review_rating'>
+            <div className='review_rating' id='review_rating'>
                 <div className='container'>
                     <h3 className='single_hotel_heading'>Guest Reviews & Rating for xyz Hotel</h3>
                     <div className='box_Wrap'>
@@ -355,11 +391,12 @@ export default function SingleBooking() {
                         })}
 
                     </div>
+                    <Pegination />
                 </div>
             </div>
 
 
-            <div className='property_policies'>
+            <div className='property_policies' id='property_policies'>
                 <div className='container'>
                     <h3 className='single_hotel_heading'>Property Policies</h3>
                     <hr />
@@ -373,20 +410,65 @@ export default function SingleBooking() {
                 </div>
             </div>
 
-            <div className='container'>
+            <div className='container' id='hotel_location'>
                 <div className='hotel_location'>
                     <h3 className='single_hotel_heading'>Property Policies</h3>
                     <div className='map'>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58932.609445275135!2d88.35919891286824!3d22.605714715131008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027606dc300fb1%3A0x1e8c3008eba56670!2sSouth%20Dumdum%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1693309731004!5m2!1sen!2sin"
-                           
+
                             height={300}
-                            style={{ border: 0,width:"100%" }}
+                            style={{ border: 0, width: "100%" }}
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                         />
 
+                    </div>
+                </div>
+            </div>
+
+            <div className='bg_pink' id='similar_properties'>
+                <div className='container'>
+                    <h3 className='single_hotel_heading '>Similar Properties to Hotel Regent Grand</h3>
+                    <div className='similar_properties'>
+                        <Slider {...settings}>
+                            {loop2.map((item, index) => {
+                                return (
+                                    <div className='box'>
+                                        <div className='image'><img src={sm1} /></div>
+                                        <div className='cont'>
+                                            <div className='star'>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <h5>Hotel XYZ </h5>
+                                            <span>location</span>
+                                            <div className='review'>0.0/5 <span>000 review</span></div>
+                                            <hr />
+                                            <h4><img src={t} />Lorem Ipsum is simply </h4>
+                                            <h4><img src={cc} />Lorem Ipsum is simply </h4>
+                                            <hr />
+                                            <div className='d-flex justify-content-between align-items-center'>
+                                                <div>
+                                                    <h5>$ 0000 </h5>
+                                                    <span>0 room per nignt</span>
+                                                </div>
+                                                <div>
+                                                    <a href="#" className='btnnn' style={{ borderRadius: "5px" }}>Book now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            }
+
+                            )}
+
+                        </Slider>
                     </div>
                 </div>
             </div>

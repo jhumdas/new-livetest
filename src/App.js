@@ -92,6 +92,7 @@ import HotelLayout from './Layout/HotelLayout';
 import HotelBooking from '../src/View/HotelBooking/HotelBooking'
 import HotelSearch from './View/HotelBooking/HotelSearch';
 import SingleBooking from './View/HotelBooking/SingleBooking';
+import HotelInformation from './View/HotelBooking/HotelInformation';
 
 function App() {
   return (
@@ -132,6 +133,7 @@ function App() {
             <Route path="/flightbook" element={<Flightbook />} />
             <Route path="/flightressult" element={<Flightresult />} />
             <Route path="/single-booking" element={<SingleBooking />} />
+            <Route path="/hotel-info" element={<HotelInformation />} />
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />
