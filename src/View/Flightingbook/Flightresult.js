@@ -45,7 +45,7 @@ export default function Flightresult() {
 
                     <div className='flght_fltr'>
                         <div className='row'>
-                            <div className='col-lg-3 col-xl-3 col-md-12 col-12'>
+                            <div className='col-lg-4 col-xl-4 col-md-12 col-12'>
                                 <div className='side_fltrwrap'>
 
                                     <div className='fltr_icon_txt' style={{ borderBottom: "1px solid #716E6E" }}>
@@ -130,17 +130,61 @@ export default function Flightresult() {
                                             <h4>Departure form LHR</h4>
                                         </div>
                                         <div className='dprte_flx'>
-                                            <div className="form-check">
-                                                <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                                <label className="form-check-label" htmlFor="gridCheck">
-                                                    <h4 className='dprt_time'>Early Morning</h4>
+                                            <div className="form-check search-content">
+                                                <input
+                                                    name="language[]"
+                                                    id="allLanguage"
+                                                    className="form-check-input"
+                                                    type="checkbox"
+                                                    defaultValue="all"
+                                                />
+                                                <label className="form-check-label" htmlFor="allLanguage">
+                                                    Early Morning
                                                 </label>
+                                                <p>Before 6 AM</p>
                                             </div>
-                                            <div className="form-check">
-                                                <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                                <label className="form-check-label" htmlFor="gridCheck">
-                                                    <h4 className='dprt_time'>Morning</h4>
+                                           
+                                            <div className="form-check search-content">
+                                                <input
+                                                    name="language[]"
+                                                    id="allLanguage"
+                                                    className="form-check-input"
+                                                    type="checkbox"
+                                                    defaultValue="all"
+                                                />
+                                                <label className="form-check-label" htmlFor="allLanguage">
+                                                    Morning
                                                 </label>
+                                                <p>Before 6 AM</p>
+                                            </div>
+                                        </div>
+                                        <div className='dprte_flx'>
+                                            <div className="form-check search-content">
+                                                <input
+                                                    name="language[]"
+                                                    id="allLanguage"
+                                                    className="form-check-input"
+                                                    type="checkbox"
+                                                    defaultValue="all"
+                                                />
+                                                <label className="form-check-label" htmlFor="allLanguage">
+                                                    Early Morning
+                                                </label>
+                                                <p>Before 6 AM</p>
+                                            </div>
+                                           
+                                            <div className="form-check search-content">
+                                                <input
+                                                    name="language[]"
+                                                    id="allLanguage"
+                                                    className="form-check-input"
+                                                    type="checkbox"
+                                                    defaultValue="all"
+                                                />
+                                                <label className="form-check-label" htmlFor="allLanguage">
+                                                    Morning
+                                                </label>
+                                                <p>Before 6 AM</p>
                                             </div>
                                         </div>
                                     </div>
