@@ -321,6 +321,7 @@ h4.stps_hhh {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .fltr_prc p {
@@ -339,11 +340,12 @@ h4.stps_hhh {
     line-height: 20px;
 }
 
-.fltr_prc_main{
+.fltr_prc_main {
     padding-top: 11px;
-    padding-bottom: 2px;
+    padding-bottom: 18px;
     border-bottom: 1px solid #716E6E;
 }
+
 .flightreslt_main .fltr_prc_main input[type="range"] {
     position: absolute;
     pointer-events: none;
@@ -357,6 +359,7 @@ h4.stps_hhh {
     background-size: 70% 100%;
     background-repeat: no-repeat;
 }
+
 .flightreslt_main .fltr_prc_main input[type="range"] {
     position: absolute;
     pointer-events: none;
@@ -370,6 +373,24 @@ h4.stps_hhh {
     background-size: 70% 100%;
     background-repeat: no-repeat;
 }
+
+.dpertr_fltr .form-check {
+    padding-left: 0px;
+}
+
+.dprte_flx {
+    display: flex;
+    gap:10px;
+}
+
+h4.dprt_time {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
 @media(max-width:576px) {
     .bushido_txt_dcmnt h4 {
         font-size: 18px;

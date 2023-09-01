@@ -123,7 +123,7 @@ return (
             
             <Route path="/wallet" element={<Wallet/>}/>
             <Route path="/flightbook" element={<Flightbook/>}/>
-            <Route path="/flightressult" element={<Flightresult/>}/>
+            <Route path="/flightresult" element={<Flightresult/>}/>
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />

@@ -90,18 +90,18 @@ export default function Flightresult() {
                                                 <h4>Price</h4>
                                             </div>
                                             <div className='fltr_prc'>
-                                            <p> ${value3} -  ${value4} </p>
+                                                <p> ${value3}  -  ${value4} </p>
                                             </div>
                                         </div>
                                         <div class="slider">
 
                                             <div class="slider__input range-slide">
-                             
+
                                                 <input
                                                     className="slider__input_slider"
                                                     type="range"
                                                     min="10,000"
-                                                  
+
                                                     step="0.05"
                                                     value={value3}
                                                     onChange={e => setValue3(e.target.value)}
@@ -109,7 +109,7 @@ export default function Flightresult() {
                                                 <input
                                                     className="slider__input_slider"
                                                     type="range"
-                                                 
+
                                                     max="80,000"
                                                     step="0.05"
                                                     value={value4}
@@ -123,6 +123,26 @@ export default function Flightresult() {
                                             </div> */}
                                         </div>
 
+                                    </div>
+
+                                    <div className='dpertr_fltr'>
+                                        <div className='fltr_prc'>
+                                            <h4>Departure form LHR</h4>
+                                        </div>
+                                        <div className='dprte_flx'>
+                                            <div className="form-check">
+                                                <input className="form-check-input" type="checkbox" id="gridCheck" />
+                                                <label className="form-check-label" htmlFor="gridCheck">
+                                                    <h4 className='dprt_time'>Early Morning</h4>
+                                                </label>
+                                            </div>
+                                            <div className="form-check">
+                                                <input className="form-check-input" type="checkbox" id="gridCheck" />
+                                                <label className="form-check-label" htmlFor="gridCheck">
+                                                    <h4 className='dprt_time'>Morning</h4>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
