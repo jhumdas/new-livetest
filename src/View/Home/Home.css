@@ -210,8 +210,11 @@ line-height: normal;
 .card-header{
     padding: .75rem 0;
 }
-.card-body{
+.Faq .card-body{
     padding: 1.25rem 0;
+}
+.card-body{
+    padding: 0;
 }
 .Faq .card-body p{
     color: #000;

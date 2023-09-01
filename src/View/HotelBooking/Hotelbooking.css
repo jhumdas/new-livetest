@@ -1214,6 +1214,9 @@
 .hotel_info_bg {
     background: #FF3A44;
     height: 298px;
+    position: absolute;
+    top: 66px;
+    width: 100%;
 }
 
 /***hotel-info****/
@@ -1223,20 +1226,22 @@
     position: relative;
 }
 
-.Hotel_Information .card {
+.hotel_info_wrapper_cnt .card {
     margin-bottom: 20px;
     border-radius: 8px !important;
     background-color: #fff !important;
     padding: 15px;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+
 }
 
-.Hotel_Information .card-header {
+.hotel_info_wrapper_cnt .card-header {
     padding: 0 0 10px 0;
     border-bottom: 0;
    
 }
 
-.Hotel_Information .card-header button {
+.hotel_info_wrapper_cnt .card-header button {
     padding: 0;
     color: #000;
     font-family: Open Sans;
@@ -1245,10 +1250,10 @@
     font-weight: 700;
     line-height: normal;
 }
-.Hotel_Information .card-header h2{
+.hotel_info_wrapper_cnt .card-header h2{
 line-height: 23px;
 }
-.Hotel_Information .collapsible-link::before {
+.hotel_info_wrapper_cnt .collapsible-link::before {
     content: "\f107";
     position: absolute;
     right: 0.8rem;
@@ -1268,7 +1273,7 @@ line-height: 23px;
 .hotel_info.Singlehotel_details{
 margin-bottom: 0;
 }
-.Hotel_Information .collapsible-link[aria-expanded="true"]::before {
+.hotel_info_wrapper_cnt .collapsible-link[aria-expanded="true"]::before {
     content: "\f106";
 }
 .hotel_info .wrapper {
@@ -1368,6 +1373,19 @@ border-radius: 4px 0 0px 4px;
     background-color: #fff;
     padding: 15px;
     margin-bottom: 20px;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+
+}
+.Hotel_Information .form-check{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+.Hotel_Information select{
+    font-size: 14px;
+}
+.Hotel_Information .form-check label{
+    font-size: 14px;
 }
 .pin_state h3{
     color: #000;
@@ -1419,9 +1437,130 @@ display: block;
     text-align: center;
 }
 .hotel_info_wrapper_cnt{
-    margin-top: -20%;
-    margin-bottom: 50px;
+  
+    margin:20px 0 50px 0;
 
+}
+.payment_option .price-details .top{
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #C6C6C6;
+padding-bottom: 10px;
+gap: 20px;
+padding-top: 0;
+}
+.payment_option .price-details{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 120px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.payment_option .price-details .top h3{
+    color: #000;
+font-family: Open Sans;
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.payment_option .price-details .wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 15px;
+}
+.payment_option .price-details .wrap h6{
+    color: #000;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.hotel_info_wrapper_cnt .price-details .wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 15px;
+}
+.hotel_info_wrapper_cnt .price-details .wrap h6{
+    color: #000;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+/****payment-option****/
+.payment_option .top{
+    border-bottom: 1px solid #C6C6C6;
+    padding: 15px 0;
+}
+.payment_option h2{
+    color: #000;
+font-family: Open Sans;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 20px 0;
+}
+.payment_option h2 span{
+    color: #FF3A44;
+font-family: Open Sans;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.payment_option .leftBox{
+    border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+padding: 15px;
+}
+.payment_option .leftBox .topPart{
+    border-radius: 5px;
+background: #F8FBFF;
+padding: 10px;
+}
+.payment_option .leftBox .wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.payment_option .leftBox .wrap h4{
+    color: #000;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.payment_option  .flex_wrap{
+display: flex;
+gap: 50px;
+margin-top: 10px;
+}
+.payment_option .onclick_show .flex_wrap{
+    display: flex;
+justify-content: space-between;
+    margin-top: 10px;
+    }
+.payment_option .flex_wrap h5{
+    color: #000;
+font-family: Open Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.payment_option .flex_wrap span{
+    color: #4D4D4D;
+font-family: Open Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 @media (max-width:1199px) {
     .similar_properties .slick-prev {
@@ -1434,6 +1573,13 @@ display: block;
 }
 
 @media (max-width:991px) {
+    .price_summary{
+        margin-top: 30px;
+    }
+    .guest-details .mob-no select {
+        width: 30%;
+
+    }
     .Singlehotel_details h5 span{
         display: block;
     }
@@ -1558,6 +1704,23 @@ display: block;
 }
 
 @media (max-width:575px) {
+    .pin_state span {
+        font-size: 13px;
+    }
+    .Hotel_Information input {
+        font-size: 12px;
+    }
+    .Hotel_Information select {
+        font-size: 12px;
+    }
+    .guest-details label {
+        font-size: 15px;
+
+    }
+    .guest-details .mob-no select {
+        width: 50%;
+        padding: 5px 5px;
+    }
     .foodBox h5 {
         font-size: 15px;
     }

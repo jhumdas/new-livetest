@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -182,7 +183,7 @@ export default function SingleBooking() {
                                                     <h4>$ 0000</h4>
                                                     <h6>$ 0000</h6>
                                                     <h6>0 Room per Day</h6>
-                                                    <a className='btnn'>Select Room</a>
+                                                    <Link to="/hotel-info" className='btnn'>Select Room</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -458,7 +459,7 @@ export default function SingleBooking() {
                                                     <span>0 room per nignt</span>
                                                 </div>
                                                 <div>
-                                                    <a href="#" className='btnnn' style={{ borderRadius: "5px" }}>Book now</a>
+                                                    <Link to="" className='btnnn' style={{ borderRadius: "5px" }}>Book now</Link>
                                                 </div>
                                             </div>
                                         </div>

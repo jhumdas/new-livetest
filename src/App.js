@@ -93,14 +93,16 @@ import HotelBooking from '../src/View/HotelBooking/HotelBooking'
 import HotelSearch from './View/HotelBooking/HotelSearch';
 import SingleBooking from './View/HotelBooking/SingleBooking';
 import HotelInformation from './View/HotelBooking/HotelInformation';
+import PaymentOption from './View/HotelBooking/PaymentOption';
 
 function App() {
   return (
     <React.Fragment>
       <Router>
 
-
+  
         <Routes>
+        <Route path="/payment" element={<PaymentOption />} />
           <Route element={<MainLayout />}>
             <Route path="/" element={< Home />} />
             <Route path="/about" element={< About />} />

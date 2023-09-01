@@ -12,7 +12,7 @@ export default function HotelInformation() {
                 <div className='container'>
                     <div className='row'>
 
-                        <div className='col-lg-8 col-md-8 col-12'>
+                        <div className='col-lg-8 col-md-12 col-12'>
                             <div className='Hotel_Information'>
                                 <div id="accordionExample" className="accordion ">
                                     {/* Accordion item 1 */}
@@ -106,7 +106,7 @@ export default function HotelInformation() {
                                                     aria-controls="collapseTwo"
                                                     className="btn btn-link collapsible-link"
                                                 >
-                                                    GUEST DETAILS
+                                                    Guest Details
                                                 </button>
                                             </h2>
                                         </div>
@@ -226,8 +226,60 @@ export default function HotelInformation() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-lg-4 col-md-4 col-12'>
-                            <div></div>
+                        <div className='col-lg-4 col-md-12 col-12 price_summary'>
+                            <div className="card">
+                                <div
+                                    id="headingThree"
+                                    className="card-header bg-white "
+                                >
+                                    <h2 className="mb-0">
+                                        <button
+                                            type="button"
+                                            data-toggle="collapse"
+                                            data-target="#collapseThree"
+                                            aria-expanded="false"
+                                            aria-controls="collapseThree"
+                                            className="btn btn-link collapsible-link"
+                                        >
+                                            Price summary
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div
+                                    id="collapseThree"
+                                    aria-labelledby="headingThree"
+                                    data-parent="#accordionExample"
+                                    className="collapse"
+                                >
+                                    <div className="card-body">
+                                        <div className='price-details'>
+                                          <hr/>
+                                            <div className='wrap'>
+                                                <h6>Room Changes (1 room X 1 night)</h6>
+                                                <h6>-$ 00,000</h6>
+                                            </div>
+                                            <div className='wrap'>
+                                                <h6 >Total Discounts</h6>
+                                                <h6>-$ 00,000</h6>
+                                            </div>
+                                            <hr/>
+                                            <div className='wrap'>
+                                                <h6>Price after discount</h6>
+                                                <h6>$ 00,000</h6>
+                                            </div>
+                                            <div className='wrap'>
+                                                <h6>Taxes & Fees</h6>
+                                                <h6>$ 00,000</h6>
+                                            </div>
+                                            <hr/>
+                                            <div className='wrap'>
+                                                <h6><strong>Taxes & Fees</strong></h6>
+                                                <h6><strong>$ 00,000</strong></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
