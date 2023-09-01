@@ -26,6 +26,7 @@ import '../src/View/Impact/Impact.css'
 import '../src/View/Wallet/wallet.css'
 import './View/Reward/Reward.css'
 import '../src/View/Flightingbook/Flightbook.css'
+import '../src/View/HotelBooking/Hotelbooking.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './Layout/MainLayout';
 import Home from '../src/View/Home/index';
@@ -86,13 +87,22 @@ import Reaward from '../src/View/Reward/Reward'
 import Wallet from '../src/View/Wallet/Index'
 import Flightbook from '../src/View/Flightingbook/Index'
 import Flightresult from '../src/View/Flightingbook/Flightresult'
+import RewardSingle from './View/Reward/RewardSingle';
+import HotelLayout from './Layout/HotelLayout';
+import HotelBooking from '../src/View/HotelBooking/HotelBooking'
+import HotelSearch from './View/HotelBooking/HotelSearch';
+import SingleBooking from './View/HotelBooking/SingleBooking';
+import HotelInformation from './View/HotelBooking/HotelInformation';
+import PaymentOption from './View/HotelBooking/PaymentOption';
+
 function App() {
-return (
+  return (
     <React.Fragment>
       <Router>
 
-
+  
         <Routes>
+        <Route path="/payment" element={<PaymentOption />} />
           <Route element={<MainLayout />}>
             <Route path="/" element={< Home />} />
             <Route path="/about" element={< About />} />
@@ -120,10 +130,12 @@ return (
             <Route path="/payment" element={<Payment />} />
             <Route path="/balance-earned" element={<BalanceEarned />} />
             <Route path="/reward" element={<Reaward />} />
-            
-            <Route path="/wallet" element={<Wallet/>}/>
-            <Route path="/flightbook" element={<Flightbook/>}/>
-            <Route path="/flightresult" element={<Flightresult/>}/>
+            <Route path="/reward-single" element={<RewardSingle />} />
+            <Route path="/wallet" element={<Wallet />} />
+            <Route path="/flightbook" element={<Flightbook />} />
+            <Route path="/flightressult" element={<Flightresult />} />
+            <Route path="/single-booking" element={<SingleBooking />} />
+            <Route path="/hotel-info" element={<HotelInformation />} />
 
             <Route element={<MusicPodcastlayout />}>
               <Route path="/music" element={<Music />} />
@@ -165,7 +177,10 @@ return (
             <Route element={<ImpactLayout />}>
               <Route path="/impact" element={<Impact />} />
             </Route>
-
+            <Route element={<HotelLayout />}>
+              <Route path="/hotel-booking" element={<HotelBooking />} />
+              <Route path="/hotel-search" element={<HotelSearch />} />
+            </Route>
           </Route>
         </Routes>
 

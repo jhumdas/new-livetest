@@ -1,10 +1,28 @@
-import React from 'react'
+import React,{useState} from 'react'
 import rr1 from '../../images/rr2.png'
 import rr2 from '../../images/rr1.png'
 import rr3 from '../../images/clock.png'
+import { Link } from 'react-router-dom'
+import RewardCard from './RewardCard'
 export default function Reward() {
+  const [isActive, setActive] = useState(false);
+  const loop=[
+    {
+      "img":rr1
+    },
+    {
+      'img':rr2
+    },
+    {
+      'img':rr1
+    },{
+      'img':rr2
+    }
+  ];
+    
   const activeWishlist = () => {
-    document.getElementById("icon-wishlist").classList.add("in-wishliste");
+    // document.getElementById("icon-wishlist").classList.add("in-wishliste");
+    setActive(!isActive);
   }
   return (
     <>
@@ -26,47 +44,16 @@ export default function Reward() {
       </div>
 
 
-      <div className='container mt-4'>
-        <div className='reward_box'>
-          <div className='image'>
-            <img src={rr1} />
-          </div>
-          <div className='rightBox'>
-            <div className='rightBoxflex'>
-              <div className='content'>
-                <h6>Title</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-              </div>
+      <div className='container mt-4 reward-card-css' >
+        {loop.map((item,index) => {
+          return (
+        <RewardCard key={index}  index={index} item={item} />
+          )
+        }
 
-              <div className='favourite'>
-                <div class="icon-wishlist" id='icon-wishlist' onClick={activeWishlist}></div>
-              </div>
-            </div>
-            <div className='clock'>
-              <img src={rr3} className='mr-2'/>5 d
-            </div>
-          </div>
-        </div>
-        <div className='reward_box sndone'>
-          <div className='image'>
-            <img src={rr2} />
-          </div>
-          <div className='rightBox'>
-            <div className='rightBoxflex'>
-              <div className='content'>
-                <h6>Title</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-              </div>
+        )}
 
-              <div className='favourite'>
-                <div class="icon-wishlist" id='icon-wishlist' onClick={activeWishlist}></div>
-              </div>
-            </div>
-            <div className='clock'>
-              <img src={rr3} className='mr-2'/>5 d
-            </div>
-          </div>
-        </div>
+
       </div>
     </>
   )
