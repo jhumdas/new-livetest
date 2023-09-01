@@ -45,7 +45,7 @@ export default function Flightresult() {
 
                     <div className='flght_fltr'>
                         <div className='row'>
-                            <div className='col-lg-3 col-xl-3 col-md-12 col-12'>
+                            <div className='col-lg-4 col-xl-4 col-md-12 col-12'>
                                 <div className='side_fltrwrap'>
 
                                     <div className='fltr_icon_txt' style={{ borderBottom: "1px solid #716E6E" }}>
@@ -90,18 +90,18 @@ export default function Flightresult() {
                                                 <h4>Price</h4>
                                             </div>
                                             <div className='fltr_prc'>
-                                            <p> ${value3} -  ${value4} </p>
+                                                <p> ${value3}  -  ${value4} </p>
                                             </div>
                                         </div>
                                         <div class="slider">
 
                                             <div class="slider__input range-slide">
-                             
+
                                                 <input
                                                     className="slider__input_slider"
                                                     type="range"
                                                     min="10,000"
-                                                  
+
                                                     step="0.05"
                                                     value={value3}
                                                     onChange={e => setValue3(e.target.value)}
@@ -109,7 +109,7 @@ export default function Flightresult() {
                                                 <input
                                                     className="slider__input_slider"
                                                     type="range"
-                                                 
+
                                                     max="80,000"
                                                     step="0.05"
                                                     value={value4}
@@ -123,6 +123,70 @@ export default function Flightresult() {
                                             </div> */}
                                         </div>
 
+                                    </div>
+
+                                    <div className='dpertr_fltr'>
+                                        <div className='fltr_prc'>
+                                            <h4>Departure form LHR</h4>
+                                        </div>
+                                        <div className='dprte_flx'>
+                                            <div className="form-check search-content">
+                                                <input
+                                                    name="language[]"
+                                                    id="allLanguage"
+                                                    className="form-check-input"
+                                                    type="checkbox"
+                                                    defaultValue="all"
+                                                />
+                                                <label className="form-check-label" htmlFor="allLanguage">
+                                                    Early Morning
+                                                </label>
+                                                <p>Before 6 AM</p>
+                                            </div>
+                                           
+                                            <div className="form-check search-content">
+                                                <input
+                                                    name="language[]"
+                                                    id="allLanguage"
+                                                    className="form-check-input"
+                                                    type="checkbox"
+                                                    defaultValue="all"
+                                                />
+                                                <label className="form-check-label" htmlFor="allLanguage">
+                                                    Morning
+                                                </label>
+                                                <p>Before 6 AM</p>
+                                            </div>
+                                        </div>
+                                        <div className='dprte_flx'>
+                                            <div className="form-check search-content">
+                                                <input
+                                                    name="language[]"
+                                                    id="allLanguage"
+                                                    className="form-check-input"
+                                                    type="checkbox"
+                                                    defaultValue="all"
+                                                />
+                                                <label className="form-check-label" htmlFor="allLanguage">
+                                                    Early Morning
+                                                </label>
+                                                <p>Before 6 AM</p>
+                                            </div>
+                                           
+                                            <div className="form-check search-content">
+                                                <input
+                                                    name="language[]"
+                                                    id="allLanguage"
+                                                    className="form-check-input"
+                                                    type="checkbox"
+                                                    defaultValue="all"
+                                                />
+                                                <label className="form-check-label" htmlFor="allLanguage">
+                                                    Morning
+                                                </label>
+                                                <p>Before 6 AM</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

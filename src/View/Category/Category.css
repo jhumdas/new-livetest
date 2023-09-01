@@ -220,7 +220,7 @@ justify-content: space-between;
       margin: 0 .6em 0 0;
       outline: 0;
       padding: 0 !important;
-      vertical-align: text-top;
+      vertical-align: inherit;
       height: 15px;
       width: 15px;
       -webkit-appearance: none;

@@ -58,7 +58,7 @@ export default function Header() {
                 <li><a href='/#partners' className={location.hash == "#partners" ? "nav__link active" : "nav-link"}>PARTNERS</a></li>
                 <li style={{position:"relative"}}><a href='/#consumer' className={location.hash == "#consumer" ? "nav__link active" : "nav-link"}>CONSUMER <i class="fa-solid fa-angle-down"></i></a>
                 <div className='small-pop box-shadow' style={{top:"25px"}}>
-                    <h5><Link to="/"><img src={flight} />Flight Booking</Link></h5>
+                    <h5><Link to="/flightbook"><img src={flight} />Flight Booking</Link></h5>
                     <h5><Link to="/hotel-booking"><img src={hotel1} />Hotel Booking</Link></h5>
                   </div>
                 </li>
