@@ -7,11 +7,10 @@ import p4 from '../../images/p1.png'
 export default function PaymentOption() {
     const [onclickShow,setOnclickShow]= useState(false);
     const [defaltShow,setDefaltShow]= useState(true);
-    const [showText, setShowText] =useState('Show Details');
     const handClickShow = ()=>{
         setOnclickShow(!onclickShow);
         setDefaltShow(!defaltShow);
-        setShowText('Hide Details')
+
 
     }
     return (
@@ -28,7 +27,7 @@ export default function PaymentOption() {
                                 <div className='topPart'>
                                     <div className='wrap'>
                                         <h4>Hotel Information, Address</h4>
-                                        <div><a href="#" className='btnn' onClick={handClickShow}>{showText} <span className={onclickShow ? "fa-solid fa-chevron-up"  : "fa-solid fa-chevron-down "}></span></a></div>
+                                        <div><a href="#" className='btnn' onClick={handClickShow}>{!onclickShow?"Show Detail":"Hide Detail"} <span className={onclickShow ? "fa-solid fa-chevron-up"  : "fa-solid fa-chevron-down "}></span></a></div>
                                     </div>
                                   {onclickShow &&
                                    <div className='onclick_show'>
