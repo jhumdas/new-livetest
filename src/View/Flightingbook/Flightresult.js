@@ -229,8 +229,8 @@ export default function Flightresult() {
       </section>
 
       {/* <FlightCancell/> */}
-
-      <FlightDetails />
+{/* 
+      <FlightDetails /> */}
     </>
   );
 }

@@ -498,7 +498,7 @@ overflow: hidden; */
     position: fixed;
     z-index: 9;
     display: grid;
-    justify-content: center;
+    /* justify-content: center; */
     align-content: center;
     padding: 2%;
 }

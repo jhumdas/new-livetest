@@ -94,6 +94,8 @@ import HotelSearch from './View/HotelBooking/HotelSearch';
 import SingleBooking from './View/HotelBooking/SingleBooking';
 import HotelInformation from './View/HotelBooking/HotelInformation';
 import PaymentOption from './View/HotelBooking/PaymentOption';
+import DatePicker from 'react-multi-date-picker';
+import FlightDate from './Component/FlightDate';
 
 function App() {
   return (
@@ -103,6 +105,7 @@ function App() {
   
         <Routes>
         <Route path="/payment" element={<PaymentOption />} />
+        <Route path="/datepicker" element={<FlightDate/>} />
           <Route element={<MainLayout />}>
             <Route path="/" element={< Home />} />
             <Route path="/about" element={< About />} />
