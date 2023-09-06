@@ -74,13 +74,13 @@ export default function FlightDetails() {
                     <span>1 adult</span>
                   </div>
                 </div>
-                <div className="bigBox">
+                <div className="FlightbigBox">
                   <div className="text-center">
                     <img src={a} />
                     <h6>Emirates</h6>
                     <h6>Em- xxxx</h6>
                   </div>
-                  <div className="wrapBox">
+                  <div className="FlightwrapBox">
                     <div>
                       <h4>15:10</h4>
                       <h5>Thu, 10 Aug</h5>
@@ -99,19 +99,19 @@ export default function FlightDetails() {
                     </div>
                   </div>
                 </div>
-                <div className="wrapper">
+                <div className="Flightwrapper">
                   <h5>
                     <img src={c} className="mr-2" />
                     2h 30m layover in Dublin
                   </h5>
                 </div>
-                <div className="bigBox">
+                <div className="FlightbigBox">
                   <div className="text-center">
                     <img src={a} />
                     <h6>Emirates</h6>
                     <h6>Em- xxxx</h6>
                   </div>
-                  <div className="wrapBox">
+                  <div className="FlightwrapBox">
                     <div>
                       <h4>15:10</h4>
                       <h5>Thu, 10 Aug</h5>

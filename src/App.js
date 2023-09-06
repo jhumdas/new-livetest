@@ -96,6 +96,7 @@ import HotelInformation from './View/HotelBooking/HotelInformation';
 import PaymentOption from './View/HotelBooking/PaymentOption';
 import DatePicker from 'react-multi-date-picker';
 import FlightDate from './Component/FlightDate';
+import FlightResultTiming from './View/Flightingbook/FlightResultTiming';
 
 function App() {
   return (
@@ -137,6 +138,7 @@ function App() {
             <Route path="/wallet" element={<Wallet />} />
             <Route path="/flightbook" element={<Flightbook />} />
             <Route path="/flightressult" element={<Flightresult />} />
+            <Route path="/flightressult-Timing" element={<FlightResultTiming />} />
             <Route path="/single-booking" element={<SingleBooking />} />
             <Route path="/hotel-info" element={<HotelInformation />} />
 

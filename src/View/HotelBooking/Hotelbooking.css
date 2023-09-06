@@ -10,7 +10,7 @@
     border-radius: 0px 0px 8.283px 8.283px;
     background: #FFF;
     box-shadow: 0px 3.31333327293396px 10.768332481384277px 0px rgba(0, 0, 0, 0.10);
-    width: 994px;
+    max-width: 994px;
     margin: 0 auto;
     margin-top: -10%;
     padding: 13px 30px 60px 30px;
@@ -1788,6 +1788,10 @@
 }
 
 @media (max-width:991px) {
+    .hotel_search{
+margin-left: 4%;
+margin-right: 4%;
+    }
     .price_summary {
         margin-top: 30px;
     }
